@@ -280,6 +280,7 @@ sections:
         map_title: "Frenzied's Cookbook [2]"
   -
     title: Forager Brood Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03855.png"
     items:
       - id: "10_1"
@@ -298,6 +299,7 @@ sections:
         data: ["7. Acquired by selecting the option \"Talk to Moore\" when speaking with Moore. Requires having all of the other Forager Brood Cookbooks.<br><span style=\"color: #ff0000;\">NOTE:</span><strong> </strong>You can lock yourself out of the Forager Brood Cookbooks if Moore dies during his questline, and will not be able to pick them up anymore."]
   -
     title: Igon's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03840.png"
     items:
       - id: "11_1"
@@ -306,6 +308,7 @@ sections:
         data: ["2. Can be found at the edge of a cliff near the Jagged Peak Mountainside site of grace."]
   -
     title: Finger-Weaver's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/01384.png"
     items:
       - id: "12_1"
@@ -314,6 +317,7 @@ sections:
         data: ["2. Found on a corpse before the bell in Finger Ruins of Miyr. Only accessible after progressing Ymir's questline and finding the secret path under the Catherdal."]
   -
     title: Greater Potentate's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03842.png"
     items:
       - id: "13_1"
@@ -346,6 +350,7 @@ sections:
         data: ["14. Going through the north-west path from the Charo's Hidden Grave grace, hug the water to the left until you stumble upon a corpse holding the cookbook, guarded by a large poison Miranda Flower and several smaller Miranda Flowers."]
   -
     title: Ancient Dragon Knight's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03837.png"
     items:
       - id: "14_1"
@@ -354,6 +359,7 @@ sections:
         data: ["2. Found in a chest in <strong>Scorpion River Catacombs</strong>. Right after the room with the annoying elevated sorcerer and two imps, you'll come across a bridge patrolled by more death eyes. You can drop off the side onto a path which eventually leads to the chest for this."]
   -
     title: Mad Craftsman's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03843.png"
     items:
       - id: "15_1"
@@ -364,6 +370,7 @@ sections:
         data: ["3. Found in Midra's Manse, just before the second site of grace. Walk across the rafters and jump into a room filled with frenzy rats. The cookbook is found on a body in that room."]
   -
     title: St. Trina Disciple's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03841.png"
     items:
       - id: "16_1"
@@ -374,6 +381,7 @@ sections:
         data: ["3. Found in the Garden of Deep Purple after defeating the Putrescent Knight. The cookbook is inside the small cave nearby."]
   -
     title: Fire Knight's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03836.png"
     items:
       - id: "17_1"
@@ -382,12 +390,14 @@ sections:
         data: ["2. In the soldier camp past Ellac Greatbridge, found inside one of the tents. Beware of the black knight in the area."]
   -
     title: Loyal Knight's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03838.png"
     items:
       - id: "18_1"
         data: ["The Loyal Knight's Cookbook can be found inside a chest. The chest is located inside an armory room."]
   -
     title: Battlefield Priest's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03839.png"
     items:
       - id: "19_1"
@@ -400,6 +410,7 @@ sections:
         data: ["4. Shadow Keep: Take the left lift down from the Storehouse, first floor site of grace. take the first exit to the right and continue forwad until the end of thehallway. Kill the enemy, and take the left route, hit the wall to reveal a path. The Battlefield Priest's Cookbook 4] is on a corpse, after the revealed hidden door."]
   -
     title: Grave Keeper's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03844.png"
     items:
       - id: "20_1"
@@ -408,6 +419,7 @@ sections:
         data: ["2. Located shortly after entering Charo's Hidden Grave. It's by a pile of rocks and turtles when you first reach the water."]
   -
     title: Antiquity Scholar's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03845.png"
     items:
       - id: "21_1"
@@ -416,6 +428,7 @@ sections:
         data: ["2. From the entrance of the Ancient Ruins of Rauh, head north towards the edge, and head west, you will find an area with an item below in which you can jump."]
   -
     title: Tibia's Cookbook
+    dlc: true
     icon: "/img/icons/keys/cookbooks/edited/03852.png"
     items:
       - id: "22_1"
