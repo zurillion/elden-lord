@@ -1,0 +1,42 @@
+name: Check generated HTML is up to date
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    name: Regenerate and diff
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run generator
+        run: python generate.py
+
+      - name: Fail if generated files differ from committed files
+        run: |
+          if ! git diff --exit-code docs/; then
+            echo ""
+            echo "──────────────────────────────────────────────────────"
+            echo "ERROR: The generated HTML files are out of sync."
+            echo "You edited a YAML file but did not re-run generate.py."
+            echo ""
+            echo "Fix: run  python generate.py  locally, then commit the"
+            echo "updated files in docs/ together with your YAML changes."
+            echo "──────────────────────────────────────────────────────"
+            exit 1
+          fi
