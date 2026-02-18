@@ -426,6 +426,15 @@ def make_checklist(page):
             with div(cls="input-group d-print-none"):
                 input_(type="search", id=page['id'] + "_search", cls="form-control my-3", placeholder="Start typing to filter results...")
 
+            if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar'}:
+                with div(cls='row d-print-none mb-3'):
+                    with div(cls='col-auto d-flex align-items-center gap-2'):
+                        label('Show:', _for='dlc_filter', cls='mb-0')
+                        with select(id='dlc_filter', cls='form-select form-select-sm'):
+                            option('Both', value='both', selected='selected')
+                            option('Base Game', value='base')
+                            option('DLC', value='dlc')
+
             with div(id=page['id']+"_list"):
                 for s_idx, section in enumerate(page['sections']):
                     section['num_ids'] = 0
@@ -466,7 +475,15 @@ def make_checklist(page):
                                                     div(cls="ms-0 ps-0 d-flex align-items-center col-md-" + col_size).add(label(strong(header), cls='ms-0 ps-0'))
                                     for item in items:
                                         id = str(item['id'])
-                                        with li(cls="list-group-item searchable", data_id=page['id'] + '_' + id, id='item_' + id):
+                                        li_kwargs = {
+                                            'cls': "list-group-item searchable",
+                                            'data_id': page['id'] + '_' + id,
+                                            'id': 'item_' + id,
+                                        }
+                                        if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar'}:
+                                            is_dlc = item.get('dlc', section.get('dlc', page.get('dlc', False)))
+                                            li_kwargs['data_dlc'] = str(bool(is_dlc)).lower()
+                                        with li(**li_kwargs):
                                             if isinstance(item, str):
                                                 h5(item)
                                                 continue
@@ -519,7 +536,15 @@ def make_checklist(page):
                                         continue
                                     def f(item):
                                         id = str(item['id'])
-                                        with li(data_id=page['id'] + "_" + id, cls="list-group-item searchable ps-0", id='item_' + id):
+                                        li_kwargs = {
+                                            'data_id': page['id'] + "_" + id,
+                                            'cls': "list-group-item searchable ps-0",
+                                            'id': 'item_' + id,
+                                        }
+                                        if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar'}:
+                                            is_dlc = item.get('dlc', section.get('dlc', page.get('dlc', False)))
+                                            li_kwargs['data_dlc'] = str(bool(is_dlc)).lower()
+                                        with li(**li_kwargs):
                                             with div(cls="form-check checkbox d-flex align-items-center"):
                                                 input_(cls="form-check-input", type="checkbox", value="", id=page['id'] + '_' + id, data_section_idx=str(s_idx))
                                                 with label(cls="form-check-label item_content", _for=page['id'] + '_' + id):

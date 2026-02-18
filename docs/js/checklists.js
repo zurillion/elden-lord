@@ -185,6 +185,32 @@
             $.jStorage.set(profilesKey, profiles);
         });
 
+        function applyDlcFilter(mode) {
+            var rows = $('li.searchable[data-dlc]');
+            if (!rows.length) {
+                return;
+            }
+
+            rows.each(function() {
+                var isDlc = $(this).attr('data-dlc') === 'true';
+                var shouldShow = (mode === 'both') || (mode === 'dlc' && isDlc) || (mode === 'base' && !isDlc);
+                $(this).toggleClass('d-none', !shouldShow);
+            });
+
+            $('[id^="' + window.current_page_id + '_section_"]').each(function() {
+                var hasVisibleRows = $(this).find('li.searchable[data-dlc]:not(.d-none)').length > 0;
+                $(this).toggleClass('d-none', !hasVisibleRows);
+            });
+        }
+
+        var dlcFilter = $('#dlc_filter');
+        if (dlcFilter.length) {
+            dlcFilter.on('change', function() {
+                applyDlcFilter($(this).val());
+            });
+            applyDlcFilter(dlcFilter.val());
+        }
+
         // $('.nav.navbar-nav li a,#progress_list li a').on('click', function(event) {
         //     if ($(event.currentTarget).hasClass('dropdown-toggle')) {
         //         return;

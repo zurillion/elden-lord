@@ -8,18 +8,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "800"
+        dlc: true
         icon: "/img/icons/armor/15500.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dane's+Hat\">Dane's Hat</a>", "Found under a waterfall in the lower portions under Bonny Village. This area can only be accessed by using the ladder in Shadow Keep to get down to a special teleport coffin. This will take you to Ruins of Unte and you must follow the cliffs downstream and then carefully drop down to bottom level to reach the area."]
       - id: "801"
+        dlc: true
         icon: "/img/icons/armor/15501.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dryleaf+Robe\">Dryleaf Robe</a>", ""]
       - id: "802"
+        dlc: true
         icon: "/img/icons/armor/15502.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dryleaf+Arm+Wraps\">Dryleaf Arm Wraps</a>", ""]
       - id: "803"
+        dlc: true
         icon: "/img/icons/armor/15503.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dryleaf+Cuissardes\">Dryleaf Cuissardes</a>", ""]
       - id: "804"
+        dlc: true
         icon: "/img/icons/armor/15504.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dryleaf+Robe+(Altered)\">Dryleaf Robe (Altered)</a>", ""]
   -
@@ -28,15 +33,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "805"
+        dlc: true
         icon: "/img/icons/armor/15505.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gaius's+Helm\">Gaius's Helm</a>", "The helm, armor, and gauntlets can be purchased from Finger Reader Enia at Roundtable Hold after defeating Commander Gaius. The Wolf Rider Enemy drops Gaius's Greaves."]
       - id: "806"
+        dlc: true
         icon: "/img/icons/armor/15506.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gaius's+Armor\">Gaius's Armor</a>", ""]
       - id: "807"
+        dlc: true
         icon: "/img/icons/armor/15507.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gaius's+Gauntlets\">Gaius's Gauntlets</a>", ""]
       - id: "808"
+        dlc: true
         icon: "/img/icons/armor/15508.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gaius's+Greaves\">Gaius's Greaves</a>", ""]
   -
@@ -45,15 +54,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "809"
+        dlc: true
         icon: "/img/icons/armor/15509.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Helm\">Oathseeker Knight Helm</a>", "Found on a hanging body, just outside the Church of Benediction."]
       - id: "811"
+        dlc: true
         icon: "/img/icons/armor/15511.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Gauntlets\">Oathseeker Knight Gauntlets</a>", ""]
       - id: "812"
+        dlc: true
         icon: "/img/icons/armor/15512.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Greaves\">Oathseeker Knight Greaves</a>", ""]
       - id: "813"
+        dlc: true
         icon: "/img/icons/armor/15514.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Armor\">Oathseeker Knight Armor</a>", ""]
   -
@@ -61,6 +74,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "810"
+        dlc: true
         icon: "/img/icons/armor/15510.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Leda's+Armor\">Leda's Armor</a>", ""]
   -
@@ -69,15 +83,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "814"
+        dlc: true
         icon: "/img/icons/armor/15515.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Verdigris+Helm\">Verdigris Helm</a>", "Moore drops Moore's Bell Bearing wherever he's killed."]
       - id: "815"
+        dlc: true
         icon: "/img/icons/armor/15516.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Verdigris+Armor\">Verdigris Armor</a>", ""]
       - id: "816"
+        dlc: true
         icon: "/img/icons/armor/15517.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Verdigris+Gauntlets\">Verdigris Gauntlets</a>", ""]
       - id: "817"
+        dlc: true
         icon: "/img/icons/armor/15518.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Verdigris+Greaves\">Verdigris Greaves</a>", ""]
   -
@@ -86,18 +104,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "818"
+        dlc: true
         icon: "/img/icons/armor/15519.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Pelt+of+Ralva\">Pelt of Ralva</a>", "Pelt of Ralva can be obtained after defeating Ralva the Great Red Bear, a gigantic bear found in Scadu Altus. Other parts are dropped by Red Bear, a humanoid boss. This boss can be found at the Northern Nameless Mausoleum. The Northern Nameless Mausoleum is located East of the Temple Ruins."]
       - id: "819"
+        dlc: true
         icon: "/img/icons/armor/15520.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Iron+Rivet+Armor\">Iron Rivet Armor</a>", ""]
       - id: "820"
+        dlc: true
         icon: "/img/icons/armor/15521.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Iron+Rivet+Gauntlets\">Iron Rivet Gauntlets</a>", ""]
       - id: "821"
+        dlc: true
         icon: "/img/icons/armor/15522.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Iron+Rivet+Greaves\">Iron Rivet Greaves</a>", ""]
       - id: "822"
+        dlc: true
         icon: "/img/icons/armor/15523.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Fang+Helm\">Fang Helm</a>", ""]
   -
@@ -106,18 +129,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "823"
+        dlc: true
         icon: "/img/icons/armor/15524.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Thiollier's+Mask\">Thiollier's Mask</a>", "Summon Thiollier during the battle at the end of his questline, then loot his body in the boss arena after the fight."]
       - id: "824"
+        dlc: true
         icon: "/img/icons/armor/15525.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Thiollier's+Garb\">Thiollier's Garb</a>", ""]
       - id: "825"
+        dlc: true
         icon: "/img/icons/armor/15526.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Thiollier's+Gloves\">Thiollier's Gloves</a>", ""]
       - id: "826"
+        dlc: true
         icon: "/img/icons/armor/15527.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Thiollier's+Trousers\">Thiollier's Trousers</a>", ""]
       - id: "827"
+        dlc: true
         icon: "/img/icons/armor/15528.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Thiollier's+Garb+(Altered)\">Thiollier's Garb (Altered)</a>", ""]
   -
@@ -126,18 +154,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "828"
+        dlc: true
         icon: "/img/icons/armor/15537.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/High+Priest+Hat\">High Priest Hat</a>", "Dropped by Count Ymir, Mother of Fingers, who can be found in the Cathedral of Manus Metyr after interacting with the throne, you can only find Count Ymir there after you have defeated Metyr, Mother of Fingers."]
       - id: "829"
+        dlc: true
         icon: "/img/icons/armor/15538.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/High+Priest+Robe\">High Priest Robe</a>", ""]
       - id: "830"
+        dlc: true
         icon: "/img/icons/armor/15539.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/High+Priest+Gloves\">High Priest Gloves</a>", ""]
       - id: "831"
+        dlc: true
         icon: "/img/icons/armor/15540.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/High+Priest+Undergarments\">High Priest Undergarments</a>", ""]
       - id: "832"
+        dlc: true
         icon: "/img/icons/armor/15541.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Finger+Robe\">Finger Robe</a>", ""]
   -
@@ -146,15 +179,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "833"
+        dlc: true
         icon: "/img/icons/armor/15542.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Caterpillar+Mask\">Caterpillar Mask</a>", "Hornsent Set is dropped by Hornsent wherever he's killed"]
       - id: "834"
+        dlc: true
         icon: "/img/icons/armor/15543.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Braided+Cord+Robe\">Braided Cord Robe</a>", ""]
       - id: "835"
+        dlc: true
         icon: "/img/icons/armor/15544.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Braided+Arm+Wraps\">Braided Arm Wraps</a>", ""]
       - id: "836"
+        dlc: true
         icon: "/img/icons/armor/15545.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Soiled+Loincloth\">Soiled Loincloth</a>", ""]
   -
@@ -163,18 +200,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "837"
+        dlc: true
         icon: "/img/icons/armor/15546.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dancer's+Hood\">Dancer's Hood</a>", "Dropped by Dancer of Ranah in Southern Nameless Mausoleum. The Southern Nameless Mausoleum is found in the Southern Shore region, on an island that can only be accessed through an underground cave. The entrance to the cave is on the mainland shore just south from the Cerulean Coast West site of grace."]
       - id: "838"
+        dlc: true
         icon: "/img/icons/armor/15547.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dancer's+Dress\">Dancer's Dress</a>", ""]
       - id: "839"
+        dlc: true
         icon: "/img/icons/armor/15548.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dancer's+Bracer\">Dancer's Bracer</a>", ""]
       - id: "840"
+        dlc: true
         icon: "/img/icons/armor/15549.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dancer's+Trousers\">Dancer's Trousers</a>", ""]
       - id: "841"
+        dlc: true
         icon: "/img/icons/armor/15550.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Dancer's+Dress+(Altered)\">Dancer's Dress (Altered)</a>", ""]
   -
@@ -183,15 +225,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "842"
+        dlc: true
         icon: "/img/icons/armor/15551.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Helm+of+Night\">Helm of Night</a>", "Bonny Gaol: Use the jar lift near the bridge twice to reach the top level of the gaol. First, hop on the jar, go to the bridge level, and activate the switch. Ride the jar lift for the second time to go to the top level. You can find the Night Set on a corpse laying on top of a table."]
       - id: "843"
+        dlc: true
         icon: "/img/icons/armor/15552.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Armor+of+Night\">Armor of Night</a>", ""]
       - id: "844"
+        dlc: true
         icon: "/img/icons/armor/15553.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gauntlets+of+Night\">Gauntlets of Night</a>", ""]
       - id: "845"
+        dlc: true
         icon: "/img/icons/armor/15554.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Greaves+of+Night\">Greaves of Night</a>", ""]
   -
@@ -200,21 +246,27 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "846"
+        dlc: true
         icon: "/img/icons/armor/15555.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Igon's+Helm\">Igon's Helm</a>", "Complete Igon's questline by summoning him and then defeating Bayle The Dread. Igon will drop his items at his previous location, just south-east of Foot of the Jagged Peak [Map Link] his body will have both Igon's Greatbow and Igon's set. "]
       - id: "847"
+        dlc: true
         icon: "/img/icons/armor/15556.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Igon's+Armor\">Igon's Armor</a>", ""]
       - id: "848"
+        dlc: true
         icon: "/img/icons/armor/15557.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Igon's+Gauntlets\">Igon's Gauntlets</a>", ""]
       - id: "849"
+        dlc: true
         icon: "/img/icons/armor/15558.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Igon's+Loincloth\">Igon's Loincloth</a>", ""]
       - id: "850"
+        dlc: true
         icon: "/img/icons/armor/15559.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Igon's+Helm+(Altered)\">Igon's Helm (Altered)</a>", ""]
       - id: "851"
+        dlc: true
         icon: "/img/icons/armor/15560.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Igon's+Armor+(Altered)\">Igon's Armor (Altered)</a>", ""]
   -
@@ -223,18 +275,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "852"
+        dlc: true
         icon: "/img/icons/armor/15561.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Wise+Man's+Mask\">Wise Man's Mask</a>", "Complete Sir Ansbach's questline all the way through the end, and side with him when facing Leda, and then Promised Consort Radahn/ Radahn, Consort of Miquella. After the fight is over, Sir Ansbach's body will be near the site of grace, alongside his equipment and his Incantation."]
       - id: "853"
+        dlc: true
         icon: "/img/icons/armor/15562.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ansbach's+Attire\">Ansbach's Attire</a>", ""]
       - id: "854"
+        dlc: true
         icon: "/img/icons/armor/15563.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ansbach's+Manchettes\">Ansbach's Manchettes</a>", ""]
       - id: "855"
+        dlc: true
         icon: "/img/icons/armor/15564.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ansbach's+Boots\">Ansbach's Boots</a>", ""]
       - id: "856"
+        dlc: true
         icon: "/img/icons/armor/15565.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ansbach's+Attire+(Altered)\">Ansbach's Attire (Altered)</a>", ""]
   -
@@ -243,18 +300,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "857"
+        dlc: true
         icon: "/img/icons/armor/15566.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Freyja's+Helm\">Freyja's Helm</a>", "Freyja's Set appears wherever Redmane Freyja dies."]
       - id: "858"
+        dlc: true
         icon: "/img/icons/armor/15567.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Freyja's+Armor\">Freyja's Armor</a>", ""]
       - id: "859"
+        dlc: true
         icon: "/img/icons/armor/15568.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Freyja's+Gauntlets\">Freyja's Gauntlets</a>", ""]
       - id: "860"
+        dlc: true
         icon: "/img/icons/armor/15569.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Freyja's+Greaves\">Freyja's Greaves</a>", ""]
       - id: "861"
+        dlc: true
         icon: "/img/icons/armor/15570.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Freyja's+Armor+(Altered)\">Freyja's Armor (Altered)</a>", ""]
   -
@@ -263,18 +325,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "862"
+        dlc: true
         icon: "/img/icons/armor/15571.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Helm+of+Solitude\">Helm of Solitude</a>", "Can be obtained after defeating the Blackgaol Knight found inside Western Nameless Mausoleum. Blackgaol Knight can be found in the Western Nameless Mausoleum. Players will find a Mausoleum entrance west of the Scorched Ruins Site of Grace. The entrance is marked with 2 lit fires on both sides and a Stake of Marika. The stairs will lead to an underground room where the fight will take place."]
       - id: "863"
+        dlc: true
         icon: "/img/icons/armor/15572.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Armor+of+Solitude\">Armor of Solitude</a>", ""]
       - id: "864"
+        dlc: true
         icon: "/img/icons/armor/15573.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gauntlets+of+Solitude\">Gauntlets of Solitude</a>", ""]
       - id: "865"
+        dlc: true
         icon: "/img/icons/armor/15574.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Greaves+of+Solitude\">Greaves of Solitude</a>", ""]
       - id: "866"
+        dlc: true
         icon: "/img/icons/armor/15575.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Armor+of+Solitude+(Altered)\">Armor of Solitude (Altered)</a>", ""]
   -
@@ -283,18 +350,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "867"
+        dlc: true
         icon: "/img/icons/armor/15576.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer+Soldier+Helm\">Messmer Soldier Helm</a>", "Drop by Messmer Soldiers."]
       - id: "868"
+        dlc: true
         icon: "/img/icons/armor/15577.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer+Soldier+Armor\">Messmer Soldier Armor</a>", ""]
       - id: "869"
+        dlc: true
         icon: "/img/icons/armor/15578.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer+Soldier+Gauntlets\">Messmer Soldier Gauntlets</a>", ""]
       - id: "870"
+        dlc: true
         icon: "/img/icons/armor/15579.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer+Soldier+Greaves\">Messmer Soldier Greaves</a>", ""]
       - id: "871"
+        dlc: true
         icon: "/img/icons/armor/15580.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer+Soldier+Armor+(Altered)\">Messmer Soldier Armor (Altered)</a>", ""]
   -
@@ -303,15 +375,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "872"
+        dlc: true
         icon: "/img/icons/armor/15581.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Black+Knight+Helm\">Black Knight Helm</a>", "Black Knight Set pieces are dropped from Black Knights."]
       - id: "873"
+        dlc: true
         icon: "/img/icons/armor/15582.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Black+Knight+Armor\">Black Knight Armor</a>", ""]
       - id: "874"
+        dlc: true
         icon: "/img/icons/armor/15583.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Black+Knight+Gauntlets\">Black Knight Gauntlets</a>", ""]
       - id: "875"
+        dlc: true
         icon: "/img/icons/armor/15584.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Black+Knight+Greaves\">Black Knight Greaves</a>", ""]
   -
@@ -320,15 +396,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "876"
+        dlc: true
         icon: "/img/icons/armor/15585.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rakshasa+Helm\">Rakshasa Helm</a>", "Dropped by Rakshasa in Eastern Nameless Mausoleum. This area can only be accessed by using the ladder in Shadow Keep to get down to a special teleport coffin (this Elden Ring Map location). This will take you to Ruins of Unte and you must follow the cliffs downstream and then carefully drop down to bottom level to reach the mausoleum."]
       - id: "877"
+        dlc: true
         icon: "/img/icons/armor/15586.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rakshasa+Armor\">Rakshasa Armor</a>", ""]
       - id: "878"
+        dlc: true
         icon: "/img/icons/armor/15587.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rakshasa+Gauntlets\">Rakshasa Gauntlets</a>", ""]
       - id: "879"
+        dlc: true
         icon: "/img/icons/armor/15588.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rakshasa+Greaves\">Rakshasa Greaves</a>", ""]
   -
@@ -337,18 +417,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "880"
+        dlc: true
         icon: "/img/icons/armor/15593.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Fire+Knight+Helm\">Fire Knight Helm</a>", "Drop by Fire Knights in the Shadow Keep."]
       - id: "881"
+        dlc: true
         icon: "/img/icons/armor/15594.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Fire+Knight+Armor\">Fire Knight Armor</a>", ""]
       - id: "882"
+        dlc: true
         icon: "/img/icons/armor/15595.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Fire+Knight+Gauntlets\">Fire Knight Gauntlets</a>", ""]
       - id: "883"
+        dlc: true
         icon: "/img/icons/armor/15596.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Fire+Knight+Greaves\">Fire Knight Greaves</a>", ""]
       - id: "884"
+        dlc: true
         icon: "/img/icons/armor/15597.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Fire+Knight+Armor+(Altered)\">Fire Knight Armor (Altered)</a>", ""]
   -
@@ -356,6 +441,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "885"
+        dlc: true
         icon: "/img/icons/armor/15598.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Death+Mask+Helm\">Death Mask Helm</a>", "Drops from a Fire Knight miniboss in the cathedral area of Shadow Keep, after draining out the water."]
   -
@@ -363,6 +449,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "886"
+        dlc: true
         icon: "/img/icons/armor/15599.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Winged+Serpent+Helm\">Winged Serpent Helm</a>", "Shadow Keep: Sixth Floor: Climb the statues once you've used the lever to move them. Head outside, turn right and head up the stairs, turn left to the bridge which leads to Messmer boss fight, the Fire knight is right before and drops this item and Ash of War: Flame Spear."]
   -
@@ -370,6 +457,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "887"
+        dlc: true
         icon: "/img/icons/armor/15600.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Salza's+Hood\">Salza's Hood</a>", "From the West Rampart Site of Grace, take the bridge all the way. Use Torrent to avoid being trappped in the Rain of Fire. Defeat the Fire Knight at the end to obtain this and Rain of Fire."]
   -
@@ -378,21 +466,27 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "888"
+        dlc: true
         icon: "/img/icons/armor/15601.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Leather+Headband\">Leather Headband</a>", "These parts of set can be found in Rauh Base on a corpse lying atop a short cliff near the area where Rugalea the Great Red Bear roams. From the Ravine North Site of Grace, head northwest to the orange forest past the river. Head up the upper plain by using the toppled pillar and jump on top of it. Head west until you reach the edge of the plain to find the second set."]
       - id: "889"
+        dlc: true
         icon: "/img/icons/armor/15602.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gloried+Attire\">Gloried Attire</a>", ""]
       - id: "890"
+        dlc: true
         icon: "/img/icons/armor/15603.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Leather+Arm+Wraps\">Leather Arm Wraps</a>", ""]
       - id: "891"
+        dlc: true
         icon: "/img/icons/armor/15604.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Leather+Leg+Wraps\">Leather Leg Wraps</a>", ""]
       - id: "892"
+        dlc: true
         icon: "/img/icons/armor/15605.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Leather+Crown\">Leather Crown</a>", "These parts of set can be found in the Scadu Altus, in a small orange forest east of the road leading to the Shadow Keep. From the Highroad Cross site of grace, head north until the road is joined by a path from the southeast, and then travel to the forest due east. The set is located in the center of the forest, to the west of a pond where Ralva the Great Red Bear roams."]
       - id: "893"
+        dlc: true
         icon: "/img/icons/armor/15606.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Highland+Attire\">Highland Attire</a>", ""]
   -
@@ -401,15 +495,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "894"
+        dlc: true
         icon: "/img/icons/armor/15607.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Death+Knight+Helm\">Death Knight Helm</a>", "Darklight Catacombs, on a Death Knight corpse. To get this armor set make your way in the catacombs until you reach the first elevator. Head down the elevator and into the next room where you can head down the staircase on the right. Make your way to the beginning of the next staircase where you will see a broken portion of the railing, where you’ll want to jump down. In the room behind you you should find the armor set on a death knight’s corpse laying in front of a large pit."]
       - id: "895"
+        dlc: true
         icon: "/img/icons/armor/15608.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Death+Knight+Armor\">Death Knight Armor</a>", ""]
       - id: "896"
+        dlc: true
         icon: "/img/icons/armor/15609.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Death+Knight+Gauntlets\">Death Knight Gauntlets</a>", ""]
       - id: "897"
+        dlc: true
         icon: "/img/icons/armor/15610.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Death+Knight+Greaves\">Death Knight Greaves</a>", ""]
   -
@@ -418,15 +516,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "898"
+        dlc: true
         icon: "/img/icons/armor/15611.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Curseblade+Mask\">Curseblade Mask</a>", "Drop by Curseblade enemies."]
       - id: "899"
+        dlc: true
         icon: "/img/icons/armor/15612.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ascetic's+Loincloth\">Ascetic's Loincloth</a>", ""]
       - id: "900"
+        dlc: true
         icon: "/img/icons/armor/15613.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ascetic's+Wrist+Guards\">Ascetic's Wrist Guards</a>", ""]
       - id: "901"
+        dlc: true
         icon: "/img/icons/armor/15614.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ascetic's+Ankle+Guards\">Ascetic's Ankle Guards</a>", ""]
   -
@@ -435,18 +537,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "902"
+        dlc: true
         icon: "/img/icons/armor/15615.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer's+Helm\">Messmer's Helm</a>", "Purchase from Finger Reader Enia at Roundtable Hold after defeating Messmer the Impaler."]
       - id: "903"
+        dlc: true
         icon: "/img/icons/armor/15616.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer's+Armor\">Messmer's Armor</a>", ""]
       - id: "904"
+        dlc: true
         icon: "/img/icons/armor/15617.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer's+Gauntlets\">Messmer's Gauntlets</a>", ""]
       - id: "905"
+        dlc: true
         icon: "/img/icons/armor/15618.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer's+Greaves\">Messmer's Greaves</a>", ""]
       - id: "906"
+        dlc: true
         icon: "/img/icons/armor/15655.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Messmer's+Helm+(Altered)\">Messmer's Helm (Altered)</a>", ""]
   -
@@ -455,18 +562,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "907"
+        dlc: true
         icon: "/img/icons/armor/15620.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gravebird+Helm\">Gravebird Helm</a>", "From the Spiral Rise site of grace, climb the spire until you get the elevator shortcut back down. Ride the lift down and jump off halfway into a central altar."]
       - id: "908"
+        dlc: true
         icon: "/img/icons/armor/15621.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gravebird's+Blackquill+Armor\">Gravebird's Blackquill Armor</a>", "From the Temple Town Ruins site of grace head north, past the Red Pests servants of rot, and stick to the left. The path will start to head upwards and you will find several Gravebirds. Continue upwards and you will eventually reach an area where there are gravebird statues at the side, in the middle, against the wall, you will find the armor."]
       - id: "909"
+        dlc: true
         icon: "/img/icons/armor/15622.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gravebird+Bracelets\">Gravebird Bracelets</a>", "South the Pillar Path Waypoint site of grace, from a corpse at the corner of the altar."]
       - id: "910"
+        dlc: true
         icon: "/img/icons/armor/15623.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gravebird+Anklets\">Gravebird Anklets</a>", "Found in a swamp infested with Gravebirds, below a big archway."]
       - id: "911"
+        dlc: true
         icon: "/img/icons/armor/15624.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Gravebird+Armor\">Gravebird Armor</a>", "In the area, there are four statues of Gravebirds, and at the end is where you'll find the Armor. Once you approach the statues, at least 3 of them will turn into enemies. This location is situated to the far west of the Abandoned Ailing Village, nearly reaching the outer walls of Belurat, Tower Settlement."]
   -
@@ -475,15 +587,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "912"
+        dlc: true
         icon: "/img/icons/armor/15625.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Common+Soldier+Helm\">Common Soldier Helm</a>", "Drop by soldiers in Castle Ensis and Fort of Reprimand."]
       - id: "913"
+        dlc: true
         icon: "/img/icons/armor/15626.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Common+Soldier+Cloth+Armor\">Common Soldier Cloth Armor</a>", ""]
       - id: "914"
+        dlc: true
         icon: "/img/icons/armor/15627.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Common+Soldier+Gauntlets\">Common Soldier Gauntlets</a>", ""]
       - id: "915"
+        dlc: true
         icon: "/img/icons/armor/15628.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Common+Soldier+Greaves\">Common Soldier Greaves</a>", ""]
   -
@@ -492,15 +608,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "916"
+        dlc: true
         icon: "/img/icons/armor/15629.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Horned+Warrior+Helm\">Horned Warrior Helm</a>", "Drops from Horned Warriors."]
       - id: "917"
+        dlc: true
         icon: "/img/icons/armor/15630.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Horned+Warrior+Armor\">Horned Warrior Armor</a>", ""]
       - id: "918"
+        dlc: true
         icon: "/img/icons/armor/15631.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Horned+Warrior+Gauntlets\">Horned Warrior Gauntlets</a>", ""]
       - id: "919"
+        dlc: true
         icon: "/img/icons/armor/15632.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Horned+Warrior+Greaves\">Horned Warrior Greaves</a>", ""]
   -
@@ -509,9 +629,11 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "920"
+        dlc: true
         icon: "/img/icons/armor/15633.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Divine+Beast+Helm\">Divine Beast Helm</a>", "Dropped by Divine Beast Warriors, Enir Ilim."]
       - id: "921"
+        dlc: true
         icon: "/img/icons/armor/15634.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Divine+Beast+Warrior+Armor\">Divine Beast Warrior Armor</a>", ""]
   -
@@ -520,15 +642,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "922"
+        dlc: true
         icon: "/img/icons/armor/15635.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Divine+Bird+Helm\">Divine Bird Helm</a>", "Dropped by Divine Bird Warriors, Enir Ilim."]
       - id: "923"
+        dlc: true
         icon: "/img/icons/armor/15636.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Armor\">Divine Bird Warrior Armor</a>", ""]
       - id: "924"
+        dlc: true
         icon: "/img/icons/armor/15656.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Gauntlets\">Divine Bird Warrior Gauntlets</a>", ""]
       - id: "925"
+        dlc: true
         icon: "/img/icons/armor/15637.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Greaves\">Divine Bird Warrior Greaves</a>", ""]
   -
@@ -537,15 +663,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "926"
+        dlc: true
         icon: "/img/icons/armor/15638.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rellana's+Helm\">Rellana's Helm</a>", "All the armor pieces can be bought from Enia in the Roundtable Hold upon defeating Rellana Twin Moon Knight."]
       - id: "927"
+        dlc: true
         icon: "/img/icons/armor/15639.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rellana's+Armor\">Rellana's Armor</a>", ""]
       - id: "928"
+        dlc: true
         icon: "/img/icons/armor/15640.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rellana's+Gloves\">Rellana's Gloves</a>", ""]
       - id: "929"
+        dlc: true
         icon: "/img/icons/armor/15641.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Rellana's+Greaves\">Rellana's Greaves</a>", ""]
   -
@@ -554,18 +684,23 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "930"
+        dlc: true
         icon: "/img/icons/armor/15642.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Young+Lion's+Helm\">Young Lion's Helm</a>", "Purchase from Finger Reader Enia at Roundtable Hold after defeating Promised Consort Radahn / Radahn, Consort of Miquella in Enir-Ilim."]
       - id: "931"
+        dlc: true
         icon: "/img/icons/armor/15643.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Young+Lion's+Armor\">Young Lion's Armor</a>", ""]
       - id: "932"
+        dlc: true
         icon: "/img/icons/armor/15644.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Young+Lion's+Gauntlets\">Young Lion's Gauntlets</a>", ""]
       - id: "933"
+        dlc: true
         icon: "/img/icons/armor/15645.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Young+Lion's+Greaves\">Young Lion's Greaves</a>", ""]
       - id: "934"
+        dlc: true
         icon: "/img/icons/armor/15646.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Young+Lion's+Armor+(Altered)\">Young Lion's Armor (Altered)</a>", ""]
   -
@@ -573,6 +708,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "935"
+        dlc: true
         icon: "/img/icons/armor/15647.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Circlet+of+Light\">Circlet of Light</a>", "First, defeat Promised Consort Radahn / Radahn, Consort of Miquella in Enir-Ilim. After the battle, at the center of the boss arena, towards the golden orb. Select \"Touch Memory\" to trigger a cutscene. You'll obtain this item after the cutscene plays."]
   -
@@ -581,15 +717,19 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "936"
+        dlc: true
         icon: "/img/icons/armor/15648.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Helm\">Shadow Militiaman Helm</a>", "Found by killing Shadow Militiaman enemies."]
       - id: "937"
+        dlc: true
         icon: "/img/icons/armor/15649.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Armor\">Shadow Militiaman Armor</a>", ""]
       - id: "938"
+        dlc: true
         icon: "/img/icons/armor/15650.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Gauntlets\">Shadow Militiaman Gauntlets</a>", ""]
       - id: "939"
+        dlc: true
         icon: "/img/icons/armor/15651.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Greaves\">Shadow Militiaman Greaves</a>", ""]
   -
@@ -597,6 +737,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "940"
+        dlc: true
         icon: "/img/icons/armor/15652.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Divine+Beast+Head\">Divine Beast Head</a>", "The Divine Beast Dancing Lion of the Belurat, Tower Settlement drops this Helm upon defeat."]
   -
@@ -604,6 +745,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "941"
+        dlc: true
         icon: "/img/icons/armor/15653.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/St.+Trina's+Blossom\">St. Trina's Blossom</a>", "Garden of Deep Purple: After completing Thiollier and St. Trina's questline, return to her cave in Garden of Deep Purple. You can pick up this item from her fallen body."]
   -
@@ -611,6 +753,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "942"
+        dlc: true
         icon: "/img/icons/armor/15654.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Crucible+Hammer-Helm\">Crucible Hammer-Helm</a>", "Dropped by Devonia, Crucible Knight near Rauh Ancient Ruins, East Grace."]
   -
@@ -618,6 +761,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "943"
+        dlc: true
         icon: "/img/icons/armor/15657.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Greatjar\">Greatjar</a>", "Belurat Gaol: After leaving the jar labyrinth, you will pass a small bridge and fight 3 Mutated Prisoners, on quite a large platform. In order to advance the dungeon, you have to step on the jar at the end of the area, but don't do that. Instead, turn right to find another jar on a slightly lower level. Step on it, and it will take you high. Once there, jump from platform to platform, and once the area, opens up, the item is on a pedestal, beware of the enemies."]
   -
@@ -625,6 +769,7 @@ sections:
     table: ["Name", "Location"]
     items:
       - id: "944"
+        dlc: true
         icon: "/img/icons/armor/15658.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Imp+Head+(Lion)\">Imp Head (Lion)</a>", "Scorpion River Catacombs. When you enter the area with two spiked ceilings and a run across a bridge under the gaze of a deadly basilisk. Cross the bridge towards the next lift, and stop at the end, then jump on the ledge to the left and follow it up towards the basilisk. Jump on the spiked ceiling as it drops and ride it up to a platform with this item."]
   -

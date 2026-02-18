@@ -225,6 +225,7 @@
     function buildThemeSelection() {
         var style = profiles[profilesKey][profiles.current].style;
         var themeSelect = $("#themes");
+        themeSelect.empty();
         $.each(themes, function(key, value){
             themeSelect.append(
                 $('<option></option>').val(key).html(key + " Theme")
