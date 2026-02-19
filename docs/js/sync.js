@@ -206,6 +206,118 @@
     };
 
     // =========================================================================
+    // CLOUD PROVIDER — GitHub Gist
+    // Uses a Personal Access Token (gist scope) + GitHub Gist REST API.
+    // Data is stored in a private Gist owned by the user — no OAuth consent
+    // screen required, no domain restrictions, no app verification.
+    // =========================================================================
+    function GitHubGistProvider(cfg) {
+        this.cfg    = cfg;
+        this.pat    = cfg.pat    || null;
+        this.gistId = cfg.gistId || null;
+    }
+
+    GitHubGistProvider.prototype = {
+
+        _fetch: function (url, opts) {
+            opts         = opts || {};
+            opts.headers = opts.headers || {};
+            opts.headers['Authorization']       = 'Bearer ' + this.pat;
+            opts.headers['Accept']              = 'application/vnd.github+json';
+            opts.headers['X-GitHub-Api-Version'] = '2022-11-28';
+            return fetch(url, opts);
+        },
+
+        _findGist: function () {
+            var self = this;
+            if (self.gistId) return Promise.resolve(self.gistId);
+            return self._fetch('https://api.github.com/gists?per_page=100')
+                .then(function (r) { return r.json(); })
+                .then(function (gists) {
+                    for (var i = 0; i < gists.length; i++) {
+                        if (gists[i].files && gists[i].files[SYNC_FILE_NAME]) {
+                            self.gistId       = gists[i].id;
+                            syncConfig.gistId = self.gistId;
+                            saveSyncConfig();
+                            return self.gistId;
+                        }
+                    }
+                    return null;
+                });
+        },
+
+        /* Validate PAT and return account info */
+        signIn: function (pat) {
+            var self = this;
+            self.pat = pat;
+            return self._fetch('https://api.github.com/user')
+                .then(function (r) {
+                    if (!r.ok) throw new Error('Invalid token — make sure it has the gist scope.');
+                    return r.json();
+                })
+                .then(function (info) {
+                    return {
+                        login: info.login,
+                        email: info.email || info.login,
+                        name:  info.name  || info.login,
+                        pat:   pat
+                    };
+                });
+        },
+
+        /* Upload local data to Gist (create on first push, patch thereafter) */
+        push: function (data) {
+            var self    = this;
+            var files   = {};
+            files[SYNC_FILE_NAME] = { content: JSON.stringify(data) };
+            return self._findGist().then(function (gistId) {
+                if (gistId) {
+                    return self._fetch('https://api.github.com/gists/' + gistId, {
+                        method:  'PATCH',
+                        headers: { 'Content-Type': 'application/json' },
+                        body:    JSON.stringify({ files: files })
+                    }).then(function (r) { return r.json(); });
+                } else {
+                    return self._fetch('https://api.github.com/gists', {
+                        method:  'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body:    JSON.stringify({
+                            description: 'Elden Lord sync data',
+                            public:      false,
+                            files:       files
+                        })
+                    }).then(function (r) { return r.json(); })
+                      .then(function (result) {
+                        self.gistId       = result.id;
+                        syncConfig.gistId = self.gistId;
+                        saveSyncConfig();
+                        return result;
+                      });
+                }
+            });
+        },
+
+        /* Download remote data from Gist (returns null if nothing uploaded yet) */
+        pull: function () {
+            var self = this;
+            return self._findGist().then(function (gistId) {
+                if (!gistId) return null;
+                return self._fetch('https://api.github.com/gists/' + gistId)
+                    .then(function (r) { return r.json(); })
+                    .then(function (gist) {
+                        if (!gist.files || !gist.files[SYNC_FILE_NAME]) return null;
+                        var file = gist.files[SYNC_FILE_NAME];
+                        // Large files may be truncated — fetch raw URL in that case
+                        if (file.truncated) {
+                            return fetch(file.raw_url).then(function (r) { return r.json(); });
+                        }
+                        return JSON.parse(file.content);
+                    });
+            });
+        }
+    };
+
+    // =========================================================================
     // VERSION HISTORY  (local snapshots in localStorage)
     // The last MAX_HISTORY successful cloud pushes are stored locally.
     // Drive also keeps its own revision history which is available via the
@@ -489,7 +601,9 @@
             $('#syncInactive').addClass('d-none');
             $('#syncActive').removeClass('d-none');
 
-            var providerLabel = syncConfig.provider === 'google_drive' ? 'Google Drive' : syncConfig.provider;
+            var providerLabel = syncConfig.provider === 'google_drive' ? 'Google Drive' :
+                                syncConfig.provider === 'github_gist'  ? 'GitHub Gist'  :
+                                syncConfig.provider;
             $('#syncProviderInfo').text(
                 providerLabel + (syncConfig.accountEmail ? ' · ' + syncConfig.accountEmail : '')
             );
@@ -570,6 +684,19 @@
             _connectGoogle();
         });
 
+        $('#btnConnectGitHub').on('click', function () {
+            $('#syncProviderModal').modal('hide');
+            $('#githubPATInput').val('');
+            $('#syncGithubPATModal').modal('show');
+        });
+
+        $('#btnConnectGitHubConfirm').on('click', function () {
+            var pat = $('#githubPATInput').val().trim();
+            if (!pat) { return; }
+            $('#syncGithubPATModal').modal('hide');
+            _connectGitHub(pat);
+        });
+
         $('#btnSyncNow').on('click', function () {
             doSync();
         });
@@ -618,6 +745,39 @@
                     _syncAlert('Connected to Google Drive. Your data has been merged with the cloud.', 'success');
                 } else {
                     _syncAlert('Connected to Google Drive. Your progress is now being backed up.', 'success');
+                }
+            });
+        }).catch(function (err) {
+            lastErrorMsg = err.message || 'Could not connect';
+            setState('error');
+            updateOptionsUI();
+            _syncAlert('Connection failed: ' + lastErrorMsg, 'danger');
+        });
+    }
+
+    function _connectGitHub(pat) {
+        var temp = new GitHubGistProvider({ pat: pat });
+        setState('syncing');
+        temp.signIn(pat).then(function (info) {
+            syncConfig = {
+                provider:     'github_gist',
+                accountEmail: info.email,
+                accountName:  info.name,
+                pat:          pat,
+                gistId:       null
+            };
+            saveSyncConfig();
+            activeProvider = new GitHubGistProvider(syncConfig);
+            setupHooks();
+            startPeriodicSync();
+            setupPageUnloadSync();
+
+            doPullAndMerge(function (dataChanged) {
+                updateOptionsUI();
+                if (dataChanged) {
+                    _syncAlert('Connected to GitHub Gist. Your data has been merged with the cloud.', 'success');
+                } else {
+                    _syncAlert('Connected to GitHub Gist. Your progress is now being backed up.', 'success');
                 }
             });
         }).catch(function (err) {
@@ -680,7 +840,9 @@
         loadSyncConfig();
 
         if (syncConfig && syncConfig.provider) {
-            activeProvider = new GoogleDriveProvider(syncConfig);
+            activeProvider = syncConfig.provider === 'github_gist'
+                ? new GitHubGistProvider(syncConfig)
+                : new GoogleDriveProvider(syncConfig);
             setupHooks();
 
             $(document).ready(function () {
