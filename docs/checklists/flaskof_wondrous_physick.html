@@ -246,6 +246,16 @@
       <div class="input-group d-print-none">
         <input class="form-control my-3" id="crystal_tears_search" placeholder="Start typing to filter results..." type="search">
       </div>
+      <div class="row d-print-none mb-3">
+        <div class="col-auto d-flex align-items-center gap-2">
+          <label class="mb-0" for="dlc_filter">Show:</label>
+          <select class="form-select form-select-sm" id="dlc_filter">
+            <option selected="selected" value="both">Both</option>
+            <option value="base">Base Game</option>
+            <option value="dlc">DLC</option>
+          </select>
+        </div>
+      </div>
       <div id="crystal_tears_list">
         <div class="card shadow-sm mb-3" id="crystal_tears_section_0">
           <div class="card-body">
@@ -285,7 +295,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_1_1" id="item_1_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_1_1" id="item_1_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="crystal_tears_1_1" type="checkbox" value="">
@@ -318,7 +328,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_1_2" id="item_1_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_1_2" id="item_1_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="crystal_tears_1_2" type="checkbox" value="">
@@ -351,7 +361,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_1_3" id="item_1_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_1_3" id="item_1_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="crystal_tears_1_3" type="checkbox" value="">
@@ -384,7 +394,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_1_4" id="item_1_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_1_4" id="item_1_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="crystal_tears_1_4" type="checkbox" value="">
@@ -459,7 +469,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_0_1" id="item_0_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_0_1" id="item_0_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="crystal_tears_0_1" type="checkbox" value="">
@@ -492,7 +502,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_0_2" id="item_0_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_0_2" id="item_0_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="crystal_tears_0_2" type="checkbox" value="">
@@ -525,7 +535,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_0_3" id="item_0_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_0_3" id="item_0_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="crystal_tears_0_3" type="checkbox" value="">
@@ -600,7 +610,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_2_1" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="crystal_tears_2_1" type="checkbox" value="">
@@ -633,7 +643,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_2_2" id="item_2_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_2_2" id="item_2_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="crystal_tears_2_2" type="checkbox" value="">
@@ -666,7 +676,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_2_3" id="item_2_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_2_3" id="item_2_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="crystal_tears_2_3" type="checkbox" value="">
@@ -699,7 +709,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_2_4" id="item_2_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_2_4" id="item_2_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="crystal_tears_2_4" type="checkbox" value="">
@@ -732,7 +742,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_2_5" id="item_2_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_2_5" id="item_2_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="crystal_tears_2_5" type="checkbox" value="">
@@ -765,7 +775,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_2_6" id="item_2_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_2_6" id="item_2_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="crystal_tears_2_6" type="checkbox" value="">
@@ -798,7 +808,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_2_7" id="item_2_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_2_7" id="item_2_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="crystal_tears_2_7" type="checkbox" value="">
@@ -873,7 +883,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_3_1" id="item_3_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_3_1" id="item_3_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="crystal_tears_3_1" type="checkbox" value="">
@@ -906,7 +916,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_3_2" id="item_3_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_3_2" id="item_3_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="crystal_tears_3_2" type="checkbox" value="">
@@ -939,7 +949,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_3_3" id="item_3_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_3_3" id="item_3_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="crystal_tears_3_3" type="checkbox" value="">
@@ -972,7 +982,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_3_4" id="item_3_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_3_4" id="item_3_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="crystal_tears_3_4" type="checkbox" value="">
@@ -1005,7 +1015,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_3_5" id="item_3_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_3_5" id="item_3_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="crystal_tears_3_5" type="checkbox" value="">
@@ -1080,7 +1090,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_4_1" id="item_4_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_4_1" id="item_4_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="crystal_tears_4_1" type="checkbox" value="">
@@ -1113,7 +1123,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_4_2" id="item_4_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_4_2" id="item_4_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="crystal_tears_4_2" type="checkbox" value="">
@@ -1146,7 +1156,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_4_3" id="item_4_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_4_3" id="item_4_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="crystal_tears_4_3" type="checkbox" value="">
@@ -1221,7 +1231,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_5_1" id="item_5_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_5_1" id="item_5_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="crystal_tears_5_1" type="checkbox" value="">
@@ -1254,7 +1264,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_5_2" id="item_5_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_5_2" id="item_5_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="crystal_tears_5_2" type="checkbox" value="">
@@ -1329,7 +1339,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_6_1" id="item_6_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_6_1" id="item_6_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="crystal_tears_6_1" type="checkbox" value="">
@@ -1362,7 +1372,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_6_2" id="item_6_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_6_2" id="item_6_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="crystal_tears_6_2" type="checkbox" value="">
@@ -1395,7 +1405,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_6_3" id="item_6_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_6_3" id="item_6_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="crystal_tears_6_3" type="checkbox" value="">
@@ -1470,7 +1480,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_7_1" id="item_7_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_7_1" id="item_7_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="crystal_tears_7_1" type="checkbox" value="">
@@ -1503,7 +1513,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_8_1" id="item_8_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_8_1" id="item_8_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="crystal_tears_8_1" type="checkbox" value="">
@@ -1536,7 +1546,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_8_2" id="item_8_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_8_2" id="item_8_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="crystal_tears_8_2" type="checkbox" value="">
@@ -1611,7 +1621,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_8_3" id="item_8_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_8_3" id="item_8_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="crystal_tears_8_3" type="checkbox" value="">
@@ -1644,7 +1654,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_8_4" id="item_8_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="crystal_tears_8_4" id="item_8_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="crystal_tears_8_4" type="checkbox" value="">
@@ -1719,7 +1729,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_1" id="item_20_1">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_1" id="item_20_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_1" type="checkbox" value="">
@@ -1752,7 +1762,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_2" id="item_20_2">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_2" id="item_20_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_2" type="checkbox" value="">
@@ -1785,7 +1795,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_3" id="item_20_3">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_3" id="item_20_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_3" type="checkbox" value="">
@@ -1818,7 +1828,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_4" id="item_20_4">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_4" id="item_20_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_4" type="checkbox" value="">
@@ -1851,7 +1861,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_5" id="item_20_5">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_5" id="item_20_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_5" type="checkbox" value="">
@@ -1884,7 +1894,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_6" id="item_20_6">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_6" id="item_20_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_6" type="checkbox" value="">
@@ -1917,7 +1927,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_7" id="item_20_7">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_7" id="item_20_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_7" type="checkbox" value="">
@@ -1950,7 +1960,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="crystal_tears_20_8" id="item_20_8">
+                <li class="list-group-item searchable" data-dlc="true" data-id="crystal_tears_20_8" id="item_20_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="crystal_tears_20_8" type="checkbox" value="">

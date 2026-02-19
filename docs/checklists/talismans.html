@@ -286,6 +286,16 @@
       <div class="input-group d-print-none">
         <input class="form-control my-3" id="talismans_search" placeholder="Start typing to filter results..." type="search">
       </div>
+      <div class="row d-print-none mb-3">
+        <div class="col-auto d-flex align-items-center gap-2">
+          <label class="mb-0" for="dlc_filter">Show:</label>
+          <select class="form-select form-select-sm" id="dlc_filter">
+            <option selected="selected" value="both">Both</option>
+            <option value="base">Base Game</option>
+            <option value="dlc">DLC</option>
+          </select>
+        </div>
+      </div>
       <div id="talismans_list">
         <div class="card shadow-sm mb-3" id="talismans_section_0">
           <div class="card-body">
@@ -325,7 +335,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_1" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_1" type="checkbox" value="">
@@ -358,7 +368,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_2" id="item_2_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_2" id="item_2_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_2" type="checkbox" value="">
@@ -391,7 +401,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_3" id="item_2_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_3" id="item_2_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_3" type="checkbox" value="">
@@ -424,7 +434,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_4" id="item_2_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_4" id="item_2_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_4" type="checkbox" value="">
@@ -457,7 +467,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_5" id="item_2_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_5" id="item_2_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_5" type="checkbox" value="">
@@ -490,7 +500,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_6" id="item_2_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_6" id="item_2_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_6" type="checkbox" value="">
@@ -523,7 +533,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_7" id="item_2_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_7" id="item_2_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_7" type="checkbox" value="">
@@ -556,7 +566,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_8" id="item_2_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_8" id="item_2_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_8" type="checkbox" value="">
@@ -589,7 +599,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_9" id="item_2_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_9" id="item_2_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_9" type="checkbox" value="">
@@ -622,7 +632,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_10" id="item_2_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_10" id="item_2_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_10" type="checkbox" value="">
@@ -655,7 +665,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_11" id="item_2_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_11" id="item_2_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_11" type="checkbox" value="">
@@ -688,7 +698,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_12" id="item_2_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_12" id="item_2_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_12" type="checkbox" value="">
@@ -721,7 +731,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_13" id="item_2_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_13" id="item_2_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_13" type="checkbox" value="">
@@ -754,7 +764,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_14" id="item_2_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_14" id="item_2_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_14" type="checkbox" value="">
@@ -787,7 +797,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_15" id="item_2_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_15" id="item_2_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_15" type="checkbox" value="">
@@ -820,7 +830,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_20" id="item_2_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_20" id="item_2_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_20" type="checkbox" value="">
@@ -853,7 +863,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_16" id="item_2_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_16" id="item_2_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_16" type="checkbox" value="">
@@ -886,7 +896,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_17" id="item_2_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_17" id="item_2_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_17" type="checkbox" value="">
@@ -919,7 +929,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_18" id="item_2_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_18" id="item_2_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_18" type="checkbox" value="">
@@ -952,7 +962,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_2_19" id="item_2_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_2_19" id="item_2_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="talismans_2_19" type="checkbox" value="">
@@ -1027,7 +1037,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_1_1" id="item_1_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_1_1" id="item_1_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="talismans_1_1" type="checkbox" value="">
@@ -1060,7 +1070,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_1_2" id="item_1_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_1_2" id="item_1_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="talismans_1_2" type="checkbox" value="">
@@ -1093,7 +1103,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_1_3" id="item_1_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_1_3" id="item_1_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="talismans_1_3" type="checkbox" value="">
@@ -1126,7 +1136,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_1_4" id="item_1_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_1_4" id="item_1_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="talismans_1_4" type="checkbox" value="">
@@ -1159,7 +1169,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_1_5" id="item_1_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_1_5" id="item_1_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="talismans_1_5" type="checkbox" value="">
@@ -1192,7 +1202,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_1_6" id="item_1_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_1_6" id="item_1_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="talismans_1_6" type="checkbox" value="">
@@ -1225,7 +1235,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_1_7" id="item_1_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_1_7" id="item_1_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="talismans_1_7" type="checkbox" value="">
@@ -1300,7 +1310,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_3_1" id="item_3_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_3_1" id="item_3_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="talismans_3_1" type="checkbox" value="">
@@ -1333,7 +1343,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_3_2" id="item_3_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_3_2" id="item_3_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="talismans_3_2" type="checkbox" value="">
@@ -1366,7 +1376,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_3_3" id="item_3_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_3_3" id="item_3_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="talismans_3_3" type="checkbox" value="">
@@ -1399,7 +1409,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_3_4" id="item_3_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_3_4" id="item_3_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="talismans_3_4" type="checkbox" value="">
@@ -1474,7 +1484,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_1" id="item_4_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_1" id="item_4_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_1" type="checkbox" value="">
@@ -1507,7 +1517,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_2" id="item_4_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_2" id="item_4_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_2" type="checkbox" value="">
@@ -1540,7 +1550,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_3" id="item_4_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_3" id="item_4_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_3" type="checkbox" value="">
@@ -1573,7 +1583,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_4" id="item_4_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_4" id="item_4_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_4" type="checkbox" value="">
@@ -1606,7 +1616,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_5" id="item_4_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_5" id="item_4_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_5" type="checkbox" value="">
@@ -1639,7 +1649,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_6" id="item_4_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_6" id="item_4_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_6" type="checkbox" value="">
@@ -1672,7 +1682,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_7" id="item_4_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_7" id="item_4_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_7" type="checkbox" value="">
@@ -1705,7 +1715,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_8" id="item_4_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_8" id="item_4_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_8" type="checkbox" value="">
@@ -1738,7 +1748,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_9" id="item_4_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_9" id="item_4_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_9" type="checkbox" value="">
@@ -1771,7 +1781,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_10" id="item_4_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_10" id="item_4_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_10" type="checkbox" value="">
@@ -1804,7 +1814,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_11" id="item_4_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_11" id="item_4_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_11" type="checkbox" value="">
@@ -1837,7 +1847,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_12" id="item_4_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_12" id="item_4_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_12" type="checkbox" value="">
@@ -1870,7 +1880,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_13" id="item_4_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_13" id="item_4_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_13" type="checkbox" value="">
@@ -1903,7 +1913,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_14" id="item_4_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_14" id="item_4_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_14" type="checkbox" value="">
@@ -1936,7 +1946,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_15" id="item_4_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_15" id="item_4_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_15" type="checkbox" value="">
@@ -1969,7 +1979,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_16" id="item_4_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_16" id="item_4_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_16" type="checkbox" value="">
@@ -2002,7 +2012,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_17" id="item_4_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_17" id="item_4_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_17" type="checkbox" value="">
@@ -2035,7 +2045,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_18" id="item_4_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_18" id="item_4_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_18" type="checkbox" value="">
@@ -2068,7 +2078,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_19" id="item_4_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_19" id="item_4_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_19" type="checkbox" value="">
@@ -2101,7 +2111,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_4_20" id="item_4_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_4_20" id="item_4_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="talismans_4_20" type="checkbox" value="">
@@ -2176,7 +2186,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_1" id="item_5_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_1" id="item_5_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_1" type="checkbox" value="">
@@ -2209,7 +2219,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_2" id="item_5_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_2" id="item_5_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_2" type="checkbox" value="">
@@ -2242,7 +2252,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_3" id="item_5_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_3" id="item_5_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_3" type="checkbox" value="">
@@ -2275,7 +2285,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_4" id="item_5_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_4" id="item_5_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_4" type="checkbox" value="">
@@ -2308,7 +2318,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_5" id="item_5_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_5" id="item_5_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_5" type="checkbox" value="">
@@ -2341,7 +2351,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_6" id="item_5_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_6" id="item_5_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_6" type="checkbox" value="">
@@ -2374,7 +2384,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_7" id="item_5_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_7" id="item_5_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_7" type="checkbox" value="">
@@ -2407,7 +2417,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_8" id="item_5_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_8" id="item_5_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_8" type="checkbox" value="">
@@ -2440,7 +2450,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_9" id="item_5_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_9" id="item_5_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_9" type="checkbox" value="">
@@ -2473,7 +2483,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_10" id="item_5_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_10" id="item_5_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_10" type="checkbox" value="">
@@ -2506,7 +2516,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_11" id="item_5_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_11" id="item_5_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_11" type="checkbox" value="">
@@ -2539,7 +2549,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_12" id="item_5_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_12" id="item_5_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_12" type="checkbox" value="">
@@ -2572,7 +2582,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_5_13" id="item_5_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_5_13" id="item_5_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="talismans_5_13" type="checkbox" value="">
@@ -2647,7 +2657,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_1" id="item_6_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_1" id="item_6_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_1" type="checkbox" value="">
@@ -2680,7 +2690,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_2" id="item_6_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_2" id="item_6_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_2" type="checkbox" value="">
@@ -2713,7 +2723,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_3" id="item_6_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_3" id="item_6_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_3" type="checkbox" value="">
@@ -2746,7 +2756,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_4" id="item_6_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_4" id="item_6_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_4" type="checkbox" value="">
@@ -2779,7 +2789,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_5" id="item_6_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_5" id="item_6_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_5" type="checkbox" value="">
@@ -2812,7 +2822,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_6" id="item_6_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_6" id="item_6_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_6" type="checkbox" value="">
@@ -2845,7 +2855,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_7" id="item_6_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_7" id="item_6_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_7" type="checkbox" value="">
@@ -2878,7 +2888,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_8" id="item_6_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_8" id="item_6_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_8" type="checkbox" value="">
@@ -2911,7 +2921,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_9" id="item_6_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_9" id="item_6_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_9" type="checkbox" value="">
@@ -2944,7 +2954,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_10" id="item_6_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_10" id="item_6_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_10" type="checkbox" value="">
@@ -2977,7 +2987,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_6_11" id="item_6_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_6_11" id="item_6_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_6_11" type="checkbox" value="">
@@ -3010,7 +3020,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_8" id="item_7_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_8" id="item_7_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="talismans_7_8" type="checkbox" value="">
@@ -3085,7 +3095,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_1" id="item_7_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_1" id="item_7_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="talismans_7_1" type="checkbox" value="">
@@ -3118,7 +3128,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_2" id="item_7_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_2" id="item_7_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="talismans_7_2" type="checkbox" value="">
@@ -3151,7 +3161,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_4" id="item_7_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_4" id="item_7_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="talismans_7_4" type="checkbox" value="">
@@ -3184,7 +3194,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_5" id="item_7_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_5" id="item_7_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="talismans_7_5" type="checkbox" value="">
@@ -3217,7 +3227,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_6" id="item_7_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_6" id="item_7_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="talismans_7_6" type="checkbox" value="">
@@ -3250,7 +3260,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_7" id="item_7_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_7" id="item_7_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="talismans_7_7" type="checkbox" value="">
@@ -3283,7 +3293,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_7_9" id="item_7_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_7_9" id="item_7_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="talismans_7_9" type="checkbox" value="">
@@ -3358,7 +3368,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_1" id="item_8_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_1" id="item_8_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_1" type="checkbox" value="">
@@ -3391,7 +3401,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_2" id="item_8_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_2" id="item_8_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_2" type="checkbox" value="">
@@ -3424,7 +3434,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_3" id="item_8_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_3" id="item_8_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_3" type="checkbox" value="">
@@ -3457,7 +3467,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_4" id="item_8_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_4" id="item_8_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_4" type="checkbox" value="">
@@ -3490,7 +3500,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_5" id="item_8_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_5" id="item_8_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_5" type="checkbox" value="">
@@ -3523,7 +3533,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_6" id="item_8_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_6" id="item_8_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_6" type="checkbox" value="">
@@ -3556,7 +3566,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_7" id="item_8_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_7" id="item_8_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_7" type="checkbox" value="">
@@ -3589,7 +3599,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_8_8" id="item_8_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_8_8" id="item_8_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="talismans_8_8" type="checkbox" value="">
@@ -3664,7 +3674,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_9_1" id="item_9_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_9_1" id="item_9_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="talismans_9_1" type="checkbox" value="">
@@ -3697,7 +3707,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_9_2" id="item_9_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_9_2" id="item_9_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="talismans_9_2" type="checkbox" value="">
@@ -3730,7 +3740,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_9_3" id="item_9_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_9_3" id="item_9_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="talismans_9_3" type="checkbox" value="">
@@ -3763,7 +3773,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_9_4" id="item_9_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_9_4" id="item_9_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="talismans_9_4" type="checkbox" value="">
@@ -3796,7 +3806,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_9_5" id="item_9_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_9_5" id="item_9_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="talismans_9_5" type="checkbox" value="">
@@ -3871,7 +3881,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_1" id="item_10_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_1" id="item_10_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_1" type="checkbox" value="">
@@ -3904,7 +3914,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_2" id="item_10_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_2" id="item_10_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_2" type="checkbox" value="">
@@ -3937,7 +3947,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_3" id="item_10_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_3" id="item_10_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_3" type="checkbox" value="">
@@ -3970,7 +3980,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_4" id="item_10_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_4" id="item_10_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_4" type="checkbox" value="">
@@ -4003,7 +4013,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_5" id="item_10_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_5" id="item_10_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_5" type="checkbox" value="">
@@ -4036,7 +4046,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_6" id="item_10_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_6" id="item_10_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_6" type="checkbox" value="">
@@ -4069,7 +4079,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_7" id="item_10_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_7" id="item_10_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_7" type="checkbox" value="">
@@ -4102,7 +4112,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_8" id="item_10_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_8" id="item_10_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_8" type="checkbox" value="">
@@ -4135,7 +4145,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_10_9" id="item_10_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_10_9" id="item_10_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="talismans_10_9" type="checkbox" value="">
@@ -4210,7 +4220,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_11_1" id="item_11_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_11_1" id="item_11_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="talismans_11_1" type="checkbox" value="">
@@ -4243,7 +4253,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_11_2" id="item_11_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_11_2" id="item_11_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="talismans_11_2" type="checkbox" value="">
@@ -4276,7 +4286,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_11_3" id="item_11_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_11_3" id="item_11_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="talismans_11_3" type="checkbox" value="">
@@ -4309,7 +4319,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_11_4" id="item_11_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_11_4" id="item_11_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="talismans_11_4" type="checkbox" value="">
@@ -4342,7 +4352,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_11_5" id="item_11_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_11_5" id="item_11_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="talismans_11_5" type="checkbox" value="">
@@ -4417,7 +4427,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_12_1" id="item_12_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_12_1" id="item_12_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="talismans_12_1" type="checkbox" value="">
@@ -4450,7 +4460,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_12_2" id="item_12_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_12_2" id="item_12_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="talismans_12_2" type="checkbox" value="">
@@ -4525,7 +4535,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_13_1" id="item_13_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_13_1" id="item_13_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="12" id="talismans_13_1" type="checkbox" value="">
@@ -4558,7 +4568,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_13_2" id="item_13_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_13_2" id="item_13_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="12" id="talismans_13_2" type="checkbox" value="">
@@ -4633,7 +4643,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_14_1" id="item_14_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_14_1" id="item_14_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="talismans_14_1" type="checkbox" value="">
@@ -4666,7 +4676,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_14_2" id="item_14_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_14_2" id="item_14_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="talismans_14_2" type="checkbox" value="">
@@ -4699,7 +4709,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_14_3" id="item_14_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_14_3" id="item_14_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="talismans_14_3" type="checkbox" value="">
@@ -4774,7 +4784,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_15_1" id="item_15_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_15_1" id="item_15_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="14" id="talismans_15_1" type="checkbox" value="">
@@ -4849,7 +4859,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_16_1" id="item_16_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_16_1" id="item_16_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="15" id="talismans_16_1" type="checkbox" value="">
@@ -4924,7 +4934,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_17_1" id="item_17_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_17_1" id="item_17_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="16" id="talismans_17_1" type="checkbox" value="">
@@ -4999,7 +5009,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_18_1" id="item_18_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_18_1" id="item_18_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="17" id="talismans_18_1" type="checkbox" value="">
@@ -5074,7 +5084,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_19_1" id="item_19_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="talismans_19_1" id="item_19_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="18" id="talismans_19_1" type="checkbox" value="">
@@ -5149,7 +5159,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_1" id="item_50_1">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_1" id="item_50_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_1" type="checkbox" value="">
@@ -5182,7 +5192,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_2" id="item_50_2">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_2" id="item_50_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_2" type="checkbox" value="">
@@ -5215,7 +5225,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_3" id="item_50_3">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_3" id="item_50_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_3" type="checkbox" value="">
@@ -5248,7 +5258,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_4" id="item_50_4">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_4" id="item_50_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_4" type="checkbox" value="">
@@ -5281,7 +5291,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_5" id="item_50_5">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_5" id="item_50_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_5" type="checkbox" value="">
@@ -5314,7 +5324,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_6" id="item_50_6">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_6" id="item_50_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_6" type="checkbox" value="">
@@ -5347,7 +5357,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_7" id="item_50_7">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_7" id="item_50_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_7" type="checkbox" value="">
@@ -5380,7 +5390,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_8" id="item_50_8">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_8" id="item_50_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_8" type="checkbox" value="">
@@ -5413,7 +5423,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_9" id="item_50_9">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_9" id="item_50_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_9" type="checkbox" value="">
@@ -5446,7 +5456,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_10" id="item_50_10">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_10" id="item_50_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_10" type="checkbox" value="">
@@ -5479,7 +5489,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_11" id="item_50_11">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_11" id="item_50_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_11" type="checkbox" value="">
@@ -5512,7 +5522,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_12" id="item_50_12">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_12" id="item_50_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_12" type="checkbox" value="">
@@ -5545,7 +5555,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_13" id="item_50_13">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_13" id="item_50_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_13" type="checkbox" value="">
@@ -5578,7 +5588,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_14" id="item_50_14">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_14" id="item_50_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_14" type="checkbox" value="">
@@ -5611,7 +5621,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_15" id="item_50_15">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_15" id="item_50_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_15" type="checkbox" value="">
@@ -5644,7 +5654,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_16" id="item_50_16">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_16" id="item_50_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_16" type="checkbox" value="">
@@ -5677,7 +5687,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_17" id="item_50_17">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_17" id="item_50_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_17" type="checkbox" value="">
@@ -5710,7 +5720,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_18" id="item_50_18">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_18" id="item_50_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_18" type="checkbox" value="">
@@ -5743,7 +5753,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_19" id="item_50_19">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_19" id="item_50_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_19" type="checkbox" value="">
@@ -5776,7 +5786,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_20" id="item_50_20">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_20" id="item_50_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_20" type="checkbox" value="">
@@ -5809,7 +5819,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_21" id="item_50_21">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_21" id="item_50_21">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_21" type="checkbox" value="">
@@ -5842,7 +5852,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_22" id="item_50_22">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_22" id="item_50_22">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_22" type="checkbox" value="">
@@ -5875,7 +5885,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_23" id="item_50_23">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_23" id="item_50_23">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_23" type="checkbox" value="">
@@ -5908,7 +5918,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_24" id="item_50_24">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_24" id="item_50_24">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_24" type="checkbox" value="">
@@ -5941,7 +5951,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_25" id="item_50_25">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_25" id="item_50_25">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_25" type="checkbox" value="">
@@ -5974,7 +5984,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_26" id="item_50_26">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_26" id="item_50_26">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_26" type="checkbox" value="">
@@ -6007,7 +6017,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_27" id="item_50_27">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_27" id="item_50_27">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_27" type="checkbox" value="">
@@ -6040,7 +6050,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_28" id="item_50_28">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_28" id="item_50_28">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_28" type="checkbox" value="">
@@ -6073,7 +6083,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_29" id="item_50_29">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_29" id="item_50_29">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_29" type="checkbox" value="">
@@ -6106,7 +6116,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_30" id="item_50_30">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_30" id="item_50_30">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_30" type="checkbox" value="">
@@ -6139,7 +6149,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_31" id="item_50_31">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_31" id="item_50_31">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_31" type="checkbox" value="">
@@ -6172,7 +6182,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_32" id="item_50_32">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_32" id="item_50_32">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_32" type="checkbox" value="">
@@ -6205,7 +6215,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_33" id="item_50_33">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_33" id="item_50_33">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_33" type="checkbox" value="">
@@ -6238,7 +6248,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_34" id="item_50_34">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_34" id="item_50_34">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_34" type="checkbox" value="">
@@ -6271,7 +6281,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_35" id="item_50_35">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_35" id="item_50_35">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_35" type="checkbox" value="">
@@ -6304,7 +6314,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_36" id="item_50_36">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_36" id="item_50_36">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_36" type="checkbox" value="">
@@ -6337,7 +6347,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_37" id="item_50_37">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_37" id="item_50_37">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_37" type="checkbox" value="">
@@ -6370,7 +6380,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_38" id="item_50_38">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_38" id="item_50_38">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_38" type="checkbox" value="">
@@ -6403,7 +6413,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="talismans_50_39" id="item_50_39">
+                <li class="list-group-item searchable" data-dlc="true" data-id="talismans_50_39" id="item_50_39">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="19" id="talismans_50_39" type="checkbox" value="">

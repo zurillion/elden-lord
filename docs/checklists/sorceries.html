@@ -262,6 +262,16 @@
       <div class="input-group d-print-none">
         <input class="form-control my-3" id="sorceries_search" placeholder="Start typing to filter results..." type="search">
       </div>
+      <div class="row d-print-none mb-3">
+        <div class="col-auto d-flex align-items-center gap-2">
+          <label class="mb-0" for="dlc_filter">Show:</label>
+          <select class="form-select form-select-sm" id="dlc_filter">
+            <option selected="selected" value="both">Both</option>
+            <option value="base">Base Game</option>
+            <option value="dlc">DLC</option>
+          </select>
+        </div>
+      </div>
       <div id="sorceries_list">
         <div class="card shadow-sm mb-3" id="sorceries_section_0">
           <div class="card-body">
@@ -301,7 +311,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_3" id="item_1_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_3" id="item_1_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_3" type="checkbox" value="">
@@ -334,7 +344,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_4" id="item_1_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_4" id="item_1_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_4" type="checkbox" value="">
@@ -367,7 +377,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_5" id="item_1_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_5" id="item_1_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_5" type="checkbox" value="">
@@ -400,7 +410,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_6" id="item_1_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_6" id="item_1_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_6" type="checkbox" value="">
@@ -433,7 +443,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_7" id="item_1_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_7" id="item_1_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_7" type="checkbox" value="">
@@ -466,7 +476,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_8" id="item_1_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_8" id="item_1_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_8" type="checkbox" value="">
@@ -499,7 +509,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_9" id="item_1_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_9" id="item_1_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_9" type="checkbox" value="">
@@ -532,7 +542,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_1_10" id="item_1_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_1_10" id="item_1_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="sorceries_1_10" type="checkbox" value="">
@@ -607,7 +617,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_2_1" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="sorceries_2_1" type="checkbox" value="">
@@ -640,7 +650,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_2_2" id="item_2_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_2_2" id="item_2_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="sorceries_2_2" type="checkbox" value="">
@@ -715,7 +725,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_3_1" id="item_3_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_3_1" id="item_3_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="sorceries_3_1" type="checkbox" value="">
@@ -790,7 +800,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_1" id="item_4_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_1" id="item_4_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_1" type="checkbox" value="">
@@ -823,7 +833,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_18" id="item_4_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_18" id="item_4_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_18" type="checkbox" value="">
@@ -856,7 +866,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_19" id="item_4_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_19" id="item_4_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_19" type="checkbox" value="">
@@ -889,7 +899,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_20" id="item_4_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_20" id="item_4_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_20" type="checkbox" value="">
@@ -922,7 +932,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_21" id="item_4_21">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_21" id="item_4_21">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_21" type="checkbox" value="">
@@ -955,7 +965,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_4" id="item_4_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_4" id="item_4_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_4" type="checkbox" value="">
@@ -988,7 +998,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_5" id="item_4_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_5" id="item_4_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_5" type="checkbox" value="">
@@ -1021,7 +1031,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_6" id="item_4_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_6" id="item_4_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_6" type="checkbox" value="">
@@ -1054,7 +1064,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_7" id="item_4_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_7" id="item_4_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_7" type="checkbox" value="">
@@ -1087,7 +1097,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_8" id="item_4_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_8" id="item_4_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_8" type="checkbox" value="">
@@ -1120,7 +1130,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_9" id="item_4_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_9" id="item_4_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_9" type="checkbox" value="">
@@ -1153,7 +1163,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_22" id="item_4_22">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_22" id="item_4_22">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_22" type="checkbox" value="">
@@ -1186,7 +1196,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_23" id="item_4_23">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_23" id="item_4_23">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_23" type="checkbox" value="">
@@ -1219,7 +1229,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_11" id="item_4_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_11" id="item_4_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_11" type="checkbox" value="">
@@ -1252,7 +1262,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_12" id="item_4_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_12" id="item_4_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_12" type="checkbox" value="">
@@ -1285,7 +1295,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_13" id="item_4_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_13" id="item_4_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_13" type="checkbox" value="">
@@ -1318,7 +1328,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_24" id="item_4_24">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_24" id="item_4_24">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_24" type="checkbox" value="">
@@ -1351,7 +1361,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_25" id="item_4_25">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_25" id="item_4_25">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_25" type="checkbox" value="">
@@ -1384,7 +1394,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_26" id="item_4_26">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_26" id="item_4_26">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_26" type="checkbox" value="">
@@ -1417,7 +1427,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_27" id="item_4_27">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_27" id="item_4_27">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_27" type="checkbox" value="">
@@ -1450,7 +1460,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_28" id="item_4_28">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_28" id="item_4_28">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_28" type="checkbox" value="">
@@ -1483,7 +1493,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_29" id="item_4_29">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_29" id="item_4_29">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_29" type="checkbox" value="">
@@ -1516,7 +1526,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_16" id="item_4_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_16" id="item_4_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_16" type="checkbox" value="">
@@ -1549,7 +1559,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_4_17" id="item_4_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_4_17" id="item_4_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="sorceries_4_17" type="checkbox" value="">
@@ -1624,7 +1634,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_5_1" id="item_5_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_5_1" id="item_5_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="sorceries_5_1" type="checkbox" value="">
@@ -1657,7 +1667,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_5_2" id="item_5_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_5_2" id="item_5_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="sorceries_5_2" type="checkbox" value="">
@@ -1690,7 +1700,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_5_3" id="item_5_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_5_3" id="item_5_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="sorceries_5_3" type="checkbox" value="">
@@ -1765,7 +1775,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_6_1" id="item_6_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_6_1" id="item_6_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="sorceries_6_1" type="checkbox" value="">
@@ -1798,7 +1808,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_6_6" id="item_6_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_6_6" id="item_6_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="sorceries_6_6" type="checkbox" value="">
@@ -1831,7 +1841,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_6_7" id="item_6_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_6_7" id="item_6_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="sorceries_6_7" type="checkbox" value="">
@@ -1864,7 +1874,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_6_3" id="item_6_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_6_3" id="item_6_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="sorceries_6_3" type="checkbox" value="">
@@ -1897,7 +1907,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_6_4" id="item_6_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_6_4" id="item_6_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="sorceries_6_4" type="checkbox" value="">
@@ -1930,7 +1940,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_6_5" id="item_6_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_6_5" id="item_6_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="sorceries_6_5" type="checkbox" value="">
@@ -2005,7 +2015,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_7_1" id="item_7_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_7_1" id="item_7_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="sorceries_7_1" type="checkbox" value="">
@@ -2038,7 +2048,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_7_2" id="item_7_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_7_2" id="item_7_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="sorceries_7_2" type="checkbox" value="">
@@ -2113,7 +2123,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_1" id="item_8_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_1" id="item_8_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_1" type="checkbox" value="">
@@ -2146,7 +2156,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_2" id="item_8_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_2" id="item_8_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_2" type="checkbox" value="">
@@ -2179,7 +2189,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_3" id="item_8_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_3" id="item_8_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_3" type="checkbox" value="">
@@ -2212,7 +2222,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_4" id="item_8_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_4" id="item_8_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_4" type="checkbox" value="">
@@ -2245,7 +2255,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_5" id="item_8_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_5" id="item_8_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_5" type="checkbox" value="">
@@ -2278,7 +2288,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_9" id="item_8_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_9" id="item_8_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_9" type="checkbox" value="">
@@ -2311,7 +2321,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_10" id="item_8_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_10" id="item_8_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_10" type="checkbox" value="">
@@ -2344,7 +2354,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_7" id="item_8_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_7" id="item_8_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_7" type="checkbox" value="">
@@ -2377,7 +2387,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_8_8" id="item_8_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_8_8" id="item_8_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="sorceries_8_8" type="checkbox" value="">
@@ -2452,7 +2462,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_9_1" id="item_9_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_9_1" id="item_9_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="sorceries_9_1" type="checkbox" value="">
@@ -2485,7 +2495,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_9_2" id="item_9_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_9_2" id="item_9_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="sorceries_9_2" type="checkbox" value="">
@@ -2518,7 +2528,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_9_3" id="item_9_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_9_3" id="item_9_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="sorceries_9_3" type="checkbox" value="">
@@ -2551,7 +2561,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_9_4" id="item_9_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_9_4" id="item_9_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="sorceries_9_4" type="checkbox" value="">
@@ -2584,7 +2594,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_9_5" id="item_9_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_9_5" id="item_9_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="sorceries_9_5" type="checkbox" value="">
@@ -2617,7 +2627,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_9_6" id="item_9_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_9_6" id="item_9_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="sorceries_9_6" type="checkbox" value="">
@@ -2692,7 +2702,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_10_2" id="item_10_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_10_2" id="item_10_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="sorceries_10_2" type="checkbox" value="">
@@ -2725,7 +2735,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_10_3" id="item_10_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_10_3" id="item_10_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="sorceries_10_3" type="checkbox" value="">
@@ -2800,7 +2810,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_11_1" id="item_11_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_11_1" id="item_11_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="sorceries_11_1" type="checkbox" value="">
@@ -2875,7 +2885,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_12_1" id="item_12_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_12_1" id="item_12_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="sorceries_12_1" type="checkbox" value="">
@@ -2908,7 +2918,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_12_2" id="item_12_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_12_2" id="item_12_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="sorceries_12_2" type="checkbox" value="">
@@ -2941,7 +2951,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_12_3" id="item_12_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_12_3" id="item_12_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="sorceries_12_3" type="checkbox" value="">
@@ -2974,7 +2984,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_12_4" id="item_12_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_12_4" id="item_12_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="sorceries_12_4" type="checkbox" value="">
@@ -3007,7 +3017,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_12_5" id="item_12_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_12_5" id="item_12_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="sorceries_12_5" type="checkbox" value="">
@@ -3082,7 +3092,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_13_1" id="item_13_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="sorceries_13_1" id="item_13_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="12" id="sorceries_13_1" type="checkbox" value="">
@@ -3157,7 +3167,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_1" id="item_20_1">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_1" id="item_20_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_1" type="checkbox" value="">
@@ -3190,7 +3200,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_2" id="item_20_2">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_2" id="item_20_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_2" type="checkbox" value="">
@@ -3223,7 +3233,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_3" id="item_20_3">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_3" id="item_20_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_3" type="checkbox" value="">
@@ -3256,7 +3266,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_4" id="item_20_4">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_4" id="item_20_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_4" type="checkbox" value="">
@@ -3289,7 +3299,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_5" id="item_20_5">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_5" id="item_20_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_5" type="checkbox" value="">
@@ -3322,7 +3332,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_6" id="item_20_6">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_6" id="item_20_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_6" type="checkbox" value="">
@@ -3355,7 +3365,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_7" id="item_20_7">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_7" id="item_20_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_7" type="checkbox" value="">
@@ -3388,7 +3398,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_8" id="item_20_8">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_8" id="item_20_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_8" type="checkbox" value="">
@@ -3421,7 +3431,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_9" id="item_20_9">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_9" id="item_20_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_9" type="checkbox" value="">
@@ -3454,7 +3464,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_10" id="item_20_10">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_10" id="item_20_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_10" type="checkbox" value="">
@@ -3487,7 +3497,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_11" id="item_20_11">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_11" id="item_20_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_11" type="checkbox" value="">
@@ -3520,7 +3530,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_12" id="item_20_12">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_12" id="item_20_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_12" type="checkbox" value="">
@@ -3553,7 +3563,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_13" id="item_20_13">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_13" id="item_20_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_13" type="checkbox" value="">
@@ -3586,7 +3596,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="sorceries_20_14" id="item_20_14">
+                <li class="list-group-item searchable" data-dlc="true" data-id="sorceries_20_14" id="item_20_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="sorceries_20_14" type="checkbox" value="">

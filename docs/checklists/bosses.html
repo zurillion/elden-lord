@@ -278,6 +278,16 @@
       <div class="input-group d-print-none">
         <input class="form-control my-3" id="bosses_search" placeholder="Start typing to filter results..." type="search">
       </div>
+      <div class="row d-print-none mb-3">
+        <div class="col-auto d-flex align-items-center gap-2">
+          <label class="mb-0" for="dlc_filter">Show:</label>
+          <select class="form-select form-select-sm" id="dlc_filter">
+            <option selected="selected" value="both">Both</option>
+            <option value="base">Base Game</option>
+            <option value="dlc">DLC</option>
+          </select>
+        </div>
+      </div>
       <div id="bosses_list">
         <div class="card shadow-sm mb-3" id="bosses_section_0">
           <div class="card-body">
@@ -322,7 +332,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_1" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_1" type="checkbox" value="">
@@ -356,7 +366,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_14" id="item_2_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_14" id="item_2_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_14" type="checkbox" value="">
@@ -390,7 +400,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_2" id="item_2_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_2" id="item_2_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_2" type="checkbox" value="">
@@ -424,7 +434,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_3" id="item_2_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_3" id="item_2_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_3" type="checkbox" value="">
@@ -457,7 +467,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_4" id="item_2_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_4" id="item_2_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_4" type="checkbox" value="">
@@ -490,7 +500,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_5" id="item_2_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_5" id="item_2_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_5" type="checkbox" value="">
@@ -523,7 +533,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_13" id="item_2_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_13" id="item_2_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_13" type="checkbox" value="">
@@ -557,7 +567,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_12" id="item_2_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_12" id="item_2_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_12" type="checkbox" value="">
@@ -590,7 +600,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_18" id="item_2_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_18" id="item_2_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_18" type="checkbox" value="">
@@ -624,7 +634,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_7" id="item_2_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_7" id="item_2_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_7" type="checkbox" value="">
@@ -658,7 +668,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_8" id="item_2_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_8" id="item_2_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_8" type="checkbox" value="">
@@ -692,7 +702,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_6" id="item_2_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_6" id="item_2_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_6" type="checkbox" value="">
@@ -725,7 +735,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_9" id="item_2_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_9" id="item_2_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_9" type="checkbox" value="">
@@ -758,7 +768,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_10" id="item_2_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_10" id="item_2_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_10" type="checkbox" value="">
@@ -791,7 +801,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_15" id="item_2_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_15" id="item_2_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_15" type="checkbox" value="">
@@ -825,7 +835,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_16" id="item_2_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_16" id="item_2_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_16" type="checkbox" value="">
@@ -859,7 +869,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_32" id="item_2_32">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_32" id="item_2_32">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_32" type="checkbox" value="">
@@ -892,7 +902,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_17" id="item_2_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_17" id="item_2_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_17" type="checkbox" value="">
@@ -925,7 +935,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_19" id="item_2_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_19" id="item_2_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_19" type="checkbox" value="">
@@ -958,7 +968,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_20" id="item_2_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_20" id="item_2_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_20" type="checkbox" value="">
@@ -992,7 +1002,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_21" id="item_2_21">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_21" id="item_2_21">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_21" type="checkbox" value="">
@@ -1026,7 +1036,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_11" id="item_2_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_11" id="item_2_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_11" type="checkbox" value="">
@@ -1060,7 +1070,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_30" id="item_2_30">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_30" id="item_2_30">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_30" type="checkbox" value="">
@@ -1094,7 +1104,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_23" id="item_2_23">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_23" id="item_2_23">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_23" type="checkbox" value="">
@@ -1127,7 +1137,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_24" id="item_2_24">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_24" id="item_2_24">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_24" type="checkbox" value="">
@@ -1161,7 +1171,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_25" id="item_2_25">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_25" id="item_2_25">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_25" type="checkbox" value="">
@@ -1195,7 +1205,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_26" id="item_2_26">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_26" id="item_2_26">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_26" type="checkbox" value="">
@@ -1229,7 +1239,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_27" id="item_2_27">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_27" id="item_2_27">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_27" type="checkbox" value="">
@@ -1263,7 +1273,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_28" id="item_2_28">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_28" id="item_2_28">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_28" type="checkbox" value="">
@@ -1297,7 +1307,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_29" id="item_2_29">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_29" id="item_2_29">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_29" type="checkbox" value="">
@@ -1331,7 +1341,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_2_22" id="item_2_22">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_2_22" id="item_2_22">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="bosses_2_22" type="checkbox" value="">
@@ -1412,7 +1422,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_2" id="item_1_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_2" id="item_1_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_2" type="checkbox" value="">
@@ -1445,7 +1455,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_3" id="item_1_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_3" id="item_1_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_3" type="checkbox" value="">
@@ -1479,7 +1489,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_8" id="item_1_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_8" id="item_1_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_8" type="checkbox" value="">
@@ -1512,7 +1522,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_4" id="item_1_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_4" id="item_1_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_4" type="checkbox" value="">
@@ -1546,7 +1556,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_1" id="item_1_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_1" id="item_1_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_1" type="checkbox" value="">
@@ -1580,7 +1590,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_7" id="item_1_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_7" id="item_1_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_7" type="checkbox" value="">
@@ -1614,7 +1624,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_6" id="item_1_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_6" id="item_1_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_6" type="checkbox" value="">
@@ -1647,7 +1657,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_9" id="item_1_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_9" id="item_1_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_9" type="checkbox" value="">
@@ -1680,7 +1690,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_10" id="item_1_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_10" id="item_1_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_10" type="checkbox" value="">
@@ -1713,7 +1723,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_5" id="item_1_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_5" id="item_1_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_5" type="checkbox" value="">
@@ -1747,7 +1757,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_1_11" id="item_1_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_1_11" id="item_1_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="bosses_1_11" type="checkbox" value="">
@@ -1828,7 +1838,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_3_1" id="item_3_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_3_1" id="item_3_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="bosses_3_1" type="checkbox" value="">
@@ -1862,7 +1872,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_3_2" id="item_3_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_3_2" id="item_3_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="bosses_3_2" type="checkbox" value="">
@@ -1943,7 +1953,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_1" id="item_4_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_1" id="item_4_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_1" type="checkbox" value="">
@@ -1976,7 +1986,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_37" id="item_4_37">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_37" id="item_4_37">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_37" type="checkbox" value="">
@@ -2010,7 +2020,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_2" id="item_4_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_2" id="item_4_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_2" type="checkbox" value="">
@@ -2043,7 +2053,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_3" id="item_4_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_3" id="item_4_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_3" type="checkbox" value="">
@@ -2076,7 +2086,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_4" id="item_4_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_4" id="item_4_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_4" type="checkbox" value="">
@@ -2110,7 +2120,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_6" id="item_4_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_6" id="item_4_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_6" type="checkbox" value="">
@@ -2144,7 +2154,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_39" id="item_4_39">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_39" id="item_4_39">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_39" type="checkbox" value="">
@@ -2178,7 +2188,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_7" id="item_4_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_7" id="item_4_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_7" type="checkbox" value="">
@@ -2211,7 +2221,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_5" id="item_4_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_5" id="item_4_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_5" type="checkbox" value="">
@@ -2245,7 +2255,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_8" id="item_4_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_8" id="item_4_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_8" type="checkbox" value="">
@@ -2279,7 +2289,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_9" id="item_4_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_9" id="item_4_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_9" type="checkbox" value="">
@@ -2313,7 +2323,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_10" id="item_4_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_10" id="item_4_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_10" type="checkbox" value="">
@@ -2347,7 +2357,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_11" id="item_4_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_11" id="item_4_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_11" type="checkbox" value="">
@@ -2381,7 +2391,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_12" id="item_4_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_12" id="item_4_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_12" type="checkbox" value="">
@@ -2415,7 +2425,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_13" id="item_4_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_13" id="item_4_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_13" type="checkbox" value="">
@@ -2449,7 +2459,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_14" id="item_4_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_14" id="item_4_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_14" type="checkbox" value="">
@@ -2483,7 +2493,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_16" id="item_4_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_16" id="item_4_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_16" type="checkbox" value="">
@@ -2517,7 +2527,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_17" id="item_4_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_17" id="item_4_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_17" type="checkbox" value="">
@@ -2551,7 +2561,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_18" id="item_4_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_18" id="item_4_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_18" type="checkbox" value="">
@@ -2585,7 +2595,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_15" id="item_4_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_15" id="item_4_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_15" type="checkbox" value="">
@@ -2619,7 +2629,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_19" id="item_4_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_19" id="item_4_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_19" type="checkbox" value="">
@@ -2653,7 +2663,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_26" id="item_4_26">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_26" id="item_4_26">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_26" type="checkbox" value="">
@@ -2687,7 +2697,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_24" id="item_4_24">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_24" id="item_4_24">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_24" type="checkbox" value="">
@@ -2721,7 +2731,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_25" id="item_4_25">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_25" id="item_4_25">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_25" type="checkbox" value="">
@@ -2755,7 +2765,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_23" id="item_4_23">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_23" id="item_4_23">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_23" type="checkbox" value="">
@@ -2789,7 +2799,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_22" id="item_4_22">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_22" id="item_4_22">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_22" type="checkbox" value="">
@@ -2822,7 +2832,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_21" id="item_4_21">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_21" id="item_4_21">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_21" type="checkbox" value="">
@@ -2856,7 +2866,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_20" id="item_4_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_20" id="item_4_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_20" type="checkbox" value="">
@@ -2890,7 +2900,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_27" id="item_4_27">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_27" id="item_4_27">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_27" type="checkbox" value="">
@@ -2924,7 +2934,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_28" id="item_4_28">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_28" id="item_4_28">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_28" type="checkbox" value="">
@@ -2958,7 +2968,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_29" id="item_4_29">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_29" id="item_4_29">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_29" type="checkbox" value="">
@@ -2991,7 +3001,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_30" id="item_4_30">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_30" id="item_4_30">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_30" type="checkbox" value="">
@@ -3025,7 +3035,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_40" id="item_4_40">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_40" id="item_4_40">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_40" type="checkbox" value="">
@@ -3059,7 +3069,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_31" id="item_4_31">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_31" id="item_4_31">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_31" type="checkbox" value="">
@@ -3093,7 +3103,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_32" id="item_4_32">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_32" id="item_4_32">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_32" type="checkbox" value="">
@@ -3127,7 +3137,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_34" id="item_4_34">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_34" id="item_4_34">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_34" type="checkbox" value="">
@@ -3161,7 +3171,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_35" id="item_4_35">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_35" id="item_4_35">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_35" type="checkbox" value="">
@@ -3195,7 +3205,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_38" id="item_4_38">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_38" id="item_4_38">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_38" type="checkbox" value="">
@@ -3229,7 +3239,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_36" id="item_4_36">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_36" id="item_4_36">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_36" type="checkbox" value="">
@@ -3263,7 +3273,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_4_33" id="item_4_33">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_4_33" id="item_4_33">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="bosses_4_33" type="checkbox" value="">
@@ -3344,7 +3354,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_1" id="item_5_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_1" id="item_5_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_1" type="checkbox" value="">
@@ -3377,7 +3387,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_2" id="item_5_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_2" id="item_5_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_2" type="checkbox" value="">
@@ -3410,7 +3420,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_3" id="item_5_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_3" id="item_5_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_3" type="checkbox" value="">
@@ -3443,7 +3453,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_4" id="item_5_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_4" id="item_5_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_4" type="checkbox" value="">
@@ -3476,7 +3486,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_5" id="item_5_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_5" id="item_5_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_5" type="checkbox" value="">
@@ -3510,7 +3520,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_30" id="item_5_30">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_30" id="item_5_30">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_30" type="checkbox" value="">
@@ -3544,7 +3554,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_6" id="item_5_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_6" id="item_5_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_6" type="checkbox" value="">
@@ -3578,7 +3588,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_7" id="item_5_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_7" id="item_5_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_7" type="checkbox" value="">
@@ -3612,7 +3622,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_28" id="item_5_28">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_28" id="item_5_28">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_28" type="checkbox" value="">
@@ -3645,7 +3655,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_8" id="item_5_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_8" id="item_5_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_8" type="checkbox" value="">
@@ -3679,7 +3689,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_31" id="item_5_31">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_31" id="item_5_31">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_31" type="checkbox" value="">
@@ -3713,7 +3723,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_9" id="item_5_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_9" id="item_5_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_9" type="checkbox" value="">
@@ -3747,7 +3757,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_10" id="item_5_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_10" id="item_5_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_10" type="checkbox" value="">
@@ -3780,7 +3790,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_11" id="item_5_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_11" id="item_5_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_11" type="checkbox" value="">
@@ -3814,7 +3824,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_12" id="item_5_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_12" id="item_5_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_12" type="checkbox" value="">
@@ -3848,7 +3858,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_32" id="item_5_32">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_32" id="item_5_32">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_32" type="checkbox" value="">
@@ -3881,7 +3891,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_33" id="item_5_33">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_33" id="item_5_33">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_33" type="checkbox" value="">
@@ -3914,7 +3924,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_13" id="item_5_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_13" id="item_5_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_13" type="checkbox" value="">
@@ -3947,7 +3957,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_14" id="item_5_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_14" id="item_5_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_14" type="checkbox" value="">
@@ -3980,7 +3990,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_15" id="item_5_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_15" id="item_5_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_15" type="checkbox" value="">
@@ -4013,7 +4023,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_16" id="item_5_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_16" id="item_5_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_16" type="checkbox" value="">
@@ -4047,7 +4057,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_17" id="item_5_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_17" id="item_5_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_17" type="checkbox" value="">
@@ -4081,7 +4091,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_18" id="item_5_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_18" id="item_5_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_18" type="checkbox" value="">
@@ -4115,7 +4125,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_20" id="item_5_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_20" id="item_5_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_20" type="checkbox" value="">
@@ -4149,7 +4159,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_19" id="item_5_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_19" id="item_5_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_19" type="checkbox" value="">
@@ -4183,7 +4193,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_21" id="item_5_21">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_21" id="item_5_21">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_21" type="checkbox" value="">
@@ -4216,7 +4226,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_35" id="item_5_35">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_35" id="item_5_35">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_35" type="checkbox" value="">
@@ -4249,7 +4259,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_23" id="item_5_23">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_23" id="item_5_23">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_23" type="checkbox" value="">
@@ -4282,7 +4292,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_24" id="item_5_24">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_24" id="item_5_24">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_24" type="checkbox" value="">
@@ -4315,7 +4325,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_25" id="item_5_25">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_25" id="item_5_25">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_25" type="checkbox" value="">
@@ -4349,7 +4359,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_22" id="item_5_22">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_22" id="item_5_22">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_22" type="checkbox" value="">
@@ -4383,7 +4393,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_34" id="item_5_34">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_34" id="item_5_34">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_34" type="checkbox" value="">
@@ -4416,7 +4426,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_26" id="item_5_26">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_26" id="item_5_26">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_26" type="checkbox" value="">
@@ -4450,7 +4460,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_27" id="item_5_27">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_27" id="item_5_27">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_27" type="checkbox" value="">
@@ -4484,7 +4494,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_5_29" id="item_5_29">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_5_29" id="item_5_29">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="bosses_5_29" type="checkbox" value="">
@@ -4565,7 +4575,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_1" id="item_6_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_1" id="item_6_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_1" type="checkbox" value="">
@@ -4598,7 +4608,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_4" id="item_7_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_4" id="item_7_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_7_4" type="checkbox" value="">
@@ -4632,7 +4642,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_17" id="item_6_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_17" id="item_6_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_17" type="checkbox" value="">
@@ -4666,7 +4676,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_6" id="item_7_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_6" id="item_7_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_7_6" type="checkbox" value="">
@@ -4700,7 +4710,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_2" id="item_6_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_2" id="item_6_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_2" type="checkbox" value="">
@@ -4734,7 +4744,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_3" id="item_6_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_3" id="item_6_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_3" type="checkbox" value="">
@@ -4768,7 +4778,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_4" id="item_6_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_4" id="item_6_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_4" type="checkbox" value="">
@@ -4802,7 +4812,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_5" id="item_6_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_5" id="item_6_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_5" type="checkbox" value="">
@@ -4836,7 +4846,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_6" id="item_6_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_6" id="item_6_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_6" type="checkbox" value="">
@@ -4870,7 +4880,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_7" id="item_6_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_7" id="item_6_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_7" type="checkbox" value="">
@@ -4904,7 +4914,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_8" id="item_6_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_8" id="item_6_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_8" type="checkbox" value="">
@@ -4937,7 +4947,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_19" id="item_6_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_19" id="item_6_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_19" type="checkbox" value="">
@@ -4971,7 +4981,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_9" id="item_6_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_9" id="item_6_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_9" type="checkbox" value="">
@@ -5004,7 +5014,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_10" id="item_6_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_10" id="item_6_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_10" type="checkbox" value="">
@@ -5037,7 +5047,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_20" id="item_6_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_20" id="item_6_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_20" type="checkbox" value="">
@@ -5070,7 +5080,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_11" id="item_6_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_11" id="item_6_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_11" type="checkbox" value="">
@@ -5103,7 +5113,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_18" id="item_6_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_18" id="item_6_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_18" type="checkbox" value="">
@@ -5137,7 +5147,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_12" id="item_6_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_12" id="item_6_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_12" type="checkbox" value="">
@@ -5170,7 +5180,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_13" id="item_6_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_13" id="item_6_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_13" type="checkbox" value="">
@@ -5203,7 +5213,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_14" id="item_6_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_14" id="item_6_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_14" type="checkbox" value="">
@@ -5237,7 +5247,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_15" id="item_6_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_15" id="item_6_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_15" type="checkbox" value="">
@@ -5271,7 +5281,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_6_16" id="item_6_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_6_16" id="item_6_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="bosses_6_16" type="checkbox" value="">
@@ -5352,7 +5362,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_1" id="item_7_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_1" id="item_7_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_1" type="checkbox" value="">
@@ -5386,7 +5396,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_2" id="item_7_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_2" id="item_7_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_2" type="checkbox" value="">
@@ -5420,7 +5430,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_3" id="item_7_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_3" id="item_7_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_3" type="checkbox" value="">
@@ -5454,7 +5464,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_5" id="item_7_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_5" id="item_7_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_5" type="checkbox" value="">
@@ -5488,7 +5498,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_7" id="item_7_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_7" id="item_7_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_7" type="checkbox" value="">
@@ -5522,7 +5532,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_8" id="item_7_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_8" id="item_7_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_8" type="checkbox" value="">
@@ -5556,7 +5566,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_10" id="item_7_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_10" id="item_7_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_10" type="checkbox" value="">
@@ -5590,7 +5600,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_11" id="item_7_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_11" id="item_7_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_11" type="checkbox" value="">
@@ -5624,7 +5634,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_12" id="item_7_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_12" id="item_7_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_12" type="checkbox" value="">
@@ -5658,7 +5668,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_13" id="item_7_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_13" id="item_7_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_13" type="checkbox" value="">
@@ -5691,7 +5701,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_14" id="item_7_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_14" id="item_7_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_14" type="checkbox" value="">
@@ -5724,7 +5734,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_15" id="item_7_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_15" id="item_7_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_15" type="checkbox" value="">
@@ -5758,7 +5768,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_17" id="item_7_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_17" id="item_7_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_17" type="checkbox" value="">
@@ -5792,7 +5802,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_18" id="item_7_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_18" id="item_7_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_18" type="checkbox" value="">
@@ -5825,7 +5835,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_19" id="item_7_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_19" id="item_7_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_19" type="checkbox" value="">
@@ -5858,7 +5868,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_27" id="item_7_27">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_27" id="item_7_27">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_27" type="checkbox" value="">
@@ -5892,7 +5902,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_28" id="item_7_28">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_28" id="item_7_28">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_28" type="checkbox" value="">
@@ -5925,7 +5935,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_20" id="item_7_20">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_20" id="item_7_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_20" type="checkbox" value="">
@@ -5959,7 +5969,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_21" id="item_7_21">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_21" id="item_7_21">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_21" type="checkbox" value="">
@@ -5992,7 +6002,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_22" id="item_7_22">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_22" id="item_7_22">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_22" type="checkbox" value="">
@@ -6025,7 +6035,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_23" id="item_7_23">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_23" id="item_7_23">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_23" type="checkbox" value="">
@@ -6059,7 +6069,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_25" id="item_7_25">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_25" id="item_7_25">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_25" type="checkbox" value="">
@@ -6092,7 +6102,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_26" id="item_7_26">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_26" id="item_7_26">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_26" type="checkbox" value="">
@@ -6126,7 +6136,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_7_24" id="item_7_24">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_7_24" id="item_7_24">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="bosses_7_24" type="checkbox" value="">
@@ -6207,7 +6217,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_1" id="item_8_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_1" id="item_8_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_1" type="checkbox" value="">
@@ -6241,7 +6251,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_2" id="item_8_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_2" id="item_8_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_2" type="checkbox" value="">
@@ -6274,7 +6284,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_3" id="item_8_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_3" id="item_8_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_3" type="checkbox" value="">
@@ -6307,7 +6317,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_4" id="item_8_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_4" id="item_8_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_4" type="checkbox" value="">
@@ -6341,7 +6351,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_5" id="item_8_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_5" id="item_8_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_5" type="checkbox" value="">
@@ -6374,7 +6384,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_6" id="item_8_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_6" id="item_8_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_6" type="checkbox" value="">
@@ -6408,7 +6418,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_7" id="item_8_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_7" id="item_8_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_7" type="checkbox" value="">
@@ -6442,7 +6452,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_8" id="item_8_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_8" id="item_8_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_8" type="checkbox" value="">
@@ -6475,7 +6485,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_9" id="item_8_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_9" id="item_8_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_9" type="checkbox" value="">
@@ -6508,7 +6518,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_10" id="item_8_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_10" id="item_8_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_10" type="checkbox" value="">
@@ -6541,7 +6551,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_11" id="item_8_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_11" id="item_8_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_11" type="checkbox" value="">
@@ -6575,7 +6585,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_12" id="item_8_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_12" id="item_8_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_12" type="checkbox" value="">
@@ -6608,7 +6618,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_13" id="item_8_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_13" id="item_8_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_13" type="checkbox" value="">
@@ -6642,7 +6652,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_14" id="item_8_14">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_14" id="item_8_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_14" type="checkbox" value="">
@@ -6674,7 +6684,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_15" id="item_8_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_15" id="item_8_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_15" type="checkbox" value="">
@@ -6708,7 +6718,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_19" id="item_8_19">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_19" id="item_8_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_19" type="checkbox" value="">
@@ -6741,7 +6751,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_16" id="item_8_16">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_16" id="item_8_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_16" type="checkbox" value="">
@@ -6775,7 +6785,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_17" id="item_8_17">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_17" id="item_8_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_17" type="checkbox" value="">
@@ -6809,7 +6819,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_8_18" id="item_8_18">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_8_18" id="item_8_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="7" id="bosses_8_18" type="checkbox" value="">
@@ -6890,7 +6900,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_1" id="item_9_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_1" id="item_9_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_1" type="checkbox" value="">
@@ -6924,7 +6934,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_2" id="item_9_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_2" id="item_9_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_2" type="checkbox" value="">
@@ -6957,7 +6967,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_3" id="item_9_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_3" id="item_9_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_3" type="checkbox" value="">
@@ -6990,7 +7000,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_4" id="item_9_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_4" id="item_9_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_4" type="checkbox" value="">
@@ -7023,7 +7033,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_5" id="item_9_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_5" id="item_9_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_5" type="checkbox" value="">
@@ -7057,7 +7067,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_6" id="item_9_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_6" id="item_9_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_6" type="checkbox" value="">
@@ -7090,7 +7100,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_7" id="item_9_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_7" id="item_9_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_7" type="checkbox" value="">
@@ -7124,7 +7134,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_8" id="item_9_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_8" id="item_9_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_8" type="checkbox" value="">
@@ -7158,7 +7168,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_9" id="item_9_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_9" id="item_9_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_9" type="checkbox" value="">
@@ -7192,7 +7202,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_10" id="item_9_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_10" id="item_9_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_10" type="checkbox" value="">
@@ -7225,7 +7235,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_11" id="item_9_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_11" id="item_9_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_11" type="checkbox" value="">
@@ -7258,7 +7268,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_12" id="item_9_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_12" id="item_9_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_12" type="checkbox" value="">
@@ -7292,7 +7302,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_13" id="item_9_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_13" id="item_9_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_13" type="checkbox" value="">
@@ -7326,7 +7336,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_9_15" id="item_9_15">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_9_15" id="item_9_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="8" id="bosses_9_15" type="checkbox" value="">
@@ -7407,7 +7417,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_13" id="item_10_13">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_13" id="item_10_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_13" type="checkbox" value="">
@@ -7441,7 +7451,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_1" id="item_10_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_1" id="item_10_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_1" type="checkbox" value="">
@@ -7474,7 +7484,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_2" id="item_10_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_2" id="item_10_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_2" type="checkbox" value="">
@@ -7508,7 +7518,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_3" id="item_10_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_3" id="item_10_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_3" type="checkbox" value="">
@@ -7541,7 +7551,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_4" id="item_10_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_4" id="item_10_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_4" type="checkbox" value="">
@@ -7574,7 +7584,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_5" id="item_10_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_5" id="item_10_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_5" type="checkbox" value="">
@@ -7607,7 +7617,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_6" id="item_10_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_6" id="item_10_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_6" type="checkbox" value="">
@@ -7640,7 +7650,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_7" id="item_10_7">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_7" id="item_10_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_7" type="checkbox" value="">
@@ -7674,7 +7684,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_8" id="item_10_8">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_8" id="item_10_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_8" type="checkbox" value="">
@@ -7708,7 +7718,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_9" id="item_10_9">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_9" id="item_10_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_9" type="checkbox" value="">
@@ -7740,7 +7750,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_12" id="item_10_12">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_12" id="item_10_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_12" type="checkbox" value="">
@@ -7774,7 +7784,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_10" id="item_10_10">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_10" id="item_10_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_10" type="checkbox" value="">
@@ -7808,7 +7818,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_10_11" id="item_10_11">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_10_11" id="item_10_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="9" id="bosses_10_11" type="checkbox" value="">
@@ -7889,7 +7899,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_11_1" id="item_11_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_11_1" id="item_11_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="bosses_11_1" type="checkbox" value="">
@@ -7923,7 +7933,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_11_2" id="item_11_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_11_2" id="item_11_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="bosses_11_2" type="checkbox" value="">
@@ -7957,7 +7967,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_11_3" id="item_11_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_11_3" id="item_11_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="bosses_11_3" type="checkbox" value="">
@@ -7991,7 +8001,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_11_4" id="item_11_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_11_4" id="item_11_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="bosses_11_4" type="checkbox" value="">
@@ -8025,7 +8035,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_11_5" id="item_11_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_11_5" id="item_11_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="bosses_11_5" type="checkbox" value="">
@@ -8059,7 +8069,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_11_6" id="item_11_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_11_6" id="item_11_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="10" id="bosses_11_6" type="checkbox" value="">
@@ -8140,7 +8150,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_12_1" id="item_12_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_12_1" id="item_12_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="bosses_12_1" type="checkbox" value="">
@@ -8174,7 +8184,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_12_2" id="item_12_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_12_2" id="item_12_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="bosses_12_2" type="checkbox" value="">
@@ -8208,7 +8218,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_12_3" id="item_12_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_12_3" id="item_12_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="bosses_12_3" type="checkbox" value="">
@@ -8242,7 +8252,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_12_4" id="item_12_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_12_4" id="item_12_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="11" id="bosses_12_4" type="checkbox" value="">
@@ -8323,7 +8333,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_13_1" id="item_13_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_13_1" id="item_13_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="12" id="bosses_13_1" type="checkbox" value="">
@@ -8357,7 +8367,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_13_2" id="item_13_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_13_2" id="item_13_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="12" id="bosses_13_2" type="checkbox" value="">
@@ -8438,7 +8448,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_14_1" id="item_14_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_14_1" id="item_14_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="bosses_14_1" type="checkbox" value="">
@@ -8472,7 +8482,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_14_4" id="item_14_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_14_4" id="item_14_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="bosses_14_4" type="checkbox" value="">
@@ -8505,7 +8515,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_14_2" id="item_14_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_14_2" id="item_14_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="bosses_14_2" type="checkbox" value="">
@@ -8539,7 +8549,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_14_5" id="item_14_5">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_14_5" id="item_14_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="bosses_14_5" type="checkbox" value="">
@@ -8572,7 +8582,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_14_6" id="item_14_6">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_14_6" id="item_14_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="bosses_14_6" type="checkbox" value="">
@@ -8605,7 +8615,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_14_3" id="item_14_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_14_3" id="item_14_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="13" id="bosses_14_3" type="checkbox" value="">
@@ -8686,7 +8696,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_15_1" id="item_15_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_15_1" id="item_15_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="14" id="bosses_15_1" type="checkbox" value="">
@@ -8720,7 +8730,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_15_2" id="item_15_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_15_2" id="item_15_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="14" id="bosses_15_2" type="checkbox" value="">
@@ -8754,7 +8764,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_15_3" id="item_15_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_15_3" id="item_15_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="14" id="bosses_15_3" type="checkbox" value="">
@@ -8835,7 +8845,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_16_3" id="item_16_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_16_3" id="item_16_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="15" id="bosses_16_3" type="checkbox" value="">
@@ -8868,7 +8878,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_16_1" id="item_16_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_16_1" id="item_16_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="15" id="bosses_16_1" type="checkbox" value="">
@@ -8902,7 +8912,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_16_2" id="item_16_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_16_2" id="item_16_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="15" id="bosses_16_2" type="checkbox" value="">
@@ -8983,7 +8993,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_17_1" id="item_17_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_17_1" id="item_17_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="16" id="bosses_17_1" type="checkbox" value="">
@@ -9017,7 +9027,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_17_3" id="item_17_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_17_3" id="item_17_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="16" id="bosses_17_3" type="checkbox" value="">
@@ -9051,7 +9061,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_17_2" id="item_17_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_17_2" id="item_17_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="16" id="bosses_17_2" type="checkbox" value="">
@@ -9132,7 +9142,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_18_1" id="item_18_1">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_18_1" id="item_18_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="17" id="bosses_18_1" type="checkbox" value="">
@@ -9166,7 +9176,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_18_2" id="item_18_2">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_18_2" id="item_18_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="17" id="bosses_18_2" type="checkbox" value="">
@@ -9200,7 +9210,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_18_3" id="item_18_3">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_18_3" id="item_18_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="17" id="bosses_18_3" type="checkbox" value="">
@@ -9234,7 +9244,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="bosses_18_4" id="item_18_4">
+                <li class="list-group-item searchable" data-dlc="false" data-id="bosses_18_4" id="item_18_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="17" id="bosses_18_4" type="checkbox" value="">
