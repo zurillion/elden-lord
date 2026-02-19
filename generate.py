@@ -419,24 +419,32 @@ def make_options():
                                     with div(cls="text-start"):
                                         div("Google Drive", cls="fw-semibold")
                                         div("Uses your Google account \u2014 15 GB free", cls="text-muted small")
-                                with button(cls="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled",
-                                            disabled=True, type="button", title="Coming soon"):
-                                    i(cls="bi bi-cloud fs-4 text-muted")
+                                with button(cls="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3",
+                                            id="btnConnectGitHub", type="button"):
+                                    i(cls="bi bi-github fs-4")
                                     with div(cls="text-start"):
-                                        with div(cls="fw-semibold text-muted"):
-                                            span("iCloud ")
-                                            span("Coming soon", cls="badge bg-secondary ms-1 fw-normal")
-                                        div("Uses your Apple ID", cls="text-muted small")
-                                with button(cls="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled",
-                                            disabled=True, type="button", title="Coming soon"):
-                                    i(cls="bi bi-github fs-4 text-muted")
-                                    with div(cls="text-start"):
-                                        with div(cls="fw-semibold text-muted"):
-                                            span("GitHub Gist ")
-                                            span("Coming soon", cls="badge bg-secondary ms-1 fw-normal")
-                                        div("Uses your GitHub account \u2014 native version history", cls="text-muted small")
+                                        div("GitHub Gist", cls="fw-semibold")
+                                        div("Uses a Personal Access Token \u2014 no OAuth required", cls="text-muted small")
                         with div(cls="modal-footer"):
                             button("Cancel", type="button", cls="btn btn-secondary", data_bs_dismiss="modal")
+            with div(id="syncGithubPATModal", cls="modal fade", tabindex="-1", role="dialog"):
+                with div(cls="modal-dialog", role="document"):
+                    with div(cls="modal-content"):
+                        with div(cls="modal-header"):
+                            h3(i(cls="bi bi-github"), " Connect GitHub Gist", cls="modal-title")
+                            button(type="button", cls="btn-close", data_bs_dismiss="modal", aria_label="Close")
+                        with div(cls="modal-body"):
+                            p("A Personal Access Token lets this app read and write a private Gist in your GitHub account. The token is stored only in this browser and never sent to this site.",
+                              cls="text-muted small mb-3")
+                            with ol(cls="small mb-3"):
+                                li(raw('Go to <a href="https://github.com/settings/tokens/new?scopes=gist&description=Elden+Lord+sync" target="_blank" rel="noopener">GitHub \u2192 New Personal Access Token</a>'))
+                                li(raw('Confirm the <code>gist</code> scope is checked, then click <strong>Generate token</strong>'))
+                                li("Copy the generated token and paste it below")
+                            input_(cls="form-control font-monospace", id="githubPATInput", placeholder="ghp_\u2026",
+                                   type="text", autocomplete="off", spellcheck="false")
+                        with div(cls="modal-footer"):
+                            button("Cancel", type="button", cls="btn btn-secondary", data_bs_dismiss="modal")
+                            button(i(cls="bi bi-github"), " Connect", type="button", cls="btn btn-dark", id="btnConnectGitHubConfirm")
             with div(id="syncDeactivateModal", cls="modal fade", tabindex="-1", role="dialog"):
                 with div(cls="modal-dialog", role="document"):
                     with div(cls="modal-content"):
