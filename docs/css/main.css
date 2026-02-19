@@ -218,3 +218,21 @@ textarea#profileText {
   height: auto;
   width: auto;
 }
+
+/* ── Cloud Sync indicator ─────────────────────────────────────────────────── */
+@keyframes sync-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.sync-spin {
+  display: inline-block;
+  animation: sync-spin 1s linear infinite;
+}
+.sync-nav-indicator {
+  font-size: 1rem;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.sync-nav-indicator:hover {
+  opacity: 1;
+}

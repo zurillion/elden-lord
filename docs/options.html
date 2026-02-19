@@ -251,6 +251,56 @@
           </div>
         </div>
       </div>
+      <!-- ── Cloud Sync & Backup ─────────────────────────────────────────── -->
+      <div class="row mt-4" id="cloudSync">
+        <h2>Cloud Sync &amp; Backup</h2>
+        <div id="syncAlertDiv"></div>
+
+        <!-- State: not configured -->
+        <div id="syncInactive">
+          <p class="text-muted mb-3">
+            Back up and sync your progress across browsers and devices.
+            Your data is stored in your own cloud account.
+          </p>
+          <button class="btn btn-primary" id="btnActivateSync">
+            <i class="bi bi-cloud-upload"></i> Activate Cloud Sync
+          </button>
+        </div>
+
+        <!-- State: active -->
+        <div id="syncActive" class="d-none">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span id="syncStatusBadge" class="badge bg-success">
+              <i class="bi bi-check-circle-fill"></i> Synced
+            </span>
+          </div>
+          <p id="syncProviderInfo" class="mb-1"></p>
+          <p id="syncLastSyncTime" class="text-muted small mb-3"></p>
+          <div class="d-flex gap-2 flex-wrap">
+            <button class="btn btn-sm btn-primary" id="btnSyncNow">
+              <i class="bi bi-arrow-repeat"></i> Sync Now
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" id="btnViewHistory">
+              <i class="bi bi-clock-history"></i> View History
+            </button>
+            <button class="btn btn-sm btn-outline-danger" id="btnDeactivateSync">
+              <i class="bi bi-cloud-slash"></i> Deactivate
+            </button>
+          </div>
+
+          <!-- Version history panel (toggled by btnViewHistory) -->
+          <div id="syncVersionPanel" class="mt-3 d-none">
+            <h5 class="mb-2">Version History</h5>
+            <p class="text-muted small mb-2">
+              The last 10 synced snapshots. Drive also keeps its own revision
+              history for older versions.
+            </p>
+            <div class="list-group" id="syncVersionList"></div>
+          </div>
+        </div>
+      </div>
+      <!-- ────────────────────────────────────────────────────────────────── -->
+
       <div class="modal fade" id="profileModal" role="dialog" tabindex="-1">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -337,6 +387,71 @@
           </div>
         </div>
       </div>
+      <!-- ── Sync provider picker ──────────────────────────────────────────── -->
+      <div class="modal fade" id="syncProviderModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Choose a sync provider</h3>
+              <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-muted small mb-3">
+                Your data is stored in <strong>your own account</strong> — the site never
+                sees your files.
+              </p>
+              <div class="list-group">
+                <button class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3"
+                        id="btnConnectGoogle" type="button">
+                  <i class="bi bi-google fs-4"></i>
+                  <div class="text-start">
+                    <div class="fw-semibold">Google Drive</div>
+                    <div class="text-muted small">Uses your Google account &mdash; 15 GB free</div>
+                  </div>
+                </button>
+                <button class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled"
+                        disabled type="button" title="Coming soon">
+                  <i class="bi bi-cloud fs-4 text-muted"></i>
+                  <div class="text-start">
+                    <div class="fw-semibold text-muted">iCloud <span class="badge bg-secondary ms-1 fw-normal">Coming soon</span></div>
+                    <div class="text-muted small">Uses your Apple ID</div>
+                  </div>
+                </button>
+                <button class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled"
+                        disabled type="button" title="Coming soon">
+                  <i class="bi bi-github fs-4 text-muted"></i>
+                  <div class="text-start">
+                    <div class="fw-semibold text-muted">GitHub Gist <span class="badge bg-secondary ms-1 fw-normal">Coming soon</span></div>
+                    <div class="text-muted small">Uses your GitHub account &mdash; native version history</div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ── Deactivate confirm ─────────────────────────────────────────────── -->
+      <div class="modal fade" id="syncDeactivateModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Deactivate cloud sync?</h3>
+              <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+              Your local progress will not be affected. The backup file in your cloud
+              account will remain there until you delete it manually.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
+              <button class="btn btn-danger" id="btnDeactivateConfirm" type="button">Deactivate</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hiddenfile">
       <input id="fileInput" name="upload" type="file">
@@ -359,6 +474,7 @@
     gtag('config', 'G-B7FMWDCTF5');
     </script>
     
+    <script src="/js/sync.js"></script>
     <script src="/js/options.js"></script>
   </body>
 </html>
