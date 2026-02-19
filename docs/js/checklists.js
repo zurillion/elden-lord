@@ -201,6 +201,15 @@
                 var hasVisibleRows = $(this).find('li.searchable[data-dlc]:not(.d-none)').length > 0;
                 $(this).toggleClass('d-none', !hasVisibleRows);
             });
+
+            // Hide subsection headings (h5 + following ul) when all their items are filtered out
+            $('[id^="' + window.current_page_id + '_section_"] h5').each(function() {
+                var $h5 = $(this);
+                var $ul = $h5.next('ul');
+                var hasVisible = $ul.find('li.searchable[data-dlc]:not(.d-none)').length > 0;
+                $h5.toggleClass('d-none', !hasVisible);
+                $ul.toggleClass('d-none', !hasVisible);
+            });
         }
 
         var dlcFilter = $('#dlc_filter');
