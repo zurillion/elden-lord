@@ -53,6 +53,8 @@ var themes = {
             profiles[profilesKey][profile_name].map_settings = {};
         if (!('checklistTimestamps' in profiles[profilesKey][profile_name]))
             profiles[profilesKey][profile_name].checklistTimestamps = {};
+        if (!('dlc_filter' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].dlc_filter = 'both';
         $.jStorage.set(profilesKey, profiles);
     }
     

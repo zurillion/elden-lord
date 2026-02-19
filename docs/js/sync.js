@@ -395,11 +395,10 @@
             lp.checklistData        = mergedData;
             lp.checklistTimestamps  = mergedTs;
 
-            // Non-mergeable fields: the more-recently-synced profile wins
-            var lSyncAt = (lp.syncMeta && lp.syncMeta.lastSyncAt) || 0;
-            var rSyncAt = (rp.syncMeta && rp.syncMeta.lastSyncAt) || 0;
-            if (rSyncAt > lSyncAt) {
-                ['style', 'journey', 'hide_completed', 'collapsed', 'map_settings'].forEach(function (k) {
+            // Non-mergeable fields: the more-recently-synced side wins overall.
+            // Use the top-level remoteIsNewer flag (per-profile syncMeta doesn't exist).
+            if (remoteIsNewer) {
+                ['style', 'journey', 'hide_completed', 'collapsed', 'map_settings', 'dlc_filter'].forEach(function (k) {
                     if (rp[k] !== undefined) lp[k] = rp[k];
                 });
             }

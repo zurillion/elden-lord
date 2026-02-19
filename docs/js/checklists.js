@@ -205,10 +205,16 @@
 
         var dlcFilter = $('#dlc_filter');
         if (dlcFilter.length) {
+            var savedDlc = profiles[profilesKey][profiles.current].dlc_filter || 'both';
+            dlcFilter.val(savedDlc);
             dlcFilter.on('change', function() {
-                applyDlcFilter($(this).val());
+                var mode = $(this).val();
+                profiles = $.jStorage.get(profilesKey, {});
+                profiles[profilesKey][profiles.current].dlc_filter = mode;
+                $.jStorage.set(profilesKey, profiles);
+                applyDlcFilter(mode);
             });
-            applyDlcFilter(dlcFilter.val());
+            applyDlcFilter(savedDlc);
         }
 
         // $('.nav.navbar-nav li a,#progress_list li a').on('click', function(event) {
