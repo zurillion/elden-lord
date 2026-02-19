@@ -51,6 +51,8 @@ var themes = {
             profiles[profilesKey][profile_name].style = 'Standard';
         if (!('map_settings' in profiles[profilesKey][profile_name]))
             profiles[profilesKey][profile_name].map_settings = {};
+        if (!('checklistTimestamps' in profiles[profilesKey][profile_name]))
+            profiles[profilesKey][profile_name].checklistTimestamps = {};
         $.jStorage.set(profilesKey, profiles);
     }
     

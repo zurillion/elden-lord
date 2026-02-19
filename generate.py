@@ -164,6 +164,7 @@ def make_footer(page=None):
     script(src='/js/progress.js')
     script(src='/js/item_links.js')
     script(src='/js/common.js')
+    script(src='/js/sync.js')
     script(src="/js/bootstrap.bundle.min.js")
     script(src="/js/jets.min.js")
     script(src="/js/jquery.highlight.js")
