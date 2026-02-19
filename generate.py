@@ -418,7 +418,7 @@ def make_options():
                             p("Your data is stored in your own account \u2014 the site never sees your files.",
                               cls="text-muted small mb-3")
                             with div(cls="list-group"):
-                                with button(cls="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3",
+                                with button(cls="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 d-none",
                                             id="btnConnectGoogle", type="button"):
                                     i(cls="bi bi-google fs-4")
                                     with div(cls="text-start"):
