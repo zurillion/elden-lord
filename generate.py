@@ -344,8 +344,7 @@ def make_options():
                             i(cls="bi bi-cloud-slash"), " Deactivate")
                     with div(id="syncVersionPanel", cls="mt-3 d-none"):
                         h5("Version History", cls="mb-2")
-                        p("The last 10 synced snapshots. Drive also keeps its own revision "
-                          "history for older versions.", cls="text-muted small mb-2")
+                        p(cls="text-muted small mb-2", id="syncVersionDesc")
                         div(cls="list-group", id="syncVersionList")
             with div(id="profileModal", cls="modal fade", tabindex="-1", role="dialog"):
                 with div(cls="modal-dialog", role="document"):

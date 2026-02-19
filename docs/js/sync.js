@@ -434,7 +434,9 @@
 
         activeProvider.pull().then(function (remoteData) {
             if (!remoteData) {
-                // Nothing in the cloud yet — push local data as the first version
+                // Nothing in the cloud yet — push local data as the first version.
+                // Reset state first so doSync()'s 'syncing' guard doesn't bail early.
+                currentState = 'pending';
                 doSync();
                 if (onComplete) onComplete(false);
                 return;
@@ -633,6 +635,13 @@
         var list    = $('#syncVersionList');
         var history = _loadHistory();
         list.empty();
+
+        var providerNote = syncConfig && syncConfig.provider === 'github_gist'
+            ? 'The last 10 synced snapshots. Your Gist also keeps its own revision history \u2014 ' +
+              'check the Revisions tab on gist.github.com.'
+            : 'The last 10 synced snapshots. Drive also keeps its own revision ' +
+              'history for older versions.';
+        $('#syncVersionDesc').text(providerNote);
 
         if (!history.length) {
             list.append(
