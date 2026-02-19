@@ -363,6 +363,13 @@
         var remoteProfs  = (remote  && remote[profilesKey])  || {};
         var mergedProfs  = (merged  && merged[profilesKey])  || {};
 
+        // Fallback for items that pre-date per-item timestamp tracking:
+        // if neither side has a stamp, whichever side has the newer overall
+        // sync wins (covers the case of a fresh device connecting to existing data).
+        var localSyncAt   = (local._syncMeta  && local._syncMeta.lastSyncAt)  || 0;
+        var remoteSyncAt  = (remote._syncMeta && remote._syncMeta.lastSyncAt) || 0;
+        var remoteIsNewer = remoteSyncAt > localSyncAt;
+
         $.each(remoteProfs, function (profileName, rp) {
             if (!(profileName in mergedProfs)) {
                 mergedProfs[profileName] = rp;
@@ -372,13 +379,18 @@
             var localTs  = lp.checklistTimestamps  || {};
             var remoteTs = rp.checklistTimestamps  || {};
 
-            // Item-level merge
+            // Item-level merge: remote wins when it has a newer stamp.
+            // When neither side has a stamp (data pre-dating sync), fall back
+            // to whichever side was synced more recently overall.
             var mergedData = $.extend({}, lp.checklistData || {});
             var mergedTs   = $.extend({}, localTs);
             $.each(rp.checklistData || {}, function (itemId, rVal) {
                 var rt = remoteTs[itemId] || 0;
                 var lt = localTs[itemId]  || 0;
-                if (rt > lt) { mergedData[itemId] = rVal; mergedTs[itemId] = rt; }
+                if (rt > lt || (rt === 0 && lt === 0 && remoteIsNewer)) {
+                    mergedData[itemId] = rVal;
+                    if (rt > 0) mergedTs[itemId] = rt;
+                }
             });
             lp.checklistData        = mergedData;
             lp.checklistTimestamps  = mergedTs;
@@ -452,6 +464,17 @@
                 merged = localData; // local is current — just push
             }
 
+            // Compare profile data only — ignore _syncMeta to avoid false positives.
+            var dataChanged = JSON.stringify(merged[profilesKey]) !== JSON.stringify(localData[profilesKey]);
+
+            if (!dataChanged && !pendingChanges) {
+                // Already up to date with the cloud — no push needed.
+                lastSyncTime   = Date.now();
+                setState('synced');
+                if (onComplete) onComplete(false);
+                return;
+            }
+
             merged._syncMeta = {
                 lastSyncAt: Date.now(),
                 version: Math.max(
@@ -459,8 +482,6 @@
                     (remoteData._syncMeta && remoteData._syncMeta.version) || 0
                 ) + 1
             };
-
-            var dataChanged = (JSON.stringify(merged) !== JSON.stringify(localData));
 
             _internalWrite = true;
             $.jStorage.set(profilesKey, merged);
@@ -537,7 +558,13 @@
     function startPeriodicSync() {
         clearInterval(periodicTimer);
         periodicTimer = setInterval(function () {
-            if (pendingChanges) doSync();
+            // Always pull so we pick up changes from other devices.
+            // doPullAndMerge only pushes if something actually changed.
+            doPullAndMerge(function (dataChanged) {
+                if (dataChanged && window.location.pathname.indexOf('options') === -1) {
+                    location.reload();
+                }
+            });
         }, PERIODIC_MS);
     }
 
@@ -706,7 +733,9 @@
         });
 
         $('#btnSyncNow').on('click', function () {
-            doSync();
+            doPullAndMerge(function (dataChanged) {
+                if (dataChanged) location.reload();
+            });
         });
 
         $('#btnViewHistory').on('click', function () {
