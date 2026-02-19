@@ -12647,17 +12647,13 @@
                                     $(el).removeClass('d-none');
                                     return;
                                 }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
+                                var hasResults = $(el).find('.searchable').filter('[data-jets *= "' + search_phrase + '"]').length;
                                 if (! hasResults ) {
                                     $(el).addClass('d-none');
                                 } else {
                                     $(el).removeClass('d-none');
                                 }
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
                         }
                     });
                     $("#armor_search").keyup(function() {
