@@ -378,39 +378,28 @@
                     <div class="text-muted small">Uses your Google account — 15 GB free</div>
                   </div>
                 </button>
-<button class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3" id="btnConnectGitHub" type="button"><i class="bi bi-github fs-4"></i>
+                <button class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled" disabled="disabled" title="Coming soon" type="button"><i class="bi bi-cloud fs-4 text-muted"></i>
                   <div class="text-start">
-                    <div class="fw-semibold">GitHub Gist</div>
-                    <div class="text-muted small">Uses a Personal Access Token — no OAuth required</div>
+                    <div class="fw-semibold text-muted">
+                      <span>iCloud </span>
+                      <span class="badge bg-secondary ms-1 fw-normal">Coming soon</span>
+                    </div>
+                    <div class="text-muted small">Uses your Apple ID</div>
+                  </div>
+                </button>
+                <button class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 disabled" disabled="disabled" title="Coming soon" type="button"><i class="bi bi-github fs-4 text-muted"></i>
+                  <div class="text-start">
+                    <div class="fw-semibold text-muted">
+                      <span>GitHub Gist </span>
+                      <span class="badge bg-secondary ms-1 fw-normal">Coming soon</span>
+                    </div>
+                    <div class="text-muted small">Uses your GitHub account — native version history</div>
                   </div>
                 </button>
               </div>
             </div>
             <div class="modal-footer">
               <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="syncGithubPATModal" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title"><i class="bi bi-github"></i> Connect GitHub Gist</h3>
-              <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-            </div>
-            <div class="modal-body">
-              <p class="text-muted small mb-3">A Personal Access Token lets this app read and write a private Gist in your GitHub account. The token is stored only in this browser and never sent to this site.</p>
-              <ol class="small mb-3">
-                <li>Go to <a href="https://github.com/settings/tokens/new?scopes=gist&description=Elden+Lord+sync" target="_blank" rel="noopener">GitHub → New Personal Access Token</a></li>
-                <li>Confirm the <code>gist</code> scope is checked, then click <strong>Generate token</strong></li>
-                <li>Copy the generated token and paste it below</li>
-              </ol>
-              <input autocomplete="off" class="form-control font-monospace" id="githubPATInput" placeholder="ghp_…" spellcheck="false" type="text">
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cancel</button>
-              <button class="btn btn-dark" id="btnConnectGitHubConfirm" type="button"><i class="bi bi-github"></i> Connect</button>
             </div>
           </div>
         </div>
