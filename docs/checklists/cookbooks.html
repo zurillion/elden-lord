@@ -1325,6 +1325,18 @@
                                     $(el).removeClass('d-none');
                                 }
                             });
+                            $("#cookbooks_list h5").each(function() {
+                                var $h5 = $(this);
+                                var $ul = $h5.next('ul');
+                                if (!search_phrase) {
+                                    $h5.removeClass('d-none');
+                                    $ul.removeClass('d-none');
+                                    return;
+                                }
+                                var hasResults = $ul.find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
+                                $h5.toggleClass('d-none', !hasResults);
+                                $ul.toggleClass('d-none', !hasResults);
+                            });
                             if (!search_phrase) {
                                 var dlcFilter = $('#dlc_filter');
                                 if (dlcFilter.length) { dlcFilter.trigger('change'); }
