@@ -1221,15 +1221,15 @@
                             });
                             $("#stonesword_list h5").each(function() {
                                 var $h5 = $(this);
-                                var $ul = $h5.next('ul');
+                                var $subsection = $h5.nextUntil('h5');
                                 if (!search_phrase) {
                                     $h5.removeClass('d-none');
-                                    $ul.removeClass('d-none');
+                                    $subsection.removeClass('d-none');
                                     return;
                                 }
-                                var hasResults = $ul.find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
+                                var hasResults = $subsection.find('.searchable:visible').length;
                                 $h5.toggleClass('d-none', !hasResults);
-                                $ul.toggleClass('d-none', !hasResults);
+                                $subsection.toggleClass('d-none', !hasResults);
                             });
                             if (!search_phrase) {
                                 var dlcFilter = $('#dlc_filter');
