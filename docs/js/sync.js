@@ -23,7 +23,7 @@
     // =========================================================================
     // CONFIGURATION
     // =========================================================================
-    var GOOGLE_CLIENT_ID  = '671930253046-pu1q0g2e7l78v3m97jduila2nb6f9aii.apps.googleusercontent.com';
+    var GOOGLE_CLIENT_ID  = 'Put your Google Client ID Here';
     var SYNC_FILE_NAME    = 'roundtable-sync.json';
     var SYNC_CONFIG_KEY   = 'roundtable_sync_config';
     var VERSION_HIST_KEY  = 'roundtable_sync_history';
