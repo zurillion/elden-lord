@@ -217,7 +217,7 @@ sections:
     - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Armor">Iron Rivet Armor</a>
     - ''
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Armor">Armatura Iron Rivet</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Armor">Armatura di Iron Rivet</a>
     - ''
   - id: '820'
     dlc: true
@@ -226,7 +226,7 @@ sections:
     - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Gauntlets">Iron Rivet Gauntlets</a>
     - ''
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Gauntlets">Guantoni Iron Rivet</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Gauntlets">Guantoni di Iron Rivet</a>
     - ''
   - id: '821'
     dlc: true
@@ -235,7 +235,7 @@ sections:
     - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Greaves">Iron Rivet Greaves</a>
     - ''
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Greaves">Gambali Iron Rivet</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Iron+Rivet+Greaves">Gambali di Iron Rivet</a>
     - ''
   - id: '822'
     dlc: true
@@ -1426,7 +1426,7 @@ sections:
     - First, defeat Promised Consort Radahn / Radahn, Consort of Miquella in Enir-Ilim. After the battle, at the center of the boss arena, towards the golden orb. Select "Touch Memory" to trigger a cutscene. You'll obtain this item after the cutscene plays.
     data_it:
     - <a href="https://eldenring.wiki.fextralife.com/Circlet+of+Light">Cerchietto della Luce</a>
-    - Per prima cosa sconfiggi Radahn, Promesso Consorte / Radahn, Consorte di Miquella a Enir-Ilim. Dopo la battaglia, al centro dell'arena del boss, avvicinati alla sfera dorata. Seleziona "Touch Memory" per attivare una scena d'intermezzo. Otterrai questo oggetto al termine della scena.
+    - Per prima cosa sconfiggi Radahn, Promesso Consorte / Radahn, Consorte di Miquella a Enir-Ilim. Dopo la battaglia, al centro dell'arena del boss, avvicinati alla sfera dorata. Seleziona "Tocca il ricordo" per attivare una scena d'intermezzo. Otterrai questo oggetto al termine della scena.
 - title: Shadow Militiaman Set
   link: https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Set
   table:
@@ -1495,7 +1495,7 @@ sections:
     - <a href="https://eldenring.wiki.fextralife.com/St.+Trina's+Blossom">St. Trina's Blossom</a>
     - 'Garden of Deep Purple: After completing Thiollier and St. Trina''s questline, return to her cave in Garden of Deep Purple. You can pick up this item from her fallen body.'
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/St.+Trina's+Blossom">St. Trina's Blossom</a>
+    - <a href="https://eldenring.wiki.fextralife.com/St.+Trina's+Blossom">Fiore di St. Trina</a>
     - 'Giardino del Viola Profondo: dopo aver completato la quest di Thiollier e di St. Trina, torna alla sua grotta nel Giardino del Viola Profondo. Puoi raccogliere questo oggetto dal suo corpo esanime.'
 - title: Crucible Hammer-Helm
   table:
@@ -1523,7 +1523,7 @@ sections:
     - <a href="https://eldenring.wiki.fextralife.com/Greatjar">Greatjar</a>
     - 'Belurat Gaol: After leaving the jar labyrinth, you will pass a small bridge and fight 3 Mutated Prisoners, on quite a large platform. In order to advance the dungeon, you have to step on the jar at the end of the area, but don''t do that. Instead, turn right to find another jar on a slightly lower level. Step on it, and it will take you high. Once there, jump from platform to platform, and once the area, opens up, the item is on a pedestal, beware of the enemies.'
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Greatjar">Greatjar</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Greatjar">Gran Vaso</a>
     - 'Prigione di Belurat: dopo essere uscito dal labirinto dei vasi, attraverserai un piccolo ponte e combatterai 3 Prigionieri Mutati su una piattaforma piuttosto ampia. Per proseguire nel dungeon dovresti salire sul vaso alla fine dell''area, ma non farlo. Gira invece a destra per trovare un altro vaso su un livello leggermente più basso. Salici sopra e ti porterà in alto. Una volta lì, salta da una piattaforma all''altra e, quando l''area si apre, l''oggetto è su un piedistallo: fai attenzione ai nemici.'
 - title: Imp Head (Lion)
   table:
@@ -1552,7 +1552,7 @@ sections:
     - '<a href="https://eldenring.wiki.fextralife.com/Elphael+Brace+of+the+Haligtree">Elphael, Brace of the Haligtree</a>: Found along with the rest of the set deep underground in a side room with a giant scarlet flower, adjacent to the <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4457&lat=-37.1&lng=149.13&zoom=8&code=mapA">Haligtree Roots</a> grace site and just before <a href="https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella">Malenia''s</a> boss fight.'
     data_it:
     - <a href="https://eldenring.wiki.fextralife.com/Traveler's+Clothes">Vesti del Viandante</a>
-    - '<a href="https://eldenring.wiki.fextralife.com/Elphael+Brace+of+the+Haligtree">Elphael, Sostegno dell'Albero Santo</a>: si trova insieme al resto del set nelle profondità sotterranee, in una stanza laterale con un gigantesco fiore scarlatto, accanto al sito di grazia <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4457&lat=-37.1&lng=149.13&zoom=8&code=mapA">Radici dell'Albero Santo</a> e poco prima dello scontro con il boss <a href="https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella">Malenia''s</a>.'
+    - '<a href="https://eldenring.wiki.fextralife.com/Elphael+Brace+of+the+Haligtree">Elphael, Sostegno dell'Albero Santo</a>: si trova insieme al resto del set nelle profondità sotterranee, in una stanza laterale con un gigantesco fiore scarlatto, accanto al sito di grazia <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4457&lat=-37.1&lng=149.13&zoom=8&code=mapA">Radici dell'Albero Santo</a> e poco prima dello scontro con il boss <a href="https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella">Malenia</a>.'
   - id: '1'
     icon: /img/icons/armor/14762.png
     data:
@@ -1851,7 +1851,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Black+Dumpling">Black Dumpling</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Black+Dumpling">Black Dumpling</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Black+Dumpling">Gnocco Nero</a>
 - title: Mushroom Set
   link: https://eldenring.wiki.fextralife.com/Mushroom+Set
   items:
@@ -1920,7 +1920,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Cap">Juvenile Scholar Cap</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Cap">Juvenile Scholar Cap</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Cap">Cappello del Giovane Studioso</a>
   - id: '60'
     icon: /img/icons/armor/14771.png
     data:
@@ -1935,19 +1935,19 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Karolos+Glintstone+Crown">Karolos Glintstone Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Karolos+Glintstone+Crown">Karolos Glintstone Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Karolos+Glintstone+Crown">Corona di Glintstone di Karolos</a>
   - id: '62'
     icon: /img/icons/armor/14320.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Olivinus+Glintstone+Crown">Olivinus Glintstone Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Olivinus+Glintstone+Crown">Olivinus Glintstone Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Olivinus+Glintstone+Crown">Corona di Glintstone di Olivinus</a>
   - id: '63'
     icon: /img/icons/armor/14310.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Twinsage+Glintstone+Crown">Twinsage Glintstone Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Twinsage+Glintstone+Crown">Twinsage Glintstone Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Twinsage+Glintstone+Crown">Corona di Glintstone di Twinsage</a>
   - id: '64'
     icon: /img/icons/armor/14730.png
     data:
@@ -2007,7 +2007,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Haima+Glintstone+Crown">Haima Glintstone Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Haima+Glintstone+Crown">Haima Glintstone Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Haima+Glintstone+Crown">Corona di Glintstone di Haima</a>
   - id: '73'
     icon: /img/icons/armor/14681.png
     data:
@@ -2034,7 +2034,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Hierodas+Glintstone+Crown">Hierodas Glintstone Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Hierodas+Glintstone+Crown">Hierodas Glintstone Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Hierodas+Glintstone+Crown">Corona di Glintstone di Hierodas</a>
   - id: '77'
     icon: /img/icons/armor/14661.png
     data:
@@ -2666,7 +2666,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe">Lord of Blood's Robe</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe">Veste del Lord del Sangue</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Lord+of+Blood's+Robe">Veste del Signore del Sangue</a>
 - title: Scarab Masks
   items:
   - id: '182'
@@ -2674,13 +2674,13 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Crimson+Tear+Scarab">Crimson Tear Scarab</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Crimson+Tear+Scarab">Crimson Tear Scarab</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Crimson+Tear+Scarab">Scarabeo della Lacrima Cremisi</a>
   - id: '183'
     icon: /img/icons/armor/15320.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Cerulean+Tear+Scarab">Cerulean Tear Scarab</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Cerulean+Tear+Scarab">Cerulean Tear Scarab</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Cerulean+Tear+Scarab">Scarabeo della Lacrima Cerulea</a>
   - id: '184'
     icon: /img/icons/armor/15280.png
     data:
@@ -2835,13 +2835,13 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Blue+Cloth+Cowl">Blue Cloth Cowl</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Blue+Cloth+Cowl">Blue Cloth Cowl</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Blue+Cloth+Cowl">Cappuccio di Panno Blu</a>
   - id: '206'
     icon: /img/icons/armor/14031.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Blue+Cloth+Vest">Blue Cloth Vest</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Blue+Cloth+Vest">Blue Cloth Vest</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Blue+Cloth+Vest">Veste di Panno Blu</a>
   - id: '207'
     icon: /img/icons/armor/14032.png
     data:
@@ -3084,7 +3084,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Foot+Soldier+Tabard">Foot Soldier Tabard</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Foot+Soldier+Tabard">Foot Soldier Tabard</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Foot+Soldier+Tabard">Tabard del Fante</a>
   - id: '573'
     icon: /img/icons/armor/15212.png
     data:
@@ -3132,7 +3132,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Gilded+Foot+Soldier+Cap">Gilded Foot Soldier Cap</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Gilded+Foot+Soldier+Cap">Gilded Foot Soldier Cap</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Gilded+Foot+Soldier+Cap">Cappello Dorato del Fante</a>
   - id: '248'
     icon: /img/icons/armor/15231.png
     data:
@@ -3186,7 +3186,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Bloodsoaked+Tabard">Bloodsoaked Tabard</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Bloodsoaked+Tabard">Bloodsoaked Tabard</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Bloodsoaked+Tabard">Tabard Insanguinato</a>
   - id: '581'
     icon: /img/icons/armor/15212.png
     data:
@@ -3330,7 +3330,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Nox+Swordstress+Crown">Nox Swordstress Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Nox+Swordstress+Crown">Nox Swordstress Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Nox+Swordstress+Crown">Corona della Spadaccina Nox</a>
   - id: '278'
     icon: /img/icons/armor/13411.png
     data:
@@ -3357,7 +3357,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Night+Maiden+Twin+Crown">Night Maiden Twin Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Night+Maiden+Twin+Crown">Night Maiden Twin Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Night+Maiden+Twin+Crown">Corona Gemella della Fanciulla della Notte</a>
   - id: '283'
     icon: /img/icons/armor/15461.png
     data:
@@ -3591,7 +3591,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Haligtree+Crest+Surcoat">Haligtree Crest Surcoat</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Haligtree+Crest+Surcoat">Haligtree Crest Surcoat</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Haligtree+Crest+Surcoat">Surcoat con Stemma dell'Albero Santo</a>
   - id: '319'
     icon: /img/icons/armor/15062.png
     data:
@@ -3741,7 +3741,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Iron+Kasa">Iron Kasa</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Iron+Kasa">Iron Kasa</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Iron+Kasa">Kasa di Ferro</a>
   - id: '342'
     icon: /img/icons/armor/13141.png
     data:
@@ -3801,7 +3801,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Marionette+Soldier+Birdhelm">Marionette Soldier Birdhelm</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Marionette+Soldier+Birdhelm">Marionette Soldier Birdhelm</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Marionette+Soldier+Birdhelm">Elmo-Corvo del Soldato Marionetta</a>
   - id: '353'
     icon: /img/icons/armor/14351.png
     data:
@@ -3828,13 +3828,13 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Blue+Silver+Bracelets">Blue Silver Bracelets</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Blue+Silver+Bracelets">Blue Silver Bracelets</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Blue+Silver+Bracelets">Bracciali di Maglia Blu-Argento</a>
   - id: '358'
     icon: /img/icons/armor/13303.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Skirt">Blue Silver Mail Skirt</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Skirt">Blue Silver Mail Skirt</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Skirt">Gonna di Maglia Blu-Argento</a>
 - title: Fire Monk Set
   link: https://eldenring.wiki.fextralife.com/Fire+Monk+Set
   items:
@@ -3978,7 +3978,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Elden+Lord+Crown">Elden Lord Crown</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Elden+Lord+Crown">Elden Lord Crown</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Elden+Lord+Crown">Corona di Elden Lord</a>
   - id: '382'
     icon: /img/icons/armor/13651.png
     data:
@@ -3990,7 +3990,7 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Elden+Lord+Bracers">Elden Lord Bracers</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Elden+Lord+Bracers">Elden Lord Bracers</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Elden+Lord+Bracers">Bracciali di Elden Lord</a>
   - id: '385'
     icon: /img/icons/armor/13653.png
     data:
