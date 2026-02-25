@@ -180,13 +180,29 @@
             <li class="nav-item tab-li">
               <a class="nav-link hide-buttons" href="/options.html"><i class="bi bi-gear-fill"></i> Options</a>
             </li>
+            <li class="nav-item dropdown tab-li">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="langDropdown">
+                <span id="lang-display"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" id="lang-menu">
+                <li>
+                  <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                </li>
+                <li>
+                  <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container uncolor-links">
       <div class="row text-center">
-        <h1 class="mt-4">Tools &amp; Multiplayer
+        <h1 class="mt-4">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Tools &amp; Multiplayer</span>
+          </span>
           <span class="d-print-none" id="tools_overall_total"></span>
         </h1>
       </div>
@@ -227,7 +243,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#tools_0Col" data-bs-toggle="collapse" href="#tools_0Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Functional</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Functional</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="tools_totals_0"></span>
             </h4>
             <div aria-expanded="true" class="collapse show row" id="tools_0Col">
@@ -273,23 +293,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_1_1">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00009.png" loading="lazy" style="height: 70px; width: 70px">Memory of Grace
+                            <img class="me-1" data-src="/img/icons/tools/edited/00009.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Memory of Grace</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_1">Return to last Site of Grace; destroys currently held runes, but leaves intact existing rune retrieval</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Return to last Site of Grace; destroys currently held runes, but leaves intact existing rune retrieval</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_1">Granted automatically at start of game</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Granted automatically at start of game</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_1_1">
                         <img class="float-end" data-src="/img/icons/tools/edited/00009.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Memory of Grace<br>
-                        <strong class="me-1">Description: </strong>Return to last Site of Grace; destroys currently held runes, but leaves intact existing rune retrieval<br>
-                        <strong class="me-1">Location: </strong>Granted automatically at start of game<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Memory of Grace</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Return to last Site of Grace; destroys currently held runes, but leaves intact existing rune retrieval</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Granted automatically at start of game</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -306,23 +346,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_1_2">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00092.png" loading="lazy" style="height: 70px; width: 70px">Telescope
+                            <img class="me-1" data-src="/img/icons/tools/edited/00092.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Telescope</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_2">Shift camera into first person view</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Shift camera into first person view</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_2">Bought from Kalé in Church of Elleh, Limgrave, for 500 runes</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Bought from Kalé in Church of Elleh, Limgrave, for 500 runes</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_1_2">
                         <img class="float-end" data-src="/img/icons/tools/edited/00092.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Telescope<br>
-                        <strong class="me-1">Description: </strong>Shift camera into first person view<br>
-                        <strong class="me-1">Location: </strong>Bought from Kalé in Church of Elleh, Limgrave, for 500 runes<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Telescope</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Shift camera into first person view</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Bought from Kalé in Church of Elleh, Limgrave, for 500 runes</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -339,23 +399,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_1_3">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00013.png" loading="lazy" style="height: 70px; width: 70px">Spectral Steed Whistle
+                            <img class="me-1" data-src="/img/icons/tools/edited/00013.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Spectral Steed Whistle</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_3">Summon or dismiss Torrent</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Summon or dismiss Torrent</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_3">Obtained by meeting Melina at your third overworld Site of Grace</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Obtained by meeting Melina at your third overworld Site of Grace</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_1_3">
                         <img class="float-end" data-src="/img/icons/tools/edited/00013.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Spectral Steed Whistle<br>
-                        <strong class="me-1">Description: </strong>Summon or dismiss Torrent<br>
-                        <strong class="me-1">Location: </strong>Obtained by meeting Melina at your third overworld Site of Grace<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Spectral Steed Whistle</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Summon or dismiss Torrent</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Obtained by meeting Melina at your third overworld Site of Grace</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -372,23 +452,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_1_7">
-                            <img class="me-1" data-src="/img/icons/tools/flasks/00024.png" loading="lazy" style="height: 70px; width: 70px">Flask of Wondrous Physick
+                            <img class="me-1" data-src="/img/icons/tools/flasks/00024.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Flask of Wondrous Physick</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_7">Harness effects of two mixed Crystal Tears, once usage per rest</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Harness effects of two mixed Crystal Tears, once usage per rest</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_7">Found at the Third Church of Marika in Limgrave</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Found at the Third Church of Marika in Limgrave</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_1_7">
                         <img class="float-end" data-src="/img/icons/tools/flasks/00024.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Flask of Wondrous Physick<br>
-                        <strong class="me-1">Description: </strong>Harness effects of two mixed Crystal Tears, once usage per rest<br>
-                        <strong class="me-1">Location: </strong>Found at the Third Church of Marika in Limgrave<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Flask of Wondrous Physick</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Harness effects of two mixed Crystal Tears, once usage per rest</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Found at the Third Church of Marika in Limgrave</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -405,23 +505,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_1_4">
-                            <img class="me-1" data-src="/img/icons/tools/edited/03068.png" loading="lazy" style="height: 70px; width: 70px">Mimic's Veil
+                            <img class="me-1" data-src="/img/icons/tools/edited/03068.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Mimic's Veil</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_4">Spend 6 FP to disguise self as an inanimate object</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Spend 6 FP to disguise self as an inanimate object</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_4">Stormveil Castle: Up the stairs from the room with the Grafted Scion, in the room just past the dropoff for the Chrysalid's Memento, in a chest guarded by a Banished Knight</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Stormveil Castle: Up the stairs from the room with the Grafted Scion, in the room just past the dropoff for the Chrysalid's Memento, in a chest guarded by a Banished Knight</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_1_4">
                         <img class="float-end" data-src="/img/icons/tools/edited/03068.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Mimic's Veil<br>
-                        <strong class="me-1">Description: </strong>Spend 6 FP to disguise self as an inanimate object<br>
-                        <strong class="me-1">Location: </strong>Stormveil Castle: Up the stairs from the room with the Grafted Scion, in the room just past the dropoff for the Chrysalid's Memento, in a chest guarded by a Banished Knight<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Mimic's Veil</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Spend 6 FP to disguise self as an inanimate object</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Stormveil Castle: Up the stairs from the room with the Grafted Scion, in the room just past the dropoff for the Chrysalid's Memento, in a chest guarded by a Banished Knight</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -438,23 +558,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_1_5">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00093.png" loading="lazy" style="height: 70px; width: 70px">Lantern
+                            <img class="me-1" data-src="/img/icons/tools/edited/00093.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Lantern</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_5">Dimly illuminate surroundings</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Dimly illuminate surroundings</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_5">Bought for 1800 runes from either the Isolated Merchant at the Isolated Merchant's Shack Site of Grace in Weeping Peninsula or the Nomadic Merchant by the Liurnia Lake Shore Site of Grace in Liurnia</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Bought for 1800 runes from either the Isolated Merchant at the Isolated Merchant's Shack Site of Grace in Weeping Peninsula or the Nomadic Merchant by the Liurnia Lake Shore Site of Grace in Liurnia</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_1_5">
                         <img class="float-end" data-src="/img/icons/tools/edited/00093.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Lantern<br>
-                        <strong class="me-1">Description: </strong>Dimly illuminate surroundings<br>
-                        <strong class="me-1">Location: </strong>Bought for 1800 runes from either the Isolated Merchant at the Isolated Merchant's Shack Site of Grace in Weeping Peninsula or the Nomadic Merchant by the Liurnia Lake Shore Site of Grace in Liurnia<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Lantern</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Dimly illuminate surroundings</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Bought for 1800 runes from either the Isolated Merchant at the Isolated Merchant's Shack Site of Grace in Weeping Peninsula or the Nomadic Merchant by the Liurnia Lake Shore Site of Grace in Liurnia</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -471,23 +611,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_1_6">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00625.png" loading="lazy" style="height: 70px; width: 70px">Pureblood Knight's Medal
+                            <img class="me-1" data-src="/img/icons/tools/edited/00625.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Pureblood Knight's Medal</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_6">Teleport self to Dynasty Mausoleum Entrance Site of Grace; can be used to warp out of any combat safely</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Teleport self to Dynasty Mausoleum Entrance Site of Grace; can be used to warp out of any combat safely</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_6">Given by Varré at Rose Church, Liurnia, at the end of his various requests</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_1_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Given by Varré at Rose Church, Liurnia, at the end of his various requests</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_1_6">
                         <img class="float-end" data-src="/img/icons/tools/edited/00625.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Pureblood Knight's Medal<br>
-                        <strong class="me-1">Description: </strong>Teleport self to Dynasty Mausoleum Entrance Site of Grace; can be used to warp out of any combat safely<br>
-                        <strong class="me-1">Location: </strong>Given by Varré at Rose Church, Liurnia, at the end of his various requests<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Pureblood Knight's Medal</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Teleport self to Dynasty Mausoleum Entrance Site of Grace; can be used to warp out of any combat safely</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Given by Varré at Rose Church, Liurnia, at the end of his various requests</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -500,7 +660,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#tools_1Col" data-bs-toggle="collapse" href="#tools_1Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Combat</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Combat</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="tools_totals_1"></span>
             </h4>
             <div aria-expanded="true" class="collapse show row" id="tools_1Col">
@@ -546,23 +710,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_1">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00597.png" loading="lazy" style="height: 70px; width: 70px">Margit's Shackle
+                            <img class="me-1" data-src="/img/icons/tools/edited/00597.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Margit's Shackle</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_1">Usable up to twice in each attempt at the first phase of Margit, miniboss Margit, or Morgott: stun them for a few seconds</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Usable up to twice in each attempt at the first phase of Margit, miniboss Margit, or Morgott: stun them for a few seconds</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_1">Bought from Patches for 5000 runes</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Bought from Patches for 5000 runes</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_1">
                         <img class="float-end" data-src="/img/icons/tools/edited/00597.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Margit's Shackle<br>
-                        <strong class="me-1">Description: </strong>Usable up to twice in each attempt at the first phase of Margit, miniboss Margit, or Morgott: stun them for a few seconds<br>
-                        <strong class="me-1">Location: </strong>Bought from Patches for 5000 runes<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Margit's Shackle</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Usable up to twice in each attempt at the first phase of Margit, miniboss Margit, or Morgott: stun them for a few seconds</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Bought from Patches for 5000 runes</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -579,23 +763,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_2">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00201.png" loading="lazy" style="height: 70px; width: 70px">Wraith Calling Bell
+                            <img class="me-1" data-src="/img/icons/tools/edited/00201.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Wraith Calling Bell</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_2">Spend 7 FP to conjure homing projectiles</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Spend 7 FP to conjure homing projectiles</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_2">In northwest Laskyar Ruins, Liurnia of the Lakes, in the underground chest</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">In northwest Laskyar Ruins, Liurnia of the Lakes, in the underground chest</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_2">
                         <img class="float-end" data-src="/img/icons/tools/edited/00201.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Wraith Calling Bell<br>
-                        <strong class="me-1">Description: </strong>Spend 7 FP to conjure homing projectiles<br>
-                        <strong class="me-1">Location: </strong>In northwest Laskyar Ruins, Liurnia of the Lakes, in the underground chest<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Wraith Calling Bell</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Spend 7 FP to conjure homing projectiles</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">In northwest Laskyar Ruins, Liurnia of the Lakes, in the underground chest</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -612,23 +816,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_3">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00193.png" loading="lazy" style="height: 70px; width: 70px">Ancestral Infant's Head
+                            <img class="me-1" data-src="/img/icons/tools/edited/00193.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Ancestral Infant's Head</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_3">Spend 27 FP to spawn geysers that deal magic damage to enemies</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Spend 27 FP to spawn geysers that deal magic damage to enemies</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_3">In the submerged ruin in northwestern Ancestral Woods in Nokron, Eternal City; carefully platform to the far side and defeat the Ancestral Follower guarding a chest with this tool</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">In the submerged ruin in northwestern Ancestral Woods in Nokron, Eternal City; carefully platform to the far side and defeat the Ancestral Follower guarding a chest with this tool</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_3">
                         <img class="float-end" data-src="/img/icons/tools/edited/00193.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Ancestral Infant's Head<br>
-                        <strong class="me-1">Description: </strong>Spend 27 FP to spawn geysers that deal magic damage to enemies<br>
-                        <strong class="me-1">Location: </strong>In the submerged ruin in northwestern Ancestral Woods in Nokron, Eternal City; carefully platform to the far side and defeat the Ancestral Follower guarding a chest with this tool<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Ancestral Infant's Head</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Spend 27 FP to spawn geysers that deal magic damage to enemies</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">In the submerged ruin in northwestern Ancestral Woods in Nokron, Eternal City; carefully platform to the far side and defeat the Ancestral Follower guarding a chest with this tool</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -645,23 +869,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_4">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00598.png" loading="lazy" style="height: 70px; width: 70px">Mohg's Shackle
+                            <img class="me-1" data-src="/img/icons/tools/edited/00598.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Mohg's Shackle</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_4">Usable up to twice in each attempt at the first phase of Mohg: stun him for a few seconds</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Usable up to twice in each attempt at the first phase of Mohg: stun him for a few seconds</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_4">Found in Subterranean Shunning-Grounds guarded by two Giant Crayfish</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Found in Subterranean Shunning-Grounds guarded by two Giant Crayfish</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_4">
                         <img class="float-end" data-src="/img/icons/tools/edited/00598.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Mohg's Shackle<br>
-                        <strong class="me-1">Description: </strong>Usable up to twice in each attempt at the first phase of Mohg: stun him for a few seconds<br>
-                        <strong class="me-1">Location: </strong>Found in Subterranean Shunning-Grounds guarded by two Giant Crayfish<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Mohg's Shackle</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Usable up to twice in each attempt at the first phase of Mohg: stun him for a few seconds</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Found in Subterranean Shunning-Grounds guarded by two Giant Crayfish</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -678,23 +922,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_5">
-                            <img class="me-1" data-src="/img/icons/tools/00593.png" loading="lazy" style="height: 70px; width: 70px">Omen Bairn
+                            <img class="me-1" data-src="/img/icons/tools/00593.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Omen Bairn</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_5">Spend 24 FP to conjure wraiths that chase enemies</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Spend 24 FP to conjure wraiths that chase enemies</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_5">From the Underground Roadside Site of Grace in the Subterranean Shunning-Grounds, with shortcuts unlocked, go through the first two doors then down the ladder, and defeat an Omen enemy who drops it</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">From the Underground Roadside Site of Grace in the Subterranean Shunning-Grounds, with shortcuts unlocked, go through the first two doors then down the ladder, and defeat an Omen enemy who drops it</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_5">
                         <img class="float-end" data-src="/img/icons/tools/00593.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Omen Bairn<br>
-                        <strong class="me-1">Description: </strong>Spend 24 FP to conjure wraiths that chase enemies<br>
-                        <strong class="me-1">Location: </strong>From the Underground Roadside Site of Grace in the Subterranean Shunning-Grounds, with shortcuts unlocked, go through the first two doors then down the ladder, and defeat an Omen enemy who drops it<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Omen Bairn</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Spend 24 FP to conjure wraiths that chase enemies</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">From the Underground Roadside Site of Grace in the Subterranean Shunning-Grounds, with shortcuts unlocked, go through the first two doors then down the ladder, and defeat an Omen enemy who drops it</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -711,23 +975,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_6">
-                            <img class="me-1" data-src="/img/icons/tools/00677.png" loading="lazy" style="height: 70px; width: 70px">Regal Omen Bairn
+                            <img class="me-1" data-src="/img/icons/tools/00677.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Regal Omen Bairn</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_6">Spend 50 FP to conjure more wraiths that deal more damage</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Spend 50 FP to conjure more wraiths that deal more damage</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_6">One of the choices offered when trading in the Remembrance of the Omen King to Finger Reader Enia at the Roundtable Hold</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">One of the choices offered when trading in the Remembrance of the Omen King to Finger Reader Enia at the Roundtable Hold</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_6">
                         <img class="float-end" data-src="/img/icons/tools/00677.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Regal Omen Bairn<br>
-                        <strong class="me-1">Description: </strong>Spend 50 FP to conjure more wraiths that deal more damage<br>
-                        <strong class="me-1">Location: </strong>One of the choices offered when trading in the Remembrance of the Omen King to Finger Reader Enia at the Roundtable Hold<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Regal Omen Bairn</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Spend 50 FP to conjure more wraiths that deal more damage</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">One of the choices offered when trading in the Remembrance of the Omen King to Finger Reader Enia at the Roundtable Hold</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -744,23 +1028,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_7">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00094.png" loading="lazy" style="height: 70px; width: 70px">Blasphemous Claw
+                            <img class="me-1" data-src="/img/icons/tools/edited/00094.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Blasphemous Claw</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_7">Parry specific melee attacks by Maliketh, stunning him</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Parry specific melee attacks by Maliketh, stunning him</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_7">Dropped by Recusant Bernahl in Crumbling Farum Azula</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Dropped by Recusant Bernahl in Crumbling Farum Azula</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_7">
                         <img class="float-end" data-src="/img/icons/tools/edited/00094.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Blasphemous Claw<br>
-                        <strong class="me-1">Description: </strong>Parry specific melee attacks by Maliketh, stunning him<br>
-                        <strong class="me-1">Location: </strong>Dropped by Recusant Bernahl in Crumbling Farum Azula<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Blasphemous Claw</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Parry specific melee attacks by Maliketh, stunning him</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Dropped by Recusant Bernahl in Crumbling Farum Azula</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -777,23 +1081,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_11">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00764.png" loading="lazy" style="height: 70px; width: 70px">Bondstone
+                            <img class="me-1" data-src="/img/icons/tools/edited/00764.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Bondstone</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_11">Causes a spiritual explosion, consuming sprite dwelling within spritestone</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_11">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Causes a spiritual explosion, consuming sprite dwelling within spritestone</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_11">From the entrance of the Ancient Ruins of Rauh, head north towards the edge, and head west, you will find an area with an item below in which you can jump.</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_11">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">From the entrance of the Ancient Ruins of Rauh, head north towards the edge, and head west, you will find an area with an item below in which you can jump.</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_11">
                         <img class="float-end" data-src="/img/icons/tools/edited/00764.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Bondstone<br>
-                        <strong class="me-1">Description: </strong>Causes a spiritual explosion, consuming sprite dwelling within spritestone<br>
-                        <strong class="me-1">Location: </strong>From the entrance of the Ancient Ruins of Rauh, head north towards the edge, and head west, you will find an area with an item below in which you can jump.<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Bondstone</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Causes a spiritual explosion, consuming sprite dwelling within spritestone</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">From the entrance of the Ancient Ruins of Rauh, head north towards the edge, and head west, you will find an area with an item below in which you can jump.</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -810,23 +1134,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_12">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00758.png" loading="lazy" style="height: 70px; width: 70px">Horned Bairn
+                            <img class="me-1" data-src="/img/icons/tools/edited/00758.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Horned Bairn</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_12">Uses FP to summon vengeful spirits surrounding caster</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_12">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Uses FP to summon vengeful spirits surrounding caster</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_12">Drops from the Lesser Ulcerated Tree Spirit near the Ellac River Cave Site of Grace.</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_12">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Drops from the Lesser Ulcerated Tree Spirit near the Ellac River Cave Site of Grace.</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_12">
                         <img class="float-end" data-src="/img/icons/tools/edited/00758.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Horned Bairn<br>
-                        <strong class="me-1">Description: </strong>Uses FP to summon vengeful spirits surrounding caster<br>
-                        <strong class="me-1">Location: </strong>Drops from the Lesser Ulcerated Tree Spirit near the Ellac River Cave Site of Grace.<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Horned Bairn</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Uses FP to summon vengeful spirits surrounding caster</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Drops from the Lesser Ulcerated Tree Spirit near the Ellac River Cave Site of Grace.</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -843,23 +1187,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_13">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00755.png" loading="lazy" style="height: 70px; width: 70px">Perfumed Oil of Ranah
+                            <img class="me-1" data-src="/img/icons/tools/edited/00755.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Perfumed Oil of Ranah</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_13">Uses FP to spout flames forward</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_13">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Uses FP to spout flames forward</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_13">Looted from the corpse in the small island found East from Cerulean Coast. The island is accessed by traversing an underground cave passage located along the coast just south near the Cerulean Coast West Site of Grace. </label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_13">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Looted from the corpse in the small island found East from Cerulean Coast. The island is accessed by traversing an underground cave passage located along the coast just south near the Cerulean Coast West Site of Grace. </span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_13">
                         <img class="float-end" data-src="/img/icons/tools/edited/00755.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Perfumed Oil of Ranah<br>
-                        <strong class="me-1">Description: </strong>Uses FP to spout flames forward<br>
-                        <strong class="me-1">Location: </strong>Looted from the corpse in the small island found East from Cerulean Coast. The island is accessed by traversing an underground cave passage located along the coast just south near the Cerulean Coast West Site of Grace. <br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Perfumed Oil of Ranah</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Uses FP to spout flames forward</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Looted from the corpse in the small island found East from Cerulean Coast. The island is accessed by traversing an underground cave passage located along the coast just south near the Cerulean Coast West Site of Grace. </span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -876,23 +1240,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_2_14">
-                            <img class="me-1" data-src="/img/icons/tools/edited/00780.png" loading="lazy" style="height: 70px; width: 70px">Call of Tibia
+                            <img class="me-1" data-src="/img/icons/tools/edited/00780.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Call of Tibia</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_14">Uses FP to summon one lost in death</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_14">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Uses FP to summon one lost in death</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_14">Looted from a grave by a skeleton ambush.</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_2_14">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Looted from a grave by a skeleton ambush.</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_2_14">
                         <img class="float-end" data-src="/img/icons/tools/edited/00780.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Call of Tibia<br>
-                        <strong class="me-1">Description: </strong>Uses FP to summon one lost in death<br>
-                        <strong class="me-1">Location: </strong>Looted from a grave by a skeleton ambush.<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Call of Tibia</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Uses FP to summon one lost in death</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Looted from a grave by a skeleton ambush.</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -905,7 +1289,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#tools_2Col" data-bs-toggle="collapse" href="#tools_2Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Prattling Pates</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Prattling Pates</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="tools_totals_2"></span>
             </h4>
             <div aria-expanded="true" class="collapse show row" id="tools_2Col">
@@ -951,23 +1339,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_1">
-                            <img class="me-1" data-src="/img/icons/tools/00095.png" loading="lazy" style="height: 70px; width: 70px">"Hello"
+                            <img class="me-1" data-src="/img/icons/tools/00095.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"Hello"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_1">Whispers, "Hello"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "Hello"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_1">Stormfoot Catacombs, Limgrave: Behind the first flamethrower pillar</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Stormfoot Catacombs, Limgrave: Behind the first flamethrower pillar</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_1">
                         <img class="float-end" data-src="/img/icons/tools/00095.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"Hello"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "Hello"<br>
-                        <strong class="me-1">Location: </strong>Stormfoot Catacombs, Limgrave: Behind the first flamethrower pillar<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"Hello"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "Hello"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Stormfoot Catacombs, Limgrave: Behind the first flamethrower pillar</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -984,23 +1392,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_2">
-                            <img class="me-1" data-src="/img/icons/tools/00099.png" loading="lazy" style="height: 70px; width: 70px">"Please Help"
+                            <img class="me-1" data-src="/img/icons/tools/00099.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"Please Help"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_2">Whispers, "Please help"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "Please help"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_2">Impaler's Catacombs, Weeping Peninsula: In the path after dropping under the spike trap</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Impaler's Catacombs, Weeping Peninsula: In the path after dropping under the spike trap</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_2">
                         <img class="float-end" data-src="/img/icons/tools/00099.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"Please Help"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "Please help"<br>
-                        <strong class="me-1">Location: </strong>Impaler's Catacombs, Weeping Peninsula: In the path after dropping under the spike trap<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"Please Help"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "Please help"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Impaler's Catacombs, Weeping Peninsula: In the path after dropping under the spike trap</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1017,23 +1445,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_3">
-                            <img class="me-1" data-src="/img/icons/tools/00096.png" loading="lazy" style="height: 70px; width: 70px">"Thank You"
+                            <img class="me-1" data-src="/img/icons/tools/00096.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"Thank You"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_3">Whispers, "Thank you"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "Thank you"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_3">Tombsward Catacombs, Weeping Peninsula: At the end of the main path of the dungeon, just past another flamethrower pillar</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Tombsward Catacombs, Weeping Peninsula: At the end of the main path of the dungeon, just past another flamethrower pillar</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_3">
                         <img class="float-end" data-src="/img/icons/tools/00096.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"Thank You"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "Thank you"<br>
-                        <strong class="me-1">Location: </strong>Tombsward Catacombs, Weeping Peninsula: At the end of the main path of the dungeon, just past another flamethrower pillar<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"Thank You"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "Thank you"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Tombsward Catacombs, Weeping Peninsula: At the end of the main path of the dungeon, just past another flamethrower pillar</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1050,23 +1498,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_4">
-                            <img class="me-1" data-src="/img/icons/tools/00098.png" loading="lazy" style="height: 70px; width: 70px">"Wonderful"
+                            <img class="me-1" data-src="/img/icons/tools/00098.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"Wonderful"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_4">Whispers, "Wonderful"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "Wonderful"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_4">Cliffbottom Catacombs, Liurnia of the Lakes: In the tunnels after dropping down under the first set of stairs from the locked doors</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Cliffbottom Catacombs, Liurnia of the Lakes: In the tunnels after dropping down under the first set of stairs from the locked doors</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_4">
                         <img class="float-end" data-src="/img/icons/tools/00098.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"Wonderful"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "Wonderful"<br>
-                        <strong class="me-1">Location: </strong>Cliffbottom Catacombs, Liurnia of the Lakes: In the tunnels after dropping down under the first set of stairs from the locked doors<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"Wonderful"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "Wonderful"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Cliffbottom Catacombs, Liurnia of the Lakes: In the tunnels after dropping down under the first set of stairs from the locked doors</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1083,23 +1551,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_5">
-                            <img class="me-1" data-src="/img/icons/tools/00097.png" loading="lazy" style="height: 70px; width: 70px">"Apologies"
+                            <img class="me-1" data-src="/img/icons/tools/00097.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"Apologies"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_5">Whispers, "Apologies"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "Apologies"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_5">Unsightly Catacombs, Altus Plateau: Near the lever for the boss door</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Unsightly Catacombs, Altus Plateau: Near the lever for the boss door</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_5">
                         <img class="float-end" data-src="/img/icons/tools/00097.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"Apologies"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "Apologies"<br>
-                        <strong class="me-1">Location: </strong>Unsightly Catacombs, Altus Plateau: Near the lever for the boss door<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"Apologies"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "Apologies"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Unsightly Catacombs, Altus Plateau: Near the lever for the boss door</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1116,23 +1604,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_6">
-                            <img class="me-1" data-src="/img/icons/tools/00631.png" loading="lazy" style="height: 70px; width: 70px">"You're Beautiful"
+                            <img class="me-1" data-src="/img/icons/tools/00631.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"You're Beautiful"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_6">Whispers, "You're beautiful"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "You're beautiful"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_6">Hermit Village, Mt. Gelmir: On the south side of the village against a house</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Hermit Village, Mt. Gelmir: On the south side of the village against a house</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_6">
                         <img class="float-end" data-src="/img/icons/tools/00631.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"You're Beautiful"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "You're beautiful"<br>
-                        <strong class="me-1">Location: </strong>Hermit Village, Mt. Gelmir: On the south side of the village against a house<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"You're Beautiful"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "You're beautiful"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Hermit Village, Mt. Gelmir: On the south side of the village against a house</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1149,23 +1657,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_7">
-                            <img class="me-1" data-src="/img/icons/tools/00101.png" loading="lazy" style="height: 70px; width: 70px">"Let's Get to It"
+                            <img class="me-1" data-src="/img/icons/tools/00101.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"Let's Get to It"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_7">Whispers, "Let's get to it"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "Let's get to it"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_7">Sainted Hero's Grave, Altus Plateau: By the entrance to the room with the shadow enemy that unlocks the boss door</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Sainted Hero's Grave, Altus Plateau: By the entrance to the room with the shadow enemy that unlocks the boss door</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_7">
                         <img class="float-end" data-src="/img/icons/tools/00101.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"Let's Get to It"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "Let's get to it"<br>
-                        <strong class="me-1">Location: </strong>Sainted Hero's Grave, Altus Plateau: By the entrance to the room with the shadow enemy that unlocks the boss door<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"Let's Get to It"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "Let's get to it"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Sainted Hero's Grave, Altus Plateau: By the entrance to the room with the shadow enemy that unlocks the boss door</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1182,23 +1710,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_8">
-                            <img class="me-1" data-src="/img/icons/tools/00100.png" loading="lazy" style="height: 70px; width: 70px">"My Beloved"
+                            <img class="me-1" data-src="/img/icons/tools/00100.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"My Beloved"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_8">Whispers, "My beloved"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_8">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "My beloved"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_8">Miquella's Haligtree: Two branches down from where the teleporter in Ordina, Liturgical Town puts you</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_8">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Miquella's Haligtree: Two branches down from where the teleporter in Ordina, Liturgical Town puts you</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_8">
                         <img class="float-end" data-src="/img/icons/tools/00100.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"My Beloved"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "My beloved"<br>
-                        <strong class="me-1">Location: </strong>Miquella's Haligtree: Two branches down from where the teleporter in Ordina, Liturgical Town puts you<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"My Beloved"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "My beloved"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Miquella's Haligtree: Two branches down from where the teleporter in Ordina, Liturgical Town puts you</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1215,23 +1763,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_3_11">
-                            <img class="me-1" data-src="/img/icons/tools/00100.png" loading="lazy" style="height: 70px; width: 70px">"Lamentation"
+                            <img class="me-1" data-src="/img/icons/tools/00100.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">"Lamentation"</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_11">Whispers, "Weeping, weeping, weeping. Ever weeping."</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_11">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Whispers, "Weeping, weeping, weeping. Ever weeping."</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-6">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_11">Lamenter's Gaol: Lamenter's Gaol. Climb up the long ladder, cross the connecting stone bridge, and enter the room on the left, you'll find this key item on a corpse</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_3_11">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Lamenter's Gaol: Lamenter's Gaol. Climb up the long ladder, cross the connecting stone bridge, and enter the room on the left, you'll find this key item on a corpse</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_3_11">
                         <img class="float-end" data-src="/img/icons/tools/00100.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>"Lamentation"<br>
-                        <strong class="me-1">Description: </strong>Whispers, "Weeping, weeping, weeping. Ever weeping."<br>
-                        <strong class="me-1">Location: </strong>Lamenter's Gaol: Lamenter's Gaol. Climb up the long ladder, cross the connecting stone bridge, and enter the room on the left, you'll find this key item on a corpse<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">"Lamentation"</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Whispers, "Weeping, weeping, weeping. Ever weeping."</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Lamenter's Gaol: Lamenter's Gaol. Climb up the long ladder, cross the connecting stone bridge, and enter the room on the left, you'll find this key item on a corpse</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1244,7 +1812,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#tools_3Col" data-bs-toggle="collapse" href="#tools_3Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Multiplayer</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Multiplayer</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="tools_totals_3"></span>
             </h4>
             <div aria-expanded="true" class="collapse show row" id="tools_3Col">
@@ -1290,23 +1862,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_1">
-                            <img class="me-1" data-src="/img/icons/tools/online/00005.png" loading="lazy" style="height: 70px; width: 70px">Tarnished's Wizened Finger
+                            <img class="me-1" data-src="/img/icons/tools/online/00005.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Tarnished's Wizened Finger</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_1">Write messages in online play</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Write messages in online play</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_1">Found directly in the beginning of the game, on a body in the building you spawn into</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_1">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Found directly in the beginning of the game, on a body in the building you spawn into</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_1">
                         <img class="float-end" data-src="/img/icons/tools/online/00005.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Tarnished's Wizened Finger<br>
-                        <strong class="me-1">Description: </strong>Write messages in online play<br>
-                        <strong class="me-1">Location: </strong>Found directly in the beginning of the game, on a body in the building you spawn into<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Tarnished's Wizened Finger</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Write messages in online play</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Found directly in the beginning of the game, on a body in the building you spawn into</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1323,23 +1915,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_2">
-                            <img class="me-1" data-src="/img/icons/tools/online/00001.png" loading="lazy" style="height: 70px; width: 70px">Tarnished's Furled Finger
+                            <img class="me-1" data-src="/img/icons/tools/online/00001.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Tarnished's Furled Finger</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_2">Place your cooperative summon sign in online play</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Place your cooperative summon sign in online play</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_2">In the room with the Stranded Graveyard Site of Grace on a body</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_2">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">In the room with the Stranded Graveyard Site of Grace on a body</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_2">
                         <img class="float-end" data-src="/img/icons/tools/online/00001.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Tarnished's Furled Finger<br>
-                        <strong class="me-1">Description: </strong>Place your cooperative summon sign in online play<br>
-                        <strong class="me-1">Location: </strong>In the room with the Stranded Graveyard Site of Grace on a body<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Tarnished's Furled Finger</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Place your cooperative summon sign in online play</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">In the room with the Stranded Graveyard Site of Grace on a body</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1356,23 +1968,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_3">
-                            <img class="me-1" data-src="/img/icons/tools/online/00004.png" loading="lazy" style="height: 70px; width: 70px">Finger Severer
+                            <img class="me-1" data-src="/img/icons/tools/online/00004.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Finger Severer</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_3">In online play, return to your world, or send your co-op phantoms home</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">In online play, return to your world, or send your co-op phantoms home</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_3">On the same body as the previous</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_3">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">On the same body as the previous</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_3">
                         <img class="float-end" data-src="/img/icons/tools/online/00004.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Finger Severer<br>
-                        <strong class="me-1">Description: </strong>In online play, return to your world, or send your co-op phantoms home<br>
-                        <strong class="me-1">Location: </strong>On the same body as the previous<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Finger Severer</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">In online play, return to your world, or send your co-op phantoms home</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">On the same body as the previous</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1389,23 +2021,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_4">
-                            <img class="me-1" data-src="/img/icons/tools/online/00602.png" loading="lazy" style="height: 70px; width: 70px">Small Golden Effigy
+                            <img class="me-1" data-src="/img/icons/tools/online/00602.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Small Golden Effigy</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_4">Send your cooperative summon sign to all activated Martyr Effigies at once (or just those nearby) in online play</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Send your cooperative summon sign to all activated Martyr Effigies at once (or just those nearby) in online play</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_4">Found on the first Martyr Effigy, nearby The First Step Site of Grace</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_4">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Found on the first Martyr Effigy, nearby The First Step Site of Grace</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_4">
                         <img class="float-end" data-src="/img/icons/tools/online/00602.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Small Golden Effigy<br>
-                        <strong class="me-1">Description: </strong>Send your cooperative summon sign to all activated Martyr Effigies at once (or just those nearby) in online play<br>
-                        <strong class="me-1">Location: </strong>Found on the first Martyr Effigy, nearby The First Step Site of Grace<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Small Golden Effigy</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Send your cooperative summon sign to all activated Martyr Effigies at once (or just those nearby) in online play</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Found on the first Martyr Effigy, nearby The First Step Site of Grace</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1422,23 +2074,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_5">
-                            <img class="me-1" data-src="/img/icons/tools/online/00014.png" loading="lazy" style="height: 70px; width: 70px">Furlcalling Finger Remedy
+                            <img class="me-1" data-src="/img/icons/tools/online/00014.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Furlcalling Finger Remedy</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_5">In online play, view summon signs placed by other players, whether cooperative or competitive; item is refunded unless you successfully summon someone</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">In online play, view summon signs placed by other players, whether cooperative or competitive; item is refunded unless you successfully summon someone</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_5">Not reusable, but easily craftable with two Erdleaf Flowers, dropped by invaders including many NPCs, and a frequent loot pickup or shop item.</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_5">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Not reusable, but easily craftable with two Erdleaf Flowers, dropped by invaders including many NPCs, and a frequent loot pickup or shop item.</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_5">
                         <img class="float-end" data-src="/img/icons/tools/online/00014.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Furlcalling Finger Remedy<br>
-                        <strong class="me-1">Description: </strong>In online play, view summon signs placed by other players, whether cooperative or competitive; item is refunded unless you successfully summon someone<br>
-                        <strong class="me-1">Location: </strong>Not reusable, but easily craftable with two Erdleaf Flowers, dropped by invaders including many NPCs, and a frequent loot pickup or shop item.<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Furlcalling Finger Remedy</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">In online play, view summon signs placed by other players, whether cooperative or competitive; item is refunded unless you successfully summon someone</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Not reusable, but easily craftable with two Erdleaf Flowers, dropped by invaders including many NPCs, and a frequent loot pickup or shop item.</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1455,23 +2127,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_6">
-                            <img class="me-1" data-src="/img/icons/tools/online/00008.png" loading="lazy" style="height: 70px; width: 70px">Festering Bloody Finger
+                            <img class="me-1" data-src="/img/icons/tools/online/00008.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Festering Bloody Finger</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_6">Invade another player as a Bloody Finger in online play</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Invade another player as a Bloody Finger in online play</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_6">Not reusable, but can be bought in limited quantities from the Nomadic Merchant of East Limgrave, Patches, and the Imprisoned Merchant, and infinitely from the Hermit Merchant in Leyndell. Varré gives you five during his questline.</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_6">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Not reusable, but can be bought in limited quantities from the Nomadic Merchant of East Limgrave, Patches, and the Imprisoned Merchant, and infinitely from the Hermit Merchant in Leyndell. Varré gives you five during his questline.</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_6">
                         <img class="float-end" data-src="/img/icons/tools/online/00008.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Festering Bloody Finger<br>
-                        <strong class="me-1">Description: </strong>Invade another player as a Bloody Finger in online play<br>
-                        <strong class="me-1">Location: </strong>Not reusable, but can be bought in limited quantities from the Nomadic Merchant of East Limgrave, Patches, and the Imprisoned Merchant, and infinitely from the Hermit Merchant in Leyndell. Varré gives you five during his questline.<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Festering Bloody Finger</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Invade another player as a Bloody Finger in online play</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Not reusable, but can be bought in limited quantities from the Nomadic Merchant of East Limgrave, Patches, and the Imprisoned Merchant, and infinitely from the Hermit Merchant in Leyndell. Varré gives you five during his questline.</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1488,23 +2180,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_7">
-                            <img class="me-1" data-src="/img/icons/tools/online/00634.png" loading="lazy" style="height: 70px; width: 70px">Phantom Bloody Finger
+                            <img class="me-1" data-src="/img/icons/tools/online/00634.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Phantom Bloody Finger</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_7">As an invader in online play, re-attempt your current invasion; useful if you can't find the host</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">As an invader in online play, re-attempt your current invasion; useful if you can't find the host</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_7">You're automatically granted three of these consumables if you invade someone, and you lose them once the invasion has concluded</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_7">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">You're automatically granted three of these consumables if you invade someone, and you lose them once the invasion has concluded</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_7">
                         <img class="float-end" data-src="/img/icons/tools/online/00634.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Phantom Bloody Finger<br>
-                        <strong class="me-1">Description: </strong>As an invader in online play, re-attempt your current invasion; useful if you can't find the host<br>
-                        <strong class="me-1">Location: </strong>You're automatically granted three of these consumables if you invade someone, and you lose them once the invasion has concluded<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Phantom Bloody Finger</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">As an invader in online play, re-attempt your current invasion; useful if you can't find the host</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">You're automatically granted three of these consumables if you invade someone, and you lose them once the invasion has concluded</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1521,23 +2233,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_8">
-                            <img class="me-1" data-src="/img/icons/tools/online/00002.png" loading="lazy" style="height: 70px; width: 70px">Duelist's Furled Finger
+                            <img class="me-1" data-src="/img/icons/tools/online/00002.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Duelist's Furled Finger</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_8">Place your competitive summon sign in online play</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_8">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Place your competitive summon sign in online play</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_8">At the northern tip of Limgrave at the foot of the ruined round structure, directly next to the ghost, near where Recusant Henricus invades</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_8">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">At the northern tip of Limgrave at the foot of the ruined round structure, directly next to the ghost, near where Recusant Henricus invades</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_8">
                         <img class="float-end" data-src="/img/icons/tools/online/00002.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Duelist's Furled Finger<br>
-                        <strong class="me-1">Description: </strong>Place your competitive summon sign in online play<br>
-                        <strong class="me-1">Location: </strong>At the northern tip of Limgrave at the foot of the ruined round structure, directly next to the ghost, near where Recusant Henricus invades<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Duelist's Furled Finger</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Place your competitive summon sign in online play</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">At the northern tip of Limgrave at the foot of the ruined round structure, directly next to the ghost, near where Recusant Henricus invades</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1554,23 +2286,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_9">
-                            <img class="me-1" data-src="/img/icons/tools/online/00603.png" loading="lazy" style="height: 70px; width: 70px">Small Red Effigy
+                            <img class="me-1" data-src="/img/icons/tools/online/00603.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Small Red Effigy</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_9">Send your competitive summon sign to all activated Martyr Effigies at once (or just those nearby) in online play</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_9">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Send your competitive summon sign to all activated Martyr Effigies at once (or just those nearby) in online play</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_9">On the same body as the previous</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_9">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">On the same body as the previous</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_9">
                         <img class="float-end" data-src="/img/icons/tools/online/00603.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Small Red Effigy<br>
-                        <strong class="me-1">Description: </strong>Send your competitive summon sign to all activated Martyr Effigies at once (or just those nearby) in online play<br>
-                        <strong class="me-1">Location: </strong>On the same body as the previous<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Small Red Effigy</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Send your competitive summon sign to all activated Martyr Effigies at once (or just those nearby) in online play</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">On the same body as the previous</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1587,23 +2339,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_10">
-                            <img class="me-1" data-src="/img/icons/tools/online/00007.png" loading="lazy" style="height: 70px; width: 70px">Taunter's Tongue
+                            <img class="me-1" data-src="/img/icons/tools/online/00007.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Taunter's Tongue</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_10">Allow your world to be invaded without cooperators present, and for a second invader to join if you have a cooperator. Requires using a Furlcalling Finger Remedy first.</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_10">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Allow your world to be invaded without cooperators present, and for a second invader to join if you have a cooperator. Requires using a Furlcalling Finger Remedy first.</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_10">Dropped by NPC invader Mad Tongue Alberich in Roundtable Hold, down off the balcony</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_10">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Dropped by NPC invader Mad Tongue Alberich in Roundtable Hold, down off the balcony</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_10">
                         <img class="float-end" data-src="/img/icons/tools/online/00007.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Taunter's Tongue<br>
-                        <strong class="me-1">Description: </strong>Allow your world to be invaded without cooperators present, and for a second invader to join if you have a cooperator. Requires using a Furlcalling Finger Remedy first.<br>
-                        <strong class="me-1">Location: </strong>Dropped by NPC invader Mad Tongue Alberich in Roundtable Hold, down off the balcony<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Taunter's Tongue</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Allow your world to be invaded without cooperators present, and for a second invader to join if you have a cooperator. Requires using a Furlcalling Finger Remedy first.</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Dropped by NPC invader Mad Tongue Alberich in Roundtable Hold, down off the balcony</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1620,23 +2392,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_11">
-                            <img class="me-1" data-src="/img/icons/tools/online/00579.png" loading="lazy" style="height: 70px; width: 70px">White Cipher Ring
+                            <img class="me-1" data-src="/img/icons/tools/online/00579.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">White Cipher Ring</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_11">When invaded in online play, summon someone using the Blue Cipher Ring to aid you as a hunter; stays active permanently until you turn it off</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_11">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">When invaded in online play, summon someone using the Blue Cipher Ring to aid you as a hunter; stays active permanently until you turn it off</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_11">Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_11">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_11">
                         <img class="float-end" data-src="/img/icons/tools/online/00579.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>White Cipher Ring<br>
-                        <strong class="me-1">Description: </strong>When invaded in online play, summon someone using the Blue Cipher Ring to aid you as a hunter; stays active permanently until you turn it off<br>
-                        <strong class="me-1">Location: </strong>Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">White Cipher Ring</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">When invaded in online play, summon someone using the Blue Cipher Ring to aid you as a hunter; stays active permanently until you turn it off</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1653,23 +2445,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_12">
-                            <img class="me-1" data-src="/img/icons/tools/online/00580.png" loading="lazy" style="height: 70px; width: 70px">Blue Cipher Ring
+                            <img class="me-1" data-src="/img/icons/tools/online/00580.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Blue Cipher Ring</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_12">Be summoned as a hunter anytime someone nearby using the White Cipher Ring is invaded; stays active permanently until you turn it off</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_12">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Be summoned as a hunter anytime someone nearby using the White Cipher Ring is invaded; stays active permanently until you turn it off</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_12">Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_12">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_12">
                         <img class="float-end" data-src="/img/icons/tools/online/00580.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Blue Cipher Ring<br>
-                        <strong class="me-1">Description: </strong>Be summoned as a hunter anytime someone nearby using the White Cipher Ring is invaded; stays active permanently until you turn it off<br>
-                        <strong class="me-1">Location: </strong>Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Blue Cipher Ring</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Be summoned as a hunter anytime someone nearby using the White Cipher Ring is invaded; stays active permanently until you turn it off</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Bought from Twin Maiden Husks in Roundtable Hold for 1000 runes</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1686,23 +2498,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_13">
-                            <img class="me-1" data-src="/img/icons/tools/online/00003.png" loading="lazy" style="height: 70px; width: 70px">Bloody Finger
+                            <img class="me-1" data-src="/img/icons/tools/online/00003.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Bloody Finger</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_13">Invade another player as a Bloody Finger in online play; an infinite Festering Bloody Finger that replaces them in the Multiplayer menu</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_13">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Invade another player as a Bloody Finger in online play; an infinite Festering Bloody Finger that replaces them in the Multiplayer menu</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_13">Given by Varré at Rose Church, Liurnia, at the end of his various requests</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_13">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Given by Varré at Rose Church, Liurnia, at the end of his various requests</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_13">
                         <img class="float-end" data-src="/img/icons/tools/online/00003.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Bloody Finger<br>
-                        <strong class="me-1">Description: </strong>Invade another player as a Bloody Finger in online play; an infinite Festering Bloody Finger that replaces them in the Multiplayer menu<br>
-                        <strong class="me-1">Location: </strong>Given by Varré at Rose Church, Liurnia, at the end of his various requests<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Bloody Finger</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Invade another player as a Bloody Finger in online play; an infinite Festering Bloody Finger that replaces them in the Multiplayer menu</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Given by Varré at Rose Church, Liurnia, at the end of his various requests</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1719,23 +2551,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_14">
-                            <img class="me-1" data-src="/img/icons/tools/online/00635.png" loading="lazy" style="height: 70px; width: 70px">Recusant Finger
+                            <img class="me-1" data-src="/img/icons/tools/online/00635.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Recusant Finger</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_14">Invade another player as a Recusant Finger in online play; nearly identical to Bloody Finger, though biases players who've used the Taunter's Tongue</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_14">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Invade another player as a Recusant Finger in online play; nearly identical to Bloody Finger, though biases players who've used the Taunter's Tongue</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_14">Found on the table with Requests in Volcano Manor</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_14">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Found on the table with Requests in Volcano Manor</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_14">
                         <img class="float-end" data-src="/img/icons/tools/online/00635.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Recusant Finger<br>
-                        <strong class="me-1">Description: </strong>Invade another player as a Recusant Finger in online play; nearly identical to Bloody Finger, though biases players who've used the Taunter's Tongue<br>
-                        <strong class="me-1">Location: </strong>Found on the table with Requests in Volcano Manor<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Recusant Finger</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Invade another player as a Recusant Finger in online play; nearly identical to Bloody Finger, though biases players who've used the Taunter's Tongue</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Found on the table with Requests in Volcano Manor</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>
@@ -1752,23 +2604,43 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0" for="tools_4_15">
-                            <img class="me-1" data-src="/img/icons/tools/online/00626.png" loading="lazy" style="height: 70px; width: 70px">Phantom Great Rune
+                            <img class="me-1" data-src="/img/icons/tools/online/00626.png" loading="lazy" style="height: 70px; width: 70px">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">Phantom Great Rune</span>
+                            </span>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_15">When an invader in online play, buffs nearby enemies with the "Blessing of Blood"</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_15">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">When an invader in online play, buffs nearby enemies with the "Blessing of Blood"</span>
+                            </span>
+                          </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
-                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_15">You're automatically granted three of these consumables if you invade someone after using a Rune Arc with Mohg's Great Rune equipped, and you lose them once the invasion has concluded</label>
+                          <label class="form-check-label item_content ms-0 ps-0" for="tools_4_15">
+                            <span class="lang-pair">
+                              <span class="lang-text lang-en">You're automatically granted three of these consumables if you invade someone after using a Rune Arc with Mohg's Great Rune equipped, and you lose them once the invasion has concluded</span>
+                            </span>
+                          </label>
                         </div>
                       </div>
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="tools_4_15">
                         <img class="float-end" data-src="/img/icons/tools/online/00626.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1">Name: </strong>Phantom Great Rune<br>
-                        <strong class="me-1">Description: </strong>When an invader in online play, buffs nearby enemies with the "Blessing of Blood"<br>
-                        <strong class="me-1">Location: </strong>You're automatically granted three of these consumables if you invade someone after using a Rune Arc with Mohg's Great Rune equipped, and you lose them once the invasion has concluded<br>
+                        <strong class="me-1">Name: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Phantom Great Rune</span>
+                        </span><br>
+                        <strong class="me-1">Description: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">When an invader in online play, buffs nearby enemies with the "Blessing of Blood"</span>
+                        </span><br>
+                        <strong class="me-1">Location: </strong>
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">You're automatically granted three of these consumables if you invade someone after using a Rune Arc with Mohg's Great Rune equipped, and you lose them once the invasion has concluded</span>
+                        </span><br>
                       </label>
                     </div>
                   </div>

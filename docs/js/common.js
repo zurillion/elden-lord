@@ -1,5 +1,18 @@
 var profilesKey = 'darksouls3_profiles';
 
+// Language metadata — mirrors LANGUAGE_META in generate.py.
+// Add new entries here (and in generate.py) to support more languages.
+window.LANGUAGE_META = {
+    'en': { flag: '🇬🇧', name: 'EN' },
+    'it': { flag: '🇮🇹', name: 'IT' },
+    'es': { flag: '🇪🇸', name: 'ES' },
+    'fr': { flag: '🇫🇷', name: 'FR' },
+    'de': { flag: '🇩🇪', name: 'DE' },
+    'pt': { flag: '🇵🇹', name: 'PT' },
+};
+
+window.currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
 var themes = {
     "Standard" : "/css/bootstrap.min.css",
     "LightMode" : "/css/themes/lightmode/bootstrap.min.css",
@@ -154,6 +167,50 @@ var themes = {
             }
         }
     }
+
+    // ── Language support ───────────────────────────────────────────────────────
+
+    function applyLanguageCss(lang) {
+        if (lang === 'en') {
+            $('.lang-text').addClass('d-none');
+            $('.lang-text.lang-en').removeClass('d-none');
+        } else {
+            $('.lang-text').addClass('d-none');
+            // Show the target-language spans
+            $('.lang-text.lang-' + lang).removeClass('d-none');
+            // Fallback: for lang-pair elements that have no target-language child,
+            // fall back to showing the English span.
+            $('.lang-pair').each(function() {
+                if (!$(this).children('.lang-text.lang-' + lang).length) {
+                    $(this).children('.lang-text.lang-en').removeClass('d-none');
+                }
+            });
+        }
+    }
+
+    function updateLangDisplay(lang) {
+        var meta = window.LANGUAGE_META[lang] || { flag: '🌐', name: lang.toUpperCase() };
+        $('#lang-display').html(meta.flag + ' ' + meta.name);
+        $('.lang-option').removeClass('active');
+        $('.lang-option[data-lang="' + lang + '"]').addClass('active');
+    }
+
+    window.setLanguage = function(lang) {
+        window.currentLanguage = lang;
+        localStorage.setItem('selectedLanguage', lang);
+        applyLanguageCss(lang);
+        updateLangDisplay(lang);
+    };
+
+    // Initialise language on page load
+    updateLangDisplay(window.currentLanguage);
+    applyLanguageCss(window.currentLanguage);
+
+    // Language selector click handler
+    $(document).on('click', '.lang-option', function(e) {
+        e.preventDefault();
+        window.setLanguage($(this).data('lang'));
+    });
 
 })( jQuery );
     

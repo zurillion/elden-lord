@@ -180,13 +180,29 @@
             <li class="nav-item tab-li">
               <a class="nav-link hide-buttons" href="/options.html"><i class="bi bi-gear-fill"></i> Options</a>
             </li>
+            <li class="nav-item dropdown tab-li">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="langDropdown">
+                <span id="lang-display"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" id="lang-menu">
+                <li>
+                  <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                </li>
+                <li>
+                  <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container uncolor-links">
       <div class="row text-center">
-        <h1 class="mt-4">Remembrances &amp; Mausoleums
+        <h1 class="mt-4">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Remembrances &amp; Mausoleums</span>
+          </span>
           <span class="d-print-none" id="remembrances_mausoleums_overall_total"></span>
         </h1>
       </div>
@@ -220,7 +236,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#remembrances_mausoleums_0Col" data-bs-toggle="collapse" href="#remembrances_mausoleums_0Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Remembrances</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Remembrances</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="remembrances_mausoleums_totals_0"></span>
             </h4>
             <div aria-expanded="true" class="collapse show" id="remembrances_mausoleums_0Col">
@@ -229,7 +249,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_1" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_1">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00163.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Grafted">Remembrance of the Grafted</a> (20,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00163.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Grafted">Remembrance of the Grafted</a> (20,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=3087&amp;y=6447&amp;id=remembrances_mausoleums_1_1&amp;link=/checklists/remembrances_mausoleums.html%23item_1_1&amp;title=Remembrance of the Grafted"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -239,7 +262,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_1_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_1_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greataxes/10564.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Axe of Godrick
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greataxes/10564.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Axe of Godrick</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -247,7 +273,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_1_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_1_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/fists/10806.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Grafted Dragon
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/fists/10806.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Grafted Dragon</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -256,7 +285,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_2" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_2">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00172.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Full+Moon+Queen">Remembrance of the Full Moon Queen</a> (20,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00172.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Full+Moon+Queen">Remembrance of the Full Moon Queen</a> (20,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=1856&amp;y=4823&amp;id=remembrances_mausoleums_1_2&amp;link=/checklists/remembrances_mausoleums.html%23item_1_2&amp;title=Remembrance of the Full Moon Queen"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -266,7 +298,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_2_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_2_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06007.png" loading="lazy" style="height: 70px; width: 70px">Sorcery Spell - Rennala's Full Moon
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06007.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Sorcery Spell - Rennala's Full Moon</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -274,7 +309,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_2_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_2_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/glintstonestaffs/11204.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Carian Regal Scepter
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/glintstonestaffs/11204.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Carian Regal Scepter</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -283,7 +321,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_3" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_3">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00164.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Starscourge">Remembrance of the Starscourge</a> (40,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00164.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Starscourge">Remembrance of the Starscourge</a> (40,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6364&amp;y=6758&amp;id=remembrances_mausoleums_1_3&amp;link=/checklists/remembrances_mausoleums.html%23item_1_3&amp;title=Remembrance of the Scarscourge"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -293,7 +334,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_3_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_3_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/colossalswords/10125.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Starscourge Greatsword
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/colossalswords/10125.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Starscourge Greatsword</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -301,7 +345,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_3_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_3_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatbows/11080.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Lion Greatbow
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatbows/11080.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Lion Greatbow</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -310,7 +357,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_8" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_8">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00166.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Blasphemous">Remembrance of the Blasphemous</a> (50,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00166.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Blasphemous">Remembrance of the Blasphemous</a> (50,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=2292&amp;y=2960&amp;id=remembrances_mausoleums_1_8&amp;link=/checklists/remembrances_mausoleums.html%23item_1_8&amp;title=Remembrance of the Blasphemous"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -320,7 +370,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_8_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_8_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06045.png" loading="lazy" style="height: 70px; width: 70px">Sorcery Spell - Rykard's Rancor
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06045.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Sorcery Spell - Rykard's Rancor</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -328,7 +381,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_8_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_8_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatswords/10094.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Blasphemous Blade
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatswords/10094.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Blasphemous Blade</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -337,7 +393,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_10" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_10">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00165.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Omen+King">Remembrance of the Omen King</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00165.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Omen+King">Remembrance of the Omen King</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=4521&amp;y=3727&amp;id=remembrances_mausoleums_1_10&amp;link=/checklists/remembrances_mausoleums.html%23item_1_10&amp;title=Remembrance of the Omen King"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -347,7 +406,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_10_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_10_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/curvedgreatswords/10288.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Morgott's Cursed Sword
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/curvedgreatswords/10288.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Morgott's Cursed Sword</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -355,7 +417,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_10_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_10_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/00677.png" loading="lazy" style="height: 70px; width: 70px">Reusable Tool - Regal Omen Bairn
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/00677.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Reusable Tool - Regal Omen Bairn</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -364,7 +429,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_9" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_9">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00174.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Fire+Giant">Remembrance of the Fire Giant</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00174.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Fire+Giant">Remembrance of the Fire Giant</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6355&amp;y=3160&amp;id=remembrances_mausoleums_1_9&amp;link=/checklists/remembrances_mausoleums.html%23item_1_9&amp;title=Remembrance of the Fire Giant"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -374,7 +442,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_9_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_9_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/whips/10766.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Giant's Red Braid
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/whips/10766.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Giant's Red Braid</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -382,7 +453,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_9_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_9_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06211.png" loading="lazy" style="height: 70px; width: 70px">Incantation Spell - Burn, O Flame!
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06211.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation Spell - Burn, O Flame!</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -391,7 +465,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_14" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_14">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00167.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Rot+Goddess">Remembrance of the Rot Goddess</a> (50,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00167.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Rot+Goddess">Remembrance of the Rot Goddess</a> (50,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=5574&amp;y=885&amp;id=remembrances_mausoleums_1_14&amp;link=/checklists/remembrances_mausoleums.html%23item_1_14&amp;title=Remembrance of the Rot Goddess"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -401,7 +478,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_14_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_14_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/katanas/10322.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Hand Of Malenia
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/katanas/10322.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Hand Of Malenia</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -409,7 +489,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_14_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_14_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06713.png" loading="lazy" style="height: 70px; width: 70px">Incantation Spell - Scarlet Aeonia
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06713.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation Spell - Scarlet Aeonia</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -418,7 +501,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_11" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_11">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00171.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Dragonlord">Remembrance of the Dragonlord</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00171.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Dragonlord">Remembrance of the Dragonlord</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -427,7 +513,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_11_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_11_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/heavythrustingswords/10204.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Dragon King's Cragblade
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/heavythrustingswords/10204.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Dragon King's Cragblade</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -435,7 +524,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_11_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_11_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06089.png" loading="lazy" style="height: 70px; width: 70px">Incantation Spell - Placidusax's Ruin
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06089.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation Spell - Placidusax's Ruin</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -444,7 +536,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_7" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_7">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00169.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Black+Blade">Remembrance of the Black Blade</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00169.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Black+Blade">Remembrance of the Black Blade</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -453,7 +548,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_7_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_7_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/colossalswords/10122.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Maliketh's Black Blade
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/colossalswords/10122.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Maliketh's Black Blade</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -461,7 +559,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_7_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_7_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06712.png" loading="lazy" style="height: 70px; width: 70px">Incantation Spell - Black Blade
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06712.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation Spell - Black Blade</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -470,7 +571,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_6" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_6">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00170.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+Hoarah+Loux">Remembrance of Hoarah Loux</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00170.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+Hoarah+Loux">Remembrance of Hoarah Loux</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -479,7 +583,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_6_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_6_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/colossalweapons/10885.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Axe Of Godfrey
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/colossalweapons/10885.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Axe Of Godfrey</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -487,7 +594,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_6_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_6_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/ashes_of_war/08408.png" loading="lazy" style="height: 70px; width: 70px">Ash Of War - Hoarah Loux's Earthshaker
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/ashes_of_war/08408.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Ash Of War - Hoarah Loux's Earthshaker</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -496,7 +606,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_13" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_13">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00176.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Elden+Remembrance">Elden Remembrance</a> (50,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00176.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Elden+Remembrance">Elden Remembrance</a> (50,000 Runes)</span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -505,7 +618,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_13_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_13_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/hammers/10414.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Marika's Hammer
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/hammers/10414.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Marika's Hammer</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -513,7 +629,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_13_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_13_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatswords/10090.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Sacred Relic Sword
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatswords/10090.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Sacred Relic Sword</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -522,7 +641,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_4" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_4">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00175.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Regal+Ancestor">Remembrance of the Regal Ancestor</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00175.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Regal+Ancestor">Remembrance of the Regal Ancestor</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6224&amp;y=14147&amp;id=remembrances_mausoleums_1_4&amp;link=/checklists/remembrances_mausoleums.html%23item_1_4&amp;title=Remembrance of the Regal Ancestor"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -532,7 +654,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_4_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_4_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greataxes/10571.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Winged Greathorn
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greataxes/10571.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Winged Greathorn</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -540,7 +665,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_4_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_4_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/talismans/18880.png" loading="lazy" style="height: 70px; width: 70px">Talisman - Ancestral Spirit's Horn
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/talismans/18880.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Talisman - Ancestral Spirit's Horn</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -549,7 +677,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_15" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_15">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00168.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Blood+Lord">Remembrance of the Blood Lord</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00168.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Blood+Lord">Remembrance of the Blood Lord</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6796&amp;y=14396&amp;id=remembrances_mausoleums_1_15&amp;link=/checklists/remembrances_mausoleums.html%23item_1_15&amp;title=Remembrance of the Blood Lord"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -559,7 +690,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_15_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_15_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06254.png" loading="lazy" style="height: 70px; width: 70px">Incantation Spell - Bloodboon
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06254.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation Spell - Bloodboon</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -567,7 +701,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_15_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_15_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatspears/10641.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Mohgwyn's Sacred Spear
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/greatspears/10641.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Mohgwyn's Sacred Spear</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -576,7 +713,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_5" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_5">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00177.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Naturalborn">Remembrance of the Naturalborn</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00177.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Naturalborn">Remembrance of the Naturalborn</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=2765&amp;y=13744&amp;id=remembrances_mausoleums_1_5&amp;link=/checklists/remembrances_mausoleums.html%23item_1_5&amp;title=Remembrance of the Naturalborn"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -586,7 +726,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_5_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_5_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/flails/10483.png" loading="lazy" style="height: 70px; width: 70px">Weapon - Bastard's Stars
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/flails/10483.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon - Bastard's Stars</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -594,7 +737,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_5_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_5_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/ashes_of_war/08407.png" loading="lazy" style="height: 70px; width: 70px">Ash Of War - Waves Of Darkness
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/ashes_of_war/08407.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Ash Of War - Waves Of Darkness</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -603,7 +749,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_12" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_12">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00173.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Lichdragon">Remembrance of the Lichdragon</a> (30,000 Runes)
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00173.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Lichdragon">Remembrance of the Lichdragon</a> (30,000 Runes)</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=5656&amp;y=10740&amp;id=remembrances_mausoleums_1_12&amp;link=/checklists/remembrances_mausoleums.html%23item_1_12&amp;title=Remembrance of the Lichdragon"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -613,7 +762,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_12_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_12_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06075.png" loading="lazy" style="height: 70px; width: 70px">Incantation Spell - Fortissax's Lightning Spear
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06075.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation Spell - Fortissax's Lightning Spear</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -621,7 +773,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_12_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_12_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06104.png" loading="lazy" style="height: 70px; width: 70px">Incantation Spell - Death Lightning
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06104.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation Spell - Death Lightning</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -630,7 +785,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_21" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_21">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00732.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Wild+Boar+Rider">Remembrance of the Wild Boar Rider</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00732.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Wild+Boar+Rider">Remembrance of the Wild Boar Rider</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -639,7 +797,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_21_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_21_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12214.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Sword Lance
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12214.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Sword Lance</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -647,7 +808,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_21_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_21_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06805.png" loading="lazy" style="height: 70px; width: 70px">Sorcery: Blades of Stone
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06805.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Sorcery: Blades of Stone</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -656,7 +820,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_22" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_22">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00733.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Impaler">Remembrance of the Impaler</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00733.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Impaler">Remembrance of the Impaler</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -665,7 +832,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_22_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_22_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12242.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Spear of the Impaler
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12242.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Spear of the Impaler</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -673,7 +843,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_22_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_22_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06877.png" loading="lazy" style="height: 70px; width: 70px">Incantation: Messmer's Orb
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06877.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation: Messmer's Orb</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -682,7 +855,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_23" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_23">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00734.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Shadow+Sunflower">Remembrance of the Shadow Sunflower</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00734.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Shadow+Sunflower">Remembrance of the Shadow Sunflower</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -691,7 +867,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_23_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_23_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12257.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Shadow Sunflower Blossom
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12257.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Shadow Sunflower Blossom</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -699,7 +878,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_23_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_23_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06855.png" loading="lazy" style="height: 70px; width: 70px">Incantation: Land of Shadow
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06855.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation: Land of Shadow</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -708,7 +890,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_24" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_24">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00735.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Twin+Moon+Knight">Remembrance of the Twin Moon Knight</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00735.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Twin+Moon+Knight">Remembrance of the Twin Moon Knight</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -717,7 +902,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_24_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_24_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12279.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Rellana's Twin Blades
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12279.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Rellana's Twin Blades</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -725,7 +913,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_24_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_24_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06801.png" loading="lazy" style="height: 70px; width: 70px">Sorcery: Rellana's Twin Moons
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06801.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Sorcery: Rellana's Twin Moons</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -734,7 +925,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_25" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_25">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00736.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Saint+of+the+Bud">Remembrance of the Saint of the Bud</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00736.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Saint+of+the+Bud">Remembrance of the Saint of the Bud</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -743,7 +937,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_25_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_25_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12246.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Poleblade of the Bud
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12246.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Poleblade of the Bud</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -751,7 +948,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_25_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_25_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06866.png" loading="lazy" style="height: 70px; width: 70px">Incantation: Rotten Butterflies
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06866.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation: Rotten Butterflies</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -760,7 +960,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_26" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_26">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00737.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Dancing+Lion">Remembrance of the Dancing Lion</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00737.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Dancing+Lion">Remembrance of the Dancing Lion</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -769,7 +972,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_26_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_26_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/talismans/18930.png" loading="lazy" style="height: 70px; width: 70px">Talisman: Enraged Divine Beast
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/talismans/18930.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Talisman: Enraged Divine Beast</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -777,7 +983,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_26_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_26_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/ashes_of_war/08518.png" loading="lazy" style="height: 70px; width: 70px">Ash of War: Divine Beast Frost Stomp
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/ashes_of_war/08518.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Ash of War: Divine Beast Frost Stomp</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -786,7 +995,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_27">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00739.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+a+God+and+a+Lord">Remembrance of a God and a Lord</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00739.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+a+God+and+a+Lord">Remembrance of a God and a Lord</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -795,7 +1007,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_27_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12212.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Greatsword of Radahn (Lord)
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12212.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Greatsword of Radahn (Lord)</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -803,7 +1018,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_27_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12212.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Greatsword of Radahn (Light)
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12212.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Greatsword of Radahn (Light)</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -811,7 +1029,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27_3" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_27_3">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06857.png" loading="lazy" style="height: 70px; width: 70px">Incantation: Light of Miquella
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06857.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation: Light of Miquella</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -820,7 +1041,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_28" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_28">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00740.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Lord+of+Frenzied+Flame">Remembrance of the Lord of Frenzied Flame</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00740.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Lord+of+Frenzied+Flame">Remembrance of the Lord of Frenzied Flame</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -829,7 +1053,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_28_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_28_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12207.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Greatsword of Damnation
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12207.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Greatsword of Damnation</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -837,7 +1064,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_28_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_28_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06868.png" loading="lazy" style="height: 70px; width: 70px">Incantation: Midra's Flame of Frenzy
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06868.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation: Midra's Flame of Frenzy</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -846,7 +1076,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_29" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_29">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00741.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Mother+of+Fingers">Remembrance of the Mother of Fingers</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00741.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Mother+of+Fingers">Remembrance of the Mother of Fingers</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -855,7 +1088,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_29_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_29_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12290.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Staff of the Great Beyond
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12290.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Staff of the Great Beyond</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -863,7 +1099,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_29_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_29_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12258.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Gazing Finger
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12258.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Gazing Finger</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -872,7 +1111,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_30" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_30">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00742.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+Putrescence">Remembrance of Putrescence</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/00742.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+Putrescence">Remembrance of Putrescence</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -881,7 +1123,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_30_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_30_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12220.png" loading="lazy" style="height: 70px; width: 70px">Weapon: Putrescence Cleaver
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/weapons/dlc/12220.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Weapon: Putrescence Cleaver</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -889,7 +1134,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_30_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_30_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06810.png" loading="lazy" style="height: 70px; width: 70px">Sorcery: Vortex of Putrescence
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/sorceries/06810.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Sorcery: Vortex of Putrescence</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -898,7 +1146,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_31" type="checkbox" value="">
                     <label class="form-check-label item_content" for="remembrances_mausoleums_1_31">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/03807.png" loading="lazy" style="height: 70px; width: 70px"><a href="https://eldenring.wiki.fextralife.com/Heart+of+Bayle">Heart of Bayle</a>
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/tools/remembrances/03807.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Heart+of+Bayle">Heart of Bayle</a></span>
+                      </span>
                     </label>
                   </div>
                 </li>
@@ -907,7 +1158,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_31_1" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_31_1">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06864.png" loading="lazy" style="height: 70px; width: 70px">Incantation: Bayle's Flame Lightning
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06864.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation: Bayle's Flame Lightning</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -915,7 +1169,10 @@
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_31_2" type="checkbox" value="">
                       <label class="form-check-label item_content" for="remembrances_mausoleums_1_31_2">
-                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06863.png" loading="lazy" style="height: 70px; width: 70px">Incantation: Bayle's Tyranny
+                        <img class="float-md-none float-end me-md-1" data-src="/img/icons/incantations/06863.png" loading="lazy" style="height: 70px; width: 70px">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Incantation: Bayle's Tyranny</span>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -928,7 +1185,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#remembrances_mausoleums_1Col" data-bs-toggle="collapse" href="#remembrances_mausoleums_1Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Wandering Mausoleums</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Wandering Mausoleums</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="remembrances_mausoleums_totals_1"></span>
             </h4>
             <div aria-expanded="true" class="collapse show" id="remembrances_mausoleums_1Col">
@@ -936,49 +1197,77 @@
                 <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_1" id="item_2_1">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_1" type="checkbox" value="">
-                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_1">Weeping Peninsula - In the western area past the Church of Pilgrimage. The skulls are on its feet.</label>
+                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_1">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Weeping Peninsula - In the western area past the Church of Pilgrimage. The skulls are on its feet.</span>
+                      </span>
+                    </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_1&amp;id=remembrances_mausoleums_2_1&amp;link=/checklists/remembrances_mausoleums.html%23item_2_1&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
                 <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_2" id="item_2_2">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_2" type="checkbox" value="">
-                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_2">Liurnia of the Lakes - Northeast of Raya Lucaria, in the waters in front of Raya Lucaria Crystal Tunnel Grace. The skulls are on top.</label>
+                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_2">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Liurnia of the Lakes - Northeast of Raya Lucaria, in the waters in front of Raya Lucaria Crystal Tunnel Grace. The skulls are on top.</span>
+                      </span>
+                    </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_2&amp;id=remembrances_mausoleums_2_2&amp;link=/checklists/remembrances_mausoleums.html%23item_2_2&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
                 <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_3" id="item_2_3">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_3" type="checkbox" value="">
-                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_3">Liurnia of the Lakes - One of two found around the Mausoleum Compound Grace in Uld Palace Ruins, north of the Church of Vows. <b>IMPORTANT - These only duplicate a limited amount of Remembrances.</b> Watch out for its hops. The skulls are on its feet.</label>
+                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_3">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Liurnia of the Lakes - One of two found around the Mausoleum Compound Grace in Uld Palace Ruins, north of the Church of Vows. <b>IMPORTANT - These only duplicate a limited amount of Remembrances.</b> Watch out for its hops. The skulls are on its feet.</span>
+                      </span>
+                    </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_3&amp;id=remembrances_mausoleums_2_3&amp;link=/checklists/remembrances_mausoleums.html%23item_2_3&amp;title=Wandering Mausoleum (no bell)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
                 <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_7" id="item_2_7">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_7" type="checkbox" value="">
-                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_7">Liurnia of the Lakes - One of two found around the Mausoleum Compound Grace in Uld Palace Ruins, north of the Church of Vows. <b>IMPORTANT - These only duplicate a limited amount of Remembrances.</b> Watch out for its hops. The skulls are on its feet.</label>
+                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_7">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Liurnia of the Lakes - One of two found around the Mausoleum Compound Grace in Uld Palace Ruins, north of the Church of Vows. <b>IMPORTANT - These only duplicate a limited amount of Remembrances.</b> Watch out for its hops. The skulls are on its feet.</span>
+                      </span>
+                    </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_7&amp;id=remembrances_mausoleums_2_7&amp;link=/checklists/remembrances_mausoleums.html%23item_2_7&amp;title=Wandering Mausoleum (no bell)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
                 <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_4" id="item_2_4">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_4" type="checkbox" value="">
-                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_4">Mountaintop of the Giants - Just outside Castle Sol in the northern area. The skulls are on its feet.</label>
+                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_4">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Mountaintop of the Giants - Just outside Castle Sol in the northern area. The skulls are on its feet.</span>
+                      </span>
+                    </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_4&amp;id=remembrances_mausoleums_2_4&amp;link=/checklists/remembrances_mausoleums.html%23item_2_4&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
                 <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_5" id="item_2_5">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_5" type="checkbox" value="">
-                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_5">Consecrated Snowfield - Northwest of Ordina, next to the Apostate Derelict Grace. Watch out for its murder rain. The skulls are on its feet.</label>
+                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_5">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Consecrated Snowfield - Northwest of Ordina, next to the Apostate Derelict Grace. Watch out for its murder rain. The skulls are on its feet.</span>
+                      </span>
+                    </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_5&amp;id=remembrances_mausoleums_2_5&amp;link=/checklists/remembrances_mausoleums.html%23item_2_5&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
                 <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_6" id="item_2_6">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_6" type="checkbox" value="">
-                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_6">Deeproot Depths - Near the The Nameless Eternal City Grace. The skulls are on top.</label>
+                    <label class="form-check-label item_content" for="remembrances_mausoleums_2_6">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Deeproot Depths - Near the The Nameless Eternal City Grace. The skulls are on top.</span>
+                      </span>
+                    </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_6&amp;id=remembrances_mausoleums_2_6&amp;link=/checklists/remembrances_mausoleums.html%23item_2_6&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>

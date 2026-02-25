@@ -10,6 +10,17 @@ from dominate.tags import *
 from dominate.util import raw
 from more_itertools import peekable
 
+# Supported display languages. Add new entries here to support more languages.
+# The key is the 2-3 letter code used in YAML fields (title_it, data_it, etc.)
+LANGUAGE_META = {
+    'en': {'flag': '🇬🇧', 'name': 'EN'},
+    'it': {'flag': '🇮🇹', 'name': 'IT'},
+    'es': {'flag': '🇪🇸', 'name': 'ES'},
+    'fr': {'flag': '🇫🇷', 'name': 'FR'},
+    'de': {'flag': '🇩🇪', 'name': 'DE'},
+    'pt': {'flag': '🇵🇹', 'name': 'PT'},
+}
+
 
 def to_snake_case(name):
     name = "".join(name.split())
@@ -70,6 +81,38 @@ for page in pages:
                 item = next(items)
                 for subitem in item:
                     f(subitem)
+
+def detect_languages():
+    """Scan all pages to find non-English language codes present in YAML data."""
+    lang_pattern = re.compile(r'^(title|data)_([a-z]{2,3})$')
+    langs = set()
+    for page in pages:
+        for key in page:
+            if not isinstance(key, str):
+                continue
+            m = lang_pattern.match(key)
+            if m:
+                langs.add(m.group(2))
+        for section in page.get('sections', []):
+            for key in section:
+                if not isinstance(key, str):
+                    continue
+                m = lang_pattern.match(key)
+                if m:
+                    langs.add(m.group(2))
+            for item in section.get('items', []):
+                if isinstance(item, str):
+                    continue
+                for key in item:
+                    if not isinstance(key, str):
+                        continue
+                    m = lang_pattern.match(key)
+                    if m:
+                        langs.add(m.group(2))
+    return langs
+
+available_languages = detect_languages()
+
 
 def make_doc(title, description):
     doc = dominate.document(title=title)
@@ -136,6 +179,17 @@ def make_nav(page, is_map = False):
                         a(href="/map.html", cls="nav-link hide-buttons" + (' active' if page == 'map' else '')).add(i(cls="bi bi-map"), " Map")
                     with li(cls="nav-item tab-li"):
                         a(href="/options.html", cls="nav-link hide-buttons" + (' active' if page == 'options' else '')).add(i(cls="bi bi-gear-fill"), " Options")
+                    if available_languages:
+                        all_lang_codes = ['en'] + sorted(available_languages)
+                        with li(cls="nav-item dropdown tab-li"):
+                            with a(href="#", cls="nav-link dropdown-toggle", id="langDropdown",
+                                   data_bs_toggle="dropdown", aria_haspopup="true", aria_expanded="false"):
+                                span(id="lang-display")
+                            with ul(cls="dropdown-menu dropdown-menu-end", id="lang-menu"):
+                                for lang_code in all_lang_codes:
+                                    meta = LANGUAGE_META.get(lang_code, {'flag': '🌐', 'name': lang_code.upper()})
+                                    li().add(a(meta['flag'] + ' ' + meta['name'], href="#",
+                                               cls="dropdown-item lang-option", data_lang=lang_code))
 
 # def make_sidebar_nav(page):
 #     with aside(cls="bd-sidebar"):
@@ -505,9 +559,14 @@ def make_checklist(page):
             # title_row()
             # Filter buttons
             with div(cls="row text-center"):
-                h = h1(cls='mt-4')
-                h += page['title']
-                h += span(id=page['id'] + "_overall_total", cls='d-print-none')
+                with h1(cls='mt-4'):
+                    with span(cls='lang-pair'):
+                        span(page['title'], cls='lang-text lang-en')
+                        for lang in sorted(available_languages):
+                            title_key = 'title_' + lang
+                            if title_key in page:
+                                span(page[title_key], cls='lang-text lang-' + lang + ' d-none')
+                    span(id=page['id'] + "_overall_total", cls='d-print-none')
             
             hide_completed_button()
 
@@ -546,9 +605,21 @@ def make_checklist(page):
                             if 'icon' in section:
                                 add_icon(section['icon'], 'me-1')
                             if 'link' in section:
-                                a(section['title'], href=section['link'], cls='d-print-inline')
+                                with a(href=section['link'], cls='d-print-inline'):
+                                    with span(cls='lang-pair'):
+                                        span(section['title'], cls='lang-text lang-en')
+                                        for lang in sorted(available_languages):
+                                            t_key = 'title_' + lang
+                                            if t_key in section:
+                                                span(section[t_key], cls='lang-text lang-' + lang + ' d-none')
                             else:
-                                span(section['title'], cls='d-print-inline')
+                                with span(cls='d-print-inline'):
+                                    with span(cls='lang-pair'):
+                                        span(section['title'], cls='lang-text lang-en')
+                                        for lang in sorted(available_languages):
+                                            t_key = 'title_' + lang
+                                            if t_key in section:
+                                                span(section[t_key], cls='lang-text lang-' + lang + ' d-none')
                             span(id=page['id'] + "_totals_" + str(s_idx), cls="mt-0 badge rounded-pill d-print-none")
                         if 'table' in section:
                             with div(id=page['id'] + '_' + str(s_idx) + "Col", cls="collapse show row", aria_expanded="true"):
@@ -609,8 +680,18 @@ def make_checklist(page):
                                                             with label(cls="form-check-label item_content ms-0 ps-0", _for=page['id'] + '_' + id):
                                                                 if pos == 0 and 'icon' in item:
                                                                     add_icon(item['icon'], 'me-1')
-                                                                if item['data'][pos]:
-                                                                    raw(item['data'][pos])
+                                                                with span(cls='lang-pair'):
+                                                                    with span(cls='lang-text lang-en'):
+                                                                        if item['data'][pos]:
+                                                                            raw(item['data'][pos])
+                                                                    for lang in sorted(available_languages):
+                                                                        d_key = 'data_' + lang
+                                                                        if d_key in item:
+                                                                            lang_data = item[d_key]
+                                                                            val = lang_data[pos] if pos < len(lang_data) else item['data'][pos]
+                                                                            with span(cls='lang-text lang-' + lang + ' d-none'):
+                                                                                if val:
+                                                                                    raw(val)
                                                 with div(cls='col d-md-none'):
                                                     with label(cls="form-check-label item_content ms-0 ps-0", _for=page['id'] + '_' + id):
                                                         if 'icon' in item:
@@ -619,8 +700,19 @@ def make_checklist(page):
                                                             col_size = str(table_widths[pos])
                                                             if isinstance(section['table'], list) and item['data'][pos]:
                                                                 strong(section['table'][pos] + ': ', cls="me-1")
+                                                            with span(cls='lang-pair'):
+                                                                with span(cls='lang-text lang-en'):
+                                                                    if item['data'][pos]:
+                                                                        raw(item['data'][pos])
+                                                                for lang in sorted(available_languages):
+                                                                    d_key = 'data_' + lang
+                                                                    if d_key in item:
+                                                                        lang_data = item[d_key]
+                                                                        val = lang_data[pos] if pos < len(lang_data) else item['data'][pos]
+                                                                        with span(cls='lang-text lang-' + lang + ' d-none'):
+                                                                            if val:
+                                                                                raw(val)
                                                             if item['data'][pos]:
-                                                                raw(item['data'][pos])
                                                                 br()
                                                         
                         else:
@@ -651,7 +743,15 @@ def make_checklist(page):
                                                 with label(cls="form-check-label item_content", _for=page['id'] + '_' + id):
                                                     if 'icon' in item:
                                                         add_icon(item['icon'], 'float-md-none float-end me-md-1')
-                                                    raw(item['data'][0])
+                                                    with span(cls='lang-pair'):
+                                                        with span(cls='lang-text lang-en'):
+                                                            raw(item['data'][0])
+                                                        for lang in sorted(available_languages):
+                                                            d_key = 'data_' + lang
+                                                            if d_key in item:
+                                                                lang_val = item[d_key][0] if item[d_key] else item['data'][0]
+                                                                with span(cls='lang-text lang-' + lang + ' d-none'):
+                                                                    raw(lang_val)
                                                 if 'cords' in item or 'map_link' in item:
                                                     href = '/map.html?'
                                                     if 'map_link' in item:
