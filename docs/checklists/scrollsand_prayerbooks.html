@@ -180,13 +180,29 @@
             <li class="nav-item tab-li">
               <a class="nav-link hide-buttons" href="/options.html"><i class="bi bi-gear-fill"></i> Options</a>
             </li>
+            <li class="nav-item dropdown tab-li">
+              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="langDropdown">
+                <span id="lang-display"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" id="lang-menu">
+                <li>
+                  <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                </li>
+                <li>
+                  <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container uncolor-links">
       <div class="row text-center">
-        <h1 class="mt-4">Scrolls and Prayerbooks
+        <h1 class="mt-4">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Scrolls and Prayerbooks</span>
+          </span>
           <span class="d-print-none" id="scrolls_prayerbooks_overall_total"></span>
         </h1>
       </div>
@@ -219,7 +235,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#scrolls_prayerbooks_0Col" data-bs-toggle="collapse" href="#scrolls_prayerbooks_0Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Scrolls</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Scrolls</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="scrolls_prayerbooks_totals_0"></span>
             </h4>
             <div aria-expanded="true" class="collapse show" id="scrolls_prayerbooks_0Col">
@@ -228,7 +248,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="scrolls_prayerbooks_0_1" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_0_1">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00311.png" loading="lazy" style="height: 70px; width: 70px">Royal House Scroll - East of the Agheel Lake South Site of Grace, on a ruin, next to a mage enemy.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00311.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Royal House Scroll - East of the Agheel Lake South Site of Grace, on a ruin, next to a mage enemy.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_0_1&amp;id=scrolls_prayerbooks_0_1&amp;link=/checklists/scrollsand_prayerbooks.html%23item_0_1&amp;title=Royal House Scroll"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -237,7 +260,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="scrolls_prayerbooks_0_2" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_0_2">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00310.png" loading="lazy" style="height: 70px; width: 70px">Academy Scroll - West of the Lake-Facing Cliffs Site of Grace, in a graveyard.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00310.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Academy Scroll - West of the Lake-Facing Cliffs Site of Grace, in a graveyard.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_0_2&amp;id=scrolls_prayerbooks_0_2&amp;link=/checklists/scrollsand_prayerbooks.html%23item_0_2&amp;title=Academy Scroll"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -246,7 +272,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="scrolls_prayerbooks_0_3" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_0_3">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00310.png" loading="lazy" style="height: 70px; width: 70px">Conspectus Scroll - Near the Schoolhouse Classroom Site of Grace in Raya Lucaria; turn left as you leave the grace room headed into the building.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00310.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Conspectus Scroll - Near the Schoolhouse Classroom Site of Grace in Raya Lucaria; turn left as you leave the grace room headed into the building.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_0_3&amp;id=scrolls_prayerbooks_0_3&amp;link=/checklists/scrollsand_prayerbooks.html%23item_0_3&amp;title=Conspectus Scroll"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -259,7 +288,11 @@
           <div class="card-body">
             <h4 class="mt-1">
               <button class="btn btn-primary btn-sm me-2 collapse-button d-print-none" data-bs-target="#scrolls_prayerbooks_1Col" data-bs-toggle="collapse" href="#scrolls_prayerbooks_1Col" role="button"><i class="bi bi-chevron-up d-print-none"></i></button>
-              <span class="d-print-inline">Prayerbooks</span>
+              <span class="d-print-inline">
+                <span class="lang-pair">
+                  <span class="lang-text lang-en">Prayerbooks</span>
+                </span>
+              </span>
               <span class="mt-0 badge rounded-pill d-print-none" id="scrolls_prayerbooks_totals_1"></span>
             </h4>
             <div aria-expanded="true" class="collapse show" id="scrolls_prayerbooks_1Col">
@@ -268,7 +301,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_1" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_1">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00319.png" loading="lazy" style="height: 70px; width: 70px">Assassin's Prayerbook - Behind an Imp Statue door that's behind another Imp Statue door in Roundtable Hold. Requires 3 Stonesword Keys total.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00319.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Assassin's Prayerbook - Behind an Imp Statue door that's behind another Imp Statue door in Roundtable Hold. Requires 3 Stonesword Keys total.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_1&amp;id=scrolls_prayerbooks_1_1&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_1&amp;title=Assassin's Prayerbook"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -277,7 +313,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_2" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_2">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00317.png" loading="lazy" style="height: 70px; width: 70px">Godskin Prayerbook - Behind an Imp Statue door in Stormveil Castle. From the Liftside Chamber Site of Grace, exit into the courtyard and hug the right wall until you find a set of stairs going down on the wall on the other side.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00317.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Godskin Prayerbook - Behind an Imp Statue door in Stormveil Castle. From the Liftside Chamber Site of Grace, exit into the courtyard and hug the right wall until you find a set of stairs going down on the wall on the other side.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_2&amp;id=scrolls_prayerbooks_1_2&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_2&amp;title=Godskin Prayerbook"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -286,7 +325,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_3" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_3">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00315.png" loading="lazy" style="height: 70px; width: 70px">Fire Monks' Prayerbook - In a Fire Monk camp in the southern edge of Liurnia, near the Fire Spur Me gesture.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00315.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Fire Monks' Prayerbook - In a Fire Monk camp in the southern edge of Liurnia, near the Fire Spur Me gesture.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_3&amp;id=scrolls_prayerbooks_1_3&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_3&amp;title=Fire Monks' Prayerbook"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -295,7 +337,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_4" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_4">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00324.png" loading="lazy" style="height: 70px; width: 70px">Dragon Cult Prayerbook - Kill the Leyndell Knight patrolling south of the Artist's Shack Site of Grace in Liurnia.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00324.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Dragon Cult Prayerbook - Kill the Leyndell Knight patrolling south of the Artist's Shack Site of Grace in Liurnia.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_4&amp;id=scrolls_prayerbooks_1_4&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_4&amp;title=Dragon Cult Prayerbook"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -304,7 +349,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_5" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_5">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00318.png" loading="lazy" style="height: 70px; width: 70px">Two Fingers' Prayerbook - In Leyndell, near the Fortified Manor, First Floor Site of Grace, in a room to the south, by a fireplace. Same room as the By My Sword gesture.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00318.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Two Fingers' Prayerbook - In Leyndell, near the Fortified Manor, First Floor Site of Grace, in a room to the south, by a fireplace. Same room as the By My Sword gesture.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_5&amp;id=scrolls_prayerbooks_1_5&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_5&amp;title=Two Fingers' Prayerbook"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -313,7 +361,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_8" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_8">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00322.png" loading="lazy" style="height: 70px; width: 70px">Golden Order Principia - In Leyndell, from the Erdtree Sanctuary Site of Grace, exit east and climb up to the second floor. Go through the door, jump down to the roof on the left, and go through the broken window. Climb a root to the chair hanging from the ceiling.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00322.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Golden Order Principia - In Leyndell, from the Erdtree Sanctuary Site of Grace, exit east and climb up to the second floor. Go through the door, jump down to the roof on the left, and go through the broken window. Climb a root to the chair hanging from the ceiling.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_8&amp;id=scrolls_prayerbooks_1_8&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_8&amp;title=Golden Order Principia"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -322,7 +373,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_6" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_6">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00316.png" loading="lazy" style="height: 70px; width: 70px">Giant's Prayerbook - In Mountaintops of the Giants, at the top of Guardian's Garrison, up a ladder behind Chief Guardian Arghanthy.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00316.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Giant's Prayerbook - In Mountaintops of the Giants, at the top of Guardian's Garrison, up a ladder behind Chief Guardian Arghanthy.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_6&amp;id=scrolls_prayerbooks_1_6&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_6&amp;title=Giant's Prayerbook"><i class="bi bi-geo-alt"></i></a>
                   </div>
@@ -331,7 +385,10 @@
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="scrolls_prayerbooks_1_7" type="checkbox" value="">
                     <label class="form-check-label item_content" for="scrolls_prayerbooks_1_7">
-                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00325.png" loading="lazy" style="height: 70px; width: 70px">Ancient Dragon Prayerbook - Northwest of the Crumbling Beast Site of Grace in Crumbling Farum Azula, in the middle of the main hall.
+                      <img class="float-md-none float-end me-md-1" data-src="/img/icons/keys/edited/00325.png" loading="lazy" style="height: 70px; width: 70px">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Ancient Dragon Prayerbook - Northwest of the Crumbling Beast Site of Grace in Crumbling Farum Azula, in the middle of the main hall.</span>
+                      </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=scrolls_prayerbooks_1_7&amp;id=scrolls_prayerbooks_1_7&amp;link=/checklists/scrollsand_prayerbooks.html%23item_1_7&amp;title=Ancient Dragon Prayerbook"><i class="bi bi-geo-alt"></i></a>
                   </div>
