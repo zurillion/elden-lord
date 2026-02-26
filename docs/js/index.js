@@ -775,6 +775,7 @@
 "ashesofwar_13_8",
 "ashesofwar_13_9",
 "ashesofwar_14_1",
+"ashesofwar_14_2",
 "ashesofwar_1_1",
 "ashesofwar_1_2",
 "ashesofwar_1_3",
@@ -4970,7 +4971,7 @@ const sorceries_total = 84;
 var sorceries_checked = 0;
 const incantations_total = 129;
 var incantations_checked = 0;
-const ashesofwar_total = 117;
+const ashesofwar_total = 118;
 var ashesofwar_checked = 0;
 const spirit_ashes_total = 84;
 var spirit_ashes_checked = 0;

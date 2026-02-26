@@ -551,7 +551,7 @@ window.progress = {
     ],
   },
   "ashesofwar": {
-    "total": [0, 117],
+    "total": [0, 118],
     "sections": [
       [0, 16],
       [0, 18],
@@ -566,7 +566,7 @@ window.progress = {
       [0, 5],
       [0, 5],
       [0, 21],
-      [0, 1],
+      [0, 2],
     ],
   },
   "spirit_ashes": {
