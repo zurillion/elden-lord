@@ -159,6 +159,20 @@ def make_nav(page, is_map = False):
             with button(type="button", cls="navbar-toggler", data_bs_toggle="collapse", data_bs_target="#nav-collapse", aria_expanded="false", aria_controls="nav-collapse", aria_label="Toggle navigation"):
                 span(cls="navbar-toggler-icon")
             a('Roundtable Guides', cls="navbar-brand me-auto ms-2" + (' active' if page == 'index' else ''), href="/index.html")
+            
+            if available_languages:
+                all_lang_codes = ['en'] + sorted(available_languages)
+                with ul(cls="navbar-nav flex-row order-2 order-xl-3 align-items-center me-2"):
+                    with li(cls="nav-item dropdown"):
+                        with a(href="#", cls="nav-link dropdown-toggle", id="langDropdown",
+                               data_bs_toggle="dropdown", aria_haspopup="true", aria_expanded="false"):
+                            span(id="lang-display")
+                        with ul(cls="dropdown-menu dropdown-menu-end position-absolute", id="lang-menu"):
+                            for lang_code in all_lang_codes:
+                                meta = LANGUAGE_META.get(lang_code, {'flag': '🌐', 'name': lang_code.upper()})
+                                li().add(a(meta['flag'] + ' ' + meta['name'], href="#",
+                                           cls="dropdown-item lang-option", data_lang=lang_code))
+
             with form(cls="d-none d-sm-flex order-2 order-xl-3"):
                 input_(cls='form-control me-2', type='search', placeholder='Search', aria_label='search', name='search')
                 button(type='submit', cls='btn', formaction='/search.html', formmethod='get', formnovalidate='true').add(i(cls='bi bi-search'))
@@ -179,17 +193,6 @@ def make_nav(page, is_map = False):
                         a(href="/map.html", cls="nav-link hide-buttons" + (' active' if page == 'map' else '')).add(i(cls="bi bi-map"), " Map")
                     with li(cls="nav-item tab-li"):
                         a(href="/options.html", cls="nav-link hide-buttons" + (' active' if page == 'options' else '')).add(i(cls="bi bi-gear-fill"), " Options")
-                    if available_languages:
-                        all_lang_codes = ['en'] + sorted(available_languages)
-                        with li(cls="nav-item dropdown tab-li"):
-                            with a(href="#", cls="nav-link dropdown-toggle", id="langDropdown",
-                                   data_bs_toggle="dropdown", aria_haspopup="true", aria_expanded="false"):
-                                span(id="lang-display")
-                            with ul(cls="dropdown-menu dropdown-menu-end", id="lang-menu"):
-                                for lang_code in all_lang_codes:
-                                    meta = LANGUAGE_META.get(lang_code, {'flag': '🌐', 'name': lang_code.upper()})
-                                    li().add(a(meta['flag'] + ' ' + meta['name'], href="#",
-                                               cls="dropdown-item lang-option", data_lang=lang_code))
 
 # def make_sidebar_nav(page):
 #     with aside(cls="bd-sidebar"):

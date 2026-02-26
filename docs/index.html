@@ -25,6 +25,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand me-auto ms-2 active" href="/index.html">Roundtable Guides</a>
+        <ul class="navbar-nav flex-row order-2 order-xl-3 align-items-center me-2">
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="langDropdown">
+              <span id="lang-display"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
+              <li>
+                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+              </li>
+              <li>
+                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
         <form class="d-none d-sm-flex order-2 order-xl-3">
           <input aria-label="search" class="form-control me-2" name="search" placeholder="Search" type="search">
           <button class="btn" formaction="/search.html" formmethod="get" formnovalidate="true" type="submit"><i class="bi bi-search"></i></button>
@@ -179,19 +194,6 @@
             </li>
             <li class="nav-item tab-li">
               <a class="nav-link hide-buttons" href="/options.html"><i class="bi bi-gear-fill"></i> Options</a>
-            </li>
-            <li class="nav-item dropdown tab-li">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="langDropdown">
-                <span id="lang-display"></span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" id="lang-menu">
-                <li>
-                  <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
-                </li>
-                <li>
-                  <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
-                </li>
-              </ul>
             </li>
           </ul>
         </div>
