@@ -677,9 +677,9 @@ def make_checklist(page):
                                                     for pos in range(table_cols):
                                                         col_size = str(table_widths[pos])
                                                         with div(cls="ms-0 ps-0 d-flex align-items-center col-md-" + col_size):
-                                                            with label(cls="form-check-label item_content ms-0 ps-0", _for=page['id'] + '_' + id):
+                                                            with label(cls="form-check-label item_content ms-0 ps-0 d-flex align-items-center", _for=page['id'] + '_' + id):
                                                                 if pos == 0 and 'icon' in item:
-                                                                    add_icon(item['icon'], 'me-1')
+                                                                    add_icon(item['icon'], 'me-2 flex-shrink-0')
                                                                 with span(cls='lang-pair'):
                                                                     with span(cls='lang-text lang-en'):
                                                                         if item['data'][pos]:
@@ -740,9 +740,9 @@ def make_checklist(page):
                                         with li(**li_kwargs):
                                             with div(cls="form-check checkbox d-flex align-items-center"):
                                                 input_(cls="form-check-input", type="checkbox", value="", id=page['id'] + '_' + id, data_section_idx=str(s_idx))
-                                                with label(cls="form-check-label item_content", _for=page['id'] + '_' + id):
+                                                with label(cls="form-check-label item_content d-md-flex align-items-center w-100", _for=page['id'] + '_' + id):
                                                     if 'icon' in item:
-                                                        add_icon(item['icon'], 'float-md-none float-end me-md-1')
+                                                        add_icon(item['icon'], 'float-md-none float-end me-md-2 flex-shrink-0')
                                                     with span(cls='lang-pair'):
                                                         with span(cls='lang-text lang-en'):
                                                             raw(item['data'][0])
