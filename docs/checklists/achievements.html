@@ -455,7 +455,12 @@
       <div class="mb-3 d-print-none" id="btnHideCompleted">
         <div class="form-check form-switch">
           <input class="form-check-input" id="toggleHideCompleted" type="checkbox">
-          <label class="form-check-label" for="toggleHideCompleted">Hide Completed</label>
+          <label class="form-check-label" for="toggleHideCompleted">
+            <span class="lang-pair">
+              <span class="lang-text lang-en">Hide Completed</span>
+              <span class="lang-text lang-it">Nascondi Completati</span>
+            </span>
+          </label>
         </div>
       </div>
       <nav class="text-muted toc d-print-none">
@@ -3057,7 +3062,12 @@
                             $(".searchable").removeClass('d-none-regex');
                         }
                         $("#achievements_list").unhighlight();
-                        if (!$('#achievements_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
+                        if ($('#achievements_regex').is(':checked') && $(this).val() && $(this).val().length > 0) {
+                            try {
+                                var hlRegex = new RegExp($(this).val(), 'gi');
+                                $("#achievements_list").highlight(hlRegex);
+                            } catch(e) {}
+                        } else if (!$('#achievements_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
                             $("#achievements_list").highlight($(this).val());
                         }
                     });

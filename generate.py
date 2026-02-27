@@ -280,8 +280,9 @@ def hide_completed_button():
         with div(cls="form-check form-switch"):
             input_(cls="form-check-input", type="checkbox",
                    id='toggleHideCompleted')
-            label("Hide Completed", cls="form-check-label",
-                  _for='toggleHideCompleted')
+            with label(cls="form-check-label", _for='toggleHideCompleted'):
+                t = nav_static.get(5, {'en': 'Hide Completed'})
+                localized_span(t)
 
 def localized_span(translations_dict):
     """Returns a span with lang-pair and lang-text spans for each language in the dict."""
@@ -518,7 +519,12 @@ def make_footer(page=None):
                             $(".searchable").removeClass('d-none-regex');
                         }}
                         $("#{page_id}_list").unhighlight();
-                        if (!$('#{page_id}_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {{
+                        if ($('#{page_id}_regex').is(':checked') && $(this).val() && $(this).val().length > 0) {{
+                            try {{
+                                var hlRegex = new RegExp($(this).val(), 'gi');
+                                $("#{page_id}_list").highlight(hlRegex);
+                            }} catch(e) {{}}
+                        }} else if (!$('#{page_id}_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {{
                             $("#{page_id}_list").highlight($(this).val());
                         }}
                     }});
@@ -869,7 +875,8 @@ def make_checklist(page):
             if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones'}:
                 with div(cls='row d-print-none mb-3'):
                     with div(cls='col-auto d-flex align-items-center gap-2'):
-                        label('Show:', _for='dlc_filter', cls='mb-0')
+                        with label(_for='dlc_filter', cls='mb-0'):
+                            localized_span(nav_static.get(6, {'en': 'Show:'}))
                         with select(id='dlc_filter', cls='form-select form-select-sm'):
                             option('Both', value='both', selected='selected')
                             option('Base Game', value='base')

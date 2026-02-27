@@ -455,7 +455,12 @@
       <div class="mb-3 d-print-none" id="btnHideCompleted">
         <div class="form-check form-switch">
           <input class="form-check-input" id="toggleHideCompleted" type="checkbox">
-          <label class="form-check-label" for="toggleHideCompleted">Hide Completed</label>
+          <label class="form-check-label" for="toggleHideCompleted">
+            <span class="lang-pair">
+              <span class="lang-text lang-en">Hide Completed</span>
+              <span class="lang-text lang-it">Nascondi Completati</span>
+            </span>
+          </label>
         </div>
       </div>
       <nav class="text-muted toc d-print-none">
@@ -650,7 +655,12 @@
       </div>
       <div class="row d-print-none mb-3">
         <div class="col-auto d-flex align-items-center gap-2">
-          <label class="mb-0" for="dlc_filter">Show:</label>
+          <label class="mb-0" for="dlc_filter">
+            <span class="lang-pair">
+              <span class="lang-text lang-en">Show:</span>
+              <span class="lang-text lang-it">Mostra:</span>
+            </span>
+          </label>
           <select class="form-select form-select-sm" id="dlc_filter">
             <option selected="selected" value="both">Both</option>
             <option value="base">Base Game</option>
@@ -2289,7 +2299,12 @@
                             $(".searchable").removeClass('d-none-regex');
                         }
                         $("#cookbooks_list").unhighlight();
-                        if (!$('#cookbooks_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
+                        if ($('#cookbooks_regex').is(':checked') && $(this).val() && $(this).val().length > 0) {
+                            try {
+                                var hlRegex = new RegExp($(this).val(), 'gi');
+                                $("#cookbooks_list").highlight(hlRegex);
+                            } catch(e) {}
+                        } else if (!$('#cookbooks_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
                             $("#cookbooks_list").highlight($(this).val());
                         }
                     });

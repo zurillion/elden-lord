@@ -455,7 +455,12 @@
       <div class="mb-3 d-print-none" id="btnHideCompleted">
         <div class="form-check form-switch">
           <input class="form-check-input" id="toggleHideCompleted" type="checkbox">
-          <label class="form-check-label" for="toggleHideCompleted">Hide Completed</label>
+          <label class="form-check-label" for="toggleHideCompleted">
+            <span class="lang-pair">
+              <span class="lang-text lang-en">Hide Completed</span>
+              <span class="lang-text lang-it">Nascondi Completati</span>
+            </span>
+          </label>
         </div>
       </div>
       <p>
@@ -4019,7 +4024,12 @@
                             $(".searchable").removeClass('d-none-regex');
                         }
                         $("#quest_order_tldr_list").unhighlight();
-                        if (!$('#quest_order_tldr_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
+                        if ($('#quest_order_tldr_regex').is(':checked') && $(this).val() && $(this).val().length > 0) {
+                            try {
+                                var hlRegex = new RegExp($(this).val(), 'gi');
+                                $("#quest_order_tldr_list").highlight(hlRegex);
+                            } catch(e) {}
+                        } else if (!$('#quest_order_tldr_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
                             $("#quest_order_tldr_list").highlight($(this).val());
                         }
                     });

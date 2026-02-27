@@ -7,6 +7,8 @@ nav_static:
   - "Options"
   - "Table Of Contents"
   - "Use Regex"
+  - "Hide Completed"
+  - "Show:"
 
 nav_static_it:
   - "Guide della Tavola Rotonda"
@@ -14,6 +16,8 @@ nav_static_it:
   - "Opzioni"
   - "Indice"
   - "Usa Regex"
+  - "Nascondi Completati"
+  - "Mostra:"
 
 dropdowns:
   -
