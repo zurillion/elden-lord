@@ -130,59 +130,56 @@ def make_doc(title, description):
         meta(name="description", content="Cheat sheet for Elden Ring. Checklist of things to do, items to get etc.")
         meta(name="author", content="Ben Lambeth")
         meta(name="mobile-web-app-capable", content="yes")
-        link(href="/css/bootstrap.min.css", rel="stylesheet", id="bootstrap")
         script(raw("""
 (function() {
+    var style = "Standard";
     try {
         var jStorage = JSON.parse(localStorage.getItem('jStorage') || '{}');
         var profiles = jStorage['darksouls3_profiles'] || {};
         var current = profiles['current'] || 'Default Profile';
         if (profiles[current] && profiles[current]['style']) {
-            var style = profiles[current]['style'];
-            var themes = {
-                "Standard": "/css/bootstrap.min.css",
-                "LightMode": "/css/themes/lightmode/bootstrap.min.css",
-                "Ceruleon": "/css/themes/cerulean/bootstrap.min.css",
-                "Cosmo": "/css/themes/cosmo/bootstrap.min.css",
-                "Cyborg": "/css/themes/cyborg/bootstrap.min.css",
-                "Darkly": "/css/themes/darkly/bootstrap.min.css",
-                "Flatly": "/css/themes/flatly/bootstrap.min.css",
-                "Journal": "/css/themes/journal/bootstrap.min.css",
-                "Litera": "/css/themes/litera/bootstrap.min.css",
-                "Lumen": "/css/themes/lumen/bootstrap.min.css",
-                "Lux": "/css/themes/lux/bootstrap.min.css",
-                "Materia": "/css/themes/materia/bootstrap.min.css",
-                "Minty": "/css/themes/minty/bootstrap.min.css",
-                "Morph": "/css/themes/Morph/bootstrap.min.css",
-                "Pulse": "/css/themes/pulse/bootstrap.min.css",
-                "Quartz": "/css/themes/quartz/bootstrap.min.css",
-                "Regent": "/css/themes/regent/bootstrap.min.css",
-                "Sandstone": "/css/themes/sandstone/bootstrap.min.css",
-                "Simplex": "/css/themes/simplex/bootstrap.min.css",
-                "Sketchy": "/css/themes/sketchy/bootstrap.min.css",
-                "Slate": "/css/themes/slate/bootstrap.min.css",
-                "Solar": "/css/themes/solar/bootstrap.min.css",
-                "Spacelab": "/css/themes/spacelab/bootstrap.min.css",
-                "Superhero": "/css/themes/superhero/bootstrap.min.css",
-                "United": "/css/themes/united/bootstrap.min.css",
-                "Vapor": "/css/themes/vapor/bootstrap.min.css",
-                "Yeti": "/css/themes/yeti/bootstrap.min.css",
-                "Zephyr": "/css/themes/zephyr/bootstrap.min.css"
-            };
-            if (themes[style] && style !== "Standard") {
-                document.getElementById('bootstrap').href = themes[style];
-            }
+            style = profiles[current]['style'];
         }
     } catch (e) {}
+    
+    var themes = {
+        "Standard": "/css/bootstrap.min.css",
+        "LightMode": "/css/themes/lightmode/bootstrap.min.css",
+        "Ceruleon": "/css/themes/cerulean/bootstrap.min.css",
+        "Cosmo": "/css/themes/cosmo/bootstrap.min.css",
+        "Cyborg": "/css/themes/cyborg/bootstrap.min.css",
+        "Darkly": "/css/themes/darkly/bootstrap.min.css",
+        "Flatly": "/css/themes/flatly/bootstrap.min.css",
+        "Journal": "/css/themes/journal/bootstrap.min.css",
+        "Litera": "/css/themes/litera/bootstrap.min.css",
+        "Lumen": "/css/themes/lumen/bootstrap.min.css",
+        "Lux": "/css/themes/lux/bootstrap.min.css",
+        "Materia": "/css/themes/materia/bootstrap.min.css",
+        "Minty": "/css/themes/minty/bootstrap.min.css",
+        "Morph": "/css/themes/Morph/bootstrap.min.css",
+        "Pulse": "/css/themes/pulse/bootstrap.min.css",
+        "Quartz": "/css/themes/quartz/bootstrap.min.css",
+        "Regent": "/css/themes/regent/bootstrap.min.css",
+        "Sandstone": "/css/themes/sandstone/bootstrap.min.css",
+        "Simplex": "/css/themes/simplex/bootstrap.min.css",
+        "Sketchy": "/css/themes/sketchy/bootstrap.min.css",
+        "Slate": "/css/themes/slate/bootstrap.min.css",
+        "Solar": "/css/themes/solar/bootstrap.min.css",
+        "Spacelab": "/css/themes/spacelab/bootstrap.min.css",
+        "Superhero": "/css/themes/superhero/bootstrap.min.css",
+        "United": "/css/themes/united/bootstrap.min.css",
+        "Vapor": "/css/themes/vapor/bootstrap.min.css",
+        "Yeti": "/css/themes/yeti/bootstrap.min.css",
+        "Zephyr": "/css/themes/zephyr/bootstrap.min.css"
+    };
+
+    var themeUrl = themes[style] ? themes[style] : "/css/bootstrap.min.css";
+    document.write('<link href="' + themeUrl + '" rel="stylesheet" id="bootstrap">');
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
-    var styleEl = document.createElement('style');
-    styleEl.id = 'language-fouc-fix';
-    styleEl.innerHTML = '.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; }';
-    document.head.appendChild(styleEl);
+    document.write('<style id="language-fouc-fix">.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; }</style>');
 })();
 """))
-
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css")
         link(href="/css/main.css", rel="stylesheet")
     return doc
