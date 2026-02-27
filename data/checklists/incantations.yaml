@@ -1,11 +1,11 @@
 title: Incantations
-title_it: Incantazioni
+title_it: Incantesimi
 id: incantations
 table_widths: [4, 4, 4]
 sections:
   -
     title: "Bestial Incantations"
-    title_it: "Incantazioni Bestiali"
+    title_it: "Incantesimi Bestiali"
     table: ["Name", "Effect", "How to get"]
     items:
       - id: "1_1"
@@ -34,7 +34,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Stone+of+Gurranq\">Pietra di Gurranq</a>", "Scaglia un masso davanti al lanciatore. Può essere lanciata ripetutamente.", "Santuario Bestiale: Premio da Gurranq, Chierico delle Bestie dopo avergli donato la sesta Radice della Morte."]
   -
     title: "Blood Incantations"
-    title_it: "Incantazioni del Sangue"
+    title_it: "Incantesimi del Sangue"
     table: ["Name", "Effect", "How to get"]
     items:
       - id: "2_1"
@@ -55,7 +55,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Swarm+of+Flies\">Sciame di Mosche</a>", "Rilascia uno sciame di mosche sanguinarie davanti al lanciatore.", "Trovata su un cadavere lungo la parete est della palude di sangue del Palazzo Mohgwyn."]
   -
     title: "Dragon Communion Incantations"
-    title_it: "Incantazioni della Comunione Draconica"
+    title_it: "Incantesimi della Comunione Draconica"
     table: ["Name", "Effect", "How to get"]
     items:
       - id: "3_1"
@@ -112,7 +112,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Theodorix's+Magma\">Magma di Theodorix</a>", "Sputa alito di magma di Theodorix dall'alto.", "Acquistabile dalla Cattedrale della Comunione Draconica per 2 Cuori di Drago, dopo aver sconfitto il Grande Wyrm Theodorix."]
   -
     title: "Dragon Cult Incantations"
-    title_it: "Incantazioni del Culto del Drago"
+    title_it: "Incantesimi del Culto del Drago"
     table: ["Name", "Effect", "How to get"]
     items:
       - id: "4_1"
@@ -169,7 +169,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Vyke's+Dragonbolt\">Dracobolto di Vyke</a>", "Incanta l'armamento nella mano destra con danno da fulmine.", "Ottenuta sconfiggendo il Cavaliere della Tavola Rotonda Vyke all'Evergaol del Contendente del Signore."]
   -
     title: "Erdtree Incantations"
-    title_it: "Incantazioni dell'Erdtree"
+    title_it: "Incantesimi dell'Erdtree"
     table: ["Name", "Effect", "How to get"]
     items:
       - id: "5_1"
@@ -226,7 +226,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Wrath+of+Gold\">Ira d'Oro</a>", "Produce un'onda d'urto dorata che respinge i nemici.", "Trovata alle Rovine di Woodfolk, in un forziere in fondo a una scala."]
   -
     title: "Fire Giant Incantations"
-    title_it: "Incantazioni del Gigante di Fuoco"
+    title_it: "Incantesimi del Gigante di Fuoco"
     table: ["Name", "Effect", "How to get"]
     items:
       - id: "6_1"
@@ -247,7 +247,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Giantsflame+Take+Thee\">Fiamma dei Giganti, Prenditi!</a>", "Scaglia un'enorme palla di fuoco impetuoso.", "Acquistabile da Fratello Corhyn o Miriel, Pastore dei Voti dopo aver donato il Libro di Preghiere dei Giganti."]
   -
     title: "Fire Monk Incantations"
-    title_it: "Incantazioni dei Monaci del Fuoco"
+    title_it: "Incantesimi dei Monaci del Fuoco"
     id: 7
     table: ["Name", "Effect", "How to get"]
     items:
@@ -289,7 +289,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Whirl+O+Flame!\">Vortica, o Fiamma!</a>", "Spazza l'area davanti al lanciatore con un getto di fuoco.", "Rilasciata da uno Scarabeo Lacrimagemma sulla strada tra il Balcone di Rotview e le Rovine Caelem."]
   -
     title: "Frenzied Flame Incantations"
-    title_it: "Incantazioni della Fiamma della Follia"
+    title_it: "Incantesimi della Fiamma della Follia"
     id: 8
     table: ["Name", "Effect", "How to get"]
     items:
@@ -315,7 +315,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Unendurable+Frenzy\">Frenesia Insopportabile</a>", "Emette una violenta esplosione di fiamma frenetica gialla dagli occhi.", "Rovine di Yelough Anix: Trovata in un forziere in una stanza del tesoro sotterranea."]
   -
     title: "Godskin Apostle Incantations"
-    title_it: "Incantazioni dell'Apostolo Godskin"
+    title_it: "Incantesimi dell'Apostolo Godskin"
     id: 9
     table: ["Name", "Effect", "How to get"]
     items:
@@ -345,7 +345,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Scouring+Black+Flame\">Fiamma Nera Purificatrice</a>", "Spazza l'area davanti al lanciatore con la fiamma nera.", "Rilasciata dall'Apostolo Godskin."]
   -
     title: "Golden Order Incantations"
-    title_it: "Incantazioni dell'Ordine d'Oro"
+    title_it: "Incantesimi dell'Ordine d'Oro"
     id: 10
     table: ["Name", "Effect", "How to get"]
     items:
@@ -387,7 +387,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Triple+Rings+of+Light\">Tre Anelli di Luce</a>", "Spara tre anelli di luce davanti al lanciatore.", "Elphael, Sostegno dell'Haligtree: Dalla grazia della Stanza della Preghiera, dirigiti verso il camminamento orientale e scendi di un livello. C'è una stanza del tesoro sigillata che richiede 2 Chiavi Spada di Pietra."]
   -
     title: "Servants Of Rot Incantations"
-    title_it: "Incantazioni dei Servitori della Putrefazione"
+    title_it: "Incantesimi dei Servitori della Putrefazione"
     id: 11
     table: ["Name", "Effect", "How to get"]
     items:
@@ -409,7 +409,7 @@ sections:
         data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Scarlet+Aeonia\">Aeonia Scarlatta</a>", "Crea un gigantesco fiore che esplode con putrefazione scarlatta.", "Scambia il Ricordo della Dea della Putrefazione con Enia alla Tavola Rotonda."]
   -
     title: "Two Fingers Incantations"
-    title_it: "Incantazioni delle Due Dita"
+    title_it: "Incantesimi delle Due Dita"
     id: 12
     table: ["Name", "Effect", "How to get"]
     items:
