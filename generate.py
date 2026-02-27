@@ -114,6 +114,19 @@ def detect_languages():
 available_languages = detect_languages()
 
 def get_theme_colors():
+    def extract_colors(filepath):
+        with open(filepath, "r") as f:
+            content = f.read()
+            bg_match = re.search(r'--bs-body-bg:(.*?);', content)
+            color_match = re.search(r'--bs-body-color:(.*?);', content)
+            if not bg_match:
+                bg_match = re.search(r'body\{[^\}]*background-color:(.*?)[;\}]', content)
+            if not color_match:
+                color_match = re.search(r'body\{[^\}]*color:(.*?)[;\}]', content)
+            bg = bg_match.group(1).split('}')[0] if bg_match else "#ffffff"
+            color = color_match.group(1).split('}')[0] if color_match else "#212529"
+            return bg, color
+
     theme_dir = "docs/css/themes"
     themes = {}
     for root, _, files in os.walk(theme_dir):
@@ -121,21 +134,19 @@ def get_theme_colors():
             if file == "bootstrap.min.css":
                 theme_name = os.path.basename(root)
                 filepath = os.path.join(root, file)
-                with open(filepath, "r") as f:
-                    content = f.read()
-                    bg_match = re.search(r'--bs-body-bg:(.*?);', content)
-                    color_match = re.search(r'--bs-body-color:(.*?);', content)
-                    if not bg_match:
-                        bg_match = re.search(r'body\{[^\}]*background-color:(.*?)[;\}]', content)
-                    if not color_match:
-                        color_match = re.search(r'body\{[^\}]*color:(.*?)[;\}]', content)
-                    bg = bg_match.group(1).split('}')[0] if bg_match else "#ffffff"
-                    color = color_match.group(1).split('}')[0] if color_match else "#212529"
-                    
-                    key = theme_name.capitalize()
-                    if key == "Lightmode": key = "LightMode"
-                    themes[key] = {"bg": bg, "color": color}
-    themes["Standard"] = {"bg": "#ffffff", "color": "#212529"}
+                bg, color = extract_colors(filepath)
+                
+                key = theme_name.capitalize()
+                if key == "Lightmode": key = "LightMode"
+                themes[key] = {"bg": bg, "color": color}
+                
+    standard_path = "docs/css/bootstrap.min.css"
+    if os.path.exists(standard_path):
+        bg, color = extract_colors(standard_path)
+        themes["Standard"] = {"bg": bg, "color": color}
+    else:
+        themes["Standard"] = {"bg": "#ffffff", "color": "#212529"}
+        
     return themes
 
 theme_colors_map = get_theme_colors()
