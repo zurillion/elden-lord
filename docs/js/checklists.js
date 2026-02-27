@@ -1,19 +1,19 @@
-(function($) {
+(function ($) {
     'use strict';
 
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         // Get the right style going...
-    
-        $("a[href^='http']").attr('target','_blank');
-        
-        $('.checkbox input[type="checkbox"]').click(function() {
+
+        $("a[href^='http']").attr('target', '_blank');
+
+        $('.checkbox input[type="checkbox"]').click(function () {
             var id = $(this).attr('id');
             var isChecked = $(this).prop('checked');
             setItem(id, isChecked);
             calculateTotals();
         });
 
-        $('.collapse-button').click(function(event) {
+        $('.collapse-button').click(function (event) {
             var btn = $(event.currentTarget);
             var i = btn.children('i');
             if (btn.hasClass('collapsed')) {
@@ -23,10 +23,10 @@
                 i.removeClass('bi-chevron-down');
                 i.addClass('bi-chevron-up');
             }
-            
+
         });
-        
-        $('.toc-button').click(function(event) {
+
+        $('.toc-button').click(function (event) {
             var btn = $(event.currentTarget);
             var i = btn.children(i);
             if (btn.hasClass('collapsed')) {
@@ -38,7 +38,7 @@
             }
         });
 
-        $('input[id="toggleHideCompleted"]').change(function() {
+        $('input[id="toggleHideCompleted"]').change(function () {
             profiles = $.jStorage.get(profilesKey, {});
             var hidden = !$(this).is(':checked');
 
@@ -47,7 +47,7 @@
             profiles[profilesKey][profiles.current].hide_completed = !hidden;
             $.jStorage.set(profilesKey, profiles);
         });
-    
+
         function populateChecklists() {
             var checkboxes = $('.checkbox input[type="checkbox"]');
             checkboxes.each(function (index, el) {
@@ -75,7 +75,7 @@
     /// restore all saved state, except for the current tab
     /// used on page load or when switching profiles
     function restoreState(profile_name) {
-        $('button[href$="Col"]').each(function() {
+        $('button[href$="Col"]').each(function () {
             var value = profiles[profilesKey][profile_name].collapsed[$(this).attr('href')];
             var active = $(this).hasClass('collapsed');
 
@@ -99,7 +99,7 @@
 
     // Setup ("bootstrap", haha) styling
     function themeSetup(stylesheet) {
-        if(stylesheet === null || stylesheet === undefined) { // if we didn't get a param, then
+        if (stylesheet === null || stylesheet === undefined) { // if we didn't get a param, then
             stylesheet = profiles[profilesKey][profiles.current].style; // fall back on "light" if cookie not set
         }
         $("#bootstrap").attr("href", themes[stylesheet]);
@@ -132,7 +132,7 @@
             el.removeClass('done').addClass('in_progress');
         }
     }
-    
+
     function calculateTotals() {
         updateTotalNav(overall_total_el, window.progress[window.current_page_id]['total'][0], window.progress[window.current_page_id]['total'][1])
         for (var i = 0; i < window.progress[window.current_page_id]['sections'].length; i++) {
@@ -141,11 +141,11 @@
             updateTotalSection($(section_totals.get(i)), p[0], p[1]);
         }
     }
-    
-    $(function() {
+
+    $(function () {
         var offset = 220;
         var duration = 500;
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             if ($(this).scrollTop() > offset) {
                 $('.fadingbutton').fadeIn(duration);
             } else {
@@ -153,9 +153,9 @@
             }
         });
 
-        $('.back-to-top').click(function(event) {
+        $('.back-to-top').click(function (event) {
             event.preventDefault();
-            $('html, body').animate({scrollTop: 0}, duration);
+            $('html, body').animate({ scrollTop: 0 }, duration);
             return false;
         });
     });
@@ -166,7 +166,7 @@
     //         scrollTop: $(target).offset().top - $('#top_nav').outerHeight(true)
     //     }, 100);
     // });
-    
+
     $(function () {
         // reset `Hide completed` button state (otherwise Chrome bugs out)
         $('#toggleHideCompleted').prop('checked', false);
@@ -191,19 +191,25 @@
                 return;
             }
 
-            rows.each(function() {
+            rows.each(function () {
                 var isDlc = $(this).attr('data-dlc') === 'true';
                 var shouldShow = (mode === 'both') || (mode === 'dlc' && isDlc) || (mode === 'base' && !isDlc);
                 $(this).toggleClass('d-none', !shouldShow);
             });
 
-            $('[id^="' + window.current_page_id + '_section_"]').each(function() {
+            $('[id^="' + window.current_page_id + '_section_"]').each(function () {
                 var hasVisibleRows = $(this).find('li.searchable[data-dlc]:not(.d-none)').length > 0;
                 $(this).toggleClass('d-none', !hasVisibleRows);
+
+                var sectionId = $(this).attr('id');
+                var $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
+                if ($tocLi.length) {
+                    $tocLi.toggleClass('d-none', !hasVisibleRows);
+                }
             });
 
             // Hide subsection headings (h5 + following ul) when all their items are filtered out
-            $('[id^="' + window.current_page_id + '_section_"] h5').each(function() {
+            $('[id^="' + window.current_page_id + '_section_"] h5').each(function () {
                 var $h5 = $(this);
                 var $ul = $h5.next('ul');
                 var hasVisible = $ul.find('li.searchable[data-dlc]:not(.d-none)').length > 0;
@@ -216,7 +222,7 @@
         if (dlcFilter.length) {
             var savedDlc = profiles[profilesKey][profiles.current].dlc_filter || 'both';
             dlcFilter.val(savedDlc);
-            dlcFilter.on('change', function() {
+            dlcFilter.on('change', function () {
                 var mode = $(this).val();
                 profiles = $.jStorage.get(profilesKey, {});
                 profiles[profilesKey][profiles.current].dlc_filter = mode;
@@ -230,7 +236,7 @@
         //     if ($(event.currentTarget).hasClass('dropdown-toggle')) {
         //         return;
         //     }
-            
+
         //     var href = $(this).attr('href');
 
         //     profiles[profilesKey][profiles.current].current_tab = href;
@@ -245,4 +251,4 @@
         // });
     });
 
-})( jQuery );
+})(jQuery);

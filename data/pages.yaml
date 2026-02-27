@@ -5,11 +5,13 @@ nav_static:
   - "Roundtable Guides"
   - "Map"
   - "Options"
+  - "Table Of Contents"
 
 nav_static_it:
   - "Guide della Tavola Rotonda"
   - "Mappa"
   - "Opzioni"
+  - "Indice"
 
 dropdowns:
   -

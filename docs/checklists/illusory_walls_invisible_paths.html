@@ -2214,15 +2214,24 @@
                         didSearch: function(search_phrase) {
                             search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
                             $(".card").each(function(index, el) {
+                                var sectionId = $(el).attr('id');
+                                var $tocLi = null;
+                                if (sectionId) {
+                                    $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
+                                }
+
                                 if (!search_phrase) {
                                     $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
                                     return;
                                 }
                                 var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
                                 if (! hasResults ) {
                                     $(el).addClass('d-none');
+                                    if ($tocLi) $tocLi.addClass('d-none');
                                 } else {
                                     $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
                             $("#illusory_walls_list h5").each(function() {

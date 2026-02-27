@@ -401,15 +401,24 @@ def make_footer(page=None):
                         didSearch: function(search_phrase) {{
                             search_phrase = search_phrase.trim().toLowerCase().replace(/\\s\\s+/g, ' ').replace(/\\\\/g, '\\\\\\\\');
                             $(".card").each(function(index, el) {{
+                                var sectionId = $(el).attr('id');
+                                var $tocLi = null;
+                                if (sectionId) {{
+                                    $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
+                                }}
+
                                 if (!search_phrase) {{
                                     $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
                                     return;
                                 }}
                                 var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
                                 if (! hasResults ) {{
                                     $(el).addClass('d-none');
+                                    if ($tocLi) $tocLi.addClass('d-none');
                                 }} else {{
                                     $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }}
                             }});
                             $("#{page_id}_list h5").each(function() {{
@@ -739,7 +748,13 @@ def make_checklist(page):
             with nav(cls="text-muted toc d-print-none"):
                 with strong(cls="d-block h5").add(a(data_bs_toggle="collapse", role="button", href="#toc_" + page['id'], cls="toc-button")):
                     i(cls='bi bi-plus-lg')
-                    localized_span({'en': ' Table Of Contents', 'it': ' Indice'})
+                    toc_text = nav_static.get(3, {'en': ' Table Of Contents'})
+                    if 'en' in toc_text and not toc_text['en'].startswith(' '):
+                        # Ensure space before text
+                        toc_text_spaced = {k: (' ' + v if not str(v).startswith(' ') else v) for k, v in toc_text.items()}
+                        localized_span(toc_text_spaced)
+                    else:
+                        localized_span(toc_text)
                 with ul(id="toc_" + page['id'], cls="toc_page collapse"):
                     for s_idx, section in enumerate(page['sections']):
                         with li():
