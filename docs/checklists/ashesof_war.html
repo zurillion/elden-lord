@@ -8295,102 +8295,106 @@
                             }
                         }
                     });
-                    function doRegexSearch() {
+                    function updateSearch() {
                         var search_phrase = $("#ashesofwar_search").val().trim();
-                        var regex = null;
-                        
-                        try {
-                            regex = new RegExp(search_phrase, 'i');
-                        } catch (e) {
-                            return; // Invalid regex, ignore
-                        }
-                        
-                        // Disable jets css injection manually
-                        if (jet.styleTag) {
-                            jet.styleTag.innerHTML = '';
-                        }
-                        
-                        $(".searchable").each(function() {
-                            var text = $(this).attr('data-jets') || $(this).text() || '';
-                            if (!search_phrase) {
-                                $(this).removeClass('d-none-regex');
-                            } else if (regex && text.match(regex)) {
-                                $(this).removeClass('d-none-regex');
-                            } else {
-                                $(this).addClass('d-none-regex');
-                            }
-                        });
-                        
-                        // Manage empty cards/sections like Jets did
-                        $(".card").each(function(index, el) {
-                            var sectionId = $(el).attr('id');
-                            var $tocLi = null;
-                            if (sectionId) {
-                                $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
-                            }
+                        var isRegex = $('#ashesofwar_regex').is(':checked');
 
-                            if (!search_phrase) {
-                                $(el).removeClass('d-none');
-                                if ($tocLi) $tocLi.removeClass('d-none');
-                                return;
+                        if (isRegex) {
+                            var regex = null;
+                            if (search_phrase.length > 0) {
+                                try {
+                                    regex = new RegExp(search_phrase, 'i');
+                                } catch (e) {
+                                    return; // Invalid regex, ignore
+                                }
                             }
-                            var hasResults = $(el).find('.searchable:not(.d-none):not(.d-none-regex)').length;
-                            if (!hasResults) {
-                                $(el).addClass('d-none');
-                                if ($tocLi) $tocLi.addClass('d-none');
-                            } else {
-                                $(el).removeClass('d-none');
-                                if ($tocLi) $tocLi.removeClass('d-none');
+                            
+                            // Disable jets css injection manually
+                            if (jet.styleTag) {
+                                jet.styleTag.innerHTML = '';
                             }
-                        });
-                        $("#ashesofwar_list h5").each(function() {
-                            var $h5 = $(this);
-                            var $subsection = $h5.nextUntil('h5');
-                            if (!search_phrase) {
-                                $h5.removeClass('d-none');
-                                $subsection.removeClass('d-none');
-                                return;
-                            }
-                            var hasResults = $subsection.find('.searchable:not(.d-none):not(.d-none-regex)').length;
-                            $h5.toggleClass('d-none', !hasResults);
-                            $subsection.toggleClass('d-none', !hasResults);
-                        });
-                        
-                        if (!search_phrase) {
-                            var dlcFilter = $('#dlc_filter');
-                            if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                        }
-                    }
+                            
+                            $(".searchable").each(function() {
+                                var text = $(this).attr('data-jets') || $(this).text() || '';
+                                if (!search_phrase || search_phrase.length === 0) {
+                                    $(this).removeClass('d-none-regex');
+                                } else if (regex && text.match(regex)) {
+                                    $(this).removeClass('d-none-regex');
+                                } else {
+                                    $(this).addClass('d-none-regex');
+                                }
+                            });
+                            
+                            // Manage empty cards/sections like Jets did
+                            $(".card").each(function(index, el) {
+                                var sectionId = $(el).attr('id');
+                                var $tocLi = null;
+                                if (sectionId) {
+                                    $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
+                                }
 
-                    $("#ashesofwar_search").keyup(function(e) {
-                        if ($('#ashesofwar_regex').is(':checked')) {
-                            doRegexSearch();
+                                if (!search_phrase) {
+                                    $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
+                                    return;
+                                }
+                                var hasResults = $(el).find('.searchable:not(.d-none):not(.d-none-regex)').length;
+                                if (!hasResults) {
+                                    $(el).addClass('d-none');
+                                    if ($tocLi) $tocLi.addClass('d-none');
+                                } else {
+                                    $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
+                                }
+                            });
+                            $("#ashesofwar_list h5").each(function() {
+                                var $h5 = $(this);
+                                var $subsection = $h5.nextUntil('h5');
+                                if (!search_phrase) {
+                                    $h5.removeClass('d-none');
+                                    $subsection.removeClass('d-none');
+                                    return;
+                                }
+                                var hasResults = $subsection.find('.searchable:not(.d-none):not(.d-none-regex)').length;
+                                $h5.toggleClass('d-none', !hasResults);
+                                $subsection.toggleClass('d-none', !hasResults);
+                            });
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                            }
+                            
+                            // Highlighting for regex
+                            $("#ashesofwar_list").unhighlight();
+                            if (search_phrase.length > 0 && regex) {
+                                try {
+                                    $("#ashesofwar_list").highlight(regex);
+                                } catch(e) {}
+                            }
+                            
                         } else {
-                            // clear regex hiding, Jets will take over via its built-in keyup or manual re-trigger below
-                            $(".searchable").removeClass('d-none-regex');
-                        }
-                        $("#ashesofwar_list").unhighlight();
-                        if ($('#ashesofwar_regex').is(':checked') && $(this).val() && $(this).val().length > 0) {
-                            try {
-                                var hlRegex = new RegExp($(this).val(), 'gi');
-                                $("#ashesofwar_list").highlight(hlRegex);
-                            } catch(e) {}
-                        } else if (!$('#ashesofwar_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
-                            $("#ashesofwar_list").highlight($(this).val());
-                        }
-                    });
-                    
-                    $('#ashesofwar_regex').on('change', function() {
-                        if ($(this).is(':checked')) {
-                            doRegexSearch();
-                        } else {
+                            // Non-regex mode: Let Jets handle normal search filtering
                             $(".searchable").removeClass('d-none-regex');
                             if (jet._applyCSS) {
                                 jet._applyCSS();
                             }
-                            // manually trigger didSearch to update card visibility according to normal jets logic
-                            jet.options.didSearch($("#ashesofwar_search").val());
+                            jet.options.didSearch(search_phrase);
+                            
+                            // Highlighting for normal text
+                            $("#ashesofwar_list").unhighlight();
+                            if (search_phrase && search_phrase.length > 0) {
+                                $("#ashesofwar_list").highlight(search_phrase);
+                            }
                         }
+                    }
+
+                    $("#ashesofwar_search").keyup(function(e) {
+                        updateSearch();
+                    });
+                    
+                    $('#ashesofwar_regex').on('change', function() {
+                        updateSearch();
                     });
                 });
             })( jQuery );

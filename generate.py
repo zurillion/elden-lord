@@ -444,102 +444,106 @@ def make_footer(page=None):
                             }}
                         }}
                     }});
-                    function doRegexSearch() {{
+                    function updateSearch() {{
                         var search_phrase = $("#{page_id}_search").val().trim();
-                        var regex = null;
-                        
-                        try {{
-                            regex = new RegExp(search_phrase, 'i');
-                        }} catch (e) {{
-                            return; // Invalid regex, ignore
-                        }}
-                        
-                        // Disable jets css injection manually
-                        if (jet.styleTag) {{
-                            jet.styleTag.innerHTML = '';
-                        }}
-                        
-                        $(".searchable").each(function() {{
-                            var text = $(this).attr('data-jets') || $(this).text() || '';
-                            if (!search_phrase) {{
-                                $(this).removeClass('d-none-regex');
-                            }} else if (regex && text.match(regex)) {{
-                                $(this).removeClass('d-none-regex');
-                            }} else {{
-                                $(this).addClass('d-none-regex');
-                            }}
-                        }});
-                        
-                        // Manage empty cards/sections like Jets did
-                        $(".card").each(function(index, el) {{
-                            var sectionId = $(el).attr('id');
-                            var $tocLi = null;
-                            if (sectionId) {{
-                                $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
-                            }}
+                        var isRegex = $('#{page_id}_regex').is(':checked');
 
-                            if (!search_phrase) {{
-                                $(el).removeClass('d-none');
-                                if ($tocLi) $tocLi.removeClass('d-none');
-                                return;
+                        if (isRegex) {{
+                            var regex = null;
+                            if (search_phrase.length > 0) {{
+                                try {{
+                                    regex = new RegExp(search_phrase, 'i');
+                                }} catch (e) {{
+                                    return; // Invalid regex, ignore
+                                }}
                             }}
-                            var hasResults = $(el).find('.searchable:not(.d-none):not(.d-none-regex)').length;
-                            if (!hasResults) {{
-                                $(el).addClass('d-none');
-                                if ($tocLi) $tocLi.addClass('d-none');
-                            }} else {{
-                                $(el).removeClass('d-none');
-                                if ($tocLi) $tocLi.removeClass('d-none');
+                            
+                            // Disable jets css injection manually
+                            if (jet.styleTag) {{
+                                jet.styleTag.innerHTML = '';
                             }}
-                        }});
-                        $("#{page_id}_list h5").each(function() {{
-                            var $h5 = $(this);
-                            var $subsection = $h5.nextUntil('h5');
-                            if (!search_phrase) {{
-                                $h5.removeClass('d-none');
-                                $subsection.removeClass('d-none');
-                                return;
-                            }}
-                            var hasResults = $subsection.find('.searchable:not(.d-none):not(.d-none-regex)').length;
-                            $h5.toggleClass('d-none', !hasResults);
-                            $subsection.toggleClass('d-none', !hasResults);
-                        }});
-                        
-                        if (!search_phrase) {{
-                            var dlcFilter = $('#dlc_filter');
-                            if (dlcFilter.length) {{ dlcFilter.trigger('change'); }}
-                        }}
-                    }}
+                            
+                            $(".searchable").each(function() {{
+                                var text = $(this).attr('data-jets') || $(this).text() || '';
+                                if (!search_phrase || search_phrase.length === 0) {{
+                                    $(this).removeClass('d-none-regex');
+                                }} else if (regex && text.match(regex)) {{
+                                    $(this).removeClass('d-none-regex');
+                                }} else {{
+                                    $(this).addClass('d-none-regex');
+                                }}
+                            }});
+                            
+                            // Manage empty cards/sections like Jets did
+                            $(".card").each(function(index, el) {{
+                                var sectionId = $(el).attr('id');
+                                var $tocLi = null;
+                                if (sectionId) {{
+                                    $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
+                                }}
 
-                    $("#{page_id}_search").keyup(function(e) {{
-                        if ($('#{page_id}_regex').is(':checked')) {{
-                            doRegexSearch();
+                                if (!search_phrase) {{
+                                    $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
+                                    return;
+                                }}
+                                var hasResults = $(el).find('.searchable:not(.d-none):not(.d-none-regex)').length;
+                                if (!hasResults) {{
+                                    $(el).addClass('d-none');
+                                    if ($tocLi) $tocLi.addClass('d-none');
+                                }} else {{
+                                    $(el).removeClass('d-none');
+                                    if ($tocLi) $tocLi.removeClass('d-none');
+                                }}
+                            }});
+                            $("#{page_id}_list h5").each(function() {{
+                                var $h5 = $(this);
+                                var $subsection = $h5.nextUntil('h5');
+                                if (!search_phrase) {{
+                                    $h5.removeClass('d-none');
+                                    $subsection.removeClass('d-none');
+                                    return;
+                                }}
+                                var hasResults = $subsection.find('.searchable:not(.d-none):not(.d-none-regex)').length;
+                                $h5.toggleClass('d-none', !hasResults);
+                                $subsection.toggleClass('d-none', !hasResults);
+                            }});
+                            
+                            if (!search_phrase) {{
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) {{ dlcFilter.trigger('change'); }}
+                            }}
+                            
+                            // Highlighting for regex
+                            $("#{page_id}_list").unhighlight();
+                            if (search_phrase.length > 0 && regex) {{
+                                try {{
+                                    $("#{page_id}_list").highlight(regex);
+                                }} catch(e) {{}}
+                            }}
+                            
                         }} else {{
-                            // clear regex hiding, Jets will take over via its built-in keyup or manual re-trigger below
-                            $(".searchable").removeClass('d-none-regex');
-                        }}
-                        $("#{page_id}_list").unhighlight();
-                        if ($('#{page_id}_regex').is(':checked') && $(this).val() && $(this).val().length > 0) {{
-                            try {{
-                                var hlRegex = new RegExp($(this).val(), 'gi');
-                                $("#{page_id}_list").highlight(hlRegex);
-                            }} catch(e) {{}}
-                        }} else if (!$('#{page_id}_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {{
-                            $("#{page_id}_list").highlight($(this).val());
-                        }}
-                    }});
-                    
-                    $('#{page_id}_regex').on('change', function() {{
-                        if ($(this).is(':checked')) {{
-                            doRegexSearch();
-                        }} else {{
+                            // Non-regex mode: Let Jets handle normal search filtering
                             $(".searchable").removeClass('d-none-regex');
                             if (jet._applyCSS) {{
                                 jet._applyCSS();
                             }}
-                            // manually trigger didSearch to update card visibility according to normal jets logic
-                            jet.options.didSearch($("#{page_id}_search").val());
+                            jet.options.didSearch(search_phrase);
+                            
+                            // Highlighting for normal text
+                            $("#{page_id}_list").unhighlight();
+                            if (search_phrase && search_phrase.length > 0) {{
+                                $("#{page_id}_list").highlight(search_phrase);
+                            }}
                         }}
+                    }}
+
+                    $("#{page_id}_search").keyup(function(e) {{
+                        updateSearch();
+                    }});
+                    
+                    $('#{page_id}_regex').on('change', function() {{
+                        updateSearch();
                     }});
                 }});
             }})( jQuery );
