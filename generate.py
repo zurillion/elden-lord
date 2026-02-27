@@ -19,6 +19,7 @@ LANGUAGE_META = {
     'fr': {'flag': '🇫🇷', 'name': 'FR'},
     'de': {'flag': '🇩🇪', 'name': 'DE'},
     'pt': {'flag': '🇵🇹', 'name': 'PT'},
+    'ja': {'flag': '🇯🇵', 'name': 'JA'},
 }
 
 
@@ -36,17 +37,53 @@ def strip_a_tags(s):
 dropdowns = []
 pages = []
 item_links = []
+nav_static = {}
 with open(os.path.join('data', 'pages.yaml'), 'r', encoding='utf_8') as pages_yaml:
     yml = yaml.safe_load(pages_yaml)
-    item_links = yml['item_links']
+    item_links = yml.get('item_links', [])
+    
+    # Load static nav translations
+    if 'nav_static' in yml:
+        # Default English
+        for idx, val in enumerate(yml['nav_static']):
+            if idx not in nav_static:
+                nav_static[idx] = {'en': val}
+            else:
+                nav_static[idx]['en'] = val
+                
+        # Load other languages
+        for lang_code in LANGUAGE_META.keys():
+            if lang_code == 'en': continue
+            key = f'nav_static_{lang_code}'
+            if key in yml:
+                for idx, val in enumerate(yml[key]):
+                    if idx in nav_static:
+                        nav_static[idx][lang_code] = val
+
     for dropdown in yml['dropdowns']:
         dropdown_urls = []
         for page in dropdown['pages']:
             with open(os.path.join('data', 'checklists', page), 'r', encoding='utf_8') as data:
-                yml = yaml.safe_load(data)
-                pages.append(yml)
-                dropdown_urls.append((yml['title'], yml['id'], yml.get('map_icon', yml.get('icon', None))))
-        dropdowns.append((dropdown['name'], dropdown_urls))
+                page_yml = yaml.safe_load(data)
+                pages.append(page_yml)
+                
+                # Extract translated titles for the page
+                page_titles = {'en': page_yml['title']}
+                for lang in LANGUAGE_META.keys():
+                    if lang == 'en': continue
+                    if f'title_{lang}' in page_yml:
+                        page_titles[lang] = page_yml[f'title_{lang}']
+                        
+                dropdown_urls.append((page_titles, page_yml['id'], page_yml.get('map_icon', page_yml.get('icon', None))))
+        
+        # Extract translated names for the dropdown
+        dropdown_names = {'en': dropdown['name']}
+        for lang in LANGUAGE_META.keys():
+            if lang == 'en': continue
+            if f'name_{lang}' in dropdown:
+                dropdown_names[lang] = dropdown[f'name_{lang}']
+                
+        dropdowns.append((dropdown_names, dropdown_urls))
 
 page_ids = set()
 all_ids = set()
@@ -246,13 +283,22 @@ def hide_completed_button():
             label("Hide Completed", cls="form-check-label",
                   _for='toggleHideCompleted')
 
+def localized_span(translations_dict):
+    """Returns a span with lang-pair and lang-text spans for each language in the dict."""
+    with span(cls="lang-pair") as s:
+        for lang, text in translations_dict.items():
+            span(text, cls=f"lang-text lang-{lang}")
+    return s
+
 def make_nav(page, is_map = False):
     with nav(cls="navbar navbar-expand-xl bg-dark navbar-dark d-print-none" + (' sticky-top' if not is_map else ''), id="top_nav"):
         with div(cls="container-fluid"):
             # with div(cls='order-sm-last d-none d-sm-block ms-auto'):
             with button(type="button", cls="navbar-toggler", data_bs_toggle="collapse", data_bs_target="#nav-collapse", aria_expanded="false", aria_controls="nav-collapse", aria_label="Toggle navigation"):
                 span(cls="navbar-toggler-icon")
-            a('Roundtable Guides', cls="navbar-brand me-auto ms-2" + (' active' if page == 'index' else ''), href="/index.html")
+            
+            rt_guides_text = nav_static.get(0, {'en': 'Roundtable Guides'})
+            a(localized_span(rt_guides_text), cls="navbar-brand me-auto ms-2" + (' active' if page == 'index' else ''), href="/index.html")
             
             if available_languages:
                 all_lang_codes = ['en'] + sorted(available_languages)
@@ -267,26 +313,40 @@ def make_nav(page, is_map = False):
                                 li().add(a(meta['flag'] + ' ' + meta['name'], href="#",
                                            cls="dropdown-item lang-option", data_lang=lang_code))
 
-            with form(cls="d-none d-sm-flex order-2 order-xl-3"):
+            with form(cls="d-none d-sm-flex order-2 order-xl-3", action="/search.html", method="get"):
                 input_(cls='form-control me-2', type='search', placeholder='Search', aria_label='search', name='search')
-                button(type='submit', cls='btn', formaction='/search.html', formmethod='get', formnovalidate='true').add(i(cls='bi bi-search'))
+                with button(type='submit', cls='btn', formaction='/search.html', formmethod='get', formnovalidate='true'):
+                    i(cls='bi bi-search')
             with div(cls='d-sm-none order-2'):
-                a(href='/search.html', cls='nav-link me-0').add(i(cls='bi bi-search sb-icon-search'))
+                with a(href='/search.html', cls='nav-link me-0'):
+                    i(cls='bi bi-search sb-icon-search')
             with div(cls="collapse navbar-collapse order-3 order-xl-2 ms-xl-2", id="nav-collapse"):
                 with ul(cls="nav navbar-nav navbar-nav-scroll mr-auto"):
                     # with li(cls="nav-item"):
                     #     a(href="/index.html", cls="nav-link hide-buttons" + (' active' if page == 'index' else '')).add(i(cls="bi bi-house-fill"))
-                    for name, l in dropdowns:
-                        page_in_dropdown = page in [to_snake_case(guide[0]) for guide in l]
+                    for names_dict, l in dropdowns:
+                        page_in_dropdown = page in [to_snake_case(guide[0]['en']) for guide in l]
                         with li(cls="dropdown nav-item"):
-                            a(name, cls="nav-link dropdown-toggle" + (' active' if page_in_dropdown else ''), href="#", data_bs_toggle="dropdown", aria_haspopup="true", aria_expanded="false").add(span(cls="caret"))
+                            with a(cls="nav-link dropdown-toggle" + (' active' if page_in_dropdown else ''), href="#", data_bs_toggle="dropdown", aria_haspopup="true", aria_expanded="false"):
+                                localized_span(names_dict)
+                                span(cls="caret")
                             with ul(cls="dropdown-menu"):
                                 for guide in l:
-                                    li(cls='tab-li').add(a(guide[0], cls="dropdown-item show-buttons"  + (' active' if page == to_snake_case(guide[0]) else ''), href='/checklists/' + to_snake_case(guide[0]) + '.html'))
+                                    li(cls='tab-li').add(a(localized_span(guide[0]), cls="dropdown-item show-buttons"  + (' active' if page == to_snake_case(guide[0]['en']) else ''), href='/checklists/' + to_snake_case(guide[0]['en']) + '.html'))
+                    
+                    map_text = nav_static.get(1, {'en': 'Map'})
                     with li(cls='nav-item tab-li'):
-                        a(href="/map.html", cls="nav-link hide-buttons" + (' active' if page == 'map' else '')).add(i(cls="bi bi-map"), " Map")
+                        with a(href="/map.html", cls="nav-link hide-buttons" + (' active' if page == 'map' else '')):
+                            i(cls="bi bi-map")
+                            span(" ")
+                            localized_span(map_text)
+                            
+                    options_text = nav_static.get(2, {'en': 'Options'})
                     with li(cls="nav-item tab-li"):
-                        a(href="/options.html", cls="nav-link hide-buttons" + (' active' if page == 'options' else '')).add(i(cls="bi bi-gear-fill"), " Options")
+                        with a(href="/options.html", cls="nav-link hide-buttons" + (' active' if page == 'options' else '')):
+                            i(cls="bi bi-gear-fill")
+                            span(" ")
+                            localized_span(options_text)
 
 # def make_sidebar_nav(page):
 #     with aside(cls="bd-sidebar"):
@@ -439,7 +499,7 @@ def make_index():
                                     hr()
                                     for name, l in dropdowns:
                                         for guide in l:
-                                            li(cls='tab-li').add(a(guide[0], href="/checklists/" + to_snake_case(guide[0]) + '.html')).add(span(id=guide[1] + "_progress_total", cls='d-print-none'))
+                                            li(cls='tab-li').add(a(localized_span(guide[0]), href="/checklists/" + to_snake_case(guide[0]['en']) + '.html')).add(span(id=guide[1] + "_progress_total", cls='d-print-none'))
                                         hr()
             make_footer()
             script(src="/js/index.js")

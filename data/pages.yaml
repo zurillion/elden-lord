@@ -1,5 +1,16 @@
 # Every file here will be added to the website.
 # The order of entries in pages determines the order they appear in the dropdown
+
+nav_static:
+  - "Roundtable Guides"
+  - "Map"
+  - "Options"
+
+nav_static_it:
+  - "Guide della Tavola Rotonda"
+  - "Mappa"
+  - "Opzioni"
+
 dropdowns:
   -
     name: "Guides"
@@ -12,6 +23,7 @@ dropdowns:
       - "legendaries.yaml" #Legendaries
   -
     name: "Locations"
+    name_it: "Luoghi"
     pages:
       - "bosses.yaml" #Bosses
       - "landmarks.yaml" #Landmarks & Locations
@@ -19,6 +31,7 @@ dropdowns:
       - "illusory_walls.yaml" #Illusory Walls & Invisible Paths
   -
     name: "Equipment"
+    name_it: "Equipaggiamento"
     pages:
       - "weapons.yaml" #Weapons
       - "armor.yaml" #Armor
@@ -29,6 +42,7 @@ dropdowns:
       - "spirit_ashes.yaml" #Spirit Ashes
   - 
     name: "Upgrades & Unlocks"
+    name_it: "Potenziamenti e Sbloccabili"
     pages:
       - "flasks.yaml" #Golden Seeds & Sacred Tears
       - "crystal_tears.yaml" #Flask of Wondrous Physick
@@ -41,6 +55,7 @@ dropdowns:
       - "scadutree_fragment_revered_spirit_ash.yaml"
   -
     name: "Collectables"
+    name_it: "Collezionabili"
     pages:
       - "remembrances.yaml" #Remembrances & Mausoleums
       - "greatrunes.yaml" #Great Runes
