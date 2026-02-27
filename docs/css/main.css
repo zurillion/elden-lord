@@ -135,6 +135,10 @@ div.hide_completed .completed {
   display: none !important;
 }
 
+.d-none-regex {
+  display: none !important;
+}
+
 li.completed label,
 input[type="checkbox"]:checked + .item_content {
   color: var(--bs-secondary-color, #6c757d);

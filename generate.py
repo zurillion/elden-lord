@@ -460,7 +460,7 @@ def make_footer(page=None):
                         }}
                         
                         $(".searchable").each(function() {{
-                            var text = $(this).attr('data-jets') || '';
+                            var text = $(this).attr('data-jets') || $(this).text() || '';
                             if (!search_phrase) {{
                                 $(this).removeClass('d-none-regex');
                             }} else if (regex && text.match(regex)) {{
