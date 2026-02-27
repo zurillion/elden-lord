@@ -171,15 +171,21 @@ def make_doc(title, description):
 (function() {
     var style = "Standard";
     try {
-        var jStorage = JSON.parse(localStorage.getItem('jStorage') || '{}');
-        var profiles = jStorage['darksouls3_profiles'] ? JSON.parse(jStorage['darksouls3_profiles']) : {};
-        var current = profiles['current'] || 'Default Profile';
-        if (profiles[current] && profiles[current]['style']) {
-            style = profiles[current]['style'];
+        var jStorageStr = localStorage.getItem('jStorage');
+        if (jStorageStr) {
+            var jStorage = JSON.parse(jStorageStr);
+            var profiles = jStorage['darksouls3_profiles'];
+            if (typeof profiles === 'string') {
+                profiles = JSON.parse(profiles);
+            }
+            if (profiles) {
+                var current = profiles['current'] || 'Default Profile';
+                if (profiles['darksouls3_profiles'] && profiles['darksouls3_profiles'][current] && profiles['darksouls3_profiles'][current]['style']) {
+                    style = profiles['darksouls3_profiles'][current]['style'];
+                }
+            }
         }
     } catch (e) {}
-    
-    var themeColors = """ + json.dumps(theme_colors_map) + """;
     
     var themes = {
         "Standard": "/css/bootstrap.min.css",
@@ -213,12 +219,7 @@ def make_doc(title, description):
     };
 
     var themeUrl = themes[style] ? themes[style] : "/css/bootstrap.min.css";
-    document.write('<link href="' + themeUrl + '" rel="stylesheet" id="bootstrap" onload="var tb=document.getElementById(\\'theme-fouc-fix\\'); if(tb) tb.remove();">');
-    
-    // We treat 'Ceruleon' backwards compatibility correctly since the CSS map generated it as 'Cerulean'
-    var mappedStyle = style === "Ceruleon" ? "Cerulean" : style;
-    var colors = themeColors[mappedStyle] ? themeColors[mappedStyle] : themeColors["Standard"];
-    document.write('<style id="theme-fouc-fix">html, body { background-color: ' + colors.bg + ' !important; } body { opacity: 0; transition: opacity 0.1s ease-in; }</style>');
+    document.write('<link href="' + themeUrl + '" rel="stylesheet" id="bootstrap">');
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
     document.write('<style id="language-fouc-fix">.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; }</style>');

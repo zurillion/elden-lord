@@ -214,9 +214,4 @@ var themes = {
         window.setLanguage($(this).data('lang'));
     });
 
-    $(window).on('load', function () {
-        var themeFix = document.getElementById('theme-fouc-fix');
-        if (themeFix) themeFix.remove();
-    });
-
 })(jQuery);
