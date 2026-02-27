@@ -186,6 +186,8 @@ var themes = {
                 }
             });
         }
+        var fix = document.getElementById('language-fouc-fix');
+        if (fix) fix.remove();
     }
 
     function updateLangDisplay(lang) {

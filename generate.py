@@ -177,7 +177,8 @@ def make_doc(title, description):
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
     var styleEl = document.createElement('style');
-    styleEl.innerHTML = '.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; }';
+    styleEl.id = 'language-fouc-fix';
+    styleEl.innerHTML = '.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; }';
     document.head.appendChild(styleEl);
 })();
 """))
