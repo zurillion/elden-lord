@@ -218,7 +218,7 @@ def make_doc(title, description):
     // We treat 'Ceruleon' backwards compatibility correctly since the CSS map generated it as 'Cerulean'
     var mappedStyle = style === "Ceruleon" ? "Cerulean" : style;
     var colors = themeColors[mappedStyle] ? themeColors[mappedStyle] : themeColors["Standard"];
-    document.write('<style id="theme-fouc-fix">body { background-color: ' + colors.bg + ' !important; color: ' + colors.color + ' !important; }</style>');
+    document.write('<style id="theme-fouc-fix">html, body { background-color: ' + colors.bg + ' !important; } body { opacity: 0; transition: opacity 0.1s ease-in; }</style>');
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
     document.write('<style id="language-fouc-fix">.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; }</style>');
