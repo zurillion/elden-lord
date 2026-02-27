@@ -739,11 +739,17 @@ def make_checklist(page):
             with nav(cls="text-muted toc d-print-none"):
                 with strong(cls="d-block h5").add(a(data_bs_toggle="collapse", role="button", href="#toc_" + page['id'], cls="toc-button")):
                     i(cls='bi bi-plus-lg')
-                    raw('Table Of Contents')
+                    localized_span({'en': ' Table Of Contents', 'it': ' Indice'})
                 with ul(id="toc_" + page['id'], cls="toc_page collapse"):
                     for s_idx, section in enumerate(page['sections']):
                         with li():
-                            a(section['title'], href="#" + page['id'] + '_section_'  + str(s_idx), cls="toc_link")
+                            with a(href="#" + page['id'] + '_section_'  + str(s_idx), cls="toc_link"):
+                                with span(cls='lang-pair'):
+                                    span(section['title'], cls='lang-text lang-en')
+                                    for lang in sorted(available_languages):
+                                        t_key = 'title_' + lang
+                                        if t_key in section:
+                                            span(section[t_key], cls='lang-text lang-' + lang + ' d-none')
                             span(id=page['id']  + "_nav_totals_" + str(s_idx))
 
             with div(cls="input-group d-print-none"):
