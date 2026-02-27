@@ -172,7 +172,7 @@ def make_doc(title, description):
     var style = "Standard";
     try {
         var jStorage = JSON.parse(localStorage.getItem('jStorage') || '{}');
-        var profiles = jStorage['darksouls3_profiles'] || {};
+        var profiles = jStorage['darksouls3_profiles'] ? JSON.parse(jStorage['darksouls3_profiles']) : {};
         var current = profiles['current'] || 'Default Profile';
         if (profiles[current] && profiles[current]['style']) {
             style = profiles[current]['style'];
@@ -213,7 +213,7 @@ def make_doc(title, description):
     };
 
     var themeUrl = themes[style] ? themes[style] : "/css/bootstrap.min.css";
-    document.write('<link href="' + themeUrl + '" rel="stylesheet" id="bootstrap">');
+    document.write('<link href="' + themeUrl + '" rel="stylesheet" id="bootstrap" onload="var tb=document.getElementById(\\'theme-fouc-fix\\'); if(tb) tb.remove();">');
     
     // We treat 'Ceruleon' backwards compatibility correctly since the CSS map generated it as 'Cerulean'
     var mappedStyle = style === "Ceruleon" ? "Cerulean" : style;
