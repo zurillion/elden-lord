@@ -728,7 +728,13 @@ def make_checklist(page):
             hide_completed_button()
 
             if 'description' in page:
-                p(raw(page['description']))
+                with p():
+                    with span(cls='lang-pair'):
+                        span(raw(page['description']), cls='lang-text lang-en')
+                        for lang in sorted(available_languages):
+                            desc_key = 'description_' + lang
+                            if desc_key in page:
+                                span(raw(page[desc_key]), cls='lang-text lang-' + lang + ' d-none')
 
             with nav(cls="text-muted toc d-print-none"):
                 with strong(cls="d-block h5").add(a(data_bs_toggle="collapse", role="button", href="#toc_" + page['id'], cls="toc-button")):
