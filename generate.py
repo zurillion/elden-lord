@@ -164,6 +164,7 @@ def make_doc(title, description):
         var profiles = jStorage['darksouls3_profiles'] || {};
         var current = profiles['current'] || 'Default Profile';
         if (profiles[current] && profiles[current]['style']) {
+            style = profiles[current]['style'];
         }
     } catch (e) {}
     
