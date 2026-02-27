@@ -174,8 +174,14 @@ def make_doc(title, description):
             }
         }
     } catch (e) {}
+
+    var lang = localStorage.getItem('selectedLanguage') || 'en';
+    var styleEl = document.createElement('style');
+    styleEl.innerHTML = '.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; }';
+    document.head.appendChild(styleEl);
 })();
 """))
+
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css")
         link(href="/css/main.css", rel="stylesheet")
     return doc
