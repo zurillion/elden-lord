@@ -398,7 +398,11 @@ def make_footer(page=None):
                     var jet = new Jets({{
                         searchTag: "#{page_id}_search",
                         contentTag: "#{page_id}_list ul",
+                        searchSelector: '*and',
                         didSearch: function(search_phrase) {{
+                            // Only handled by Jets if Regex is off.
+                            if ($('#{page_id}_regex').is(':checked')) return;
+                            
                             search_phrase = search_phrase.trim().toLowerCase().replace(/\\s\\s+/g, ' ').replace(/\\\\/g, '\\\\\\\\');
                             $(".card").each(function(index, el) {{
                                 var sectionId = $(el).attr('id');
@@ -439,9 +443,90 @@ def make_footer(page=None):
                             }}
                         }}
                     }});
-                    $("#{page_id}_search").keyup(function() {{
+                    
+                    function doRegexSearch() {{
+                        var search_phrase = $("#{page_id}_search").val().trim();
+                        var regex = null;
+                        
+                        try {{
+                            regex = new RegExp(search_phrase, 'i');
+                        }} catch (e) {{
+                            return; // Invalid regex, ignore
+                        }}
+                        
+                        // Disable jets css injection manually by emptying it
+                        jet.options.searchTag.value = ''; // Ensure Jets thinks it's empty
+                        jet._applyCSS(''); // clear jets CSS manually
+                        
+                        $(".searchable").each(function() {{
+                            var text = $(this).attr('data-jets');
+                            if (!search_phrase) {{
+                                $(this).show().removeClass('regex-hidden');
+                            }} else if (regex && text.match(regex)) {{
+                                $(this).show().removeClass('regex-hidden');
+                            }} else {{
+                                $(this).hide().addClass('regex-hidden');
+                            }}
+                        }});
+                        
+                        // Manage empty cards/sections like Jets did
+                        $(".card").each(function(index, el) {{
+                            var sectionId = $(el).attr('id');
+                            var $tocLi = null;
+                            if (sectionId) {{
+                                $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
+                            }}
+
+                            if (!search_phrase) {{
+                                $(el).removeClass('d-none');
+                                if ($tocLi) $tocLi.removeClass('d-none');
+                                return;
+                            }}
+                            var hasResults = $(el).find('.searchable:visible:not(.d-none)').length;
+                            if (! hasResults ) {{
+                                $(el).addClass('d-none');
+                                if ($tocLi) $tocLi.addClass('d-none');
+                            }} else {{
+                                $(el).removeClass('d-none');
+                                if ($tocLi) $tocLi.removeClass('d-none');
+                            }}
+                        }});
+                        $("#{page_id}_list h5").each(function() {{
+                            var $h5 = $(this);
+                            var $subsection = $h5.nextUntil('h5');
+                            if (!search_phrase) {{
+                                $h5.removeClass('d-none');
+                                $subsection.removeClass('d-none');
+                                return;
+                            }}
+                            var hasResults = $subsection.find('.searchable:visible:not(.d-none)').length;
+                            $h5.toggleClass('d-none', !hasResults);
+                            $subsection.toggleClass('d-none', !hasResults);
+                        }});
+                    }}
+
+                    $("#{page_id}_search").keyup(function(e) {{
+                        if ($('#{page_id}_regex').is(':checked')) {{
+                            doRegexSearch();
+                        }} else {{
+                            // ensure items previously hidden by manual regex search are shown again from the DOM layer so jets CSS applies
+                            $(".searchable").show().removeClass('regex-hidden');
+                        }}
                         $("#{page_id}_list").unhighlight();
-                        $("#{page_id}_list").highlight($(this).val());
+                        if (!$('#{page_id}_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {{
+                            $("#{page_id}_list").highlight($(this).val());
+                        }}
+                    }});
+                    
+                    $('#{page_id}_regex').on('change', function() {{
+                        if ($(this).is(':checked')) {{
+                            doRegexSearch();
+                        }} else {{
+                            $(".searchable").show().removeClass('regex-hidden');
+                            // Re-trigger jets
+                            var evt = new Event('keyup');
+                            document.getElementById('{page_id}_search').dispatchEvent(evt);
+                        }}
                     }});
                 }});
             }})( jQuery );
@@ -767,8 +852,12 @@ def make_checklist(page):
                                             span(section[t_key], cls='lang-text lang-' + lang + ' d-none')
                             span(id=page['id']  + "_nav_totals_" + str(s_idx))
 
-            with div(cls="input-group d-print-none"):
-                input_(type="search", id=page['id'] + "_search", cls="form-control my-3", placeholder="Start typing to filter results...")
+            with div(cls="input-group my-3 d-print-none"):
+                input_(type="search", id=page['id'] + "_search", cls="form-control", placeholder="Start typing to filter results...")
+                with div(cls="input-group-text"):
+                    input_(cls="form-check-input mt-0 me-2", type="checkbox", id=page['id'] + "_regex", aria_label="Use Regex for Search")
+                    label_text = nav_static.get(4, {'en': 'Use Regex'})
+                    localized_span(label_text)
 
             if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones'}:
                 with div(cls='row d-print-none mb-3'):

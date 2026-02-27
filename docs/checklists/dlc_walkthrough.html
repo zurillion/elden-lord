@@ -590,8 +590,15 @@
           </li>
         </ul>
       </nav>
-      <div class="input-group d-print-none">
-        <input class="form-control my-3" id="dlc_playthrough_search" placeholder="Start typing to filter results..." type="search">
+      <div class="input-group my-3 d-print-none">
+        <input class="form-control" id="dlc_playthrough_search" placeholder="Start typing to filter results..." type="search">
+        <div class="input-group-text">
+          <input aria-label="Use Regex for Search" class="form-check-input mt-0 me-2" id="dlc_playthrough_regex" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Use Regex</span>
+            <span class="lang-text lang-it">Usa Regex</span>
+          </span>
+        </div>
       </div>
       <div id="dlc_playthrough_list">
         <div class="card shadow-sm mb-3" id="dlc_playthrough_section_0">
@@ -3354,7 +3361,11 @@
                     var jet = new Jets({
                         searchTag: "#dlc_playthrough_search",
                         contentTag: "#dlc_playthrough_list ul",
+                        searchSelector: '*and',
                         didSearch: function(search_phrase) {
+                            // Only handled by Jets if Regex is off.
+                            if ($('#dlc_playthrough_regex').is(':checked')) return;
+                            
                             search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
@@ -3395,9 +3406,90 @@
                             }
                         }
                     });
-                    $("#dlc_playthrough_search").keyup(function() {
+                    
+                    function doRegexSearch() {
+                        var search_phrase = $("#dlc_playthrough_search").val().trim();
+                        var regex = null;
+                        
+                        try {
+                            regex = new RegExp(search_phrase, 'i');
+                        } catch (e) {
+                            return; // Invalid regex, ignore
+                        }
+                        
+                        // Disable jets css injection manually by emptying it
+                        jet.options.searchTag.value = ''; // Ensure Jets thinks it's empty
+                        jet._applyCSS(''); // clear jets CSS manually
+                        
+                        $(".searchable").each(function() {
+                            var text = $(this).attr('data-jets');
+                            if (!search_phrase) {
+                                $(this).show().removeClass('regex-hidden');
+                            } else if (regex && text.match(regex)) {
+                                $(this).show().removeClass('regex-hidden');
+                            } else {
+                                $(this).hide().addClass('regex-hidden');
+                            }
+                        });
+                        
+                        // Manage empty cards/sections like Jets did
+                        $(".card").each(function(index, el) {
+                            var sectionId = $(el).attr('id');
+                            var $tocLi = null;
+                            if (sectionId) {
+                                $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
+                            }
+
+                            if (!search_phrase) {
+                                $(el).removeClass('d-none');
+                                if ($tocLi) $tocLi.removeClass('d-none');
+                                return;
+                            }
+                            var hasResults = $(el).find('.searchable:visible:not(.d-none)').length;
+                            if (! hasResults ) {
+                                $(el).addClass('d-none');
+                                if ($tocLi) $tocLi.addClass('d-none');
+                            } else {
+                                $(el).removeClass('d-none');
+                                if ($tocLi) $tocLi.removeClass('d-none');
+                            }
+                        });
+                        $("#dlc_playthrough_list h5").each(function() {
+                            var $h5 = $(this);
+                            var $subsection = $h5.nextUntil('h5');
+                            if (!search_phrase) {
+                                $h5.removeClass('d-none');
+                                $subsection.removeClass('d-none');
+                                return;
+                            }
+                            var hasResults = $subsection.find('.searchable:visible:not(.d-none)').length;
+                            $h5.toggleClass('d-none', !hasResults);
+                            $subsection.toggleClass('d-none', !hasResults);
+                        });
+                    }
+
+                    $("#dlc_playthrough_search").keyup(function(e) {
+                        if ($('#dlc_playthrough_regex').is(':checked')) {
+                            doRegexSearch();
+                        } else {
+                            // ensure items previously hidden by manual regex search are shown again from the DOM layer so jets CSS applies
+                            $(".searchable").show().removeClass('regex-hidden');
+                        }
                         $("#dlc_playthrough_list").unhighlight();
-                        $("#dlc_playthrough_list").highlight($(this).val());
+                        if (!$('#dlc_playthrough_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {
+                            $("#dlc_playthrough_list").highlight($(this).val());
+                        }
+                    });
+                    
+                    $('#dlc_playthrough_regex').on('change', function() {
+                        if ($(this).is(':checked')) {
+                            doRegexSearch();
+                        } else {
+                            $(".searchable").show().removeClass('regex-hidden');
+                            // Re-trigger jets
+                            var evt = new Event('keyup');
+                            document.getElementById('dlc_playthrough_search').dispatchEvent(evt);
+                        }
                     });
                 });
             })( jQuery );

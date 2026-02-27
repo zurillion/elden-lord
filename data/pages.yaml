@@ -6,12 +6,14 @@ nav_static:
   - "Map"
   - "Options"
   - "Table Of Contents"
+  - "Use Regex"
 
 nav_static_it:
   - "Guide della Tavola Rotonda"
   - "Mappa"
   - "Opzioni"
   - "Indice"
+  - "Usa Regex"
 
 dropdowns:
   -
