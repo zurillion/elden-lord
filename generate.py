@@ -259,7 +259,7 @@ def make_doc(title, description):
     document.write('<link href="' + themeUrl + '" rel="stylesheet" id="bootstrap">');
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
-    document.write('<style id="language-fouc-fix">.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; }</style>');
+    document.write('<style id="language-fouc-fix">.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; } .d-none-regex { display: none !important; }</style>');
 })();
 """))
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css")
@@ -443,7 +443,6 @@ def make_footer(page=None):
                             }}
                         }}
                     }});
-                    
                     function doRegexSearch() {{
                         var search_phrase = $("#{page_id}_search").val().trim();
                         var regex = null;
@@ -454,18 +453,19 @@ def make_footer(page=None):
                             return; // Invalid regex, ignore
                         }}
                         
-                        // Disable jets css injection manually by emptying it
-                        jet.options.searchTag.value = ''; // Ensure Jets thinks it's empty
-                        jet._applyCSS(''); // clear jets CSS manually
+                        // Disable jets css injection manually
+                        if (jet.styleTag) {{
+                            jet.styleTag.innerHTML = '';
+                        }}
                         
                         $(".searchable").each(function() {{
-                            var text = $(this).attr('data-jets');
+                            var text = $(this).attr('data-jets') || '';
                             if (!search_phrase) {{
-                                $(this).show().removeClass('regex-hidden');
+                                $(this).removeClass('d-none-regex');
                             }} else if (regex && text.match(regex)) {{
-                                $(this).show().removeClass('regex-hidden');
+                                $(this).removeClass('d-none-regex');
                             }} else {{
-                                $(this).hide().addClass('regex-hidden');
+                                $(this).addClass('d-none-regex');
                             }}
                         }});
                         
@@ -482,8 +482,8 @@ def make_footer(page=None):
                                 if ($tocLi) $tocLi.removeClass('d-none');
                                 return;
                             }}
-                            var hasResults = $(el).find('.searchable:visible:not(.d-none)').length;
-                            if (! hasResults ) {{
+                            var hasResults = $(el).find('.searchable:not(.d-none):not(.d-none-regex)').length;
+                            if (!hasResults) {{
                                 $(el).addClass('d-none');
                                 if ($tocLi) $tocLi.addClass('d-none');
                             }} else {{
@@ -499,18 +499,23 @@ def make_footer(page=None):
                                 $subsection.removeClass('d-none');
                                 return;
                             }}
-                            var hasResults = $subsection.find('.searchable:visible:not(.d-none)').length;
+                            var hasResults = $subsection.find('.searchable:not(.d-none):not(.d-none-regex)').length;
                             $h5.toggleClass('d-none', !hasResults);
                             $subsection.toggleClass('d-none', !hasResults);
                         }});
+                        
+                        if (!search_phrase) {{
+                            var dlcFilter = $('#dlc_filter');
+                            if (dlcFilter.length) {{ dlcFilter.trigger('change'); }}
+                        }}
                     }}
 
                     $("#{page_id}_search").keyup(function(e) {{
                         if ($('#{page_id}_regex').is(':checked')) {{
                             doRegexSearch();
                         }} else {{
-                            // ensure items previously hidden by manual regex search are shown again from the DOM layer so jets CSS applies
-                            $(".searchable").show().removeClass('regex-hidden');
+                            // clear regex hiding, Jets will take over via its built-in keyup or manual re-trigger below
+                            $(".searchable").removeClass('d-none-regex');
                         }}
                         $("#{page_id}_list").unhighlight();
                         if (!$('#{page_id}_regex').is(':checked') || (!$(this).val() || $(this).val().length === 0)) {{
@@ -522,10 +527,12 @@ def make_footer(page=None):
                         if ($(this).is(':checked')) {{
                             doRegexSearch();
                         }} else {{
-                            $(".searchable").show().removeClass('regex-hidden');
-                            // Re-trigger jets
-                            var evt = new Event('keyup');
-                            document.getElementById('{page_id}_search').dispatchEvent(evt);
+                            $(".searchable").removeClass('d-none-regex');
+                            if (jet._applyCSS) {{
+                                jet._applyCSS();
+                            }}
+                            // manually trigger didSearch to update card visibility according to normal jets logic
+                            jet.options.didSearch($("#{page_id}_search").val());
                         }}
                     }});
                 }});
