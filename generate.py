@@ -113,6 +113,32 @@ def detect_languages():
 
 available_languages = detect_languages()
 
+def get_theme_colors():
+    theme_dir = "docs/css/themes"
+    themes = {}
+    for root, _, files in os.walk(theme_dir):
+        for file in files:
+            if file == "bootstrap.min.css":
+                theme_name = os.path.basename(root)
+                filepath = os.path.join(root, file)
+                with open(filepath, "r") as f:
+                    content = f.read()
+                    bg_match = re.search(r'--bs-body-bg:(.*?);', content)
+                    color_match = re.search(r'--bs-body-color:(.*?);', content)
+                    if not bg_match:
+                        bg_match = re.search(r'body\{[^\}]*background-color:(.*?)[;\}]', content)
+                    if not color_match:
+                        color_match = re.search(r'body\{[^\}]*color:(.*?)[;\}]', content)
+                    bg = bg_match.group(1).split('}')[0] if bg_match else "#ffffff"
+                    color = color_match.group(1).split('}')[0] if color_match else "#212529"
+                    
+                    key = theme_name.capitalize()
+                    if key == "Lightmode": key = "LightMode"
+                    themes[key] = {"bg": bg, "color": color}
+    themes["Standard"] = {"bg": "#ffffff", "color": "#212529"}
+    return themes
+
+theme_colors_map = get_theme_colors()
 
 def make_doc(title, description):
     doc = dominate.document(title=title)
@@ -138,42 +164,11 @@ def make_doc(title, description):
         var profiles = jStorage['darksouls3_profiles'] || {};
         var current = profiles['current'] || 'Default Profile';
         if (profiles[current] && profiles[current]['style']) {
-            style = profiles[current]['style'];
         }
     } catch (e) {}
     
-    var themeColors = {
-        "Standard": {"bg": "#ffffff", "color": "#212529"},
-        "Ceruleon": {"bg": "#fff", "color": "#495057"},
-        "Cosmo": {"bg": "#fff", "color": "#373a3c"},
-        "Cyborg": {"bg": "#060606", "color": "#adafae"},
-        "Darkly": {"bg": "#222", "color": "#fff"},
-        "Flatly": {"bg": "#fff", "color": "#212529"},
-        "Journal": {"bg": "#fff", "color": "#222"},
-        "LightMode": {"bg": "#fff", "color": "#212529"},
-        "Litera": {"bg": "#fff", "color": "#343a40"},
-        "Lumen": {"bg": "#fff", "color": "#222"},
-        "Lux": {"bg": "#fff", "color": "#55595c"},
-        "Materia": {"bg": "#fff", "color": "#444"},
-        "Minty": {"bg": "#fff", "color": "#888"},
-        "Morph": {"bg": "#d9e3f1", "color": "#7b8ab8"},
-        "Pulse": {"bg": "#fff", "color": "#444"},
-        "Quartz": {"bg": "#686dc3", "color": "#fff"},
-        "Regent": {"bg": "#fff", "color": "#0b0c0c"},
-        "Sandstone": {"bg": "#fff", "color": "#3e3f3a"},
-        "Simplex": {"bg": "#fcfcfc", "color": "#212529"},
-        "Sketchy": {"bg": "#fff", "color": "#212529"},
-        "Slate": {"bg": "#272b30", "color": "#aaa"},
-        "Solar": {"bg": "#002b36", "color": "#839496"},
-        "Spacelab": {"bg": "#fff", "color": "#777"},
-        "Superhero": {"bg": "#0f2537", "color": "#ebebeb"},
-        "United": {"bg": "#fff", "color": "#333"},
-        "Vapor": {"bg": "#1a0933", "color": "#32fbe2"},
-        "Yeti": {"bg": "#fff", "color": "#222"},
-        "Zephyr": {"bg": "#fff", "color": "#495057"}
-    };
+    var themeColors = """ + json.dumps(theme_colors_map) + """;
     
-
     var themes = {
         "Standard": "/css/bootstrap.min.css",
         "LightMode": "/css/themes/lightmode/bootstrap.min.css",
@@ -208,7 +203,9 @@ def make_doc(title, description):
     var themeUrl = themes[style] ? themes[style] : "/css/bootstrap.min.css";
     document.write('<link href="' + themeUrl + '" rel="stylesheet" id="bootstrap">');
     
-    var colors = themeColors[style] ? themeColors[style] : themeColors["Standard"];
+    // We treat 'Ceruleon' backwards compatibility correctly since the CSS map generated it as 'Cerulean'
+    var mappedStyle = style === "Ceruleon" ? "Cerulean" : style;
+    var colors = themeColors[mappedStyle] ? themeColors[mappedStyle] : themeColors["Standard"];
     document.write('<style id="theme-fouc-fix">body { background-color: ' + colors.bg + ' !important; color: ' + colors.color + ' !important; }</style>');
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
