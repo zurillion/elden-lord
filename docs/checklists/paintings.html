@@ -94,10 +94,10 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
               <li>
-                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                <a class="dropdown-item lang-option" data-lang="en" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> EN</a>
               </li>
               <li>
-                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                <a class="dropdown-item lang-option" data-lang="it" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> IT</a>
               </li>
             </ul>
           </li>
@@ -177,6 +177,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/bosses.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Bosses</span>
+                      <span class="lang-text lang-it">Boss</span>
                     </span>
                   </a>
                 </li>
@@ -500,6 +501,13 @@
             <span class="lang-text lang-it">Usa Regex</span>
           </span>
         </div>
+        <div class="input-group-text">
+          <input aria-label="Name Only Search" class="form-check-input mt-0 me-2" id="paintings_name_only" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Name Only</span>
+            <span class="lang-text lang-it">Solo nome</span>
+          </span>
+        </div>
       </div>
       <div id="paintings_list">
         <div class="card shadow-sm mb-3" id="paintings_section_0">
@@ -527,24 +535,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Name</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Name</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Area</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Area</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_1_1" id="item_1_1">
+                <li class="list-group-item searchable" data-id="paintings_1_1" data-name-jets="prophecy painting" id="item_1_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_1_1" type="checkbox" value="">
@@ -557,7 +571,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_1_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03210.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Prophecy+Painting">Prophecy Painting</a></span>
                             </span>
                           </label>
@@ -581,15 +595,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_1_1">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03210.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Prophecy+Painting">Prophecy Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Limgrave</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Stormveil Castle, in a study room in the heavily guarded courtyard.</span>
                         </span><br>
@@ -597,7 +617,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_1_2" id="item_1_2">
+                <li class="list-group-item searchable" data-id="paintings_1_2" data-name-jets="homing instinct painting" id="item_1_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_1_2" type="checkbox" value="">
@@ -610,7 +630,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_1_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03066.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Homing+Instinct+Painting">Homing Instinct Painting</a></span>
                             </span>
                           </label>
@@ -634,15 +654,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_1_2">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03066.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Homing+Instinct+Painting">Homing Instinct Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Limgrave</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Artist's Shack, northwest of the Mistwood Outskirts Site of Grace, and east of the Murkwater Coast Site of Grace.</span>
                         </span><br>
@@ -650,7 +676,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-id="paintings_2_1" data-name-jets="resurrection painting" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_2_1" type="checkbox" value="">
@@ -663,7 +689,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_2_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03207.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Resurrection+Painting">Resurrection Painting</a></span>
                             </span>
                           </label>
@@ -687,15 +713,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_2_1">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03207.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Resurrection+Painting">Resurrection Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Liurnia of the Lakes</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Artist's Shack, on the Plateau southeast of the Eastern Liurnia Lake Shore Site of Grace, and north of the Gate Town Bridge Site of Grace.</span>
                         </span><br>
@@ -703,7 +735,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_3_1" id="item_3_1">
+                <li class="list-group-item searchable" data-id="paintings_3_1" data-name-jets="redmane painting" id="item_3_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_3_1" type="checkbox" value="">
@@ -716,7 +748,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_3_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03212.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Redmane+Painting">Redmane Painting</a></span>
                             </span>
                           </label>
@@ -740,15 +772,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_3_1">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03212.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Redmane+Painting">Redmane Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Caelid</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Sellia, Town of Sorcery east of the Inner Aeonia Site of Grace, and southwest of Fort Faroth.</span>
                         </span><br>
@@ -756,7 +794,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_4_1" id="item_4_1">
+                <li class="list-group-item searchable" data-id="paintings_4_1" data-name-jets="champion's song painting" id="item_4_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_4_1" type="checkbox" value="">
@@ -769,7 +807,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_4_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03208.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Champion's+Song+Painting">Champion's Song Painting</a></span>
                             </span>
                           </label>
@@ -793,15 +831,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_4_1">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03208.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Champion's+Song+Painting">Champion's Song Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Altus Plateau</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Shaded Castle, in a Wooden Shack next to the eastern outer wall of the Shaded Castle, along the wall of the Shaded Castle Ramparts Site of Grace.</span>
                         </span><br>
@@ -809,7 +853,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_5_1" id="item_5_1">
+                <li class="list-group-item searchable" data-id="paintings_5_1" data-name-jets="flightless bird painting" id="item_5_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_5_1" type="checkbox" value="">
@@ -822,7 +866,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_5_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03211.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Flightless+Bird+Painting">Flightless Bird Painting</a></span>
                             </span>
                           </label>
@@ -846,15 +890,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_5_1">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03211.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Flightless+Bird+Painting">Flightless Bird Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Leyndell, Royal Capital</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Fortified Manor, right next to the Fortified Manor, First Floor Site of Grace.</span>
                         </span><br>
@@ -862,7 +912,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_6_1" id="item_6_1">
+                <li class="list-group-item searchable" data-id="paintings_6_1" data-name-jets="sorcerer painting" id="item_6_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_6_1" type="checkbox" value="">
@@ -875,7 +925,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_6_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03209.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sorcerer+Painting">Sorcerer Painting</a></span>
                             </span>
                           </label>
@@ -899,15 +949,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_6_1">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03209.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sorcerer+Painting">Sorcerer Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Mountaintop of the Giants</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Castle Sol, in a locked room accessed from descending a ladder from atop the Ramparts guarded by two ballistas.</span>
                         </span><br>
@@ -915,7 +971,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_11_1" id="item_11_1">
+                <li class="list-group-item searchable" data-id="paintings_11_1" data-name-jets="incursion painting" id="item_11_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_11_1" type="checkbox" value="">
@@ -928,7 +984,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_11_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03831.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Incursion+Painting">Incursion Painting</a></span>
                             </span>
                           </label>
@@ -952,15 +1008,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_11_1">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03831.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Incursion+Painting">Incursion Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Gravesite Plain</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Obtained from the Artist's Shack.</span>
                         </span><br>
@@ -968,7 +1030,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_11_2" id="item_11_2">
+                <li class="list-group-item searchable" data-id="paintings_11_2" data-name-jets="the sacred tower painting" id="item_11_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_11_2" type="checkbox" value="">
@@ -981,7 +1043,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_11_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03834.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/The+Sacred+Tower+Painting">The Sacred Tower Painting</a></span>
                             </span>
                           </label>
@@ -1005,15 +1067,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_11_2">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03834.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/The+Sacred+Tower+Painting">The Sacred Tower Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Gravesite Plain</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Can be found in a small cave north-east from Scorched Ruins in</span>
                         </span><br>
@@ -1021,7 +1089,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_11_3" id="item_11_3">
+                <li class="list-group-item searchable" data-id="paintings_11_3" data-name-jets="domain of dragons painting" id="item_11_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="paintings_11_3" type="checkbox" value="">
@@ -1034,7 +1102,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_11_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/info/paintings/edited/03835.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Domain+of+Dragons+Painting">Domain of Dragons Painting</a></span>
                             </span>
                           </label>
@@ -1058,15 +1126,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_11_3">
                         <img class="float-end" data-src="/img/icons/info/paintings/edited/03835.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Domain+of+Dragons+Painting">Domain of Dragons Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Area: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Area: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Shadow Keep</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Bottom part of keep, accessing by climbing down ladders from main plaza</span>
                         </span><br>
@@ -1103,24 +1177,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Name</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Name</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Destination</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Destination</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_1" id="item_1">
+                <li class="list-group-item searchable" data-id="paintings_1" data-name-jets="prophecy painting" id="item_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_1" type="checkbox" value="">
@@ -1133,7 +1213,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/spirit_ashes/00456.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Prophecy+Painting">Prophecy Painting</a></span>
                             </span>
                           </label>
@@ -1157,15 +1237,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_1">
                         <img class="float-end" data-src="/img/icons/spirit_ashes/00456.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Prophecy+Painting">Prophecy Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Warhawk+Ashes">Warhawk Ashes</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Weeping Peninsula, just north of Pilgrimage Church on the cliff edge you should see the spirit of the artist in a chair.</span>
                         </span><br>
@@ -1173,7 +1259,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_2" id="item_2">
+                <li class="list-group-item searchable" data-id="paintings_2" data-name-jets="homing instinct painting" id="item_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_2" type="checkbox" value="">
@@ -1186,7 +1272,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/armor/15290.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Homing+Instinct+Painting">Homing Instinct Painting</a></span>
                             </span>
                           </label>
@@ -1210,15 +1296,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_2">
                         <img class="float-end" data-src="/img/icons/armor/15290.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Homing+Instinct+Painting">Homing Instinct Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Incantation+Scarab">Incantation Scarab</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Limgrave, A small grave west from Dragon-Burnt Ruins, and northwest from the Seaside Ruins Site of Grace, next to some gravestones you should see the spirit of the painter in a chair.</span>
                         </span><br>
@@ -1226,7 +1318,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_3" id="item_3">
+                <li class="list-group-item searchable" data-id="paintings_3" data-name-jets="resurrection painting" id="item_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_3" type="checkbox" value="">
@@ -1239,7 +1331,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/armor/14770.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Resurrection+Painting">Resurrection Painting</a></span>
                             </span>
                           </label>
@@ -1263,15 +1355,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_3">
                         <img class="float-end" data-src="/img/icons/armor/14770.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Resurrection+Painting">Resurrection Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Cap">Juvenile Scholar Cap</a>, <a href="https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Robe">Juvenile Scholar Robe</a> and <a href="https://eldenring.wiki.fextralife.com/Larval+Tear">Larval Tear</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Liurnia of the Lakes, start at the Behind Caria Manor Site of Grace and head slightly southeast until you arrive at a graveyard, behind a big rock you should see the spirit of the artist sitting in a chair.</span>
                         </span><br>
@@ -1279,7 +1377,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_4" id="item_4">
+                <li class="list-group-item searchable" data-id="paintings_4" data-name-jets="redmane painting" id="item_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_4" type="checkbox" value="">
@@ -1292,7 +1390,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_4">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/ashes_of_war/08385.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Redmane+Painting">Redmane Painting</a></span>
                             </span>
                           </label>
@@ -1316,15 +1414,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_4">
                         <img class="float-end" data-src="/img/icons/ashes_of_war/08385.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Redmane+Painting">Redmane Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Ash+of+War:+Rain+of+Arrows">Ash of War: Rain of Arrows</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Caelid, off a cliff edge south east of the Minor Erdtree in Dragonbarrow where a powerful Magic weilding Golem will be. Once you've made your way down the roots and stone pillars, walk to the edge and you'll briefly see the spirit of a painter.</span>
                         </span><br>
@@ -1332,7 +1436,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_5" id="item_5">
+                <li class="list-group-item searchable" data-id="paintings_5" data-name-jets="champion's song painting" id="item_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_5" type="checkbox" value="">
@@ -1345,7 +1449,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_5">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/weapons/lightbows/11003.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Champion's+Song+Painting">Champion's Song Painting</a></span>
                             </span>
                           </label>
@@ -1369,15 +1473,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_5">
                         <img class="float-end" data-src="/img/icons/weapons/lightbows/11003.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Champion's+Song+Painting">Champion's Song Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Harp+Bow">Harp Bow</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Altus Plateau, on the cliff just slightly southeast of the Rampartside Path Site of Grace, you should see the painter in a chair.</span>
                         </span><br>
@@ -1385,7 +1495,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_6" id="item_6">
+                <li class="list-group-item searchable" data-id="paintings_6" data-name-jets="flightless bird painting" id="item_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_6" type="checkbox" value="">
@@ -1398,7 +1508,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_6">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/incantations/06060.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Flightless+Bird+Painting">Flightless Bird Painting</a></span>
                             </span>
                           </label>
@@ -1422,15 +1532,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_6">
                         <img class="float-end" data-src="/img/icons/incantations/06060.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Flightless+Bird+Painting">Flightless Bird Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Fire's+Deadly+Sin">Fire's Deadly Sin</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Altus Plateau, From the Windmill Heights Site of Grace head southeast along the cliff edge, you will find the spirit of the painter on a cliff left of the shack at the end of the road.</span>
                         </span><br>
@@ -1438,7 +1554,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_7" id="item_7">
+                <li class="list-group-item searchable" data-id="paintings_7" data-name-jets="sorcerer painting" id="item_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_7" type="checkbox" value="">
@@ -1451,7 +1567,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_7">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/armor/15000.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sorcerer+Painting">Sorcerer Painting</a></span>
                             </span>
                           </label>
@@ -1475,15 +1591,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_7">
                         <img class="float-end" data-src="/img/icons/armor/15000.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sorcerer+Painting">Sorcerer Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Greathood">Greathood</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Moutaintops of the Giants, on the bridge Northwest of the Stargazers' Ruins, go on the small platform jutting out on the eastern side of the bridge to find the spirit of the artist.</span>
                         </span><br>
@@ -1491,7 +1613,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_11" id="item_11">
+                <li class="list-group-item searchable" data-id="paintings_11" data-name-jets="incursion painting" id="item_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_11" type="checkbox" value="">
@@ -1504,7 +1626,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_11">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12286.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Incursion+Painting">Incursion Painting</a></span>
                             </span>
                           </label>
@@ -1528,15 +1650,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_11">
                         <img class="float-end" data-src="/img/icons/weapons/dlc/12286.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Incursion+Painting">Incursion Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Serpent+Crest+Shield">Serpent Crest Shield</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Travel to the Greatbridge North Site of Grace, and head straight West until you can see the large bridge leading into Belurat Tower Settlement in the Distance.</span>
                         </span><br>
@@ -1544,7 +1672,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_12" id="item_12">
+                <li class="list-group-item searchable" data-id="paintings_12" data-name-jets="the sacred tower painting" id="item_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_12" type="checkbox" value="">
@@ -1557,7 +1685,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_12">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12294.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/The+Sacred+Tower+Painting">The Sacred Tower Painting</a></span>
                             </span>
                           </label>
@@ -1581,15 +1709,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_12">
                         <img class="float-end" data-src="/img/icons/weapons/dlc/12294.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/The+Sacred+Tower+Painting">The Sacred Tower Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Spiraltree+Seal">Spiraltree Seal</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Found on the high ground above Temple Town Ruins. This area is accessed by a Spiritspring on the north side of the platform. Once up at the top, right past the Northern Nameless Mausoleum and down the western slope, explore until you find two jagged rocks. Look north-west while aligning the rocks to find the ghost.</span>
                         </span><br>
@@ -1597,7 +1731,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="paintings_13" id="item_13">
+                <li class="list-group-item searchable" data-id="paintings_13" data-name-jets="domain of dragons painting" id="item_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="paintings_13" type="checkbox" value="">
@@ -1610,7 +1744,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="paintings_13">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/tools/edited/00788.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Domain+of+Dragons+Painting">Domain of Dragons Painting</a></span>
                             </span>
                           </label>
@@ -1634,15 +1768,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="paintings_13">
                         <img class="float-end" data-src="/img/icons/tools/edited/00788.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Domain+of+Dragons+Painting">Domain of Dragons Painting</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Rock+Heart">Rock Heart</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Destination: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Destination: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Traveling to the Jagged Peak Mountainside site of grace and following a path south-west from the grace, across rugged terrain. Instead of proceeding South for the level, take the spiritspring to land slightly west and find a spot where the storm clears up.</span>
                         </span><br>
@@ -1689,15 +1829,41 @@
                         contentTag: "#paintings_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {
+                            if ($('#paintings_name_only').is(':checked')) {
+                                return node.getAttribute('data-name-jets') || '';
+                            }
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         },
                         didSearch: function(search_phrase) {
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#paintings_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#paintings_list h5").removeClass('d-none');
+                            $("#paintings_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                                return;
+                            }
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#paintings_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }
+                                return true;
+                            };
+                            
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -1705,37 +1871,23 @@
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }
 
-                                if (!search_phrase) {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                } else {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
+                            
                             $("#paintings_list h5").each(function() {
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
-                        }
+                        },
                     });
                     function updateSearch() {
                         var search_phrase = $("#paintings_search").val().trim();
@@ -1757,9 +1909,15 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#paintings_name_only').is(':checked')) {
+                                    text = $(this).attr('data-name-jets') || '';
+                                } else {
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }
+                                
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {
@@ -1813,7 +1971,11 @@
                             $("#paintings_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {
                                 try {
-                                    $("#paintings_list").highlight(regex);
+                                    if ($('#paintings_name_only').is(':checked')) {
+                                        $("#paintings_list .item-name").highlight(regex);
+                                    } else {
+                                        $("#paintings_list").highlight(regex);
+                                    }
                                 } catch(e) {}
                             }
                             
@@ -1828,7 +1990,11 @@
                             // Highlighting for normal text
                             $("#paintings_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {
-                                $("#paintings_list").highlight(search_phrase);
+                                if ($('#paintings_name_only').is(':checked')) {
+                                    $("#paintings_list .item-name").highlight(search_phrase);
+                                } else {
+                                    $("#paintings_list").highlight(search_phrase);
+                                }
                             }
                         }
                     }
@@ -1840,6 +2006,30 @@
                     $('#paintings_regex').on('change', function() {
                         updateSearch();
                     });
+                    
+                    $('#paintings_name_only').on('change', function() {
+                        if (jet.options) {
+                            jet.options.manualContentHandling = function(node) {
+                                if ($('#paintings_name_only').is(':checked')) {
+                                    return node.getAttribute('data-name-jets') || '';
+                                }
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            };
+                        }
+                        if (jet._setJets) {
+                            jet._setJets('', true);
+                        }
+                        
+                        if ($('#paintings_regex').is(':checked')) {
+                            updateSearch();
+                        } else {
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#paintings_search').trigger('input');
+                        }
+                    });
+                    updateSearch();
                 });
             })( jQuery );
             </script>

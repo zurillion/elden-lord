@@ -2,13 +2,22 @@ var profilesKey = 'darksouls3_profiles';
 
 // Language metadata — mirrors LANGUAGE_META in generate.py.
 // Add new entries here (and in generate.py) to support more languages.
+var UK_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">";
+var IT_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">";
+var ES_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23c60b1e'/%3E%3Crect width='3' height='1' y='0.5' fill='%23ffc400'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">";
+var FR_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23002395'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ed2939'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">";
+var DE_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23000'/%3E%3Crect width='3' height='1.333' y='0.666' fill='%23d00'/%3E%3Crect width='3' height='0.666' y='1.333' fill='%23ffce00'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">";
+var PT_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 3'%3E%3Cpath fill='%23060' d='M0 0h2v3H0z'/%3E%3Cpath fill='%23f00' d='M2 0h3v3H2z'/%3E%3Ccircle fill='%23ff0' cx='2' cy='1.5' r='0.6'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">";
+var JA_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23fff'/%3E%3Ccircle cx='1.5' cy='1' r='0.6' fill='%23bc002d'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">";
+
 window.LANGUAGE_META = {
-    'en': { flag: '🇬🇧', name: 'EN' },
-    'it': { flag: '🇮🇹', name: 'IT' },
-    'es': { flag: '🇪🇸', name: 'ES' },
-    'fr': { flag: '🇫🇷', name: 'FR' },
-    'de': { flag: '🇩🇪', name: 'DE' },
-    'pt': { flag: '🇵🇹', name: 'PT' },
+    'en': { flag: UK_FLAG, name: 'EN' },
+    'it': { flag: IT_FLAG, name: 'IT' },
+    'es': { flag: ES_FLAG, name: 'ES' },
+    'fr': { flag: FR_FLAG, name: 'FR' },
+    'de': { flag: DE_FLAG, name: 'DE' },
+    'pt': { flag: PT_FLAG, name: 'PT' },
+    'ja': { flag: JA_FLAG, name: 'JA' },
 };
 
 window.currentLanguage = localStorage.getItem('selectedLanguage') || 'en';

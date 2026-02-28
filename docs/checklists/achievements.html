@@ -94,10 +94,10 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
               <li>
-                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                <a class="dropdown-item lang-option" data-lang="en" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> EN</a>
               </li>
               <li>
-                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                <a class="dropdown-item lang-option" data-lang="it" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> IT</a>
               </li>
             </ul>
           </li>
@@ -177,6 +177,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/bosses.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Bosses</span>
+                      <span class="lang-text lang-it">Boss</span>
                     </span>
                   </a>
                 </li>
@@ -516,6 +517,13 @@
             <span class="lang-text lang-it">Usa Regex</span>
           </span>
         </div>
+        <div class="input-group-text">
+          <input aria-label="Name Only Search" class="form-check-input mt-0 me-2" id="achievements_name_only" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Name Only</span>
+            <span class="lang-text lang-it">Solo nome</span>
+          </span>
+        </div>
       </div>
       <div id="achievements_list">
         <div class="card shadow-sm mb-3" id="achievements_section_0">
@@ -543,24 +551,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Name</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Name</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Condition</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Condition</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Notes</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Notes</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_1_1" id="item_1_1">
+                <li class="list-group-item searchable" data-id="achievements_1_1" data-name-jets="shardbearer godrick" id="item_1_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="achievements_1_1" type="checkbox" value="">
@@ -573,7 +587,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_1_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/shardbearer_godrick.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Shardbearer Godrick</span>
                             </span>
                           </label>
@@ -597,15 +611,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_1_1">
                         <img class="float-end" data-src="/img/achievements/shardbearer_godrick.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Shardbearer Godrick</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Shardbearer Godrick</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Semi-optional, only two Shardbearers need to be defeated.</span>
                         </span><br>
@@ -613,7 +633,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_1_2" id="item_1_2">
+                <li class="list-group-item searchable" data-id="achievements_1_2" data-name-jets="shardbearer radahn" id="item_1_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="achievements_1_2" type="checkbox" value="">
@@ -626,7 +646,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_1_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/shardbearer_radahn.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Shardbearer Radahn</span>
                             </span>
                           </label>
@@ -650,15 +670,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_1_2">
                         <img class="float-end" data-src="/img/achievements/shardbearer_radahn.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Shardbearer Radahn</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Shardbearer Radahn</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Semi-optional, only two Shardbearers need to be defeated.</span>
                         </span><br>
@@ -666,7 +692,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_1_3" id="item_1_3">
+                <li class="list-group-item searchable" data-id="achievements_1_3" data-name-jets="shardbearer morgott" id="item_1_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="achievements_1_3" type="checkbox" value="">
@@ -679,7 +705,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_1_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/shardbearer_morgott.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Shardbearer Morgott</span>
                             </span>
                           </label>
@@ -703,15 +729,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_1_3">
                         <img class="float-end" data-src="/img/achievements/shardbearer_morgott.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Shardbearer Morgott</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Shardbearer Morgott</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock through story progression.</span>
                         </span><br>
@@ -719,7 +751,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_1_4" id="item_1_4">
+                <li class="list-group-item searchable" data-id="achievements_1_4" data-name-jets="shardbearer rykard" id="item_1_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="achievements_1_4" type="checkbox" value="">
@@ -732,7 +764,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_1_4">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/shardbearer_rykard.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Shardbearer Rykard</span>
                             </span>
                           </label>
@@ -756,15 +788,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_1_4">
                         <img class="float-end" data-src="/img/achievements/shardbearer_rykard.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Shardbearer Rykard</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Shardbearer Rykard</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Semi-optional, only two Shardbearers need to be defeated.</span>
                         </span><br>
@@ -772,7 +810,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_1_5" id="item_1_5">
+                <li class="list-group-item searchable" data-id="achievements_1_5" data-name-jets="shardbearer mohg" id="item_1_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="achievements_1_5" type="checkbox" value="">
@@ -785,7 +823,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_1_5">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/shardbearer_mohg.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Shardbearer Mohg</span>
                             </span>
                           </label>
@@ -809,15 +847,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_1_5">
                         <img class="float-end" data-src="/img/achievements/shardbearer_mohg.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Shardbearer Mohg</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Shardbearer Mohg</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Semi-optional, only two Shardbearers need to be defeated.</span>
                         </span><br>
@@ -825,7 +869,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_1_6" id="item_1_6">
+                <li class="list-group-item searchable" data-id="achievements_1_6" data-name-jets="shardbearer malenia" id="item_1_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="achievements_1_6" type="checkbox" value="">
@@ -838,7 +882,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_1_6">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/shardbearer_malenia.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Shardbearer Malenia</span>
                             </span>
                           </label>
@@ -862,15 +906,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_1_6">
                         <img class="float-end" data-src="/img/achievements/shardbearer_malenia.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Shardbearer Malenia</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Shardbearer Malenia</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Semi-optional, only two Shardbearers need to be defeated.</span>
                         </span><br>
@@ -907,24 +957,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Name</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Name</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Condition</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Condition</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Notes</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Notes</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-id="achievements_2_1" data-name-jets="margit, the fell omen" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_1" type="checkbox" value="">
@@ -937,7 +993,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/margit_the_fell_omen.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Margit, the Fell Omen</span>
                             </span>
                           </label>
@@ -961,15 +1017,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_1">
                         <img class="float-end" data-src="/img/achievements/margit_the_fell_omen.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Margit, the Fell Omen</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Margit, the Fell Omen</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock as you progress through Stormveil Castle.</span>
                         </span><br>
@@ -977,7 +1039,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_2" id="item_2_2">
+                <li class="list-group-item searchable" data-id="achievements_2_2" data-name-jets="leonine misbegotten" id="item_2_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_2" type="checkbox" value="">
@@ -990,7 +1052,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/leonine_misbegotten.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Leonine Misbegotten</span>
                             </span>
                           </label>
@@ -1014,11 +1076,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_2">
                         <img class="float-end" data-src="/img/achievements/leonine_misbegotten.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Leonine Misbegotten</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat the Leonine Misbegotten</span>
                         </span><br>
@@ -1029,7 +1095,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_3" id="item_2_3">
+                <li class="list-group-item searchable" data-id="achievements_2_3" data-name-jets="red wolf of radagon" id="item_2_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_3" type="checkbox" value="">
@@ -1042,7 +1108,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/red_wolf_of_radagon.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Red Wolf of Radagon</span>
                             </span>
                           </label>
@@ -1066,15 +1132,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_3">
                         <img class="float-end" data-src="/img/achievements/red_wolf_of_radagon.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Red Wolf of Radagon</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat the Red Wolf of Radagon</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock as you progress through Raya Lucaria Academy.</span>
                         </span><br>
@@ -1082,7 +1154,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_4" id="item_2_4">
+                <li class="list-group-item searchable" data-id="achievements_2_4" data-name-jets="rennala, queen of the full moon" id="item_2_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_4" type="checkbox" value="">
@@ -1095,7 +1167,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_4">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/rennala_queen_of_the_full_moon.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Rennala, Queen of the Full Moon</span>
                             </span>
                           </label>
@@ -1119,11 +1191,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_4">
                         <img class="float-end" data-src="/img/achievements/rennala_queen_of_the_full_moon.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Rennala, Queen of the Full Moon</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Rennala, Queen of the Full Moon</span>
                         </span><br>
@@ -1134,7 +1210,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_5" id="item_2_5">
+                <li class="list-group-item searchable" data-id="achievements_2_5" data-name-jets="royal knight loretta" id="item_2_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_5" type="checkbox" value="">
@@ -1147,7 +1223,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_5">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/royal_knight_loretta.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Royal Knight Loretta</span>
                             </span>
                           </label>
@@ -1171,15 +1247,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_5">
                         <img class="float-end" data-src="/img/achievements/royal_knight_loretta.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Royal Knight Loretta</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Royal Knight Loretta</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Royal Knight Loretta at Carian Manor.</span>
                         </span><br>
@@ -1187,7 +1269,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_6" id="item_2_6">
+                <li class="list-group-item searchable" data-id="achievements_2_6" data-name-jets="magma wyrm makar" id="item_2_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_6" type="checkbox" value="">
@@ -1200,7 +1282,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_6">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/magma_wyrm_makar.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Magma Wyrm Makar</span>
                             </span>
                           </label>
@@ -1224,11 +1306,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_6">
                         <img class="float-end" data-src="/img/achievements/magma_wyrm_makar.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Magma Wyrm Makar</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Magma Wyrm Makar</span>
                         </span><br>
@@ -1239,7 +1325,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_7" id="item_2_7">
+                <li class="list-group-item searchable" data-id="achievements_2_7" data-name-jets="ancestor spirit" id="item_2_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_7" type="checkbox" value="">
@@ -1252,7 +1338,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_7">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/ancestor_spirit.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Ancestor Spirit</span>
                             </span>
                           </label>
@@ -1276,11 +1362,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_7">
                         <img class="float-end" data-src="/img/achievements/ancestor_spirit.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Ancestor Spirit</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat the Ancestor Spirit</span>
                         </span><br>
@@ -1291,7 +1381,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_8" id="item_2_8">
+                <li class="list-group-item searchable" data-id="achievements_2_8" data-name-jets="mimic tear" id="item_2_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_8" type="checkbox" value="">
@@ -1304,7 +1394,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_8">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/mimic_tear.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Mimic Tear</span>
                             </span>
                           </label>
@@ -1328,11 +1418,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_8">
                         <img class="float-end" data-src="/img/achievements/mimic_tear.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Mimic Tear</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat the Mimic Tear</span>
                         </span><br>
@@ -1343,7 +1437,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_9" id="item_2_9">
+                <li class="list-group-item searchable" data-id="achievements_2_9" data-name-jets="godfrey, the first lord" id="item_2_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_9" type="checkbox" value="">
@@ -1356,7 +1450,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_9">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/godfrey_the_first_lord.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Godfrey, the First Lord</span>
                             </span>
                           </label>
@@ -1380,15 +1474,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_9">
                         <img class="float-end" data-src="/img/achievements/godfrey_the_first_lord.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Godfrey, the First Lord</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Godfrey, the First Lord</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock through story progression.</span>
                         </span><br>
@@ -1396,7 +1496,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_10" id="item_2_10">
+                <li class="list-group-item searchable" data-id="achievements_2_10" data-name-jets="dragonkin soldier of nokstella" id="item_2_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_10" type="checkbox" value="">
@@ -1409,7 +1509,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_10">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/dragonkin_soldier_of_nokstella.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Dragonkin Soldier of Nokstella</span>
                             </span>
                           </label>
@@ -1433,11 +1533,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_10">
                         <img class="float-end" data-src="/img/achievements/dragonkin_soldier_of_nokstella.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Dragonkin Soldier of Nokstella</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Dragonkin Soldier of Nokstella</span>
                         </span><br>
@@ -1448,7 +1552,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_11" id="item_2_11">
+                <li class="list-group-item searchable" data-id="achievements_2_11" data-name-jets="astel, naturalborn of the void" id="item_2_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_11" type="checkbox" value="">
@@ -1461,7 +1565,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_11">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/astel_naturalborn_of_the_void.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Astel, Naturalborn of the Void</span>
                             </span>
                           </label>
@@ -1485,15 +1589,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_11">
                         <img class="float-end" data-src="/img/achievements/astel_naturalborn_of_the_void.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Astel, Naturalborn of the Void</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Astel, Naturalborn of the Void</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Required for Ranni's questline, and 'Age of the Stars' ending.</span>
                         </span><br>
@@ -1501,7 +1611,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_12" id="item_2_12">
+                <li class="list-group-item searchable" data-id="achievements_2_12" data-name-jets="regal ancestor spirit" id="item_2_12">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_12" type="checkbox" value="">
@@ -1514,7 +1624,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_12">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/regal_ancestor_spirit.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Regal Ancestor Spirit</span>
                             </span>
                           </label>
@@ -1538,11 +1648,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_12">
                         <img class="float-end" data-src="/img/achievements/regal_ancestor_spirit.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Regal Ancestor Spirit</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat the Regal Ancestor Spirit</span>
                         </span><br>
@@ -1553,7 +1667,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_13" id="item_2_13">
+                <li class="list-group-item searchable" data-id="achievements_2_13" data-name-jets="valiant gargoyle" id="item_2_13">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_13" type="checkbox" value="">
@@ -1566,7 +1680,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_13">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/valiant_gargoyle.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Valiant Gargoyle</span>
                             </span>
                           </label>
@@ -1590,11 +1704,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_13">
                         <img class="float-end" data-src="/img/achievements/valiant_gargoyle.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Valiant Gargoyle</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat the Valiant Gargoyle</span>
                         </span><br>
@@ -1605,7 +1723,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_14" id="item_2_14">
+                <li class="list-group-item searchable" data-id="achievements_2_14" data-name-jets="elemer of the briar" id="item_2_14">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_14" type="checkbox" value="">
@@ -1618,7 +1736,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_14">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/elemer_of_the_briar.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Elemer of the Briar</span>
                             </span>
                           </label>
@@ -1642,11 +1760,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_14">
                         <img class="float-end" data-src="/img/achievements/elemer_of_the_briar.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Elemer of the Briar</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Elemer of the Briar</span>
                         </span><br>
@@ -1657,7 +1779,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_15" id="item_2_15">
+                <li class="list-group-item searchable" data-id="achievements_2_15" data-name-jets="godskin noble" id="item_2_15">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_15" type="checkbox" value="">
@@ -1670,7 +1792,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_15">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/godskin_noble.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Godskin Noble</span>
                             </span>
                           </label>
@@ -1694,11 +1816,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_15">
                         <img class="float-end" data-src="/img/achievements/godskin_noble.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Godskin Noble</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Godskin Noble</span>
                         </span><br>
@@ -1709,7 +1835,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_16" id="item_2_16">
+                <li class="list-group-item searchable" data-id="achievements_2_16" data-name-jets="commander niall" id="item_2_16">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_16" type="checkbox" value="">
@@ -1722,7 +1848,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_16">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/commander_niall.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Commander Niall</span>
                             </span>
                           </label>
@@ -1746,11 +1872,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_16">
                         <img class="float-end" data-src="/img/achievements/commander_niall.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Commander Niall</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Commander Niall</span>
                         </span><br>
@@ -1761,7 +1891,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_17" id="item_2_17">
+                <li class="list-group-item searchable" data-id="achievements_2_17" data-name-jets="fire giant" id="item_2_17">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_17" type="checkbox" value="">
@@ -1774,7 +1904,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_17">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/fire_giant.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Fire Giant</span>
                             </span>
                           </label>
@@ -1798,15 +1928,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_17">
                         <img class="float-end" data-src="/img/achievements/fire_giant.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Fire Giant</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat the Fire Giant</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock through story progression.</span>
                         </span><br>
@@ -1814,7 +1950,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_18" id="item_2_18">
+                <li class="list-group-item searchable" data-id="achievements_2_18" data-name-jets="godskin duo" id="item_2_18">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_18" type="checkbox" value="">
@@ -1827,7 +1963,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_18">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/godskin_duo.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Godskin Duo</span>
                             </span>
                           </label>
@@ -1851,15 +1987,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_18">
                         <img class="float-end" data-src="/img/achievements/godskin_duo.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Godskin Duo</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Godskin Duo</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock through story progression.</span>
                         </span><br>
@@ -1867,7 +2009,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_19" id="item_2_19">
+                <li class="list-group-item searchable" data-id="achievements_2_19" data-name-jets="loretta, knight of the haligtree" id="item_2_19">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_19" type="checkbox" value="">
@@ -1880,7 +2022,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_19">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/loretta_knight_of_the_haligtree.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Loretta, Knight of the Haligtree</span>
                             </span>
                           </label>
@@ -1904,11 +2046,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_19">
                         <img class="float-end" data-src="/img/achievements/loretta_knight_of_the_haligtree.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Loretta, Knight of the Haligtree</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Loretta, Knight of the Haligtree</span>
                         </span><br>
@@ -1919,7 +2065,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_20" id="item_2_20">
+                <li class="list-group-item searchable" data-id="achievements_2_20" data-name-jets="maliketh, the black blade" id="item_2_20">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_20" type="checkbox" value="">
@@ -1932,7 +2078,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_20">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/maliketh_the_black_blade.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Maliketh, the Black Blade</span>
                             </span>
                           </label>
@@ -1956,15 +2102,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_20">
                         <img class="float-end" data-src="/img/achievements/maliketh_the_black_blade.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Maliketh, the Black Blade</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Malekith, the Black Blade</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock through story progression.</span>
                         </span><br>
@@ -1972,7 +2124,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_21" id="item_2_21">
+                <li class="list-group-item searchable" data-id="achievements_2_21" data-name-jets="hoarah loux, the warrior" id="item_2_21">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_21" type="checkbox" value="">
@@ -1985,7 +2137,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_21">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/hoarah_loux_the_warrior.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Hoarah Loux, the Warrior</span>
                             </span>
                           </label>
@@ -2009,15 +2161,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_21">
                         <img class="float-end" data-src="/img/achievements/hoarah_loux_the_warrior.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Hoarah Loux, the Warrior</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Hoarah Loux, the Warrior</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock through story progression.</span>
                         </span><br>
@@ -2025,7 +2183,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_22" id="item_2_22">
+                <li class="list-group-item searchable" data-id="achievements_2_22" data-name-jets="mohg, the omen" id="item_2_22">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_22" type="checkbox" value="">
@@ -2038,7 +2196,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_22">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/mohg_the_omen.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Mohg, the Omen</span>
                             </span>
                           </label>
@@ -2062,11 +2220,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_22">
                         <img class="float-end" data-src="/img/achievements/mohg_the_omen.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Mohg, the Omen</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Mohg, the Omen</span>
                         </span><br>
@@ -2077,7 +2239,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_23" id="item_2_23">
+                <li class="list-group-item searchable" data-id="achievements_2_23" data-name-jets="dragonlord placidusax" id="item_2_23">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_23" type="checkbox" value="">
@@ -2090,7 +2252,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_23">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/dragonlord_placidusax.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Dragonlord Placidusax</span>
                             </span>
                           </label>
@@ -2114,11 +2276,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_23">
                         <img class="float-end" data-src="/img/achievements/dragonlord_placidusax.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Dragonlord Placidusax</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Dragonlord Placidusax</span>
                         </span><br>
@@ -2129,7 +2295,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_2_24" id="item_2_24">
+                <li class="list-group-item searchable" data-id="achievements_2_24" data-name-jets="lichdragon fortissax" id="item_2_24">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="achievements_2_24" type="checkbox" value="">
@@ -2142,7 +2308,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_2_24">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/lichdragon_fortissax.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Lichdragon Fortissax</span>
                             </span>
                           </label>
@@ -2166,15 +2332,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_2_24">
                         <img class="float-end" data-src="/img/achievements/lichdragon_fortissax.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Lichdragon Fortissax</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Defeat Lichdragon Fortissax</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Follow Fia's questline to unlock, part of 'Age of Duskborn' ending.</span>
                         </span><br>
@@ -2211,24 +2383,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Name</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Name</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Condition</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Condition</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Notes</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Notes</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_1" id="item_3_1">
+                <li class="list-group-item searchable" data-id="achievements_3_1" data-name-jets="roundtable hold" id="item_3_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_1" type="checkbox" value="">
@@ -2241,7 +2419,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/roundtable_hold.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Roundtable Hold</span>
                             </span>
                           </label>
@@ -2265,15 +2443,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_1">
                         <img class="float-end" data-src="/img/achievements/roundtable_hold.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Roundtable Hold</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Arrive at Roundtable Hold</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock as part of story progression.</span>
                         </span><br>
@@ -2281,7 +2465,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_2" id="item_3_2">
+                <li class="list-group-item searchable" data-id="achievements_3_2" data-name-jets="god-slaying armament" id="item_3_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_2" type="checkbox" value="">
@@ -2294,7 +2478,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/god-slaying_armament.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">God-Slaying Armament</span>
                             </span>
                           </label>
@@ -2318,11 +2502,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_2">
                         <img class="float-end" data-src="/img/achievements/god-slaying_armament.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">God-Slaying Armament</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Upgrade any armament to its highest stage.</span>
                         </span><br>
@@ -2333,7 +2521,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_3" id="item_3_3">
+                <li class="list-group-item searchable" data-id="achievements_3_3" data-name-jets="legendary armaments" id="item_3_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_3" type="checkbox" value="">
@@ -2346,7 +2534,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/legendary_armaments.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Legendary Armaments</span>
                             </span>
                           </label>
@@ -2370,11 +2558,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_3">
                         <img class="float-end" data-src="/img/achievements/legendary_armaments.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Legendary Armaments</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Acquire all nine legendary weapons.</span>
                         </span><br>
@@ -2385,7 +2577,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_4" id="item_3_4">
+                <li class="list-group-item searchable" data-id="achievements_3_4" data-name-jets="legendary ashen remains" id="item_3_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_4" type="checkbox" value="">
@@ -2398,7 +2590,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_4">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/legendary_ashen_remains.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Legendary Ashen Remains</span>
                             </span>
                           </label>
@@ -2422,11 +2614,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_4">
                         <img class="float-end" data-src="/img/achievements/legendary_ashen_remains.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Legendary Ashen Remains</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Acquire all six legendary ashen remains.</span>
                         </span><br>
@@ -2437,7 +2633,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_5" id="item_3_5">
+                <li class="list-group-item searchable" data-id="achievements_3_5" data-name-jets="legendary sorceries and incantations" id="item_3_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_5" type="checkbox" value="">
@@ -2450,7 +2646,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_5">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/legendary_sorceries_and_incantations.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Legendary Sorceries and Incantations</span>
                             </span>
                           </label>
@@ -2474,11 +2670,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_5">
                         <img class="float-end" data-src="/img/achievements/legendary_sorceries_and_incantations.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Legendary Sorceries and Incantations</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Acquire all seven legendary sorceries and incantations.</span>
                         </span><br>
@@ -2489,7 +2689,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_6" id="item_3_6">
+                <li class="list-group-item searchable" data-id="achievements_3_6" data-name-jets="legendary talismans" id="item_3_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_6" type="checkbox" value="">
@@ -2502,7 +2702,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_6">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/legendary_talismans.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Legendary Talismans</span>
                             </span>
                           </label>
@@ -2526,11 +2726,15 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_6">
                         <img class="float-end" data-src="/img/achievements/legendary_talismans.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Legendary Talismans</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Acquire all eight legendary talismans.</span>
                         </span><br>
@@ -2541,7 +2745,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_7" id="item_3_7">
+                <li class="list-group-item searchable" data-id="achievements_3_7" data-name-jets="great rune" id="item_3_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_7" type="checkbox" value="">
@@ -2554,7 +2758,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_7">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/great_rune.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Great Rune</span>
                             </span>
                           </label>
@@ -2578,15 +2782,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_7">
                         <img class="float-end" data-src="/img/achievements/great_rune.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Great Rune</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Restore the power of a Great Rune.</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Easy to unlock at Stormveil, after defeating Godrick.</span>
                         </span><br>
@@ -2594,7 +2804,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_8" id="item_3_8">
+                <li class="list-group-item searchable" data-id="achievements_3_8" data-name-jets="erdtree aflame" id="item_3_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_8" type="checkbox" value="">
@@ -2607,7 +2817,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_8">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/erdtree_aflame.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Erdtree Aflame</span>
                             </span>
                           </label>
@@ -2631,15 +2841,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_8">
                         <img class="float-end" data-src="/img/achievements/erdtree_aflame.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Erdtree Aflame</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"> Use kindling to set the Erdtree Aflame.</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Will unlock as part of story progression, but I think it's achievable in two ways.</span>
                         </span><br>
@@ -2647,7 +2863,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_3_9" id="item_3_9">
+                <li class="list-group-item searchable" data-id="achievements_3_9" data-name-jets="elden ring" id="item_3_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="achievements_3_9" type="checkbox" value="">
@@ -2660,7 +2876,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_3_9">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/elden_ring.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Elden Ring</span>
                             </span>
                           </label>
@@ -2684,15 +2900,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_3_9">
                         <img class="float-end" data-src="/img/achievements/elden_ring.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Elden Ring</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Condition: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Condition: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Obtained all achievements</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Equivalent to a PlayStaton platinum trophy, but there's an achievement for it on all platforms.</span>
                         </span><br>
@@ -2729,24 +2951,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Name</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Name</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Desc.</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Desc.</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Notes</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Notes</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_4_1" id="item_4_1">
+                <li class="list-group-item searchable" data-id="achievements_4_1" data-name-jets="elden lord" id="item_4_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="achievements_4_1" type="checkbox" value="">
@@ -2759,7 +2987,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_4_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/elden_lord.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Elden Lord</span>
                             </span>
                           </label>
@@ -2783,15 +3011,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_4_1">
                         <img class="float-end" data-src="/img/achievements/elden_lord.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Elden Lord</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Desc.: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Desc.: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Achieve the 'Elden Lord' ending </span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Default ending. There are 4 confirmed variations based on quests you can do.</span>
                         </span><br>
@@ -2799,7 +3033,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_4_2" id="item_4_2">
+                <li class="list-group-item searchable" data-id="achievements_4_2" data-name-jets="age of the stars" id="item_4_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="achievements_4_2" type="checkbox" value="">
@@ -2812,7 +3046,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_4_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/age_of_the_stars.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Age of the Stars</span>
                             </span>
                           </label>
@@ -2836,15 +3070,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_4_2">
                         <img class="float-end" data-src="/img/achievements/age_of_the_stars.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Age of the Stars</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Desc.: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Desc.: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Achieve the 'Age of the Stars' ending</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Alternate ending. Finish Ranni's questline to unlock.</span>
                         </span><br>
@@ -2852,7 +3092,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="achievements_4_3" id="item_4_3">
+                <li class="list-group-item searchable" data-id="achievements_4_3" data-name-jets="lord of frenzied flame" id="item_4_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="achievements_4_3" type="checkbox" value="">
@@ -2865,7 +3105,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="achievements_4_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/achievements/lord_of_frenzied_flame.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Lord of Frenzied Flame</span>
                             </span>
                           </label>
@@ -2889,15 +3129,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="achievements_4_3">
                         <img class="float-end" data-src="/img/achievements/lord_of_frenzied_flame.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Lord of Frenzied Flame</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Desc.: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Desc.: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Achieve the 'Lord of Frenzied Flame' ending</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Alternate ending. Search for the Three Fingers and follow through to unlock.</span>
                         </span><br>
@@ -2944,15 +3190,41 @@
                         contentTag: "#achievements_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {
+                            if ($('#achievements_name_only').is(':checked')) {
+                                return node.getAttribute('data-name-jets') || '';
+                            }
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         },
                         didSearch: function(search_phrase) {
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#achievements_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#achievements_list h5").removeClass('d-none');
+                            $("#achievements_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                                return;
+                            }
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#achievements_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }
+                                return true;
+                            };
+                            
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -2960,37 +3232,23 @@
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }
 
-                                if (!search_phrase) {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                } else {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
+                            
                             $("#achievements_list h5").each(function() {
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
-                        }
+                        },
                     });
                     function updateSearch() {
                         var search_phrase = $("#achievements_search").val().trim();
@@ -3012,9 +3270,15 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#achievements_name_only').is(':checked')) {
+                                    text = $(this).attr('data-name-jets') || '';
+                                } else {
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }
+                                
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {
@@ -3068,7 +3332,11 @@
                             $("#achievements_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {
                                 try {
-                                    $("#achievements_list").highlight(regex);
+                                    if ($('#achievements_name_only').is(':checked')) {
+                                        $("#achievements_list .item-name").highlight(regex);
+                                    } else {
+                                        $("#achievements_list").highlight(regex);
+                                    }
                                 } catch(e) {}
                             }
                             
@@ -3083,7 +3351,11 @@
                             // Highlighting for normal text
                             $("#achievements_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {
-                                $("#achievements_list").highlight(search_phrase);
+                                if ($('#achievements_name_only').is(':checked')) {
+                                    $("#achievements_list .item-name").highlight(search_phrase);
+                                } else {
+                                    $("#achievements_list").highlight(search_phrase);
+                                }
                             }
                         }
                     }
@@ -3095,6 +3367,30 @@
                     $('#achievements_regex').on('change', function() {
                         updateSearch();
                     });
+                    
+                    $('#achievements_name_only').on('change', function() {
+                        if (jet.options) {
+                            jet.options.manualContentHandling = function(node) {
+                                if ($('#achievements_name_only').is(':checked')) {
+                                    return node.getAttribute('data-name-jets') || '';
+                                }
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            };
+                        }
+                        if (jet._setJets) {
+                            jet._setJets('', true);
+                        }
+                        
+                        if ($('#achievements_regex').is(':checked')) {
+                            updateSearch();
+                        } else {
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#achievements_search').trigger('input');
+                        }
+                    });
+                    updateSearch();
                 });
             })( jQuery );
             </script>

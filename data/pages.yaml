@@ -12,6 +12,7 @@ nav_static:
   - "Both"
   - "Base Game"
   - "DLC"
+  - "Name Only"
 
 nav_static_it:
   - "Guide della Tavola Rotonda"
@@ -24,6 +25,7 @@ nav_static_it:
   - "Entrambi"
   - "Gioco Base"
   - "DLC"
+  - "Solo nome"
 
 dropdowns:
   -

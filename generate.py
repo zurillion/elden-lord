@@ -12,14 +12,22 @@ from more_itertools import peekable
 
 # Supported display languages. Add new entries here to support more languages.
 # The key is the 2-3 letter code used in YAML fields (title_it, data_it, etc.)
+UK_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">"
+IT_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">"
+ES_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23c60b1e'/%3E%3Crect width='3' height='1' y='0.5' fill='%23ffc400'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">"
+FR_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23002395'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ed2939'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">"
+DE_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23000'/%3E%3Crect width='3' height='1.333' y='0.666' fill='%23d00'/%3E%3Crect width='3' height='0.666' y='1.333' fill='%23ffce00'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">"
+PT_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 3'%3E%3Cpath fill='%23060' d='M0 0h2v3H0z'/%3E%3Cpath fill='%23f00' d='M2 0h3v3H2z'/%3E%3Ccircle fill='%23ff0' cx='2' cy='1.5' r='0.6'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">"
+JA_FLAG = "<img src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='3' height='2' fill='%23fff'/%3E%3Ccircle cx='1.5' cy='1' r='0.6' fill='%23bc002d'/%3E%3C/svg%3E\" style=\"height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);\">"
+
 LANGUAGE_META = {
-    'en': {'flag': '🇬🇧', 'name': 'EN'},
-    'it': {'flag': '🇮🇹', 'name': 'IT'},
-    'es': {'flag': '🇪🇸', 'name': 'ES'},
-    'fr': {'flag': '🇫🇷', 'name': 'FR'},
-    'de': {'flag': '🇩🇪', 'name': 'DE'},
-    'pt': {'flag': '🇵🇹', 'name': 'PT'},
-    'ja': {'flag': '🇯🇵', 'name': 'JA'},
+    'en': {'flag': UK_FLAG, 'name': 'EN'},
+    'it': {'flag': IT_FLAG, 'name': 'IT'},
+    'es': {'flag': ES_FLAG, 'name': 'ES'},
+    'fr': {'flag': FR_FLAG, 'name': 'FR'},
+    'de': {'flag': DE_FLAG, 'name': 'DE'},
+    'pt': {'flag': PT_FLAG, 'name': 'PT'},
+    'ja': {'flag': JA_FLAG, 'name': 'JA'},
 }
 
 
@@ -311,8 +319,8 @@ def make_nav(page, is_map = False):
                         with ul(cls="dropdown-menu dropdown-menu-end position-absolute", id="lang-menu"):
                             for lang_code in all_lang_codes:
                                 meta = LANGUAGE_META.get(lang_code, {'flag': '🌐', 'name': lang_code.upper()})
-                                li().add(a(meta['flag'] + ' ' + meta['name'], href="#",
-                                           cls="dropdown-item lang-option", data_lang=lang_code))
+                                with li():
+                                    a(raw(meta['flag']), ' ', meta['name'], href="#", cls="dropdown-item lang-option", data_lang=lang_code)
 
             with form(cls="d-none d-sm-flex order-2 order-xl-3", action="/search.html", method="get"):
                 input_(cls='form-control me-2', type='search', placeholder='Search', aria_label='search', name='search')
@@ -401,15 +409,41 @@ def make_footer(page=None):
                         contentTag: "#{page_id}_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {{
+                            if ($('#{page_id}_name_only').is(':checked')) {{
+                                return node.getAttribute('data-name-jets') || '';
+                            }}
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         }},
                         didSearch: function(search_phrase) {{
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#{page_id}_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\\s\\s+/g, ' ').replace(/\\\\/g, '\\\\\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#{page_id}_list h5").removeClass('d-none');
+                            $("#{page_id}_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {{
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) {{ dlcFilter.trigger('change'); }}
+                                return;
+                            }}
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\\s\\s+/g, ' ').replace(/\\\\/g, '\\\\\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#{page_id}_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {{
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {{
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }}
+                                return true;
+                            }};
+                            
                             $(".card").each(function(index, el) {{
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -417,37 +451,23 @@ def make_footer(page=None):
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }}
 
-                                if (!search_phrase) {{
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }}
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {{
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {{
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                }} else {{
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }}
                             }});
+                            
                             $("#{page_id}_list h5").each(function() {{
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {{
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {{
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }}
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             }});
-                            if (!search_phrase) {{
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) {{ dlcFilter.trigger('change'); }}
-                            }}
-                        }}
+                        }},
                     }});
                     function updateSearch() {{
                         var search_phrase = $("#{page_id}_search").val().trim();
@@ -469,9 +489,15 @@ def make_footer(page=None):
                             }}
                             
                             $(".searchable").each(function() {{
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#{page_id}_name_only').is(':checked')) {{
+                                    text = $(this).attr('data-name-jets') || '';
+                                }} else {{
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }}
+                                
                                 if (!search_phrase || search_phrase.length === 0) {{
                                     $(this).removeClass('d-none-regex');
                                 }} else if (regex && text.match(regex)) {{
@@ -525,7 +551,11 @@ def make_footer(page=None):
                             $("#{page_id}_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {{
                                 try {{
-                                    $("#{page_id}_list").highlight(regex);
+                                    if ($('#{page_id}_name_only').is(':checked')) {{
+                                        $("#{page_id}_list .item-name").highlight(regex);
+                                    }} else {{
+                                        $("#{page_id}_list").highlight(regex);
+                                    }}
                                 }} catch(e) {{}}
                             }}
                             
@@ -540,7 +570,11 @@ def make_footer(page=None):
                             // Highlighting for normal text
                             $("#{page_id}_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {{
-                                $("#{page_id}_list").highlight(search_phrase);
+                                if ($('#{page_id}_name_only').is(':checked')) {{
+                                    $("#{page_id}_list .item-name").highlight(search_phrase);
+                                }} else {{
+                                    $("#{page_id}_list").highlight(search_phrase);
+                                }}
                             }}
                         }}
                     }}
@@ -552,6 +586,30 @@ def make_footer(page=None):
                     $('#{page_id}_regex').on('change', function() {{
                         updateSearch();
                     }});
+                    
+                    $('#{page_id}_name_only').on('change', function() {{
+                        if (jet.options) {{
+                            jet.options.manualContentHandling = function(node) {{
+                                if ($('#{page_id}_name_only').is(':checked')) {{
+                                    return node.getAttribute('data-name-jets') || '';
+                                }}
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            }};
+                        }}
+                        if (jet._setJets) {{
+                            jet._setJets('', true);
+                        }}
+                        
+                        if ($('#{page_id}_regex').is(':checked')) {{
+                            updateSearch();
+                        }} else {{
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#{page_id}_search').trigger('input');
+                        }}
+                    }});
+                    updateSearch();
                 }});
             }})( jQuery );
             """.format(page_id=page['id']))
@@ -882,13 +940,17 @@ def make_checklist(page):
                     input_(cls="form-check-input mt-0 me-2", type="checkbox", id=page['id'] + "_regex", aria_label="Use Regex for Search")
                     label_text = nav_static.get(4, {'en': 'Use Regex'})
                     localized_span(label_text)
+                with div(cls="input-group-text"):
+                    input_(cls="form-check-input mt-0 me-2", type="checkbox", id=page['id'] + "_name_only", aria_label="Name Only Search")
+                    name_only_text = nav_static.get(10, {'en': 'Name Only'})
+                    localized_span(name_only_text)
 
             if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones'}:
                 with div(cls='row d-print-none mb-3'):
                     with div(cls='col-auto d-flex align-items-center gap-2'):
                         with label(_for='dlc_filter', cls='mb-0'):
                             localized_span(nav_static.get(6, {'en': 'Show:'}))
-                        with select(id='dlc_filter', cls='form-select form-select-sm'):
+                        with select(id='dlc_filter', cls='form-select form-select-sm', style='min-width: 140px;'):
                             both_opts = {'value': 'both', 'selected': 'selected'}
                             for l in available_languages | {'en'}:
                                 both_opts[f'data_lang_{l}'] = nav_static.get(7, {'en': 'Both'}).get(l, 'Both')
@@ -953,13 +1015,28 @@ def make_checklist(page):
                                             with div(cls="col d-flex align-items-center d-md-block").add(div(cls="row")):
                                                 for idx, header in enumerate(section['table']):
                                                     col_size = str(table_widths[idx])
-                                                    div(cls="ms-0 ps-0 d-flex align-items-center col-md-" + col_size).add(label(strong(header, cls="no-highlight"), cls='ms-0 ps-0'))
+                                                    with div(cls="ms-0 ps-0 d-flex align-items-center col-md-" + col_size):
+                                                        with label(cls='ms-0 ps-0'):
+                                                            with strong(cls="no-highlight lang-pair"):
+                                                                span(header, cls='lang-text lang-en')
+                                                                for lang in sorted(available_languages):
+                                                                    t_key = 'table_' + lang
+                                                                    if t_key in section and len(section[t_key]) > idx:
+                                                                        span(section[t_key][idx], cls='lang-text lang-' + lang + ' d-none')
                                     for item in items:
                                         id = str(item['id'])
+                                        
+                                        d_name_jets = strip_a_tags(item['data'][0])
+                                        for lang in available_languages:
+                                            d_key = 'data_' + lang
+                                            if d_key in item and item[d_key]:
+                                                d_name_jets += ' ' + strip_a_tags(item[d_key][0])
+                                                
                                         li_kwargs = {
                                             'cls': "list-group-item searchable",
                                             'data_id': page['id'] + '_' + id,
                                             'id': 'item_' + id,
+                                            'data_name_jets': d_name_jets.lower() if hasattr(d_name_jets, 'lower') else str(d_name_jets).lower(),
                                         }
                                         if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones'}:
                                             is_dlc = item.get('dlc', section.get('dlc', page.get('dlc', False)))
@@ -989,7 +1066,7 @@ def make_checklist(page):
                                                             with label(cls="form-check-label item_content ms-0 ps-0 d-flex align-items-center", _for=page['id'] + '_' + id):
                                                                 if pos == 0 and 'icon' in item:
                                                                     add_icon(item['icon'], 'me-2 flex-shrink-0')
-                                                                with span(cls='lang-pair'):
+                                                                with span(cls='lang-pair item-name' if pos == 0 else 'lang-pair'):
                                                                     with span(cls='lang-text lang-en'):
                                                                         if item['data'][pos]:
                                                                             raw(item['data'][pos])
@@ -1008,8 +1085,13 @@ def make_checklist(page):
                                                         for pos in range(table_cols):
                                                             col_size = str(table_widths[pos])
                                                             if isinstance(section['table'], list) and item['data'][pos]:
-                                                                strong(section['table'][pos] + ': ', cls="me-1 no-highlight")
-                                                            with span(cls='lang-pair'):
+                                                                with strong(cls="me-1 no-highlight lang-pair"):
+                                                                    span(section['table'][pos] + ': ', cls='lang-text lang-en')
+                                                                    for lang in sorted(available_languages):
+                                                                        t_key = 'table_' + lang
+                                                                        if t_key in section and len(section[t_key]) > pos:
+                                                                            span(section[t_key][pos] + ': ', cls='lang-text lang-' + lang + ' d-none')
+                                                            with span(cls='lang-pair item-name' if pos == 0 else 'lang-pair'):
                                                                 with span(cls='lang-text lang-en'):
                                                                     if item['data'][pos]:
                                                                         raw(item['data'][pos])
@@ -1038,10 +1120,18 @@ def make_checklist(page):
                                         continue
                                     def f(item):
                                         id = str(item['id'])
+                                        
+                                        d_name_jets = strip_a_tags(item['data'][0])
+                                        for lang in available_languages:
+                                            d_key = 'data_' + lang
+                                            if d_key in item and item[d_key]:
+                                                d_name_jets += ' ' + strip_a_tags(item[d_key][0])
+                                                
                                         li_kwargs = {
                                             'data_id': page['id'] + "_" + id,
                                             'cls': "list-group-item searchable ps-0",
                                             'id': 'item_' + id,
+                                            'data_name_jets': d_name_jets.lower() if hasattr(d_name_jets, 'lower') else str(d_name_jets).lower(),
                                         }
                                         if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones'}:
                                             is_dlc = item.get('dlc', section.get('dlc', page.get('dlc', False)))
@@ -1052,7 +1142,7 @@ def make_checklist(page):
                                                 with label(cls="form-check-label item_content d-md-flex align-items-center w-100", _for=page['id'] + '_' + id):
                                                     if 'icon' in item:
                                                         add_icon(item['icon'], 'float-md-none float-end me-md-2 flex-shrink-0')
-                                                    with span(cls='lang-pair'):
+                                                    with span(cls='lang-pair item-name'):
                                                         with span(cls='lang-text lang-en'):
                                                             raw(item['data'][0])
                                                         for lang in sorted(available_languages):
@@ -1132,7 +1222,12 @@ def make_search():
                                             for pos in range(table_cols):
                                                 col_size = str(table_widths[pos])
                                                 if isinstance(section['table'], list) and item['data'][pos]:
-                                                    strong(strip_a_tags(section['table'][pos]) + ': ', cls='me-1 no-highlight')
+                                                    with strong(cls="me-1 no-highlight lang-pair"):
+                                                        span(strip_a_tags(section['table'][pos]) + ': ', cls='lang-text lang-en')
+                                                        for lang in sorted(available_languages):
+                                                            t_key = 'table_' + lang
+                                                            if t_key in section and len(section[t_key]) > pos:
+                                                                span(strip_a_tags(section[t_key][pos]) + ': ', cls='lang-text lang-' + lang + ' d-none')
                                                 if item['data'][pos]:
                                                     raw(strip_a_tags(item['data'][pos]))
                                                     br()

@@ -94,10 +94,10 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
               <li>
-                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                <a class="dropdown-item lang-option" data-lang="en" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> EN</a>
               </li>
               <li>
-                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                <a class="dropdown-item lang-option" data-lang="it" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> IT</a>
               </li>
             </ul>
           </li>
@@ -177,6 +177,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/bosses.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Bosses</span>
+                      <span class="lang-text lang-it">Boss</span>
                     </span>
                   </a>
                 </li>
@@ -505,6 +506,13 @@
             <span class="lang-text lang-it">Usa Regex</span>
           </span>
         </div>
+        <div class="input-group-text">
+          <input aria-label="Name Only Search" class="form-check-input mt-0 me-2" id="remembrances_mausoleums_name_only" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Name Only</span>
+            <span class="lang-text lang-it">Solo nome</span>
+          </span>
+        </div>
       </div>
       <div id="remembrances_mausoleums_list">
         <div class="card shadow-sm mb-3" id="remembrances_mausoleums_section_0">
@@ -520,12 +528,12 @@
             </h4>
             <div aria-expanded="true" class="collapse show" id="remembrances_mausoleums_0Col">
               <ul class="list-group-flush mb-0 ps-0 ps-md-4">
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_1" id="item_1_1">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_1" data-name-jets="remembrance of the grafted (20,000 runes)" id="item_1_1">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_1" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_1">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00163.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Grafted">Remembrance of the Grafted</a> (20,000 Runes)</span>
                       </span>
                     </label>
@@ -533,35 +541,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_1_1" id="item_1_1_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_1_1" data-name-jets="weapon - axe of godrick" id="item_1_1_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_1_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_1_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/greataxes/10564.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Axe of Godrick</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_1_2" id="item_1_1_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_1_2" data-name-jets="weapon - grafted dragon" id="item_1_1_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_1_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_1_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/fists/10806.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Grafted Dragon</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_2" id="item_1_2">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_2" data-name-jets="remembrance of the full moon queen (20,000 runes)" id="item_1_2">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_2" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_2">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00172.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Full+Moon+Queen">Remembrance of the Full Moon Queen</a> (20,000 Runes)</span>
                       </span>
                     </label>
@@ -569,35 +577,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_2_1" id="item_1_2_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_2_1" data-name-jets="sorcery spell - rennala's full moon" id="item_1_2_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_2_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_2_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/sorceries/06007.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Sorcery Spell - Rennala's Full Moon</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_2_2" id="item_1_2_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_2_2" data-name-jets="weapon - carian regal scepter" id="item_1_2_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_2_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_2_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/glintstonestaffs/11204.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Carian Regal Scepter</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_3" id="item_1_3">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_3" data-name-jets="remembrance of the starscourge (40,000 runes)" id="item_1_3">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_3" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_3">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00164.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Starscourge">Remembrance of the Starscourge</a> (40,000 Runes)</span>
                       </span>
                     </label>
@@ -605,35 +613,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_3_1" id="item_1_3_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_3_1" data-name-jets="weapon - starscourge greatsword" id="item_1_3_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_3_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_3_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/colossalswords/10125.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Starscourge Greatsword</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_3_2" id="item_1_3_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_3_2" data-name-jets="weapon - lion greatbow" id="item_1_3_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_3_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_3_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/greatbows/11080.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Lion Greatbow</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_8" id="item_1_8">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_8" data-name-jets="remembrance of the blasphemous (50,000 runes)" id="item_1_8">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_8" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_8">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00166.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Blasphemous">Remembrance of the Blasphemous</a> (50,000 Runes)</span>
                       </span>
                     </label>
@@ -641,35 +649,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_8_1" id="item_1_8_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_8_1" data-name-jets="sorcery spell - rykard's rancor" id="item_1_8_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_8_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_8_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/sorceries/06045.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Sorcery Spell - Rykard's Rancor</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_8_2" id="item_1_8_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_8_2" data-name-jets="weapon - blasphemous blade" id="item_1_8_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_8_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_8_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/greatswords/10094.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Blasphemous Blade</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_10" id="item_1_10">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_10" data-name-jets="remembrance of the omen king (30,000 runes)" id="item_1_10">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_10" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_10">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00165.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Omen+King">Remembrance of the Omen King</a> (30,000 Runes)</span>
                       </span>
                     </label>
@@ -677,35 +685,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_10_1" id="item_1_10_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_10_1" data-name-jets="weapon - morgott's cursed sword" id="item_1_10_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_10_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_10_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/curvedgreatswords/10288.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Morgott's Cursed Sword</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_10_2" id="item_1_10_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_10_2" data-name-jets="reusable tool - regal omen bairn" id="item_1_10_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_10_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_10_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/00677.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Reusable Tool - Regal Omen Bairn</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_9" id="item_1_9">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_9" data-name-jets="remembrance of the fire giant (30,000 runes)" id="item_1_9">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_9" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_9">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00174.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Fire+Giant">Remembrance of the Fire Giant</a> (30,000 Runes)</span>
                       </span>
                     </label>
@@ -713,35 +721,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_9_1" id="item_1_9_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_9_1" data-name-jets="weapon - giant's red braid" id="item_1_9_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_9_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_9_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/whips/10766.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Giant's Red Braid</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_9_2" id="item_1_9_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_9_2" data-name-jets="incantation spell - burn, o flame!" id="item_1_9_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_9_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_9_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06211.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation Spell - Burn, O Flame!</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_14" id="item_1_14">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_14" data-name-jets="remembrance of the rot goddess (50,000 runes)" id="item_1_14">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_14" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_14">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00167.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Rot+Goddess">Remembrance of the Rot Goddess</a> (50,000 Runes)</span>
                       </span>
                     </label>
@@ -749,175 +757,175 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_14_1" id="item_1_14_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_14_1" data-name-jets="weapon - hand of malenia" id="item_1_14_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_14_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_14_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/katanas/10322.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Hand Of Malenia</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_14_2" id="item_1_14_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_14_2" data-name-jets="incantation spell - scarlet aeonia" id="item_1_14_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_14_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_14_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06713.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation Spell - Scarlet Aeonia</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_11" id="item_1_11">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_11" data-name-jets="remembrance of the dragonlord (30,000 runes)" id="item_1_11">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_11" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_11">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00171.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Dragonlord">Remembrance of the Dragonlord</a> (30,000 Runes)</span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_11_1" id="item_1_11_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_11_1" data-name-jets="weapon - dragon king's cragblade" id="item_1_11_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_11_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_11_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/heavythrustingswords/10204.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Dragon King's Cragblade</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_11_2" id="item_1_11_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_11_2" data-name-jets="incantation spell - placidusax's ruin" id="item_1_11_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_11_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_11_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06089.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation Spell - Placidusax's Ruin</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_7" id="item_1_7">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_7" data-name-jets="remembrance of the black blade (30,000 runes)" id="item_1_7">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_7" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_7">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00169.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Black+Blade">Remembrance of the Black Blade</a> (30,000 Runes)</span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_7_1" id="item_1_7_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_7_1" data-name-jets="weapon - maliketh's black blade" id="item_1_7_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_7_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_7_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/colossalswords/10122.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Maliketh's Black Blade</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_7_2" id="item_1_7_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_7_2" data-name-jets="incantation spell - black blade" id="item_1_7_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_7_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_7_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06712.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation Spell - Black Blade</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_6" id="item_1_6">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_6" data-name-jets="remembrance of hoarah loux (30,000 runes)" id="item_1_6">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_6" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_6">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00170.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+Hoarah+Loux">Remembrance of Hoarah Loux</a> (30,000 Runes)</span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_6_1" id="item_1_6_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_6_1" data-name-jets="weapon - axe of godfrey" id="item_1_6_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_6_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_6_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/colossalweapons/10885.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Axe Of Godfrey</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_6_2" id="item_1_6_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_6_2" data-name-jets="ash of war - hoarah loux's earthshaker" id="item_1_6_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_6_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_6_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/ashes_of_war/08408.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Ash Of War - Hoarah Loux's Earthshaker</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_13" id="item_1_13">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_13" data-name-jets="elden remembrance (50,000 runes)" id="item_1_13">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_13" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_13">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00176.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Elden+Remembrance">Elden Remembrance</a> (50,000 Runes)</span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_13_1" id="item_1_13_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_13_1" data-name-jets="weapon - marika's hammer" id="item_1_13_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_13_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_13_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/hammers/10414.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Marika's Hammer</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_13_2" id="item_1_13_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_13_2" data-name-jets="weapon - sacred relic sword" id="item_1_13_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_13_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_13_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/greatswords/10090.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Sacred Relic Sword</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_4" id="item_1_4">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_4" data-name-jets="remembrance of the regal ancestor (30,000 runes)" id="item_1_4">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_4" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_4">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00175.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Regal+Ancestor">Remembrance of the Regal Ancestor</a> (30,000 Runes)</span>
                       </span>
                     </label>
@@ -925,35 +933,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_4_1" id="item_1_4_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_4_1" data-name-jets="weapon - winged greathorn" id="item_1_4_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_4_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_4_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/greataxes/10571.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Winged Greathorn</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_4_2" id="item_1_4_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_4_2" data-name-jets="talisman - ancestral spirit's horn" id="item_1_4_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_4_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_4_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/talismans/18880.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Talisman - Ancestral Spirit's Horn</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_15" id="item_1_15">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_15" data-name-jets="remembrance of the blood lord (30,000 runes)" id="item_1_15">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_15" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_15">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00168.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Blood+Lord">Remembrance of the Blood Lord</a> (30,000 Runes)</span>
                       </span>
                     </label>
@@ -961,35 +969,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_15_1" id="item_1_15_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_15_1" data-name-jets="incantation spell - bloodboon" id="item_1_15_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_15_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_15_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06254.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation Spell - Bloodboon</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_15_2" id="item_1_15_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_15_2" data-name-jets="weapon - mohgwyn's sacred spear" id="item_1_15_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_15_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_15_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/greatspears/10641.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Mohgwyn's Sacred Spear</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_5" id="item_1_5">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_5" data-name-jets="remembrance of the naturalborn (30,000 runes)" id="item_1_5">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_5" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_5">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00177.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Naturalborn">Remembrance of the Naturalborn</a> (30,000 Runes)</span>
                       </span>
                     </label>
@@ -997,35 +1005,35 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_5_1" id="item_1_5_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_5_1" data-name-jets="weapon - bastard's stars" id="item_1_5_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_5_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_5_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/flails/10483.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon - Bastard's Stars</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_5_2" id="item_1_5_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_5_2" data-name-jets="ash of war - waves of darkness" id="item_1_5_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_5_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_5_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/ashes_of_war/08407.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Ash Of War - Waves Of Darkness</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_12" id="item_1_12">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_12" data-name-jets="remembrance of the lichdragon (30,000 runes)" id="item_1_12">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_12" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_12">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00173.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Lichdragon">Remembrance of the Lichdragon</a> (30,000 Runes)</span>
                       </span>
                     </label>
@@ -1033,419 +1041,419 @@
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_12_1" id="item_1_12_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_12_1" data-name-jets="incantation spell - fortissax's lightning spear" id="item_1_12_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_12_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_12_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06075.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation Spell - Fortissax's Lightning Spear</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_12_2" id="item_1_12_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_12_2" data-name-jets="incantation spell - death lightning" id="item_1_12_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_12_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_12_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06104.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation Spell - Death Lightning</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_21" id="item_1_21">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_21" data-name-jets="remembrance of the wild boar rider" id="item_1_21">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_21" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_21">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00732.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Wild+Boar+Rider">Remembrance of the Wild Boar Rider</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_21_1" id="item_1_21_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_21_1" data-name-jets="weapon: sword lance" id="item_1_21_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_21_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_21_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12214.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Sword Lance</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_21_2" id="item_1_21_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_21_2" data-name-jets="sorcery: blades of stone" id="item_1_21_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_21_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_21_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/sorceries/06805.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Sorcery: Blades of Stone</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_22" id="item_1_22">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_22" data-name-jets="remembrance of the impaler" id="item_1_22">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_22" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_22">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00733.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Impaler">Remembrance of the Impaler</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_22_1" id="item_1_22_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_22_1" data-name-jets="weapon: spear of the impaler" id="item_1_22_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_22_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_22_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12242.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Spear of the Impaler</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_22_2" id="item_1_22_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_22_2" data-name-jets="incantation: messmer's orb" id="item_1_22_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_22_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_22_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06877.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation: Messmer's Orb</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_23" id="item_1_23">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_23" data-name-jets="remembrance of the shadow sunflower" id="item_1_23">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_23" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_23">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00734.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Shadow+Sunflower">Remembrance of the Shadow Sunflower</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_23_1" id="item_1_23_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_23_1" data-name-jets="weapon: shadow sunflower blossom" id="item_1_23_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_23_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_23_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12257.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Shadow Sunflower Blossom</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_23_2" id="item_1_23_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_23_2" data-name-jets="incantation: land of shadow" id="item_1_23_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_23_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_23_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06855.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation: Land of Shadow</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_24" id="item_1_24">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_24" data-name-jets="remembrance of the twin moon knight" id="item_1_24">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_24" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_24">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00735.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Twin+Moon+Knight">Remembrance of the Twin Moon Knight</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_24_1" id="item_1_24_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_24_1" data-name-jets="weapon: rellana's twin blades" id="item_1_24_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_24_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_24_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12279.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Rellana's Twin Blades</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_24_2" id="item_1_24_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_24_2" data-name-jets="sorcery: rellana's twin moons" id="item_1_24_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_24_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_24_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/sorceries/06801.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Sorcery: Rellana's Twin Moons</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_25" id="item_1_25">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_25" data-name-jets="remembrance of the saint of the bud" id="item_1_25">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_25" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_25">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00736.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Saint+of+the+Bud">Remembrance of the Saint of the Bud</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_25_1" id="item_1_25_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_25_1" data-name-jets="weapon: poleblade of the bud" id="item_1_25_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_25_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_25_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12246.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Poleblade of the Bud</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_25_2" id="item_1_25_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_25_2" data-name-jets="incantation: rotten butterflies" id="item_1_25_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_25_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_25_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06866.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation: Rotten Butterflies</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_26" id="item_1_26">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_26" data-name-jets="remembrance of the dancing lion" id="item_1_26">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_26" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_26">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00737.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Dancing+Lion">Remembrance of the Dancing Lion</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_26_1" id="item_1_26_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_26_1" data-name-jets="talisman: enraged divine beast" id="item_1_26_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_26_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_26_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/talismans/18930.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Talisman: Enraged Divine Beast</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_26_2" id="item_1_26_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_26_2" data-name-jets="ash of war: divine beast frost stomp" id="item_1_26_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_26_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_26_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/ashes_of_war/08518.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Ash of War: Divine Beast Frost Stomp</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27" id="item_1_27">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27" data-name-jets="remembrance of a god and a lord" id="item_1_27">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_27">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00739.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+a+God+and+a+Lord">Remembrance of a God and a Lord</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27_1" id="item_1_27_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27_1" data-name-jets="weapon: greatsword of radahn (lord)" id="item_1_27_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_27_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12212.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Greatsword of Radahn (Lord)</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27_2" id="item_1_27_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27_2" data-name-jets="weapon: greatsword of radahn (light)" id="item_1_27_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_27_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12212.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Greatsword of Radahn (Light)</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27_3" id="item_1_27_3">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_27_3" data-name-jets="incantation: light of miquella" id="item_1_27_3">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_27_3" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_27_3">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06857.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation: Light of Miquella</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_28" id="item_1_28">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_28" data-name-jets="remembrance of the lord of frenzied flame" id="item_1_28">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_28" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_28">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00740.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Lord+of+Frenzied+Flame">Remembrance of the Lord of Frenzied Flame</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_28_1" id="item_1_28_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_28_1" data-name-jets="weapon: greatsword of damnation" id="item_1_28_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_28_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_28_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12207.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Greatsword of Damnation</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_28_2" id="item_1_28_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_28_2" data-name-jets="incantation: midra's flame of frenzy" id="item_1_28_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_28_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_28_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06868.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation: Midra's Flame of Frenzy</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_29" id="item_1_29">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_29" data-name-jets="remembrance of the mother of fingers" id="item_1_29">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_29" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_29">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00741.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+the+Mother+of+Fingers">Remembrance of the Mother of Fingers</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_29_1" id="item_1_29_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_29_1" data-name-jets="weapon: staff of the great beyond" id="item_1_29_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_29_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_29_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12290.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Staff of the Great Beyond</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_29_2" id="item_1_29_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_29_2" data-name-jets="weapon: gazing finger" id="item_1_29_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_29_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_29_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12258.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Gazing Finger</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_30" id="item_1_30">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_30" data-name-jets="remembrance of putrescence" id="item_1_30">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_30" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_30">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/00742.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Remembrance+of+Putrescence">Remembrance of Putrescence</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_30_1" id="item_1_30_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_30_1" data-name-jets="weapon: putrescence cleaver" id="item_1_30_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_30_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_30_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/weapons/dlc/12220.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Weapon: Putrescence Cleaver</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_30_2" id="item_1_30_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_30_2" data-name-jets="sorcery: vortex of putrescence" id="item_1_30_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_30_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_30_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/sorceries/06810.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Sorcery: Vortex of Putrescence</span>
                         </span>
                       </label>
                     </div>
                   </li>
                 </ul>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_31" id="item_1_31">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_31" data-name-jets="heart of bayle" id="item_1_31">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_31" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_31">
                       <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/tools/remembrances/03807.png" loading="lazy" style="height: 70px; width: 70px">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Heart+of+Bayle">Heart of Bayle</a></span>
                       </span>
                     </label>
                   </div>
                 </li>
                 <ul class="list-group-flush">
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_31_1" id="item_1_31_1">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_31_1" data-name-jets="incantation: bayle's flame lightning" id="item_1_31_1">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_31_1" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_31_1">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06864.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation: Bayle's Flame Lightning</span>
                         </span>
                       </label>
                     </div>
                   </li>
-                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_31_2" id="item_1_31_2">
+                  <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_1_31_2" data-name-jets="incantation: bayle's tyranny" id="item_1_31_2">
                     <div class="form-check checkbox d-flex align-items-center">
                       <input class="form-check-input" data-section-idx="0" id="remembrances_mausoleums_1_31_2" type="checkbox" value="">
                       <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_1_31_2">
                         <img class="float-md-none float-end me-md-2 flex-shrink-0" data-src="/img/icons/incantations/06863.png" loading="lazy" style="height: 70px; width: 70px">
-                        <span class="lang-pair">
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Incantation: Bayle's Tyranny</span>
                         </span>
                       </label>
@@ -1469,77 +1477,77 @@
             </h4>
             <div aria-expanded="true" class="collapse show" id="remembrances_mausoleums_1Col">
               <ul class="list-group-flush mb-0 ps-0 ps-md-4">
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_1" id="item_2_1">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_1" data-name-jets="weeping peninsula - in the western area past the church of pilgrimage. the skulls are on its feet." id="item_2_1">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_1" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_2_1">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Weeping Peninsula - In the western area past the Church of Pilgrimage. The skulls are on its feet.</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_1&amp;id=remembrances_mausoleums_2_1&amp;link=/checklists/remembrances_mausoleums.html%23item_2_1&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_2" id="item_2_2">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_2" data-name-jets="liurnia of the lakes - northeast of raya lucaria, in the waters in front of raya lucaria crystal tunnel grace. the skulls are on top." id="item_2_2">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_2" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_2_2">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Liurnia of the Lakes - Northeast of Raya Lucaria, in the waters in front of Raya Lucaria Crystal Tunnel Grace. The skulls are on top.</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_2&amp;id=remembrances_mausoleums_2_2&amp;link=/checklists/remembrances_mausoleums.html%23item_2_2&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_3" id="item_2_3">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_3" data-name-jets="liurnia of the lakes - one of two found around the mausoleum compound grace in uld palace ruins, north of the church of vows. &lt;b&gt;important - these only duplicate a limited amount of remembrances.&lt;/b&gt; watch out for its hops. the skulls are on its feet." id="item_2_3">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_3" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_2_3">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Liurnia of the Lakes - One of two found around the Mausoleum Compound Grace in Uld Palace Ruins, north of the Church of Vows. <b>IMPORTANT - These only duplicate a limited amount of Remembrances.</b> Watch out for its hops. The skulls are on its feet.</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_3&amp;id=remembrances_mausoleums_2_3&amp;link=/checklists/remembrances_mausoleums.html%23item_2_3&amp;title=Wandering Mausoleum (no bell)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_7" id="item_2_7">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_7" data-name-jets="liurnia of the lakes - one of two found around the mausoleum compound grace in uld palace ruins, north of the church of vows. &lt;b&gt;important - these only duplicate a limited amount of remembrances.&lt;/b&gt; watch out for its hops. the skulls are on its feet." id="item_2_7">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_7" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_2_7">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Liurnia of the Lakes - One of two found around the Mausoleum Compound Grace in Uld Palace Ruins, north of the Church of Vows. <b>IMPORTANT - These only duplicate a limited amount of Remembrances.</b> Watch out for its hops. The skulls are on its feet.</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_7&amp;id=remembrances_mausoleums_2_7&amp;link=/checklists/remembrances_mausoleums.html%23item_2_7&amp;title=Wandering Mausoleum (no bell)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_4" id="item_2_4">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_4" data-name-jets="mountaintop of the giants - just outside castle sol in the northern area. the skulls are on its feet." id="item_2_4">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_4" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_2_4">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Mountaintop of the Giants - Just outside Castle Sol in the northern area. The skulls are on its feet.</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_4&amp;id=remembrances_mausoleums_2_4&amp;link=/checklists/remembrances_mausoleums.html%23item_2_4&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_5" id="item_2_5">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_5" data-name-jets="consecrated snowfield - northwest of ordina, next to the apostate derelict grace. watch out for its murder rain. the skulls are on its feet." id="item_2_5">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_5" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_2_5">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Consecrated Snowfield - Northwest of Ordina, next to the Apostate Derelict Grace. Watch out for its murder rain. The skulls are on its feet.</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=remembrances_mausoleums_2_5&amp;id=remembrances_mausoleums_2_5&amp;link=/checklists/remembrances_mausoleums.html%23item_2_5&amp;title=Wandering Mausoleum"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_6" id="item_2_6">
+                <li class="list-group-item searchable ps-0" data-id="remembrances_mausoleums_2_6" data-name-jets="deeproot depths - near the the nameless eternal city grace. the skulls are on top." id="item_2_6">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="remembrances_mausoleums_2_6" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="remembrances_mausoleums_2_6">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Deeproot Depths - Near the The Nameless Eternal City Grace. The skulls are on top.</span>
                       </span>
                     </label>
@@ -1585,15 +1593,41 @@
                         contentTag: "#remembrances_mausoleums_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {
+                            if ($('#remembrances_mausoleums_name_only').is(':checked')) {
+                                return node.getAttribute('data-name-jets') || '';
+                            }
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         },
                         didSearch: function(search_phrase) {
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#remembrances_mausoleums_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#remembrances_mausoleums_list h5").removeClass('d-none');
+                            $("#remembrances_mausoleums_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                                return;
+                            }
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#remembrances_mausoleums_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }
+                                return true;
+                            };
+                            
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -1601,37 +1635,23 @@
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }
 
-                                if (!search_phrase) {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                } else {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
+                            
                             $("#remembrances_mausoleums_list h5").each(function() {
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
-                        }
+                        },
                     });
                     function updateSearch() {
                         var search_phrase = $("#remembrances_mausoleums_search").val().trim();
@@ -1653,9 +1673,15 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#remembrances_mausoleums_name_only').is(':checked')) {
+                                    text = $(this).attr('data-name-jets') || '';
+                                } else {
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }
+                                
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {
@@ -1709,7 +1735,11 @@
                             $("#remembrances_mausoleums_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {
                                 try {
-                                    $("#remembrances_mausoleums_list").highlight(regex);
+                                    if ($('#remembrances_mausoleums_name_only').is(':checked')) {
+                                        $("#remembrances_mausoleums_list .item-name").highlight(regex);
+                                    } else {
+                                        $("#remembrances_mausoleums_list").highlight(regex);
+                                    }
                                 } catch(e) {}
                             }
                             
@@ -1724,7 +1754,11 @@
                             // Highlighting for normal text
                             $("#remembrances_mausoleums_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {
-                                $("#remembrances_mausoleums_list").highlight(search_phrase);
+                                if ($('#remembrances_mausoleums_name_only').is(':checked')) {
+                                    $("#remembrances_mausoleums_list .item-name").highlight(search_phrase);
+                                } else {
+                                    $("#remembrances_mausoleums_list").highlight(search_phrase);
+                                }
                             }
                         }
                     }
@@ -1736,6 +1770,30 @@
                     $('#remembrances_mausoleums_regex').on('change', function() {
                         updateSearch();
                     });
+                    
+                    $('#remembrances_mausoleums_name_only').on('change', function() {
+                        if (jet.options) {
+                            jet.options.manualContentHandling = function(node) {
+                                if ($('#remembrances_mausoleums_name_only').is(':checked')) {
+                                    return node.getAttribute('data-name-jets') || '';
+                                }
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            };
+                        }
+                        if (jet._setJets) {
+                            jet._setJets('', true);
+                        }
+                        
+                        if ($('#remembrances_mausoleums_regex').is(':checked')) {
+                            updateSearch();
+                        } else {
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#remembrances_mausoleums_search').trigger('input');
+                        }
+                    });
+                    updateSearch();
                 });
             })( jQuery );
             </script>

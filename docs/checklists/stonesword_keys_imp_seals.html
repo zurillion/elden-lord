@@ -94,10 +94,10 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
               <li>
-                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                <a class="dropdown-item lang-option" data-lang="en" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> EN</a>
               </li>
               <li>
-                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                <a class="dropdown-item lang-option" data-lang="it" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> IT</a>
               </li>
             </ul>
           </li>
@@ -177,6 +177,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/bosses.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Bosses</span>
+                      <span class="lang-text lang-it">Boss</span>
                     </span>
                   </a>
                 </li>
@@ -505,6 +506,13 @@
             <span class="lang-text lang-it">Usa Regex</span>
           </span>
         </div>
+        <div class="input-group-text">
+          <input aria-label="Name Only Search" class="form-check-input mt-0 me-2" id="stonesword_name_only" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Name Only</span>
+            <span class="lang-text lang-it">Solo nome</span>
+          </span>
+        </div>
       </div>
       <div id="stonesword_list">
         <div class="card shadow-sm mb-3" id="stonesword_section_0">
@@ -521,21 +529,21 @@
             </h4>
             <div aria-expanded="true" class="collapse show" id="stonesword_0Col">
               <ul class="list-group-flush mb-0 ps-0 ps-md-4">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k1" id="item_k1">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k1" data-name-jets="can choose two as a keepsake" id="item_k1">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k1" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k1">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Can choose two as a keepsake</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k2" id="item_k2">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k2" data-name-jets="can choose two as a keepsake" id="item_k2">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k2" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k2">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Can choose two as a keepsake</span>
                       </span>
                     </label>
@@ -544,44 +552,44 @@
               </ul>
               <h5>Limgrave</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k3" id="item_k3">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k3" data-name-jets="in a tiny intact room in the center of dragon-burnt ruins, on a body guarded by a single rat" id="item_k3">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k3" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k3">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In a tiny intact room in the center of Dragon-Burnt Ruins, on a body guarded by a single rat</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k3&amp;id=stonesword_k3&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k3&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k4" id="item_k4">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k4" data-name-jets="sold by patches for 5000 runes in murkwater cave (and thereafter)" id="item_k4">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k4" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k4">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by Patches for 5000 runes in Murkwater Cave (and thereafter)</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k4&amp;id=stonesword_k4&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k4&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k5" id="item_k5">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k5" data-name-jets="on the front of stormhill shack, on a body atop the little staircase of wooden platforms" id="item_k5">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k5" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k5">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On the front of Stormhill Shack, on a body atop the little staircase of wooden platforms</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k5&amp;id=stonesword_k5&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k5&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k6" id="item_k6">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k6" data-name-jets="in fringefolk hero's grave, on the ledge from which you can shoot down the jars to destroy the chariot" id="item_k6">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k6" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k6">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Fringefolk Hero's Grave, on the ledge from which you can shoot down the jars to destroy the chariot</span>
                       </span>
                     </label>
@@ -591,33 +599,33 @@
               </ul>
               <h5>Roundtable Hold</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k7" id="item_k7">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k7" data-name-jets="sold by twin maiden husks for 4000 runes" id="item_k7">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k7" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k7">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by Twin Maiden Husks for 4000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k7&amp;id=stonesword_k7&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k7&amp;title=Stonesword Key x3"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k8" id="item_k8">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k8" data-name-jets="sold by twin maiden husks for 4000 runes" id="item_k8">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k8" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k8">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by Twin Maiden Husks for 4000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=451&amp;y=8385&amp;id=stonesword_k8&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k8&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k9" id="item_k9">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k9" data-name-jets="sold by twin maiden husks for 4000 runes" id="item_k9">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k9" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k9">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by Twin Maiden Husks for 4000 runes</span>
                       </span>
                     </label>
@@ -627,77 +635,77 @@
               </ul>
               <h5>Weeping Peninsula</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k10" id="item_k10">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k10" data-name-jets="on the bridge of sacrifice on a body behind the ballista" id="item_k10">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k10" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k10">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On the Bridge of Sacrifice on a body behind the ballista</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k10&amp;id=stonesword_k10&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k10&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k11" id="item_k11">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k11" data-name-jets="on the northern tip of the high ledge in the northeast, on a body sitting in a chair" id="item_k11">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k11" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k11">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On the northern tip of the high ledge in the northeast, on a body sitting in a chair</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k11&amp;id=stonesword_k11&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k11&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k12" id="item_k12">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k12" data-name-jets="sold by the nomadic merchant in the east for 2000 runes" id="item_k12">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k12" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k12">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Nomadic Merchant in the east for 2000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k12&amp;id=stonesword_k12&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k12&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k13" id="item_k13">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k13" data-name-jets="sold by the isolated merchant in the west for 2000 runes" id="item_k13">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k13" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k13">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Isolated Merchant in the west for 2000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k13&amp;id=stonesword_k13&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k13&amp;title=Stonesword Key x3"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k14" id="item_k14">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k14" data-name-jets="sold by the isolated merchant in the west for 2000 runes" id="item_k14">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k14" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k14">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Isolated Merchant in the west for 2000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=3450&amp;y=8230&amp;id=stonesword_k14&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k14&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k15" id="item_k15">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k15" data-name-jets="sold by the isolated merchant in the west for 2000 runes" id="item_k15">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k15" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k15">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Isolated Merchant in the west for 2000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=3450&amp;y=8230&amp;id=stonesword_k15&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k15&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k16" id="item_k16">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k16" data-name-jets="from the behind the castle site of grace in castle morne, descend down a couple ledges to the first rooftop, then walk forward and drop off to a wooden platform halfway down with the key on a body" id="item_k16">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k16" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k16">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Behind the Castle Site of Grace in Castle Morne, descend down a couple ledges to the first rooftop, then walk forward and drop off to a wooden platform halfway down with the key on a body</span>
                       </span>
                     </label>
@@ -707,33 +715,33 @@
               </ul>
               <h5>Stormveil Castle</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k17" id="item_k17">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k17" data-name-jets="from rampart tower, follow the path up the central spiral staircase and to the rooftops; from the stack of sandbags, follow the ledge to the south tower, then turn east and hop to the next crumbling tower, and drop down inside it to find it on a body" id="item_k17">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k17" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k17">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From Rampart Tower, follow the path up the central spiral staircase and to the rooftops; from the stack of sandbags, follow the ledge to the south tower, then turn east and hop to the next crumbling tower, and drop down inside it to find it on a body</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k17&amp;id=stonesword_k17&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k17&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k18" id="item_k18">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k18" data-name-jets="on a body on the wooden platform above the grafted scion (down the shortcut elevator from rampart tower)" id="item_k18">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k18" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k18">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On a body on the wooden platform above the Grafted Scion (down the shortcut elevator from Rampart Tower)</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k18&amp;id=stonesword_k18&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k18&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k19" id="item_k19">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k19" data-name-jets="on a body in the pit with the ulcerated tree spirit, just past the first big roots on the left" id="item_k19">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k19" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k19">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On a body in the pit with the Ulcerated Tree Spirit, just past the first big roots on the left</span>
                       </span>
                     </label>
@@ -743,99 +751,99 @@
               </ul>
               <h5>Liurnia of the Lakes</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k20" id="item_k20">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k20" data-name-jets="in academy crystal cave, stick to the left past the rats and the sages to find a small side room in the back, containing the key on a body in a cage" id="item_k20">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k20" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k20">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Academy Crystal Cave, stick to the left past the rats and the Sages to find a small side room in the back, containing the key on a body in a cage</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k20&amp;id=stonesword_k20&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k20&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k21" id="item_k21">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k21" data-name-jets="on the island directly east of the south raya lucaria gate site of grace, accessible from gate town north; it's in a chest in a small tower sticking out of the water, requiring torrent's double jump to reach" id="item_k21">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k21" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k21">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On the island directly east of the South Raya Lucaria Gate Site of Grace, accessible from Gate Town North; it's in a chest in a small tower sticking out of the water, requiring Torrent's double jump to reach</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k21&amp;id=stonesword_k21&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k21&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k22" id="item_k22">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k22" data-name-jets="outside raya lucaria at the base of its northeastern corner, up an incline leading to an area with many wraith callers and a body sitting in a chair with the key" id="item_k22">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k22" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k22">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Outside Raya Lucaria at the base of its northeastern corner, up an incline leading to an area with many Wraith Callers and a body sitting in a chair with the key</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k22&amp;id=stonesword_k22&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k22&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k23" id="item_k23">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k23" data-name-jets="sold by the isolated merchant inside the south raya lucaria gate for 3000 runes" id="item_k23">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k23" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k23">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Isolated Merchant inside the South Raya Lucaria Gate for 3000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k23&amp;id=stonesword_k23&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k23&amp;title=Stonesword Key x3"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k24" id="item_k24">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k24" data-name-jets="sold by the isolated merchant inside the south raya lucaria gate for 3000 runes" id="item_k24">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k24" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k24">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Isolated Merchant inside the South Raya Lucaria Gate for 3000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=2028&amp;y=4957&amp;id=stonesword_k24&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k24&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k25" id="item_k25">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k25" data-name-jets="sold by the isolated merchant inside the south raya lucaria gate for 3000 runes" id="item_k25">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k25" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k25">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Isolated Merchant inside the South Raya Lucaria Gate for 3000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=2028&amp;y=4957&amp;id=stonesword_k25&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k25&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k26" id="item_k26">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k26" data-name-jets="as far north as it's possible to go from the ainsel river well before the cliff wall cuts off the path, on a body in a chair in a small patch of flowers" id="item_k26">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k26" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k26">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">As far north as it's possible to go from the Ainsel River Well before the cliff wall cuts off the path, on a body in a chair in a small patch of flowers</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k26&amp;id=stonesword_k26&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k26&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k27" id="item_k27">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k27" data-name-jets="atop the western wall of frenzied flame village" id="item_k27">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k27" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k27">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Atop the western wall of Frenzied Flame Village</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k27&amp;id=stonesword_k27&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k27&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k28" id="item_k28">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k28" data-name-jets="from three sisters above caria manor, follow the path along the rooftops, dropping down when necessary, all the way to the rampart overlooking the main gate, with a giant crab on top guarding a body with the key" id="item_k28">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k28" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k28">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From Three Sisters above Caria Manor, follow the path along the rooftops, dropping down when necessary, all the way to the rampart overlooking the Main Gate, with a Giant Crab on top guarding a body with the key</span>
                       </span>
                     </label>
@@ -845,22 +853,22 @@
               </ul>
               <h5>Academy of Raya Lucaria</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k29" id="item_k29">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k29" data-name-jets="past the illusory bookshelf directly before the debate parlor (red wolf of radagon), on the other side of the altar behind the chest" id="item_k29">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k29" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k29">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Past the illusory bookshelf directly before the Debate Parlor (Red Wolf of Radagon), on the other side of the altar behind the chest</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k29&amp;id=stonesword_k29&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k29&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k30" id="item_k30">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k30" data-name-jets="in the courtyard directly after the debate parlor, on a body draped on the central fountain" id="item_k30">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k30" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k30">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In the courtyard directly after the Debate Parlor, on a body draped on the central fountain</span>
                       </span>
                     </label>
@@ -870,66 +878,66 @@
               </ul>
               <h5>Caelid</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k31" id="item_k31">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k31" data-name-jets="in gaol cave, on a body in a cell" id="item_k31">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k31" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k31">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Gaol Cave, on a body in a cell</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k31&amp;id=stonesword_k31&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k31&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k32" id="item_k32">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k32" data-name-jets="sold by the nomadic merchant in the south for 4000 runes" id="item_k32">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k32" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k32">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Nomadic Merchant in the south for 4000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k32&amp;id=stonesword_k32&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k32&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k33" id="item_k33">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k33" data-name-jets="from the dragonbarrow west grace, head to the divine tower of caelid and jump onto the high tree branch, then to the first ledge with a ladder and a sentry with a torch; don't climb the ladder but face southeast from it and follow the arch to find the key on a body on the next landing, guarded by a knight" id="item_k33">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k33" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k33">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Dragonbarrow West grace, head to the Divine Tower of Caelid and jump onto the high tree branch, then to the first ledge with a ladder and a sentry with a torch; don't climb the ladder but face southeast from it and follow the arch to find the key on a body on the next landing, guarded by a knight</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k33&amp;id=stonesword_k33&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k33&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k34" id="item_k34">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k34" data-name-jets="in sellia, town of sorcery, on a body slumped atop an archway connecting two buildings at the southern entrance of town; passing northward through the arch underneath, turn right to see rubble with a rotted tree through it, an easy way up on horseback" id="item_k34">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k34" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k34">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Sellia, Town of Sorcery, on a body slumped atop an archway connecting two buildings at the southern entrance of town; passing northward through the arch underneath, turn right to see rubble with a rotted tree through it, an easy way up on horseback</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k34&amp;id=stonesword_k34&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k34&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k35" id="item_k35">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k35" data-name-jets="from fort faroth, face west and climb the hulking white rock in the distance; it's on one of the bodies on top, the one whose chair fell over" id="item_k35">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k35" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k35">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From Fort Faroth, face west and climb the hulking white rock in the distance; it's on one of the bodies on top, the one whose chair fell over</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k35&amp;id=stonesword_k35&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k35&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k36" id="item_k36">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k36" data-name-jets="south of the deep siofra well, past the large bear, on a body sitting on the cliff" id="item_k36">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k36" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k36">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">South of the Deep Siofra Well, past the large bear, on a body sitting on the cliff</span>
                       </span>
                     </label>
@@ -939,77 +947,77 @@
               </ul>
               <h5>Altus Plateau</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k37" id="item_k37">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k37" data-name-jets="early on the road northeast from the grand lift of dectus, in the small encampment of misbegottens on the right, on a body against a tent" id="item_k37">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k37" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k37">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Early on the road northeast from the Grand Lift of Dectus, in the small encampment of Misbegottens on the right, on a body against a tent</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k37&amp;id=stonesword_k37&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k37&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k38" id="item_k38">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k38" data-name-jets="in sage's cave, proceed down the linear path, through illusory walls when necessary, until a more open room with a bonfire, many stalactites, and a larger skeleton wielding the executioner's greataxe; on the left, being stared at by another skeleton, is an illusory wall hiding a nook with a chest with the key inside" id="item_k38">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k38" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k38">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Sage's Cave, proceed down the linear path, through illusory walls when necessary, until a more open room with a bonfire, many stalactites, and a larger skeleton wielding the Executioner's Greataxe; on the left, being stared at by another skeleton, is an illusory wall hiding a nook with a chest with the key inside</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k38&amp;id=stonesword_k38&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k38&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k39" id="item_k39">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k39" data-name-jets="sold by the nomadic merchant here for 4000 runes" id="item_k39">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k39" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k39">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Nomadic Merchant here for 4000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k39&amp;id=stonesword_k39&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k39&amp;title=Stonesword Key x3"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k40" id="item_k40">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k40" data-name-jets="sold by the nomadic merchant here for 4000 runes" id="item_k40">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k40" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k40">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Nomadic Merchant here for 4000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=3321&amp;y=3074&amp;id=stonesword_k40&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k40&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k41" id="item_k41">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k41" data-name-jets="sold by the nomadic merchant here for 4000 runes" id="item_k41">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k41" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k41">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Nomadic Merchant here for 4000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=3321&amp;y=3074&amp;id=stonesword_k41&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k41&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k42" id="item_k42">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k42" data-name-jets="on the eastern side of the raised plateau in the center of altus with perpetual lightning storms, on a body slumped on a stone platform" id="item_k42">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k42" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k42">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On the eastern side of the raised plateau in the center of Altus with perpetual lightning storms, on a body slumped on a stone platform</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k42&amp;id=stonesword_k42&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k42&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k43" id="item_k43">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k43" data-name-jets="from the shaded castle ramparts grace, go back down the little stairs and turn left, following the rampart around to find a perfumer near a ramp down to the swamp below. the wall of the rampart is broken near this ramp, providing a way up, so get on the wall and follow it back a bit the way you came (south) until you can hop to the right onto the large stone barrier. carefully climb up the stones with a few precise jumps, until a ledge wraps slightly around to the right, from where you can see a lower landing ahead that you can jump to. then turn left and hop over the rock in the way (it's a bit tricky to get over it) and drop down to the other side of it, onto a small ledge with a body holding the key, with three slugs looking up at you from below." id="item_k43">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k43" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k43">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Shaded Castle Ramparts grace, go back down the little stairs and turn left, following the rampart around to find a Perfumer near a ramp down to the swamp below. The wall of the rampart is broken near this ramp, providing a way up, so get on the wall and follow it back a bit the way you came (south) until you can hop to the right onto the large stone barrier. Carefully climb up the stones with a few precise jumps, until a ledge wraps slightly around to the right, from where you can see a lower landing ahead that you can jump to. Then turn left and hop over the rock in the way (it's a bit tricky to get over it) and drop down to the other side of it, onto a small ledge with a body holding the key, with three slugs looking up at you from below.</span>
                       </span>
                     </label>
@@ -1019,44 +1027,44 @@
               </ul>
               <h5>Mt. Gelmir</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k44" id="item_k44">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k44" data-name-jets="in gelmir hero's grave, past the first chariot, a few nobles and pages, and a fire trap, you'll find a second chariot through an archway; instead of turning left to go down the incline and progress through the dungeon, turn right and run up into a dead end to find the key, though beware it's very difficult to get back on track without being killed by the chariot, as it will suddenly go all the way up the incline on its way back, so you may need to make a suicide run for it" id="item_k44">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k44" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k44">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Gelmir Hero's Grave, past the first chariot, a few Nobles and Pages, and a fire trap, you'll find a second chariot through an archway; instead of turning left to go down the incline and progress through the dungeon, turn right and run up into a dead end to find the key, though beware it's very difficult to get back on track without being killed by the chariot, as it will suddenly go all the way up the incline on its way back, so you may need to make a suicide run for it</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k44&amp;id=stonesword_k44&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k44&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k45" id="item_k45">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k45" data-name-jets="on the broken bridge just west of corpse-stench shack" id="item_k45">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k45" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k45">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On the broken bridge just west of Corpse-Stench Shack</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k45&amp;id=stonesword_k45&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k45&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k46" id="item_k46">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k46" data-name-jets="sold by the nomadic merchant here for 5000 runes" id="item_k46">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k46" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k46">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Nomadic Merchant here for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k46&amp;id=stonesword_k46&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k46&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k47" id="item_k47">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k47" data-name-jets="north of fort laiedd, in the corner with gravestones and jellyfish, on a body against a large tree" id="item_k47">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k47" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k47">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">North of Fort Laiedd, in the corner with gravestones and jellyfish, on a body against a large tree</span>
                       </span>
                     </label>
@@ -1066,22 +1074,22 @@
               </ul>
               <h5>Volcano Manor</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k48" id="item_k48">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k48" data-name-jets="from the prison town church grace, descend into the town square with an omenkiller by a bonfire. go through the doorway near the omenkiller's initial position, proceed through another archway with a dog, and turn right. go down the stairs to the broken gap. instead of dropping all the way down (you can survive that fall), if you take a running jump, you can just barely reach the other end of the gap and land on the wooden platform, which has the key." id="item_k48">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k48" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k48">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Prison Town Church grace, descend into the town square with an Omenkiller by a bonfire. Go through the doorway near the Omenkiller's initial position, proceed through another archway with a dog, and turn right. Go down the stairs to the broken gap. Instead of dropping all the way down (you can survive that fall), if you take a running jump, you can just barely reach the other end of the gap and land on the wooden platform, which has the key.</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k48&amp;id=stonesword_k48&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k48&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k49" id="item_k49">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k49" data-name-jets="exit southeast from the room rya moves to deep in volcano manor later in her questline, hop over the thin lava stream, and jump up the ledge through an open window to find the key on a body on a cot" id="item_k49">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k49" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k49">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Exit southeast from the room Rya moves to deep in Volcano Manor later in her questline, hop over the thin lava stream, and jump up the ledge through an open window to find the key on a body on a cot</span>
                       </span>
                     </label>
@@ -1091,22 +1099,22 @@
               </ul>
               <h5>Capital Outskirts</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k50" id="item_k50">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k50" data-name-jets="in sealed tunnel, when you emerge into an open room navigable by tree branches and containing many vulgar militia and an iron maiden, use the branches to get to the platform on the right side, which has a short dead-end path with the key on a body" id="item_k50">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k50" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k50">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Sealed Tunnel, when you emerge into an open room navigable by tree branches and containing many Vulgar Militia and an Iron Maiden, use the branches to get to the platform on the right side, which has a short dead-end path with the key on a body</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k50&amp;id=stonesword_k50&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k50&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k51" id="item_k51">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k51" data-name-jets="in auriza hero's grave in the room with two chariots running opposite each other, on a body in an alcove in the center of their paths" id="item_k51">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k51" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k51">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Auriza Hero's Grave in the room with two chariots running opposite each other, on a body in an alcove in the center of their paths</span>
                       </span>
                     </label>
@@ -1116,66 +1124,66 @@
               </ul>
               <h5>Leyndell, Royal Capital</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k52" id="item_k52">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k52" data-name-jets="from east capital rampart, follow the rampart all the way south until just before the door into a building filled with plants, drop off the side of the rampart onto the rooftops, and hop between rooftops all the way back north, until you find the key on a body next to two imps" id="item_k52">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k52" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k52">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From East Capital Rampart, follow the rampart all the way south until just before the door into a building filled with plants, drop off the side of the rampart onto the rooftops, and hop between rooftops all the way back north, until you find the key on a body next to two Imps</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k52&amp;id=stonesword_k52&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k52&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k53" id="item_k53">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k53" data-name-jets="from west capital rampart, drop down to ground level and face northwest, then climb the petrified dragon foot and leap from its extended claw to the roof of a barn, and from there into the second floor of an adjacent building, with the key on a body draped over a windowsill" id="item_k53">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k53" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k53">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From West Capital Rampart, drop down to ground level and face northwest, then climb the petrified dragon foot and leap from its extended claw to the roof of a barn, and from there into the second floor of an adjacent building, with the key on a body draped over a windowsill</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k53&amp;id=stonesword_k53&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k53&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k54" id="item_k54">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k54" data-name-jets="from avenue balcony, head down the stairs and hook around them to the right, then down the ladder into a room with many enemies throwing lightning pots, and open the little cell on the ground floor to find a chest with the key inside" id="item_k54">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k54" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k54">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From Avenue Balcony, head down the stairs and hook around them to the right, then down the ladder into a room with many enemies throwing lightning pots, and open the little cell on the ground floor to find a chest with the key inside</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k54&amp;id=stonesword_k54&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k54&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k55" id="item_k55">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k55" data-name-jets="from the previous, head out the door on the ground floor, and continue forward until you can hook around a little set of stairs up and right, to see two skeletal militiamen and a putrid corpse praying at a grave bearing a body with the key" id="item_k55">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k55" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k55">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the previous, head out the door on the ground floor, and continue forward until you can hook around a little set of stairs up and right, to see two Skeletal Militiamen and a Putrid Corpse praying at a grave bearing a body with the key</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k55&amp;id=stonesword_k55&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k55&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k56" id="item_k56">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k56" data-name-jets="from lower capital church, exit the church and wrap around the building to the right; climb the long ladder and the following ladder to emerge at a gazebo; hook right again before the gazebo, then turn left and follow the tight path until you can climb a large staircase on your left; finally, from the top of the staircase, face directly east and run and jump on top of the gazebo to loot the key from the body" id="item_k56">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k56" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k56">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From Lower Capital Church, exit the church and wrap around the building to the right; climb the long ladder and the following ladder to emerge at a gazebo; hook right again before the gazebo, then turn left and follow the tight path until you can climb a large staircase on your left; finally, from the top of the staircase, face directly east and run and jump on top of the gazebo to loot the key from the body</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k56&amp;id=stonesword_k56&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k56&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k57" id="item_k57">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k57" data-name-jets="subterranean shunning-grounds: from underground roadside, head northeast and drop through the gap in the floor grate, turn northwest and go into the tunnel in the right wall, drop into the first hole surrounded by slugs, and follow the path from there into a room with three wraith callers and the key on a body" id="item_k57">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k57" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k57">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Subterranean Shunning-Grounds: From Underground Roadside, head northeast and drop through the gap in the floor grate, turn northwest and go into the tunnel in the right wall, drop into the first hole surrounded by Slugs, and follow the path from there into a room with three Wraith Callers and the key on a body</span>
                       </span>
                     </label>
@@ -1185,55 +1193,55 @@
               </ul>
               <h5>Mountaintops of the Giants</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k58" id="item_k58">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k58" data-name-jets="sold by the hermit merchant here for 5000 runes" id="item_k58">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k58" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k58">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Hermit Merchant here for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k58&amp;id=stonesword_k58&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k58&amp;title=Stonesword Key x3"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k59" id="item_k59">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k59" data-name-jets="sold by the hermit merchant here for 5000 runes" id="item_k59">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k59" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k59">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Hermit Merchant here for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=5960&amp;y=2238&amp;id=stonesword_k59&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k59&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k60" id="item_k60">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k60" data-name-jets="sold by the hermit merchant here for 5000 runes" id="item_k60">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k60" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k60">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Hermit Merchant here for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=5960&amp;y=2238&amp;id=stonesword_k60&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k60&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k61" id="item_k61">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k61" data-name-jets="in castle sol, from the church of the eclipse, exit to the north, climb the ladder to the east, go all the way north, cross the wooden bridge, and climb the stairs on the right to find a body slumped over the wall on the left with the key" id="item_k61">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k61" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k61">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Castle Sol, from the Church of the Eclipse, exit to the north, climb the ladder to the east, go all the way north, cross the wooden bridge, and climb the stairs on the right to find a body slumped over the wall on the left with the key</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k61&amp;id=stonesword_k61&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k61&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k62" id="item_k62">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k62" data-name-jets="on a body right behind the fire prelate outside guardians' garrison" id="item_k62">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k62" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k62">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On a body right behind the Fire Prelate outside Guardians' Garrison</span>
                       </span>
                     </label>
@@ -1243,22 +1251,22 @@
               </ul>
               <h5>Consecrated Snowfield</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k63" id="item_k63">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k63" data-name-jets="from inner consecrated snowfield, look at your compass and travel exactly one notch north of west, to a hill guarded by two lightning balls; on top is a chair with a corpse with the key" id="item_k63">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k63" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k63">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From Inner Consecrated Snowfield, look at your compass and travel exactly one notch north of West, to a hill guarded by two lightning balls; on top is a chair with a corpse with the key</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k63&amp;id=stonesword_k63&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k63&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k64" id="item_k64">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k64" data-name-jets="in the northwest of yelough anix ruins, in a tiny crumbling room packed with four frenzied rats" id="item_k64">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k64" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k64">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In the northwest of Yelough Anix Ruins, in a tiny crumbling room packed with four frenzied rats</span>
                       </span>
                     </label>
@@ -1268,22 +1276,22 @@
               </ul>
               <h5>Miquella's Haligtree</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k65" id="item_k65">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k65" data-name-jets="directly south of haligtree canopy on a body at the tip of the same branch" id="item_k65">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k65" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k65">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Directly south of Haligtree Canopy on a body at the tip of the same branch</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k65&amp;id=stonesword_k65&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k65&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k66" id="item_k66">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k66" data-name-jets="from haligtree canopy, head east, dropping down when necessary to reach the first large oracle envoy; follow the branch from there east/northeast until you can reach a large central branch with giant ants patrolling; follow the large branch south until its first offshoot on the left, which you can follow around in a large ascending circle onto a wide branch above with a scarlot rot flavored giant miranda sprout; face northwest and walk along this branch until its first offshoot at a sharp left angle, at the end of which is an oracle envoy and a body with the key" id="item_k66">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k66" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k66">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From Haligtree Canopy, head east, dropping down when necessary to reach the first Large Oracle Envoy; follow the branch from there east/northeast until you can reach a large central branch with Giant Ants patrolling; follow the large branch south until its first offshoot on the left, which you can follow around in a large ascending circle onto a wide branch above with a scarlot rot flavored Giant Miranda Sprout; face northwest and walk along this branch until its first offshoot at a sharp left angle, at the end of which is an Oracle Envoy and a body with the key</span>
                       </span>
                     </label>
@@ -1293,11 +1301,11 @@
               </ul>
               <h5>Crumbling Farum Azula</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k67" id="item_k67">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k67" data-name-jets="in the back of the dragon temple to the east, on a body near a ledge" id="item_k67">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k67" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k67">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In the back of the Dragon Temple to the east, on a body near a ledge</span>
                       </span>
                     </label>
@@ -1307,55 +1315,55 @@
               </ul>
               <h5>Siofra River</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k68" id="item_k68">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k68" data-name-jets="sold by the abandoned merchant for 2000 runes" id="item_k68">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k68" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k68">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Abandoned Merchant for 2000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k68&amp;id=stonesword_k68&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k68&amp;title=Stonesword Key x3"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k69" id="item_k69">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k69" data-name-jets="sold by the abandoned merchant for 2000 runes" id="item_k69">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k69" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k69">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Abandoned Merchant for 2000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6289&amp;y=14256&amp;id=stonesword_k69&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k69&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k70" id="item_k70">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k70" data-name-jets="sold by the abandoned merchant for 2000 runes" id="item_k70">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k70" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k70">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Abandoned Merchant for 2000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6289&amp;y=14256&amp;id=stonesword_k70&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k70&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k71" id="item_k71">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k71" data-name-jets="at the end of the long bridge/wall protruding from the southwest of siofra river, accessed via a spiritspring in front of it" id="item_k71">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k71" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k71">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">At the end of the long bridge/wall protruding from the southwest of Siofra River, accessed via a spiritspring in front of it</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k71&amp;id=stonesword_k71&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k71&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k72" id="item_k72">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k72" data-name-jets="from the below the well grace, travel southwest along the right cliffside until you find a bridge leading to the other side near a golden tree; turn left at the other side and hop onto the pillar there, then run down the attached beam to the next pillar, which hides a body with a key" id="item_k72">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k72" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k72">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Below the Well grace, travel southwest along the right cliffside until you find a bridge leading to the other side near a Golden Tree; turn left at the other side and hop onto the pillar there, then run down the attached beam to the next pillar, which hides a body with a key</span>
                       </span>
                     </label>
@@ -1365,11 +1373,11 @@
               </ul>
               <h5>Nokron, Eternal City</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k73" id="item_k73">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k73" data-name-jets="on a body just south of the aqueduct-facing cliffs grace, right outside the cave, where you drop down from the ledge above with the jellyfish to reach it" id="item_k73">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k73" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k73">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On a body just south of the Aqueduct-Facing Cliffs grace, right outside the cave, where you drop down from the ledge above with the jellyfish to reach it</span>
                       </span>
                     </label>
@@ -1379,22 +1387,22 @@
               </ul>
               <h5>Ainsel River</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k74" id="item_k74">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k74" data-name-jets="on a body in water surrounded by many frenzied miranda sprouts, near the waterfall just southwest of uld palace ruins" id="item_k74">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k74" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k74">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On a body in water surrounded by many frenzied Miranda Sprouts, near the waterfall just southwest of Uld Palace Ruins</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k74&amp;id=stonesword_k74&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k74&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k75" id="item_k75">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k75" data-name-jets="in nokstella, eternal city, directly north of the elevator to nokstella waterfall basin, on a cliff under a ledge" id="item_k75">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k75" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k75">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Nokstella, Eternal City, directly north of the elevator to Nokstella Waterfall Basin, on a cliff under a ledge</span>
                       </span>
                     </label>
@@ -1404,11 +1412,11 @@
               </ul>
               <h5>Deeproot Depths</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k76" id="item_k76">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k76" data-name-jets="atop the very tall square building directly southeast of crucible knight siluria, reached via the spiritspring next to the building" id="item_k76">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k76" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k76">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Atop the very tall square building directly southeast of Crucible Knight Siluria, reached via the spiritspring next to the building</span>
                       </span>
                     </label>
@@ -1418,77 +1426,77 @@
               </ul>
               <h5>Mohgwyn Palace</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k77" id="item_k77">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k77" data-name-jets="on the south end of the area with many giant crows, on a body on the ground in the open" id="item_k77">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k77" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k77">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">On the south end of the area with many Giant Crows, on a body on the ground in the open</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k77&amp;id=stonesword_k77&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k77&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k78" id="item_k78">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k78" data-name-jets="along the path up from dynasty mausoleum entrance, just past the giant skeletal slime, turn right for a dead end side path with many praying putrid corpses and a key on a body against a rock" id="item_k78">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k78" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k78">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Along the path up from Dynasty Mausoleum Entrance, just past the Giant Skeletal Slime, turn right for a dead end side path with many praying Putrid Corpses and a key on a body against a rock</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k78&amp;id=stonesword_k78&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k78&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k79" id="item_k79">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k79" data-name-jets="sold by the imprisoned merchant for 5000 runes" id="item_k79">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k79" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k79">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Imprisoned Merchant for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_k79&amp;id=stonesword_k79&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k79&amp;title=Stonesword Key x5"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k80" id="item_k80">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k80" data-name-jets="sold by the imprisoned merchant for 5000 runes" id="item_k80">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k80" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k80">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Imprisoned Merchant for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6793&amp;y=14474&amp;id=stonesword_k80&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k80&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k81" id="item_k81">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k81" data-name-jets="sold by the imprisoned merchant for 5000 runes" id="item_k81">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k81" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k81">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Imprisoned Merchant for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6793&amp;y=14474&amp;id=stonesword_k81&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k81&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k82" id="item_k82">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k82" data-name-jets="sold by the imprisoned merchant for 5000 runes" id="item_k82">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k82" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k82">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Imprisoned Merchant for 5000 runes</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?x=6793&amp;y=14474&amp;id=stonesword_k82&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_k82&amp;title=Stonesword Key"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_k83" id="item_k83">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_k83" data-name-jets="sold by the imprisoned merchant for 5000 runes" id="item_k83">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="stonesword_k83" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_k83">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Imprisoned Merchant for 5000 runes</span>
                       </span>
                     </label>
@@ -1513,22 +1521,22 @@
             <div aria-expanded="true" class="collapse show" id="stonesword_1Col">
               <h5>Limgrave</h5>
               <ul class="list-group-flush mb-0 ps-0 ps-md-4">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s1" id="item_s1">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s1" data-name-jets="2 keys: the entrance to fringefolk hero's grave" id="item_s1">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s1" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s1">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Fringefolk Hero's Grave</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s1&amp;id=stonesword_s1&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s1&amp;title=Imp Statue Seal (2 keys)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s2" id="item_s2">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s2" data-name-jets="1 key: a cellar in eastern summonwater village containing the green turtle talisman" id="item_s2">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s2" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s2">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A cellar in eastern Summonwater Village containing the Green Turtle Talisman</span>
                       </span>
                     </label>
@@ -1538,22 +1546,22 @@
               </ul>
               <h5>Roundtable Hold</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s3" id="item_s3">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s3" data-name-jets="1 key: a small room down the stairs near smithing master hewg containing crepus's black-key crossbow and another imp statue seal" id="item_s3">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s3" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s3">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room down the stairs near Smithing Master Hewg containing Crepus's Black-Key Crossbow and another Imp Statue Seal</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s3&amp;id=stonesword_s3&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s3&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s4" id="item_s4">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s4" data-name-jets="2 keys: a small room accessed via the previous, containing the assassin's prayerbook" id="item_s4">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s4" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s4">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: A small room accessed via the previous, containing the Assassin's Prayerbook</span>
                       </span>
                     </label>
@@ -1563,22 +1571,22 @@
               </ul>
               <h5>Weeping Peninsula</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s5" id="item_s5">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s5" data-name-jets="1 key: a small room in tombsward catacombs containing nomadic warrior's cookbook [9]" id="item_s5">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s5" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s5">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room in Tombsward Catacombs containing Nomadic Warrior's Cookbook [9]</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s5&amp;id=stonesword_s5&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s5&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s6" id="item_s6">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s6" data-name-jets="1 key: unlocks weeping evergaol" id="item_s6">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s6" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s6">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: Unlocks Weeping Evergaol</span>
                       </span>
                     </label>
@@ -1588,22 +1596,22 @@
               </ul>
               <h5>Stormveil Castle</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s7" id="item_s7">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s7" data-name-jets="1 key: a cellar down some stairs in the main courtyard opposite liftside chamber, on the other side of a room full of rats; contains the godskin prayerbook, the godslayer's seal, and a shortcut door" id="item_s7">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s7" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s7">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A cellar down some stairs in the main courtyard opposite Liftside Chamber, on the other side of a room full of rats; contains the Godskin Prayerbook, the Godslayer's Seal, and a shortcut door</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s7&amp;id=stonesword_s7&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s7&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s8" id="item_s8">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s8" data-name-jets="1 key: a small room out the northwest of the main hall with the grafted scion, containing the iron whetblade, a miséricorde, and a hawk crest wooden shield" id="item_s8">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s8" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s8">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room out the northwest of the main hall with the Grafted Scion, containing the Iron Whetblade, a Miséricorde, and a Hawk Crest Wooden Shield</span>
                       </span>
                     </label>
@@ -1613,44 +1621,44 @@
               </ul>
               <h5>Liurnia of the Lakes</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s9" id="item_s9">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s9" data-name-jets="1 key: a small room in cliffbottom catacombs containing the nox mirrorhelm" id="item_s9">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s9" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s9">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room in Cliffbottom Catacombs containing the Nox Mirrorhelm</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s9&amp;id=stonesword_s9&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s9&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s10" id="item_s10">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s10" data-name-jets="2 keys: the entrance to academy crystal cave" id="item_s10">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s10" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s10">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Academy Crystal Cave</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s10&amp;id=stonesword_s10&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s10&amp;title=Imp Statue Seal (2 keys)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s11" id="item_s11">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s11" data-name-jets="1 key: a small room in black knife catacombs containing rosus' axe" id="item_s11">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s11" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s11">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room in Black Knife Catacombs containing Rosus' Axe</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s11&amp;id=stonesword_s11&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s11&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s12" id="item_s12">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s12" data-name-jets="1 key: a cellar in lunar estate ruins up by the moonlight altar accessed late in ranni's questline. the imp statue appears to be by itself, with its seal located to its right underneath an illusory floor blocking a hidden basement. contains the cerulean amber medallion +2." id="item_s12">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s12" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s12">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A cellar in Lunar Estate Ruins up by the Moonlight Altar accessed late in Ranni's questline. The Imp Statue appears to be by itself, with its seal located to its right underneath an illusory floor blocking a hidden basement. Contains the Cerulean Amber Medallion +2.</span>
                       </span>
                     </label>
@@ -1660,22 +1668,22 @@
               </ul>
               <h5>Caelid</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s13" id="item_s13">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s13" data-name-jets="2 keys: the entrance to gaol cave" id="item_s13">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s13" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s13">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Gaol Cave</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s13&amp;id=stonesword_s13&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s13&amp;title=Imp Statue Seal (2 keys)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s14" id="item_s14">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s14" data-name-jets="1 key: a cellar in forsaken ruins containing the sword of st. trina" id="item_s14">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s14" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s14">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A cellar in Forsaken Ruins containing the Sword of St. Trina</span>
                       </span>
                     </label>
@@ -1685,66 +1693,66 @@
               </ul>
               <h5>Altus Plateau</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s15" id="item_s15">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s15" data-name-jets="1 key: unlocks golden lineage evergaol" id="item_s15">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s15" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s15">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: Unlocks Golden Lineage Evergaol</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s15&amp;id=stonesword_s15&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s15&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s16" id="item_s16">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s16" data-name-jets="2 keys: the entrance to unsightly catacombs" id="item_s16">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s16" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s16">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Unsightly Catacombs</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s16&amp;id=stonesword_s16&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s16&amp;title=Imp Statue Seal (2 keys)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s21" id="item_s21">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s21" data-name-jets="1 key: a cellar near the top of wyndham ruins containing the pearldrake talisman +1" id="item_s21">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s21" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s21">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A cellar near the top of Wyndham Ruins containing the Pearldrake Talisman +1</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s21&amp;id=stonesword_s21&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s21&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s17" id="item_s17">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s17" data-name-jets="1 key: a small room in sainted hero's grave containing the crimson seed talisman" id="item_s17">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s17" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s17">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room in Sainted Hero's Grave containing the Crimson Seed Talisman</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s17&amp;id=stonesword_s17&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s17&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s18" id="item_s18">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s18" data-name-jets="1 key: a small room much farther into sainted hero's grave containing a ghost glovewort [5] and the dragoncrest shield talisman +1" id="item_s18">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s18" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s18">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room much farther into Sainted Hero's Grave containing a Ghost Glovewort [5] and the Dragoncrest Shield Talisman +1</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s18&amp;id=stonesword_s18&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s18&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s19" id="item_s19">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s19" data-name-jets="2 keys: the entrance to old altus tunnel" id="item_s19">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s19" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s19">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Old Altus Tunnel</span>
                       </span>
                     </label>
@@ -1754,22 +1762,22 @@
               </ul>
               <h5>Mt. Gelmir</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s20" id="item_s20">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s20" data-name-jets="2 keys: the entrance to seethewater cave" id="item_s20">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s20" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s20">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Seethewater Cave</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s20&amp;id=stonesword_s20&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s20&amp;title=Imp Statue Seal (2 keys)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s22" id="item_s22">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s22" data-name-jets="1 key: a small room in wyndham catacombs containing the lightning scorpion charm" id="item_s22">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s22" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s22">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room in Wyndham Catacombs containing the Lightning Scorpion Charm</span>
                       </span>
                     </label>
@@ -1779,22 +1787,22 @@
               </ul>
               <h5>Volcano Manor</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s23" id="item_s23">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s23" data-name-jets="1 key: a building along the main path from prison town church with an abductor virgin and a spiral staircase to the crimson amber medallion +1" id="item_s23">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s23" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s23">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A building along the main path from Prison Town Church with an Abductor Virgin and a spiral staircase to the Crimson Amber Medallion +1</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s23&amp;id=stonesword_s23&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s23&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s24" id="item_s24">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s24" data-name-jets="2 keys: in the grand hall with an eastern upstairs exit to a balcony with the teleporter to audience chamber, climb the west-facing stairs instead; a cavernous room with hanging cages that leads to the dagger talisman, a seedbed curse, a somber smithing stone [7], and eventually a shortcut door" id="item_s24">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s24" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s24">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: In the grand hall with an eastern upstairs exit to a balcony with the teleporter to Audience Chamber, climb the west-facing stairs instead; a cavernous room with hanging cages that leads to the Dagger Talisman, a Seedbed Curse, a Somber Smithing Stone [7], and eventually a shortcut door</span>
                       </span>
                     </label>
@@ -1804,11 +1812,11 @@
               </ul>
               <h5>Capital Outskirts</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s25" id="item_s25">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s25" data-name-jets="1 key: a small room in auriza hero's grave containing the golden epitaph" id="item_s25">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s25" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s25">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room in Auriza Hero's Grave containing the Golden Epitaph</span>
                       </span>
                     </label>
@@ -1818,22 +1826,22 @@
               </ul>
               <h5>Mountaintops of the Giants</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s26" id="item_s26">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s26" data-name-jets="2 keys: the entrance to spiritcaller cave" id="item_s26">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s26" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s26">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Spiritcaller Cave</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s26&amp;id=stonesword_s26&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s26&amp;title=Imp Statue Seal (2 keys)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s27" id="item_s27">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s27" data-name-jets="1 key: a small room in giant-conquering hero's grave containing flame, protect me" id="item_s27">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s27" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s27">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A small room in Giant-Conquering Hero's Grave containing Flame, Protect Me</span>
                       </span>
                     </label>
@@ -1843,11 +1851,11 @@
               </ul>
               <h5>Consecrated Snowfield</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s28" id="item_s28">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s28" data-name-jets="2 keys: the entrance to cave of the forlorn" id="item_s28">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s28" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s28">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The entrance to Cave of the Forlorn</span>
                       </span>
                     </label>
@@ -1857,22 +1865,22 @@
               </ul>
               <h5>Elphael, Brace of the Haligtree</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s29" id="item_s29">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s29" data-name-jets="1 key: drop down twice immediately after the prayer room grace; a small room containing triple rings of light" id="item_s29">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s29" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s29">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: Drop down twice immediately after the Prayer Room grace; a small room containing Triple Rings of Light</span>
                       </span>
                     </label>
                     <a class="ms-2" href="/map.html?target=stonesword_s29&amp;id=stonesword_s29&amp;link=/checklists/stonesword_keys_imp_seals.html%23item_s29&amp;title=Imp Statue Seal (1 key)"><i class="bi bi-geo-alt"></i></a>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s30" id="item_s30">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s30" data-name-jets="1 key: visible below from the previous, but must be climbed down to further on, e.g. via the pillars; a small room containing the marika's soreseal" id="item_s30">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s30" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s30">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: Visible below from the previous, but must be climbed down to further on, e.g. via the pillars; a small room containing the Marika's Soreseal</span>
                       </span>
                     </label>
@@ -1882,11 +1890,11 @@
               </ul>
               <h5>Crumbling Farum Azula</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s31" id="item_s31">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s31" data-name-jets="2 keys: unlocks the dragon temple lift" id="item_s31">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s31" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s31">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: Unlocks the Dragon Temple Lift</span>
                       </span>
                     </label>
@@ -1896,11 +1904,11 @@
               </ul>
               <h5>Siofra River</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s32" id="item_s32">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s32" data-name-jets="2 keys: the elevator up to deep siofra well" id="item_s32">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s32" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s32">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">2 keys: The elevator up to Deep Siofra Well</span>
                       </span>
                     </label>
@@ -1910,11 +1918,11 @@
               </ul>
               <h5>Nokron, Eternal City</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s33" id="item_s33">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s33" data-name-jets="1 key: a room down a small hall in the massive cathedral with a large ball in night's sacred ground, upstairs near the altar with the black whetblade; contains the mimic tear ashes" id="item_s33">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s33" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s33">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A room down a small hall in the massive cathedral with a large ball in Night's Sacred Ground, upstairs near the altar with the Black Whetblade; contains the Mimic Tear Ashes</span>
                       </span>
                     </label>
@@ -1924,11 +1932,11 @@
               </ul>
               <h5>Nokstella, Eternal City</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="stonesword_s34" id="item_s34">
+                <li class="list-group-item searchable ps-0" data-id="stonesword_s34" data-name-jets="1 key: a room along the path to the top, tucked around the far side of a building before the bridge leading to a large ball on a stairway; contains two nox monks guarding the nightmaiden &amp; swordstress puppets" id="item_s34">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="stonesword_s34" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="stonesword_s34">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">1 key: A room along the path to the top, tucked around the far side of a building before the bridge leading to a large ball on a stairway; contains two Nox Monks guarding the Nightmaiden & Swordstress Puppets</span>
                       </span>
                     </label>
@@ -1974,15 +1982,41 @@
                         contentTag: "#stonesword_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {
+                            if ($('#stonesword_name_only').is(':checked')) {
+                                return node.getAttribute('data-name-jets') || '';
+                            }
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         },
                         didSearch: function(search_phrase) {
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#stonesword_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#stonesword_list h5").removeClass('d-none');
+                            $("#stonesword_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                                return;
+                            }
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#stonesword_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }
+                                return true;
+                            };
+                            
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -1990,37 +2024,23 @@
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }
 
-                                if (!search_phrase) {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                } else {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
+                            
                             $("#stonesword_list h5").each(function() {
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
-                        }
+                        },
                     });
                     function updateSearch() {
                         var search_phrase = $("#stonesword_search").val().trim();
@@ -2042,9 +2062,15 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#stonesword_name_only').is(':checked')) {
+                                    text = $(this).attr('data-name-jets') || '';
+                                } else {
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }
+                                
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {
@@ -2098,7 +2124,11 @@
                             $("#stonesword_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {
                                 try {
-                                    $("#stonesword_list").highlight(regex);
+                                    if ($('#stonesword_name_only').is(':checked')) {
+                                        $("#stonesword_list .item-name").highlight(regex);
+                                    } else {
+                                        $("#stonesword_list").highlight(regex);
+                                    }
                                 } catch(e) {}
                             }
                             
@@ -2113,7 +2143,11 @@
                             // Highlighting for normal text
                             $("#stonesword_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {
-                                $("#stonesword_list").highlight(search_phrase);
+                                if ($('#stonesword_name_only').is(':checked')) {
+                                    $("#stonesword_list .item-name").highlight(search_phrase);
+                                } else {
+                                    $("#stonesword_list").highlight(search_phrase);
+                                }
                             }
                         }
                     }
@@ -2125,6 +2159,30 @@
                     $('#stonesword_regex').on('change', function() {
                         updateSearch();
                     });
+                    
+                    $('#stonesword_name_only').on('change', function() {
+                        if (jet.options) {
+                            jet.options.manualContentHandling = function(node) {
+                                if ($('#stonesword_name_only').is(':checked')) {
+                                    return node.getAttribute('data-name-jets') || '';
+                                }
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            };
+                        }
+                        if (jet._setJets) {
+                            jet._setJets('', true);
+                        }
+                        
+                        if ($('#stonesword_regex').is(':checked')) {
+                            updateSearch();
+                        } else {
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#stonesword_search').trigger('input');
+                        }
+                    });
+                    updateSearch();
                 });
             })( jQuery );
             </script>

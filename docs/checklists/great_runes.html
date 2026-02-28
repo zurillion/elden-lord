@@ -94,10 +94,10 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
               <li>
-                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                <a class="dropdown-item lang-option" data-lang="en" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> EN</a>
               </li>
               <li>
-                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                <a class="dropdown-item lang-option" data-lang="it" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> IT</a>
               </li>
             </ul>
           </li>
@@ -177,6 +177,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/bosses.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Bosses</span>
+                      <span class="lang-text lang-it">Boss</span>
                     </span>
                   </a>
                 </li>
@@ -508,6 +509,13 @@
             <span class="lang-text lang-it">Usa Regex</span>
           </span>
         </div>
+        <div class="input-group-text">
+          <input aria-label="Name Only Search" class="form-check-input mt-0 me-2" id="great_runes_name_only" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Name Only</span>
+            <span class="lang-text lang-it">Solo nome</span>
+          </span>
+        </div>
       </div>
       <div id="great_runes_list">
         <div class="card shadow-sm mb-3" id="great_runes_section_0">
@@ -535,24 +543,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Boss</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Boss</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Effect</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Effect</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_1" id="item_1_1">
+                <li class="list-group-item searchable" data-id="great_runes_1_1" data-name-jets="godrick the grafted" id="item_1_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_1" type="checkbox" value="">
@@ -565,7 +579,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03078.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Godrick the Grafted</span>
                             </span>
                           </label>
@@ -589,15 +603,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_1">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03078.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Godrick the Grafted</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Limgrave - Stormveil Castle</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Raises all attributes by +5.</span>
                         </span><br>
@@ -605,7 +625,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_2" id="item_1_2">
+                <li class="list-group-item searchable" data-id="great_runes_1_2" data-name-jets="rennala, queen of the full moon" id="item_1_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_2" type="checkbox" value="">
@@ -618,7 +638,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03202.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Rennala, Queen of the Full Moon</span>
                             </span>
                           </label>
@@ -642,15 +662,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_2">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03202.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Rennala, Queen of the Full Moon</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Liurnia of the Lakes - Raya Lucaria Academy</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Special, can't equip - used to respec.</span>
                         </span><br>
@@ -658,7 +684,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_3" id="item_1_3">
+                <li class="list-group-item searchable" data-id="great_runes_1_3" data-name-jets="starscourge radahn" id="item_1_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_3" type="checkbox" value="">
@@ -671,7 +697,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03079.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Starscourge Radahn</span>
                             </span>
                           </label>
@@ -695,15 +721,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_3">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03079.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Starscourge Radahn</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Caelid - Redmane Castle</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Raises maximum HP, FP, and Stamina by 15% each.</span>
                         </span><br>
@@ -711,7 +743,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_4" id="item_1_4">
+                <li class="list-group-item searchable" data-id="great_runes_1_4" data-name-jets="morgott, the omen king" id="item_1_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_4" type="checkbox" value="">
@@ -724,7 +756,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_4">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03080.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Morgott, the Omen King</span>
                             </span>
                           </label>
@@ -748,15 +780,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_4">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03080.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Morgott, the Omen King</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Altus Plateau - Leyndell, Royal Capital</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Raises maximum HP by 25%.</span>
                         </span><br>
@@ -764,7 +802,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_5" id="item_1_5">
+                <li class="list-group-item searchable" data-id="great_runes_1_5" data-name-jets="rykard, lord of blasphemy" id="item_1_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_5" type="checkbox" value="">
@@ -777,7 +815,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_5">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03081.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Rykard, Lord of Blasphemy</span>
                             </span>
                           </label>
@@ -801,15 +839,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_5">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03081.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Rykard, Lord of Blasphemy</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Mt. Gelmir - Volcano Manor</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Restores 80 HP + 7% of maximum upon defeating enemies.</span>
                         </span><br>
@@ -817,7 +861,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_7" id="item_1_7">
+                <li class="list-group-item searchable" data-id="great_runes_1_7" data-name-jets="mohg, lord of blood" id="item_1_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_7" type="checkbox" value="">
@@ -830,7 +874,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_7">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03082.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Mohg, Lord of Blood</span>
                             </span>
                           </label>
@@ -854,15 +898,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_7">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03082.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Mohg, Lord of Blood</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Mohgwyn Palace - Mohgwyn Dynasty Mausoleum</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Grants the <a href="https://eldenring.wiki.fextralife.com/Mohg's+Great+Rune">Blessing of Blood</a> to Spirit Ashes.</span>
                         </span><br>
@@ -870,7 +920,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_6" id="item_1_6">
+                <li class="list-group-item searchable" data-id="great_runes_1_6" data-name-jets="malenia, blade of miquella" id="item_1_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_6" type="checkbox" value="">
@@ -883,7 +933,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_6">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03083.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Malenia, Blade of Miquella</span>
                             </span>
                           </label>
@@ -907,15 +957,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_6">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03083.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Malenia, Blade of Miquella</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Miquella's Haligtree - Elphael, Brace of the Haligtree</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Become Bloodborne (After taking damage, provides a few seconds to regain health by attacking, but nerfs Flask of Crimson Tears by 30%).</span>
                         </span><br>
@@ -923,7 +979,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_11" id="item_1_11">
+                <li class="list-group-item searchable" data-id="great_runes_1_11" data-name-jets="scadutree avatar" id="item_1_11">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="great_runes_1_11" type="checkbox" value="">
@@ -936,7 +992,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_11">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03801.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Scadutree Avatar</span>
                             </span>
                           </label>
@@ -960,15 +1016,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_11">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03801.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Boss: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Boss: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Scadutree Avatar</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Scadutree Base</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Effect: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Effect: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Special, can't equip - can be used after the first grab of final boss to remove the glowing symbol, preventing the second grab from causing a game over. It is reusable and can be used to remove the status effect as often as required during the fight.</span>
                         </span><br>
@@ -1005,24 +1067,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rune</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rune</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Notes</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Notes</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_1r" id="item_1_1r">
+                <li class="list-group-item searchable" data-id="great_runes_1_1r" data-name-jets="godrick's" id="item_1_1r">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="great_runes_1_1r" type="checkbox" value="">
@@ -1035,7 +1103,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_1r">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03201.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Godrick's</span>
                             </span>
                           </label>
@@ -1059,15 +1127,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_1r">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03201.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Rune: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rune: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Godrick's</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Divine Tower of Limgrave</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Tower waygate guarded by Giant Golems.</span>
                         </span><br>
@@ -1075,7 +1149,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_3r" id="item_1_3r">
+                <li class="list-group-item searchable" data-id="great_runes_1_3r" data-name-jets="radahn's" id="item_1_3r">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="great_runes_1_3r" type="checkbox" value="">
@@ -1088,7 +1162,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_3r">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03204.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Radahn's</span>
                             </span>
                           </label>
@@ -1112,15 +1186,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_3r">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03204.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Rune: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rune: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Radahn's</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Divine Tower of Caelid</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Features a platforming challenge to find the way inside. Features another optional platforming challenge inside to descend into the tower and find a boss.</span>
                         </span><br>
@@ -1128,7 +1208,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_5r" id="item_1_5r">
+                <li class="list-group-item searchable" data-id="great_runes_1_5r" data-name-jets="rykard's" id="item_1_5r">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="great_runes_1_5r" type="checkbox" value="">
@@ -1141,7 +1221,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_5r">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03203.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Rykard's</span>
                             </span>
                           </label>
@@ -1165,15 +1245,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_5r">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03203.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Rune: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rune: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Rykard's</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Divine Tower of West Altus</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Accessed via Sealed Tunnel.</span>
                         </span><br>
@@ -1181,7 +1267,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_6r" id="item_1_6r">
+                <li class="list-group-item searchable" data-id="great_runes_1_6r" data-name-jets="malenia's" id="item_1_6r">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="great_runes_1_6r" type="checkbox" value="">
@@ -1194,7 +1280,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_6r">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03206.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Malenia's</span>
                             </span>
                           </label>
@@ -1218,15 +1304,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_6r">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03206.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Rune: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rune: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Malenia's</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Isolated Divine Tower</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Accessed via a waygate at the Divine Bridge in Leyndell, which itself can be accessed via a waygate at the Tower of Return in Weeping Peninsula.</span>
                         </span><br>
@@ -1234,7 +1326,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_4r" id="item_1_4r">
+                <li class="list-group-item searchable" data-id="great_runes_1_4r" data-name-jets="morgott's" id="item_1_4r">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="great_runes_1_4r" type="checkbox" value="">
@@ -1247,7 +1339,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_4r">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03200.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Morgott's</span>
                             </span>
                           </label>
@@ -1271,15 +1363,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_4r">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03200.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Rune: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rune: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Morgott's</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Divine Tower of East Altus</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Tower guarded by Fell Twins. Uniquely restores two Great Runes, not one.</span>
                         </span><br>
@@ -1287,7 +1385,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_1_7r" id="item_1_7r">
+                <li class="list-group-item searchable" data-id="great_runes_1_7r" data-name-jets="mohg's" id="item_1_7r">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="great_runes_1_7r" type="checkbox" value="">
@@ -1300,7 +1398,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_1_7r">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03205.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Mohg's</span>
                             </span>
                           </label>
@@ -1324,15 +1422,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_1_7r">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03205.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Rune: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rune: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Mohg's</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Divine Tower of East Altus</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Notes: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Notes: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Tower guarded by Fell Twins. Uniquely restores two Great Runes, not one.</span>
                         </span><br>
@@ -1369,24 +1473,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Name</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Name</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-5">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-id="great_runes_2_1" data-name-jets="phantom great rune" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="great_runes_2_1" type="checkbox" value="">
@@ -1399,7 +1509,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_2_1">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/tools/online/00626.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en">Phantom Great Rune</span>
                             </span>
                           </label>
@@ -1423,15 +1533,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_2_1">
                         <img class="float-end" data-src="/img/icons/tools/online/00626.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en">Phantom Great Rune</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Granted and removed automatically</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Item for online play. Obtained when invading another world with Mohg's Great Rune activated. Grants the Blessing of Blood to enemies native to the invaded world.</span>
                         </span><br>
@@ -1439,7 +1555,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_2_2" id="item_2_2">
+                <li class="list-group-item searchable" data-id="great_runes_2_2" data-name-jets="mending rune of the death-prince" id="item_2_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="great_runes_2_2" type="checkbox" value="">
@@ -1452,7 +1568,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_2_2">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/03117.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Death-Prince">Mending Rune of the Death-Prince</a></span>
                             </span>
                           </label>
@@ -1476,15 +1592,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_2_2">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/03117.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Death-Prince">Mending Rune of the Death-Prince</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Received from Fia after completing her questline</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Rune gestated by Fia, the Deathbed Companion. Formed of the two hallowbrand half-wheels combined, it will embed the principle of life within Death into Order. Unlocks a variant of the Elden Lord ending.</span>
                         </span><br>
@@ -1492,7 +1614,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_2_3" id="item_2_3">
+                <li class="list-group-item searchable" data-id="great_runes_2_3" data-name-jets="mending rune of the fell curse" id="item_2_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="great_runes_2_3" type="checkbox" value="">
@@ -1505,7 +1627,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_2_3">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/edited/03118.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Fell+Curse">Mending Rune of the Fell Curse</a></span>
                             </span>
                           </label>
@@ -1529,15 +1651,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_2_3">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/edited/03118.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Fell+Curse">Mending Rune of the Fell Curse</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Dropped by Dung Eater after completing his questline</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Loathsome rune gestated by the Dung Eater. The reviled curse will last eternally, and the world's children, grandchildren, and every generation hence, will be its pustules. Unlocks a variant of the Elden Lord ending.</span>
                         </span><br>
@@ -1545,7 +1673,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="great_runes_2_4" id="item_2_4">
+                <li class="list-group-item searchable" data-id="great_runes_2_4" data-name-jets="mending rune of perfect order" id="item_2_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="great_runes_2_4" type="checkbox" value="">
@@ -1558,7 +1686,7 @@
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-4">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="great_runes_2_4">
                             <img class="me-2 flex-shrink-0" data-src="/img/icons/keys/great_runes/edited/03116.png" loading="lazy" style="height: 70px; width: 70px">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mending+Rune+of+Perfect+Order">Mending Rune of Perfect Order</a></span>
                             </span>
                           </label>
@@ -1582,15 +1710,21 @@
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="great_runes_2_4">
                         <img class="float-end" data-src="/img/icons/keys/great_runes/edited/03116.png" loading="lazy" style="height: 70px; width: 70px">
-                        <strong class="me-1 no-highlight">Name: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Name: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mending+Rune+of+Perfect+Order">Mending Rune of Perfect Order</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Location: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Dropped by Goldmask after completing his and Brother Corhyn's questline</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Rune discovered by the noble Goldmask. A rune of transcendental ideology which will attempt to perfect the Golden Order. Unlocks a variant of the Elden Lord ending.</span>
                         </span><br>
@@ -1637,15 +1771,41 @@
                         contentTag: "#great_runes_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {
+                            if ($('#great_runes_name_only').is(':checked')) {
+                                return node.getAttribute('data-name-jets') || '';
+                            }
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         },
                         didSearch: function(search_phrase) {
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#great_runes_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#great_runes_list h5").removeClass('d-none');
+                            $("#great_runes_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                                return;
+                            }
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#great_runes_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }
+                                return true;
+                            };
+                            
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -1653,37 +1813,23 @@
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }
 
-                                if (!search_phrase) {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                } else {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
+                            
                             $("#great_runes_list h5").each(function() {
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
-                        }
+                        },
                     });
                     function updateSearch() {
                         var search_phrase = $("#great_runes_search").val().trim();
@@ -1705,9 +1851,15 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#great_runes_name_only').is(':checked')) {
+                                    text = $(this).attr('data-name-jets') || '';
+                                } else {
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }
+                                
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {
@@ -1761,7 +1913,11 @@
                             $("#great_runes_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {
                                 try {
-                                    $("#great_runes_list").highlight(regex);
+                                    if ($('#great_runes_name_only').is(':checked')) {
+                                        $("#great_runes_list .item-name").highlight(regex);
+                                    } else {
+                                        $("#great_runes_list").highlight(regex);
+                                    }
                                 } catch(e) {}
                             }
                             
@@ -1776,7 +1932,11 @@
                             // Highlighting for normal text
                             $("#great_runes_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {
-                                $("#great_runes_list").highlight(search_phrase);
+                                if ($('#great_runes_name_only').is(':checked')) {
+                                    $("#great_runes_list .item-name").highlight(search_phrase);
+                                } else {
+                                    $("#great_runes_list").highlight(search_phrase);
+                                }
                             }
                         }
                     }
@@ -1788,6 +1948,30 @@
                     $('#great_runes_regex').on('change', function() {
                         updateSearch();
                     });
+                    
+                    $('#great_runes_name_only').on('change', function() {
+                        if (jet.options) {
+                            jet.options.manualContentHandling = function(node) {
+                                if ($('#great_runes_name_only').is(':checked')) {
+                                    return node.getAttribute('data-name-jets') || '';
+                                }
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            };
+                        }
+                        if (jet._setJets) {
+                            jet._setJets('', true);
+                        }
+                        
+                        if ($('#great_runes_regex').is(':checked')) {
+                            updateSearch();
+                        } else {
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#great_runes_search').trigger('input');
+                        }
+                    });
+                    updateSearch();
                 });
             })( jQuery );
             </script>

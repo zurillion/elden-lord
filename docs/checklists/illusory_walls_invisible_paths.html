@@ -94,10 +94,10 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
               <li>
-                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                <a class="dropdown-item lang-option" data-lang="en" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> EN</a>
               </li>
               <li>
-                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                <a class="dropdown-item lang-option" data-lang="it" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> IT</a>
               </li>
             </ul>
           </li>
@@ -177,6 +177,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/bosses.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Bosses</span>
+                      <span class="lang-text lang-it">Boss</span>
                     </span>
                   </a>
                 </li>
@@ -540,6 +541,13 @@
             <span class="lang-text lang-it">Usa Regex</span>
           </span>
         </div>
+        <div class="input-group-text">
+          <input aria-label="Name Only Search" class="form-check-input mt-0 me-2" id="illusory_walls_name_only" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Name Only</span>
+            <span class="lang-text lang-it">Solo nome</span>
+          </span>
+        </div>
       </div>
       <div id="illusory_walls_list">
         <div class="card shadow-sm mb-3" id="illusory_walls_section_0">
@@ -567,24 +575,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_1" id="item_1_1">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_1" data-name-jets="academy crystal cave" id="item_1_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_1" type="checkbox" value="">
@@ -596,7 +610,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_1">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+Crystal+Cave">Academy Crystal Cave</a></span>
                             </span>
                           </label>
@@ -619,15 +633,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_1">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+Crystal+Cave">Academy Crystal Cave</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Crystal+Staff">Crystal Staff</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">After entering through a wooden door, there is a room guarded by a tanky mage with a pointy hat. Before entering that room, the illusory wall is to the left.</span>
                         </span><br>
@@ -635,7 +655,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_2" id="item_1_2">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_2" data-name-jets="academy of raya lucaria" id="item_1_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_2" type="checkbox" value="">
@@ -647,7 +667,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_2">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+of+Raya+Lucaria">Academy of Raya Lucaria</a></span>
                             </span>
                           </label>
@@ -670,15 +690,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_2">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+of+Raya+Lucaria">Academy of Raya Lucaria</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Rune+Arc">Rune Arc</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">The wall to the right just upon entering the Church of the Cuckoo.	</span>
                         </span><br>
@@ -686,7 +712,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_3" id="item_1_3">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_3" data-name-jets="academy of raya lucaria" id="item_1_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_3" type="checkbox" value="">
@@ -698,7 +724,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_3">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+of+Raya+Lucaria">Academy of Raya Lucaria</a></span>
                             </span>
                           </label>
@@ -721,15 +747,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_3">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+of+Raya+Lucaria">Academy of Raya Lucaria</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Smithing+Stone+(4)">Smithing Stone [4]</a>, <a href="https://eldenring.wiki.fextralife.com/Olivinus+Glintstone+Crown">Olivinus Glintstone Crown</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Bookshelf by the corpse in the room to the left in the hallway just after the Schoolhouse Classroom site of grace.</span>
                         </span><br>
@@ -737,7 +769,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_4" id="item_1_4">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_4" data-name-jets="academy of raya lucaria" id="item_1_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_4" type="checkbox" value="">
@@ -749,7 +781,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_4">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+of+Raya+Lucaria">Academy of Raya Lucaria</a></span>
                             </span>
                           </label>
@@ -772,15 +804,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_4">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Academy+of+Raya+Lucaria">Academy of Raya Lucaria</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Comet">Comet</a>, <a href="https://eldenring.wiki.fextralife.com/Graven-School+Talisman">Graven-School Talisman</a>, <a href="https://eldenring.wiki.fextralife.com/Stonesword+Key">Stonesword Key</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">From the Debate Parlor site of grace head back the way to the mage's the right bookshelf near the stairs, the one with no books.</span>
                         </span><br>
@@ -788,7 +826,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_5" id="item_1_5">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_5" data-name-jets="black knife catacombs" id="item_1_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_5" type="checkbox" value="">
@@ -800,7 +838,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_5">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Black+Knife+Catacombs">Black Knife Catacombs</a></span>
                             </span>
                           </label>
@@ -823,15 +861,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_5">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Black+Knife+Catacombs">Black Knife Catacombs</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Optional Boss  <a href="https://eldenring.wiki.fextralife.com/Black+Knife+Assassin">Black Knife Assassin</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Ride the knife traps up, at the end of the hall, hit the wall to access an Optional Boss.</span>
                         </span><br>
@@ -839,7 +883,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_6" id="item_1_6">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_6" data-name-jets="kingsrealm ruins" id="item_1_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_6" type="checkbox" value="">
@@ -851,7 +895,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_6">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Kingsrealm+Ruins">Kingsrealm Ruins</a></span>
                             </span>
                           </label>
@@ -874,15 +918,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_6">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Kingsrealm+Ruins">Kingsrealm Ruins</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Areas north of Kingsrealm Ruins</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">This illusory wall is located north side of Kingsrealm Ruins, blocking the road, posing as a large brick wall. Hit it to see the road ahead and continue to the manor.</span>
                         </span><br>
@@ -890,7 +940,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_7" id="item_1_7">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_7" data-name-jets="kingsrealm ruins" id="item_1_7">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_7" type="checkbox" value="">
@@ -902,7 +952,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_7">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Kingsrealm+Ruins">Kingsrealm Ruins</a></span>
                             </span>
                           </label>
@@ -925,15 +975,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_7">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Kingsrealm+Ruins">Kingsrealm Ruins</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Optional Boss <a href="https://eldenring.wiki.fextralife.com/Royal+Revenant">Royal Revenant</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">The stairs leading down into an underground area is covered by an illusory floor.</span>
                         </span><br>
@@ -941,7 +997,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_8" id="item_1_8">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_8" data-name-jets="moonfolk ruins" id="item_1_8">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_8" type="checkbox" value="">
@@ -953,7 +1009,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_8">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Moonfolk+Ruins">Moonfolk Ruins</a></span>
                             </span>
                           </label>
@@ -976,15 +1032,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_8">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Moonfolk+Ruins">Moonfolk Ruins</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(8)">Somber Smithing Stone [8]</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">This illusory floor is located in the northeast part of the ruins.	</span>
                         </span><br>
@@ -992,7 +1054,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_9" id="item_1_9">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_9" data-name-jets="road's end catacomb" id="item_1_9">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_9" type="checkbox" value="">
@@ -1004,7 +1066,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_9">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Road's+End+Catacombs">Road's End Catacomb</a></span>
                             </span>
                           </label>
@@ -1027,15 +1089,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_9">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Road's+End+Catacombs">Road's End Catacomb</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Ghost+Glovewort+(2)">Ghost Glovewort (2)</a>, <a href="https://eldenring.wiki.fextralife.com/Rune+Arc">Rune Arc</a>, <a href="https://eldenring.wiki.fextralife.com/Root+Resin">Root Resin</a>, <a href="https://eldenring.wiki.fextralife.com/Grave+Grovewort+(2)">Grave Glovewort [2]</a>, Optional Boss  <a href="https://eldenring.wiki.fextralife.com/Spirit-Caller+Snail">Spirit-Caller Snail</a>, <a href="https://eldenring.wiki.fextralife.com/Glintstone+Sorcerer+Ashes">Glintstone Sorcerer Ashes</a>, <a href="https://eldenring.wiki.fextralife.com/Watchdog's+Staff">Watchdog's Staff</a>, <a href="https://eldenring.wiki.fextralife.com/Grave+Glovewort+(3)">Grave Glovewort (3)</a>, <a href="https://eldenring.wiki.fextralife.com/Grave+Violet">Grave Violet</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">The first 2 are one floor below the lever, in the stone archways, both of them lead to the same area, it continues on with another illusory wall, then another one, until you find the boss room. The second 2 are two floors below the lever, in the stone archways, both are next to each other, leading to the same area. The last wall in the catacombs leads to a dead end area with a chest.</span>
                         </span><br>
@@ -1043,7 +1111,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_1_10" id="item_1_10">
+                <li class="list-group-item searchable" data-id="illusory_walls_1_10" data-name-jets="three sisters" id="item_1_10">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="0" id="illusory_walls_1_10" type="checkbox" value="">
@@ -1055,7 +1123,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_1_10">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Three+Sisters">Three Sisters</a></span>
                             </span>
                           </label>
@@ -1078,15 +1146,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_1_10">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Three+Sisters">Three Sisters</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">N/A</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">The wall is located on the ground in the Ruined area at the west end. Hit or roll onto it to reveal it. Just below, there is another Illusory Wall that reveals an NPC that appears to be <a href="https://eldenring.wiki.fextralife.com/Sorceress+Sellen">Sorceress Sellen</a>, though in Stasis.</span>
                         </span><br>
@@ -1123,24 +1197,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_2_1" id="item_2_1">
+                <li class="list-group-item searchable" data-id="illusory_walls_2_1" data-name-jets="caelid catacombs" id="item_2_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="illusory_walls_2_1" type="checkbox" value="">
@@ -1152,7 +1232,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_2_1">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Caelid+Catacombs">Caelid Catacombs</a></span>
                             </span>
                           </label>
@@ -1175,15 +1255,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_2_1">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Caelid+Catacombs">Caelid Catacombs</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Miranda+Sprout+Ashes">Miranda Sprout Ashes</a>, <a href="https://eldenring.wiki.fextralife.com/Grave+Glovewort+(5)">Grave Glovewort [5]</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">After descending the staircase that leads onto a swamp, turn to the right, go under the platform where the Archer Skeleton was, and hit wall on the right corner. At the end of the dungeon, there will be a locked door. Once you see it, turn 180 and then attack the wall on the column in the middle of the previous room.</span>
                         </span><br>
@@ -1191,7 +1277,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_2_2" id="item_2_2">
+                <li class="list-group-item searchable" data-id="illusory_walls_2_2" data-name-jets="sellia hideaway" id="item_2_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="1" id="illusory_walls_2_2" type="checkbox" value="">
@@ -1203,7 +1289,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_2_2">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sellia+Hideaway">Sellia Hideaway</a></span>
                             </span>
                           </label>
@@ -1226,15 +1312,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_2_2">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sellia+Hideaway">Sellia Hideaway</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">N/A</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Entrance found behind an illusionary wall of rock. Illusory wall in the sloped area leading down to the boss room.</span>
                         </span><br>
@@ -1271,24 +1363,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_3_1" id="item_3_1">
+                <li class="list-group-item searchable" data-id="illusory_walls_3_1" data-name-jets="auriza side tomb" id="item_3_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="illusory_walls_3_1" type="checkbox" value="">
@@ -1300,7 +1398,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_3_1">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Auriza+Side+Tomb">Auriza Side Tomb</a></span>
                             </span>
                           </label>
@@ -1323,15 +1421,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_3_1">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Auriza+Side+Tomb">Auriza Side Tomb</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Complete the Dungeon</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">In the final room after using the first teleporter trap, when facing the chest in the room, there is an illusory wall on the left side.</span>
                         </span><br>
@@ -1339,7 +1443,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_3_2" id="item_3_2">
+                <li class="list-group-item searchable" data-id="illusory_walls_3_2" data-name-jets="mirage rise" id="item_3_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="illusory_walls_3_2" type="checkbox" value="">
@@ -1351,7 +1455,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_3_2">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mirage+Rise">Mirage Rise</a></span>
                             </span>
                           </label>
@@ -1374,15 +1478,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_3_2">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Mirage+Rise">Mirage Rise</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Entrance to the Rise</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">East-Southeast of the Bower of Bounty Grace, up a little cliff, it's an illusory rock part of the Mirage Riddle.</span>
                         </span><br>
@@ -1390,7 +1500,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_3_3" id="item_3_3">
+                <li class="list-group-item searchable" data-id="illusory_walls_3_3" data-name-jets="sage's cave" id="item_3_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="illusory_walls_3_3" type="checkbox" value="">
@@ -1402,7 +1512,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_3_3">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sage's+Cave">Sage's Cave</a></span>
                             </span>
                           </label>
@@ -1425,15 +1535,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_3_3">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sage's+Cave">Sage's Cave</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">N/A</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">There’s an illusory wall near the path past the campfire, with another one along the way. The wall between the two bazaars is actually an illusory wall as well. There are also two illusory walls in the middle of the waterfall with two chests in the middle.</span>
                         </span><br>
@@ -1441,7 +1557,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_3_4" id="item_3_4">
+                <li class="list-group-item searchable" data-id="illusory_walls_3_4" data-name-jets="sainted hero's grave" id="item_3_4">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="illusory_walls_3_4" type="checkbox" value="">
@@ -1453,7 +1569,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_3_4">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sainted+Hero's+Grave">Sainted Hero's Grave</a></span>
                             </span>
                           </label>
@@ -1476,15 +1592,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_3_4">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sainted+Hero's+Grave">Sainted Hero's Grave</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">N/A</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Past the site of grace take the left passage down the stairs, follow the corridor until the end into the room with the two bell casters up the stairs past them the wall behind them is Illusory.</span>
                         </span><br>
@@ -1492,7 +1614,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_3_5" id="item_3_5">
+                <li class="list-group-item searchable" data-id="illusory_walls_3_5" data-name-jets="sealed tunnel" id="item_3_5">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="illusory_walls_3_5" type="checkbox" value="">
@@ -1504,7 +1626,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_3_5">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sealed+Tunnel">Sealed Tunnel</a></span>
                             </span>
                           </label>
@@ -1527,15 +1649,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_3_5">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sealed+Tunnel">Sealed Tunnel</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">N/A</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">In Leyndell Royal Capital, there's a tunnel down at the lake outside the west entrance, the tunnel is apparently sealed with nothing in it, but hitting a cavity in one of the walls will open a path to a new area. The tunnel keeps going deeper and deeper and at the end of each hidden area, there's another illusory wall that you must hit to continue.</span>
                         </span><br>
@@ -1543,7 +1671,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_3_6" id="item_3_6">
+                <li class="list-group-item searchable" data-id="illusory_walls_3_6" data-name-jets="sealed tunnel" id="item_3_6">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="2" id="illusory_walls_3_6" type="checkbox" value="">
@@ -1555,7 +1683,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_3_6">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sealed+Tunnel">Sealed Tunnel</a></span>
                             </span>
                           </label>
@@ -1578,15 +1706,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_3_6">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Sealed+Tunnel">Sealed Tunnel</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">N/A</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">The first is between a summoning pool and a fire place. The next is behind a chest containing a ball bearing. After Dropping into a room filled with the exploding ball enemies a hidden wall can be found behind a bunch of crates and barrels opposite a stair case</span>
                         </span><br>
@@ -1623,24 +1757,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_4_1" id="item_4_1">
+                <li class="list-group-item searchable" data-id="illusory_walls_4_1" data-name-jets="frenzied flame proscription" id="item_4_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="illusory_walls_4_1" type="checkbox" value="">
@@ -1652,7 +1792,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_4_1">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Frenzied+Flame+Proscription">Frenzied Flame Proscription</a></span>
                             </span>
                           </label>
@@ -1675,15 +1815,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_4_1">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Frenzied+Flame+Proscription">Frenzied Flame Proscription</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Alternative way to <a href="https://eldenring.wiki.fextralife.com/Deeproot+Depths">Deeproot Depths</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">In one of the arches on the wall next to <a href="https://eldenring.wiki.fextralife.com/Hyetta">Hyetta</a>'s final location, you'll find an Illusory Wall hiding a hallway leading to a chest with a Rune Arc. Another Illusory Wall can be found behind the chest and opens up to the Root-Facing Site of Grace.</span>
                         </span><br>
@@ -1691,7 +1837,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_4_2" id="item_4_2">
+                <li class="list-group-item searchable" data-id="illusory_walls_4_2" data-name-jets="leyndell catacombs" id="item_4_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="3" id="illusory_walls_4_2" type="checkbox" value="">
@@ -1703,7 +1849,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_4_2">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Leyndell+Catacombs">Leyndell Catacombs</a></span>
                             </span>
                           </label>
@@ -1726,15 +1872,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_4_2">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Leyndell+Catacombs">Leyndell Catacombs</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Haligdrake+Talisman">Haligdrake Talisman +1</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Up the stairs from the Grace, up the elevator, in the room with unkillable enemies, next to the stairs up 2 walls, leading to the snail. This is also accessible via <a href="https://eldenring.wiki.fextralife.com/Leyndell,+Ashen+Capital">Leyndall, Ashen Capital</a>.</span>
                         </span><br>
@@ -1771,24 +1923,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_5_1" id="item_5_1">
+                <li class="list-group-item searchable" data-id="illusory_walls_5_1" data-name-jets="hidden path to the haligtree" id="item_5_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="4" id="illusory_walls_5_1" type="checkbox" value="">
@@ -1800,7 +1958,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_5_1">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Hidden+Path+to+the+Haligtree">Hidden Path to the Haligtree</a></span>
                             </span>
                           </label>
@@ -1823,15 +1981,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_5_1">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Hidden+Path+to+the+Haligtree">Hidden Path to the Haligtree</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Grave+Glovewort+(9)">Grave Glovewort [9]</a>, <a href="https://eldenring.wiki.fextralife.com/Silver+Scarab">Silver Scarab</a>, <a href="https://eldenring.wiki.fextralife.com/Grave+Glovewort+(9)">Grave Glovewort [9]</a>, <a href="https://eldenring.wiki.fextralife.com/Hero's+Rune+(1)">Hero's Rune [1]</a>, <a href="https://eldenring.wiki.fextralife.com/Spelldrake+Talisman">Spelldrake Talisman +2</a>, <a href="https://eldenring.wiki.fextralife.com/Blackflame+Monk+Amon">Blackflame Monk Amon Ashes</a>, <a href="https://eldenring.wiki.fextralife.com/Deathroot">Deathroot</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">From the Site of Grace, make your way back down the staircase in the main hall and stand where the broken section of railing is, it will be on your right hand side. Looking down, you should be able to see an alcove along the walls across the pit. Walk to the ledge and drop a Rainbow Stone or Glowstone, etc., to ensure solid landing. Walk forward to drop to the invisible floor. Once on the invisible floor, you can move straight ahead into the alcove. Keep following the hidden path from here to progress.</span>
                         </span><br>
@@ -1868,24 +2032,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_6_1" id="item_6_1">
+                <li class="list-group-item searchable" data-id="illusory_walls_6_1" data-name-jets="giant-conquering hero's grave" id="item_6_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="illusory_walls_6_1" type="checkbox" value="">
@@ -1897,7 +2067,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_6_1">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Giant-Conquering+Hero's+Grave">Giant-Conquering Hero's Grave</a></span>
                             </span>
                           </label>
@@ -1920,15 +2090,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_6_1">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Giant-Conquering+Hero's+Grave">Giant-Conquering Hero's Grave</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Golden+Rune+(11)">Golden Rune [11]</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">From the Grace, down the hallway where it opens up, turn right and it's the panel on the left.</span>
                         </span><br>
@@ -1936,7 +2112,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_6_2" id="item_6_2">
+                <li class="list-group-item searchable" data-id="illusory_walls_6_2" data-name-jets="giants' mountaintop catacombs" id="item_6_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="illusory_walls_6_2" type="checkbox" value="">
@@ -1948,7 +2124,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_6_2">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Giants'+Mountaintop+Catacombs">Giants' Mountaintop Catacombs</a></span>
                             </span>
                           </label>
@@ -1971,15 +2147,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_6_2">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Giants'+Mountaintop+Catacombs">Giants' Mountaintop Catacombs</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Grave+Glovewort+(8)">Grave Glovewort [8]</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">In the secret lower part of the dungeon, located by raising the lift once you've taken it down to the first level. Once you've taken the lift downward and moved past the first room you'll be faced with 2 frost breath traps down a long hallway. The hidden wall is between the two traps on the right hand side just before the second trap.</span>
                         </span><br>
@@ -1987,7 +2169,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_6_3" id="item_6_3">
+                <li class="list-group-item searchable" data-id="illusory_walls_6_3" data-name-jets="heretical rise" id="item_6_3">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="5" id="illusory_walls_6_3" type="checkbox" value="">
@@ -1999,7 +2181,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_6_3">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Heretical+Rise">Heretical Rise</a></span>
                             </span>
                           </label>
@@ -2022,15 +2204,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_6_3">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Heretical+Rise">Heretical Rise</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Founding+Rain+of+Stars">Founding Rain of Stars</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">You must head over to the other side of the ravine in the north and find the invisible bridge that takes you across. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2804&lat=-63.42&lng=163.07&zoom=8&code=mapA">See this for the bridge start location</a>. From here make your way across the ravine and as you reach the tower look to your left. You should see very faint mist that guides you on a winding path up to enter the tower from a balcony above. <b>Tip:</b> You can use Rainbow Stones or shoot arrows with a bow to mark safe spots to walk on.</span>
                         </span><br>
@@ -2067,24 +2255,30 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Location</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Location</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-3">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Rewards</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Rewards</span>
+                            </strong>
                           </label>
                         </div>
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-7">
                           <label class="ms-0 ps-0">
-                            <strong class="no-highlight">Description</strong>
+                            <strong class="no-highlight lang-pair">
+                              <span class="lang-text lang-en">Description</span>
+                            </strong>
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_7_1" id="item_7_1">
+                <li class="list-group-item searchable" data-id="illusory_walls_7_1" data-name-jets="volcano manor" id="item_7_1">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="illusory_walls_7_1" type="checkbox" value="">
@@ -2096,7 +2290,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_7_1">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Volcano+Manor">Volcano Manor</a></span>
                             </span>
                           </label>
@@ -2119,15 +2313,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_7_1">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Volcano+Manor">Volcano Manor</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Carmaan+Ashes">Depraved Perfumer Carmaan Ashes</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">After receiving the Drawing-Room Key from <a href="https://eldenring.wiki.fextralife.com/Tanith">Tanith</a>, open the first door on the right in the hallway next to <a href="https://eldenring.wiki.fextralife.com/Tanith">Tanith</a>. The back wall, right corner is illusory. Follow the hallway, when it opens up go to the path to the left, not the stairs, and all the way at the end of this hallway is an illusory wall on your left.</span>
                         </span><br>
@@ -2135,7 +2335,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="list-group-item searchable" data-id="illusory_walls_7_2" id="item_7_2">
+                <li class="list-group-item searchable" data-id="illusory_walls_7_2" data-name-jets="volcano manor" id="item_7_2">
                   <div class="row form-check checkbox d-flex">
                     <div class="col-auto d-flex align-items-center">
                       <input class="form-check-input pe-0 me-0" data-section-idx="6" id="illusory_walls_7_2" type="checkbox" value="">
@@ -2147,7 +2347,7 @@
                       <div class="row">
                         <div class="ms-0 ps-0 d-flex align-items-center col-md-2">
                           <label class="form-check-label item_content ms-0 ps-0 d-flex align-items-center" for="illusory_walls_7_2">
-                            <span class="lang-pair">
+                            <span class="lang-pair item-name">
                               <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Volcano+Manor">Volcano Manor</a></span>
                             </span>
                           </label>
@@ -2170,15 +2370,21 @@
                     </div>
                     <div class="col d-md-none">
                       <label class="form-check-label item_content ms-0 ps-0" for="illusory_walls_7_2">
-                        <strong class="me-1 no-highlight">Location: </strong>
-                        <span class="lang-pair">
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Location: </span>
+                        </strong>
+                        <span class="lang-pair item-name">
                           <span class="lang-text lang-en"><a href="https://eldenring.wiki.fextralife.com/Volcano+Manor">Volcano Manor</a></span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Rewards: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Rewards: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">Opens a shortcut; probable glitch, it reforms</span>
                         </span><br>
-                        <strong class="me-1 no-highlight">Description: </strong>
+                        <strong class="me-1 no-highlight lang-pair">
+                          <span class="lang-text lang-en">Description: </span>
+                        </strong>
                         <span class="lang-pair">
                           <span class="lang-text lang-en">From the site of grace, then through the hallway, first room to the right, then the through the path at the corner of the room guarded by snails, at some part in that path you will find a cavity on the left with a bit of illumination coming form the other side. This illusory wall requires multiple hits to open, about 50 times with a heavy weapon.</span>
                         </span><br>
@@ -2225,15 +2431,41 @@
                         contentTag: "#illusory_walls_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {
+                            if ($('#illusory_walls_name_only').is(':checked')) {
+                                return node.getAttribute('data-name-jets') || '';
+                            }
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         },
                         didSearch: function(search_phrase) {
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#illusory_walls_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#illusory_walls_list h5").removeClass('d-none');
+                            $("#illusory_walls_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                                return;
+                            }
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#illusory_walls_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }
+                                return true;
+                            };
+                            
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -2241,37 +2473,23 @@
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }
 
-                                if (!search_phrase) {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                } else {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
+                            
                             $("#illusory_walls_list h5").each(function() {
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
-                        }
+                        },
                     });
                     function updateSearch() {
                         var search_phrase = $("#illusory_walls_search").val().trim();
@@ -2293,9 +2511,15 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#illusory_walls_name_only').is(':checked')) {
+                                    text = $(this).attr('data-name-jets') || '';
+                                } else {
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }
+                                
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {
@@ -2349,7 +2573,11 @@
                             $("#illusory_walls_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {
                                 try {
-                                    $("#illusory_walls_list").highlight(regex);
+                                    if ($('#illusory_walls_name_only').is(':checked')) {
+                                        $("#illusory_walls_list .item-name").highlight(regex);
+                                    } else {
+                                        $("#illusory_walls_list").highlight(regex);
+                                    }
                                 } catch(e) {}
                             }
                             
@@ -2364,7 +2592,11 @@
                             // Highlighting for normal text
                             $("#illusory_walls_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {
-                                $("#illusory_walls_list").highlight(search_phrase);
+                                if ($('#illusory_walls_name_only').is(':checked')) {
+                                    $("#illusory_walls_list .item-name").highlight(search_phrase);
+                                } else {
+                                    $("#illusory_walls_list").highlight(search_phrase);
+                                }
                             }
                         }
                     }
@@ -2376,6 +2608,30 @@
                     $('#illusory_walls_regex').on('change', function() {
                         updateSearch();
                     });
+                    
+                    $('#illusory_walls_name_only').on('change', function() {
+                        if (jet.options) {
+                            jet.options.manualContentHandling = function(node) {
+                                if ($('#illusory_walls_name_only').is(':checked')) {
+                                    return node.getAttribute('data-name-jets') || '';
+                                }
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            };
+                        }
+                        if (jet._setJets) {
+                            jet._setJets('', true);
+                        }
+                        
+                        if ($('#illusory_walls_regex').is(':checked')) {
+                            updateSearch();
+                        } else {
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#illusory_walls_search').trigger('input');
+                        }
+                    });
+                    updateSearch();
                 });
             })( jQuery );
             </script>

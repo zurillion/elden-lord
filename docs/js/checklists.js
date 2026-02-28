@@ -228,6 +228,14 @@
                 profiles[profilesKey][profiles.current].dlc_filter = mode;
                 $.jStorage.set(profilesKey, profiles);
                 applyDlcFilter(mode);
+
+                var searchInput = $('#' + window.current_page_id + '_search');
+                if (searchInput.length && searchInput.val()) {
+                    searchInput.trigger('input');
+                    setTimeout(function () {
+                        searchInput.trigger('keyup');
+                    }, 10);
+                }
             });
             applyDlcFilter(savedDlc);
         }

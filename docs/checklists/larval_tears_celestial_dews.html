@@ -94,10 +94,10 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end position-absolute" id="lang-menu">
               <li>
-                <a class="dropdown-item lang-option" data-lang="en" href="#">🇬🇧 EN</a>
+                <a class="dropdown-item lang-option" data-lang="en" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'%3E%3CclipPath id='t'%3E%3Cpath d='M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z'/%3E%3C/clipPath%3E%3Cpath d='M0,0 v30 h60 v-30 z' fill='%23012169'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M0,0 L60,30 M60,0 L0,30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23fff' stroke-width='10'/%3E%3Cpath d='M30,0 v30 M0,15 h60' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> EN</a>
               </li>
               <li>
-                <a class="dropdown-item lang-option" data-lang="it" href="#">🇮🇹 IT</a>
+                <a class="dropdown-item lang-option" data-lang="it" href="#"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%23009246'/%3E%3Crect width='1' height='2' x='1' fill='%23fff'/%3E%3Crect width='1' height='2' x='2' fill='%23ce2b37'/%3E%3C/svg%3E" style="height: 1.1em; border-radius: 2px; margin-bottom: 2px; border: 1px solid rgba(128, 128, 128, 0.3);"> IT</a>
               </li>
             </ul>
           </li>
@@ -177,6 +177,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/bosses.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Bosses</span>
+                      <span class="lang-text lang-it">Boss</span>
                     </span>
                   </a>
                 </li>
@@ -500,6 +501,13 @@
             <span class="lang-text lang-it">Usa Regex</span>
           </span>
         </div>
+        <div class="input-group-text">
+          <input aria-label="Name Only Search" class="form-check-input mt-0 me-2" id="tears_dews_name_only" type="checkbox">
+          <span class="lang-pair">
+            <span class="lang-text lang-en">Name Only</span>
+            <span class="lang-text lang-it">Solo nome</span>
+          </span>
+        </div>
       </div>
       <div id="tears_dews_list">
         <div class="card shadow-sm mb-3" id="tears_dews_section_0">
@@ -517,11 +525,11 @@
             <div aria-expanded="true" class="collapse show" id="tears_dews_0Col">
               <h5>Limgrave</h5>
               <ul class="list-group-flush mb-0 ps-0 ps-md-4">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_1" id="item_1_1">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_1" data-name-jets="just east of the agheel lake south site of grace is a raised ledge. on the ledge are a few wandering nobles digging in the grass at the base of large tombstones, and to the left is one noble standing by himself. kill him." id="item_1_1">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_1" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_1">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Just east of the Agheel Lake South Site of Grace is a raised ledge. On the ledge are a few Wandering Nobles digging in the grass at the base of large tombstones, and to the left is one noble standing by himself. Kill him.</span>
                       </span>
                     </label>
@@ -530,41 +538,41 @@
               </ul>
               <h5>Liurnia of the Lakes</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_2" id="item_1_2">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_2" data-name-jets="in village of the albinaurics, find one in a graveyard near the site of grace surrounded by first-generation albinauric enemies." id="item_1_2">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_2" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_2">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In Village of the Albinaurics, find one in a graveyard near the Site of Grace surrounded by first-generation Albinauric enemies.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_3" id="item_1_3">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_3" data-name-jets="just southeast of the fallen ruins of the lake site of grace is a giant crayfish in the water, separate from the three giant crayfish surrounding the small building nearby. kill the lone one." id="item_1_3">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_3" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_3">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Just southeast of the Fallen Ruins of the Lake Site of Grace is a Giant Crayfish in the water, separate from the three Giant Crayfish surrounding the small building nearby. Kill the lone one.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_4" id="item_1_4">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_4" data-name-jets="among the rewards of the resurrection painting." id="item_1_4">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_4" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_4">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Among the rewards of the <a href="paintings.html#item_3">Resurrection painting</a>.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_5" id="item_1_5">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_5" data-name-jets="sold for 3000 runes by pidia, carian servant, in caria manor (accessed by dropping down from three sisters)." id="item_1_5">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_5" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_5">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold for 3000 runes by Pidia, Carian Servant, in Caria Manor (accessed by dropping down from Three Sisters).</span>
                       </span>
                     </label>
@@ -573,11 +581,11 @@
               </ul>
               <h5>Caelid</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_6" id="item_1_6">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_6" data-name-jets="in the southwestern corner of caelid, south of the caelid highway south site of grace, is a crowd of wandering nobles milling about amongst sarcophagi. kill the noble in the back." id="item_1_6">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_6" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_6">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">In the southwestern corner of Caelid, south of the Caelid Highway South Site of Grace, is a crowd of Wandering Nobles milling about amongst sarcophagi. Kill the noble in the back.</span>
                       </span>
                     </label>
@@ -586,11 +594,11 @@
               </ul>
               <h5>Altus Plateau</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_7" id="item_1_7">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_7" data-name-jets="from the rampartside path site of grace (just west of the vertical center of the rampart wall surrounding capital outskirts), follow the road north until you come to a building. as soon as you go through the door, look over your left shoulder to see a noble cowering in the corner. kill him." id="item_1_7">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_7" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_7">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Rampartside Path Site of Grace (just west of the vertical center of the rampart wall surrounding Capital Outskirts), follow the road north until you come to a building. As soon as you go through the door, look over your left shoulder to see a noble cowering in the corner. Kill him.</span>
                       </span>
                     </label>
@@ -599,11 +607,11 @@
               </ul>
               <h5>Mt. Gelmir</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_8" id="item_1_8">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_8" data-name-jets="from the road of iniquity site of grace, face east and head to the burning fire you can see. right in front of it is a flaming enemy. kill it." id="item_1_8">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_8" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_8">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Road of Iniquity Site of Grace, face east and head to the burning fire you can see. Right in front of it is a flaming enemy. Kill it.</span>
                       </span>
                     </label>
@@ -612,11 +620,11 @@
               </ul>
               <h5>Siofra River</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_9" id="item_1_9">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_9" data-name-jets="sold by the abandoned merchant for 3000 runes. (to find him, from the worshippers' woods site of grace, climb the scaffolding you can see directly west - climb the ladders, drop down around the corner, cross the wooden bridge, and follow the cave-like path until you can drop down into his room.)" id="item_1_9">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_9" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_9">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Abandoned Merchant for 3000 runes. (To find him, from the Worshippers' Woods Site of Grace, climb the scaffolding you can see directly west - climb the ladders, drop down around the corner, cross the wooden bridge, and follow the cave-like path until you can drop down into his room.)</span>
                       </span>
                     </label>
@@ -625,51 +633,51 @@
               </ul>
               <h5>Nokron, Eternal City</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_10" id="item_1_10">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_10" data-name-jets="from the nokron, eternal city site of grace, head out the eastern door. it's sitting on a body in the building on your right." id="item_1_10">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_10" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_10">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Nokron, Eternal City Site of Grace, head out the eastern door. It's sitting on a body in the building on your right.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_11" id="item_1_11">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_11" data-name-jets="turn right and go down the narrow stairway from the previous description. before the mimic tear boss room is a large gazebo with the larval tear on a body in its center, guarded by silver tears above." id="item_1_11">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_11" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_11">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Turn right and go down the narrow stairway from the previous description. Before the Mimic Tear boss room is a large gazebo with the Larval Tear on a body in its center, guarded by Silver Tears above.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_12" id="item_1_12">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_12" data-name-jets="dropped by mimic tear." id="item_1_12">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_12" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_12">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Dropped by <a href="bosses.html#item_14_1">Mimic Tear</a>.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_13" id="item_1_13">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_13" data-name-jets="dropped by mimic tear." id="item_1_13">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_13" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_13">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Dropped by <a href="bosses.html#item_14_1">Mimic Tear</a>.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_14" id="item_1_14">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_14" data-name-jets="from the night's sacred ground site of grace, head up the stairs on the right into the building, and kill the large ball." id="item_1_14">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_14" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_14">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Night's Sacred Ground Site of Grace, head up the stairs on the right into the building, and kill the large ball.</span>
                       </span>
                     </label>
@@ -678,31 +686,31 @@
               </ul>
               <h5>Nokstella, Eternal City</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_15" id="item_1_15">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_15" data-name-jets="from the nokstella, eternal city site of grace, head up the stairs right nearby, and follow them all the way up, through the hall with many silver tears and up the stairs beyond, then turn right onto the bridge. you should see a large ball rolling down a far staircase toward you in the distance. kill it." id="item_1_15">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_15" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_15">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Nokstella, Eternal City Site of Grace, head up the stairs right nearby, and follow them all the way up, through the hall with many Silver Tears and up the stairs beyond, then turn right onto the bridge. You should see a large ball rolling down a far staircase toward you in the distance. Kill it.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_16" id="item_1_16">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_16" data-name-jets="after crossing the bridge mentioned in the previous, before climbing the stairs the ball rolled down, enter the building here with a chest in the back. kill the ball inside." id="item_1_16">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_16" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_16">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">After crossing the bridge mentioned in the previous, before climbing the stairs the ball rolled down, enter the building here with a chest in the back. Kill the ball inside.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_17" id="item_1_17">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_17" data-name-jets="following on from the previous two, now do go up the stairs the first ball rolled down. enter the building at the top. kill yet another ball inside, or let the silver tears do it by triggering a chain explosion." id="item_1_17">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_17" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_17">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Following on from the previous two, now do go up the stairs the first ball rolled down. Enter the building at the top. Kill yet another ball inside, or let the Silver Tears do it by triggering a chain explosion.</span>
                       </span>
                     </label>
@@ -711,11 +719,11 @@
               </ul>
               <h5>Consecrated Snowfield</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_18" id="item_1_18">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_18" data-name-jets="from the inner consecrated snowfield site of grace, head southeast to shortly find three wandering pilgrims stranded in the snow. one of them is stuck, buried almost up to his armpits and waddling sillily. kill him." id="item_1_18">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_18" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_18">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Inner Consecrated Snowfield Site of Grace, head southeast to shortly find three Wandering Pilgrims stranded in the snow. One of them is stuck, buried almost up to his armpits and waddling sillily. Kill him.</span>
                       </span>
                     </label>
@@ -724,91 +732,91 @@
               </ul>
               <h5>Realm of Shadow</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_21" id="item_1_21">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_21" data-name-jets="prospect town: located southeast of the large ruins on a small hill." id="item_1_21">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_21" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_21">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Prospect Town: Located southeast of the large ruins on a small hill.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_22" id="item_1_22">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_22" data-name-jets="scorched ruins: can be found southeast of scorched ruins." id="item_1_22">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_22" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_22">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Scorched Ruins: Can be found southeast of Scorched Ruins.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_23" id="item_1_23">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_23" data-name-jets="suppressing pillar: can be found northeast of the suppressing pillar." id="item_1_23">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_23" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_23">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Suppressing Pillar: Can be found northeast of the Suppressing Pillar.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_24" id="item_1_24">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_24" data-name-jets="church of the crusade: can be found south of the church of the crusade." id="item_1_24">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_24" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_24">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Church of the Crusade: Can be found south of the Church of the crusade.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_25" id="item_1_25">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_25" data-name-jets="abandoned ailing village: can be found south of the abandoned ailing village, or just east from the greatbridge, north site of grace." id="item_1_25">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_25" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_25">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Abandoned Ailing Village: Can be found south of the Abandoned Ailing Village, or just east from the Greatbridge, North site of grace.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_26" id="item_1_26">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_26" data-name-jets="rabbath's rise: can be found west of rabbath's rise." id="item_1_26">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_26" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_26">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Rabbath's Rise: Can be found west of Rabbath's Rise.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_27" id="item_1_27">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_27" data-name-jets="messmer's army encampment: can be found east of messmer's army encampment." id="item_1_27">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_27" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_27">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Messmer's Army Encampment: Can be found east of Messmer's Army Encampment.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_28" id="item_1_28">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_28" data-name-jets="rauh base: can be found on the cliff above fog rift catacombs, southwest of the ancient ruins base site of grace." id="item_1_28">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_28" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_28">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Rauh Base: Can be found on the cliff above Fog Rift Catacombs, southwest of the Ancient Ruins Base Site of Grace.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_29" id="item_1_29">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_1_29" data-name-jets="rauh base: can be found northwest of the ravine north site of grace." id="item_1_29">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="0" id="tears_dews_1_29" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_1_29">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Rauh Base: Can be found northwest of the Ravine North Site of Grace.</span>
                       </span>
                     </label>
@@ -833,21 +841,21 @@
             <div aria-expanded="true" class="collapse show" id="tears_dews_1Col">
               <h5>Liurnia of the Lakes</h5>
               <ul class="list-group-flush mb-0 ps-0 ps-md-4">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_1" id="item_2_1">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_1" data-name-jets="from the main academy gate site of grace, face southeast toward the seal teleporter to the outside side of the south raya lucaria gate. instead of using the portal, run right through it, and follow the path down past the isolated merchant to its end, where you'll find the inside side of the same south gate. at its foot is the celestial dew on a body." id="item_2_1">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_1" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_1">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Main Academy Gate Site of Grace, face southeast toward the seal teleporter to the outside side of the South Raya Lucaria Gate. Instead of using the portal, run right through it, and follow the path down past the Isolated Merchant to its end, where you'll find the inside side of the same south gate. At its foot is the Celestial Dew on a body.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_2" id="item_2_2">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_2" data-name-jets="sold for 5000 runes by pidia, carian servant, in caria manor (accessed by dropping down from three sisters)." id="item_2_2">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_2" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_2">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold for 5000 runes by Pidia, Carian Servant, in Caria Manor (accessed by dropping down from Three Sisters).</span>
                       </span>
                     </label>
@@ -856,21 +864,21 @@
               </ul>
               <h5>Ainsel River</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_3" id="item_2_3">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_3" data-name-jets="from the ainsel river well depths site of grace, proceed into the cave on the left with all the ants. at the first fork, turn right; at the second fork, turn left and hop up some ledges to find the room with the queen. proceed out the other side all the way until you come out in the top of the room with uhl palace ruins. from this high ledge, drop onto the beam with a smithing stone [4] at the end, then onto a lower ledge against the wall. on this ledge is the body with the celestial dew." id="item_2_3">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_3" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_3">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Ainsel River Well Depths Site of Grace, proceed into the cave on the left with all the ants. At the first fork, turn right; at the second fork, turn left and hop up some ledges to find the room with the Queen. Proceed out the other side all the way until you come out in the top of the room with Uhl Palace Ruins. From this high ledge, drop onto the beam with a Smithing Stone [4] at the end, then onto a lower ledge against the wall. On this ledge is the body with the Celestial Dew.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_4" id="item_2_4">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_4" data-name-jets="sold by the hermit merchant for 7500 runes. (to find him, either from the previous [drop down to ground level and run through the building ahead into the next open area] or from the ainsel river downstream site of grace [just face east and head back into the big room], climb the stairs in here to enter the building with the massive malformed star enemy on top. inside is the merchant." id="item_2_4">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_4" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_4">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">Sold by the Hermit Merchant for 7500 runes. (To find him, either from the previous [drop down to ground level and run through the building ahead into the next open area] or from the Ainsel River Downstream Site of Grace [just face east and head back into the big room], climb the stairs in here to enter the building with the massive Malformed Star enemy on top. Inside is the merchant.</span>
                       </span>
                     </label>
@@ -879,31 +887,31 @@
               </ul>
               <h5>Nokron, Eternal City</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_5" id="item_2_5">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_5" data-name-jets="from the ancestral woods site of grace, head directly east until you reach a brazier at the edge of the cliffside. look over the cliff and jump down onto the bridge-like ruins as safely as possible. at the northeastern end, the bridge slopes down toward a large ruined building that you must drop down into; for extra safety, you can try to use the top of the building wall to break your fall into two halves. from inside this square room, carefully platform down levels and columns all the way to the bottom. the celestial dew is in the southeastern corner on a body." id="item_2_5">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_5" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_5">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Ancestral Woods Site of Grace, head directly east until you reach a brazier at the edge of the cliffside. Look over the cliff and jump down onto the bridge-like ruins as safely as possible. At the northeastern end, the bridge slopes down toward a large ruined building that you must drop down into; for extra safety, you can try to use the top of the building wall to break your fall into two halves. From inside this square room, carefully platform down levels and columns all the way to the bottom. The Celestial Dew is in the southeastern corner on a body.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_6" id="item_2_6">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_6" data-name-jets="from the ancestral woods site of grace, leap off the cliff to the rooftop. jump off the southwestern end to the narrow ledge on the next building, then turn right and follow the ledge around, and jump to the building on your right when you see the night's sacred ground title appear. continue southwest, hopping over the lip, then turn right and hop up the large stairs. at the top is a body with a rune arc. turn to face northwest, and take a running leap to another building ledge. turn right, and follow the ledge around until you come upon a body with the celestial dew in the back." id="item_2_6">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_6" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_6">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Ancestral Woods Site of Grace, leap off the cliff to the rooftop. Jump off the southwestern end to the narrow ledge on the next building, then turn right and follow the ledge around, and jump to the building on your right when you see the Night's Sacred Ground title appear. Continue southwest, hopping over the lip, then turn right and hop up the large stairs. At the top is a body with a Rune Arc. Turn to face northwest, and take a running leap to another building ledge. Turn right, and follow the ledge around until you come upon a body with the Celestial Dew in the back.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_7" id="item_2_7">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_7" data-name-jets="from the night's sacred ground site of grace, simply head forward and find it almost immediately on a body on the left side of the road." id="item_2_7">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_7" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_7">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Night's Sacred Ground Site of Grace, simply head forward and find it almost immediately on a body on the left side of the road.</span>
                       </span>
                     </label>
@@ -912,21 +920,21 @@
               </ul>
               <h5>Nokstella, Eternal City</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_8" id="item_2_8">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_8" data-name-jets="from the nokstella, eternal city site of grace, head northwest into the area, staying on ground level as you pass the stairs on your left. follow the stream past the silver tears on the ledge trying to snipe you, then bank north into an alcove on the right. three crystal snails guard a celestial dew on a body." id="item_2_8">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_8" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_8">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Nokstella, Eternal City Site of Grace, head northwest into the area, staying on ground level as you pass the stairs on your left. Follow the stream past the Silver Tears on the ledge trying to snipe you, then bank north into an alcove on the right. Three Crystal Snails guard a Celestial Dew on a body.</span>
                       </span>
                     </label>
                   </div>
                 </li>
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_9" id="item_2_9">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_9" data-name-jets="from the nokstella, eternal city site of grace, follow the stream as far west as it goes, to a large structure at the precipice of a waterfall. (alternatively, if you have the nokstella waterfall basin site of grace, simply head up the elevator and turn left.) many silver tears guard the final celestial dew on a body under the structure." id="item_2_9">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_9" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_9">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">From the Nokstella, Eternal City Site of Grace, follow the stream as far west as it goes, to a large structure at the precipice of a waterfall. (Alternatively, if you have the Nokstella Waterfall Basin Site of Grace, simply head up the elevator and turn left.) Many Silver Tears guard the final Celestial Dew on a body under the structure.</span>
                       </span>
                     </label>
@@ -935,11 +943,11 @@
               </ul>
               <h5>Leyndell, Royal Capital</h5>
               <ul class="list-group-flush mb-0">
-                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_10" id="item_2_10">
+                <li class="list-group-item searchable ps-0" data-id="tears_dews_2_10" data-name-jets="at the top of the shortcut ladder you can drop in erdtree sanctuary. to get up there, from the site of grace, go outside to the east and climb the root, go through the door, immediately turn left and jump down to the roof, and go through the broken window. turn right and cross the room to the doorway on the other side with the body and ladder right past it." id="item_2_10">
                   <div class="form-check checkbox d-flex align-items-center">
                     <input class="form-check-input" data-section-idx="1" id="tears_dews_2_10" type="checkbox" value="">
                     <label class="form-check-label item_content d-md-flex align-items-center w-100" for="tears_dews_2_10">
-                      <span class="lang-pair">
+                      <span class="lang-pair item-name">
                         <span class="lang-text lang-en">At the top of the shortcut ladder you can drop in Erdtree Sanctuary. To get up there, from the Site of Grace, go outside to the east and climb the root, go through the door, immediately turn left and jump down to the roof, and go through the broken window. Turn right and cross the room to the doorway on the other side with the body and ladder right past it.</span>
                       </span>
                     </label>
@@ -984,15 +992,41 @@
                         contentTag: "#tears_dews_list ul",
                         searchSelector: '*and',
                         manualContentHandling: function(node) {
+                            if ($('#tears_dews_name_only').is(':checked')) {
+                                return node.getAttribute('data-name-jets') || '';
+                            }
                             var $clone = $(node).clone();
                             $clone.find('.no-highlight').remove();
                             return $clone.text();
                         },
                         didSearch: function(search_phrase) {
-                            // Only handled by Jets if Regex is off.
+                            // Only handled by Jets if Regex off.
                             if ($('#tears_dews_regex').is(':checked')) return;
                             
-                            search_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            // Un-hide all sections to accurately measure visibility
+                            $(".card").removeClass('d-none');
+                            $("#tears_dews_list h5").removeClass('d-none');
+                            $("#tears_dews_list h5").nextUntil('h5').removeClass('d-none');
+                            $(".toc_link").closest('li').removeClass('d-none');
+                            
+                            if (!search_phrase) {
+                                var dlcFilter = $('#dlc_filter');
+                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
+                                return;
+                            }
+                            
+                            var clean_phrase = search_phrase.trim().toLowerCase().replace(/\s\s+/g, ' ').replace(/\\/g, '\\\\');
+                            var words = clean_phrase.split(' ');
+                            var searchAtt = $('#tears_dews_name_only').is(':checked') ? 'data-name-jets' : 'data-jets';
+                            
+                            var filterFunc = function() {
+                                var text = ($(this).attr(searchAtt) || '').toLowerCase();
+                                for (var i = 0; i < words.length; i++) {
+                                    if (text.indexOf(words[i]) === -1) return false;
+                                }
+                                return true;
+                            };
+                            
                             $(".card").each(function(index, el) {
                                 var sectionId = $(el).attr('id');
                                 var $tocLi = null;
@@ -1000,37 +1034,23 @@
                                     $tocLi = $('a.toc_link[href="#' + sectionId + '"]').closest('li');
                                 }
 
-                                if (!search_phrase) {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
-                                    return;
-                                }
-                                var hasResults = $(el).find('.searchable:not(.d-none)').filter('[data-jets *= "' + search_phrase + '"]').length;
-                                if (! hasResults ) {
+                                var hasResults = $(el).find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
                                     $(el).addClass('d-none');
                                     if ($tocLi) $tocLi.addClass('d-none');
-                                } else {
-                                    $(el).removeClass('d-none');
-                                    if ($tocLi) $tocLi.removeClass('d-none');
                                 }
                             });
+                            
                             $("#tears_dews_list h5").each(function() {
                                 var $h5 = $(this);
                                 var $subsection = $h5.nextUntil('h5');
-                                if (!search_phrase) {
-                                    $h5.removeClass('d-none');
-                                    $subsection.removeClass('d-none');
-                                    return;
+                                var hasResults = $subsection.find('.searchable:not(.d-none)').filter(filterFunc).length;
+                                if (!hasResults) {
+                                    $h5.addClass('d-none');
+                                    $subsection.addClass('d-none');
                                 }
-                                var hasResults = $subsection.find('.searchable:visible').length;
-                                $h5.toggleClass('d-none', !hasResults);
-                                $subsection.toggleClass('d-none', !hasResults);
                             });
-                            if (!search_phrase) {
-                                var dlcFilter = $('#dlc_filter');
-                                if (dlcFilter.length) { dlcFilter.trigger('change'); }
-                            }
-                        }
+                        },
                     });
                     function updateSearch() {
                         var search_phrase = $("#tears_dews_search").val().trim();
@@ -1052,9 +1072,15 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var $clone = $(this).clone();
-                                $clone.find('.no-highlight').remove();
-                                var text = $clone.attr('data-jets') || $clone.text() || '';
+                                var text = '';
+                                if ($('#tears_dews_name_only').is(':checked')) {
+                                    text = $(this).attr('data-name-jets') || '';
+                                } else {
+                                    var $clone = $(this).clone();
+                                    $clone.find('.no-highlight').remove();
+                                    text = $clone.attr('data-jets') || $clone.text() || '';
+                                }
+                                
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {
@@ -1108,7 +1134,11 @@
                             $("#tears_dews_list").unhighlight();
                             if (search_phrase.length > 0 && regex) {
                                 try {
-                                    $("#tears_dews_list").highlight(regex);
+                                    if ($('#tears_dews_name_only').is(':checked')) {
+                                        $("#tears_dews_list .item-name").highlight(regex);
+                                    } else {
+                                        $("#tears_dews_list").highlight(regex);
+                                    }
                                 } catch(e) {}
                             }
                             
@@ -1123,7 +1153,11 @@
                             // Highlighting for normal text
                             $("#tears_dews_list").unhighlight();
                             if (search_phrase && search_phrase.length > 0) {
-                                $("#tears_dews_list").highlight(search_phrase);
+                                if ($('#tears_dews_name_only').is(':checked')) {
+                                    $("#tears_dews_list .item-name").highlight(search_phrase);
+                                } else {
+                                    $("#tears_dews_list").highlight(search_phrase);
+                                }
                             }
                         }
                     }
@@ -1135,6 +1169,30 @@
                     $('#tears_dews_regex').on('change', function() {
                         updateSearch();
                     });
+                    
+                    $('#tears_dews_name_only').on('change', function() {
+                        if (jet.options) {
+                            jet.options.manualContentHandling = function(node) {
+                                if ($('#tears_dews_name_only').is(':checked')) {
+                                    return node.getAttribute('data-name-jets') || '';
+                                }
+                                var $clone = $(node).clone();
+                                $clone.find('.no-highlight').remove();
+                                return $clone.text();
+                            };
+                        }
+                        if (jet._setJets) {
+                            jet._setJets('', true);
+                        }
+                        
+                        if ($('#tears_dews_regex').is(':checked')) {
+                            updateSearch();
+                        } else {
+                            // Trigger Jets' internal search and our didSearch callback
+                            $('#tears_dews_search').trigger('input');
+                        }
+                    });
+                    updateSearch();
                 });
             })( jQuery );
             </script>
