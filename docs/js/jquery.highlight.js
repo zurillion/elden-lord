@@ -84,7 +84,7 @@ jQuery.fn.unhighlight = function (options) {
 };
 
 jQuery.fn.highlight = function (words, options) {
-    var settings = { className: 'highlight', element: 'span', caseSensitive: false, wordsOnly: false, maxHighlights: 500 };
+    var settings = { className: 'highlight', element: 'span', caseSensitive: false, wordsOnly: false, maxHighlights: 10000 };
     jQuery.extend(settings, options);
 
     var re;
