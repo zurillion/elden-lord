@@ -5046,6 +5046,11 @@
                         searchTag: "#npc_quests_search",
                         contentTag: "#npc_quests_list ul",
                         searchSelector: '*and',
+                        manualContentHandling: function(htmlString) {
+                            var $temp = $('<div>').html(htmlString);
+                            $temp.find('.no-highlight').remove();
+                            return $temp.text();
+                        },
                         didSearch: function(search_phrase) {
                             // Only handled by Jets if Regex is off.
                             if ($('#npc_quests_regex').is(':checked')) return;
@@ -5110,7 +5115,9 @@
                             }
                             
                             $(".searchable").each(function() {
-                                var text = $(this).attr('data-jets') || $(this).text() || '';
+                                var $clone = $(this).clone();
+                                $clone.find('.no-highlight').remove();
+                                var text = $clone.attr('data-jets') || $clone.text() || '';
                                 if (!search_phrase || search_phrase.length === 0) {
                                     $(this).removeClass('d-none-regex');
                                 } else if (regex && text.match(regex)) {

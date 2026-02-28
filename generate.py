@@ -400,6 +400,11 @@ def make_footer(page=None):
                         searchTag: "#{page_id}_search",
                         contentTag: "#{page_id}_list ul",
                         searchSelector: '*and',
+                        manualContentHandling: function(htmlString) {{
+                            var $temp = $('<div>').html(htmlString);
+                            $temp.find('.no-highlight').remove();
+                            return $temp.text();
+                        }},
                         didSearch: function(search_phrase) {{
                             // Only handled by Jets if Regex is off.
                             if ($('#{page_id}_regex').is(':checked')) return;
@@ -464,7 +469,9 @@ def make_footer(page=None):
                             }}
                             
                             $(".searchable").each(function() {{
-                                var text = $(this).attr('data-jets') || $(this).text() || '';
+                                var $clone = $(this).clone();
+                                $clone.find('.no-highlight').remove();
+                                var text = $clone.attr('data-jets') || $clone.text() || '';
                                 if (!search_phrase || search_phrase.length === 0) {{
                                     $(this).removeClass('d-none-regex');
                                 }} else if (regex && text.match(regex)) {{
