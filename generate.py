@@ -946,7 +946,7 @@ def make_checklist(page):
                                             with div(cls="col d-flex align-items-center d-md-block").add(div(cls="row")):
                                                 for idx, header in enumerate(section['table']):
                                                     col_size = str(table_widths[idx])
-                                                    div(cls="ms-0 ps-0 d-flex align-items-center col-md-" + col_size).add(label(strong(header), cls='ms-0 ps-0'))
+                                                    div(cls="ms-0 ps-0 d-flex align-items-center col-md-" + col_size).add(label(strong(header, cls="no-highlight"), cls='ms-0 ps-0'))
                                     for item in items:
                                         id = str(item['id'])
                                         li_kwargs = {
@@ -1001,7 +1001,7 @@ def make_checklist(page):
                                                         for pos in range(table_cols):
                                                             col_size = str(table_widths[pos])
                                                             if isinstance(section['table'], list) and item['data'][pos]:
-                                                                strong(section['table'][pos] + ': ', cls="me-1")
+                                                                strong(section['table'][pos] + ': ', cls="me-1 no-highlight")
                                                             with span(cls='lang-pair'):
                                                                 with span(cls='lang-text lang-en'):
                                                                     if item['data'][pos]:
@@ -1125,7 +1125,7 @@ def make_search():
                                             for pos in range(table_cols):
                                                 col_size = str(table_widths[pos])
                                                 if isinstance(section['table'], list) and item['data'][pos]:
-                                                    strong(strip_a_tags(section['table'][pos]) + ': ', cls='me-1')
+                                                    strong(strip_a_tags(section['table'][pos]) + ': ', cls='me-1 no-highlight')
                                                 if item['data'][pos]:
                                                     raw(strip_a_tags(item['data'][pos]))
                                                     br()

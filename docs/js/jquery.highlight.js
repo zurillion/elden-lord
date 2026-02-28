@@ -63,6 +63,7 @@ jQuery.extend({
             }
         } else if ((node.nodeType === 1 && node.childNodes) && // only element nodes that have children
             !/(script|style)/i.test(node.tagName) && // ignore script and style nodes
+            !(node.className && typeof node.className === 'string' && ((" " + node.className + " ").indexOf(" no-highlight ") > -1)) && // skip .no-highlight elements
             !(node.tagName === (nodeName || 'span').toUpperCase() && node.className === (className || 'highlight'))) { // skip if already highlighted
             for (var i = 0; i < node.childNodes.length; i++) {
                 i += jQuery.highlight(node.childNodes[i], re, nodeName, className, context);
