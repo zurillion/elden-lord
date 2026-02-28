@@ -400,10 +400,10 @@ def make_footer(page=None):
                         searchTag: "#{page_id}_search",
                         contentTag: "#{page_id}_list ul",
                         searchSelector: '*and',
-                        manualContentHandling: function(htmlString) {{
-                            var $temp = $('<div>').html(htmlString);
-                            $temp.find('.no-highlight').remove();
-                            return $temp.text();
+                        manualContentHandling: function(node) {{
+                            var $clone = $(node).clone();
+                            $clone.find('.no-highlight').remove();
+                            return $clone.text();
                         }},
                         didSearch: function(search_phrase) {{
                             // Only handled by Jets if Regex is off.

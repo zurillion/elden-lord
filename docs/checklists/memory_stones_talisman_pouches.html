@@ -693,10 +693,10 @@
                         searchTag: "#memory_stones_talisman_pouches_search",
                         contentTag: "#memory_stones_talisman_pouches_list ul",
                         searchSelector: '*and',
-                        manualContentHandling: function(htmlString) {
-                            var $temp = $('<div>').html(htmlString);
-                            $temp.find('.no-highlight').remove();
-                            return $temp.text();
+                        manualContentHandling: function(node) {
+                            var $clone = $(node).clone();
+                            $clone.find('.no-highlight').remove();
+                            return $clone.text();
                         },
                         didSearch: function(search_phrase) {
                             // Only handled by Jets if Regex is off.
