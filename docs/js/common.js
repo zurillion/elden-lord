@@ -186,6 +186,15 @@ var themes = {
                 }
             });
         }
+
+        // Update any options with data-lang attributes
+        $('option').each(function () {
+            var langText = $(this).attr('data-lang-' + lang) || $(this).attr('data-lang-en');
+            if (langText) {
+                $(this).text(langText);
+            }
+        });
+
         var fix = document.getElementById('language-fouc-fix');
         if (fix) fix.remove();
     }

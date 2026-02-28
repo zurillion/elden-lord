@@ -9,6 +9,9 @@ nav_static:
   - "Use Regex"
   - "Hide Completed"
   - "Show:"
+  - "Both"
+  - "Base Game"
+  - "DLC"
 
 nav_static_it:
   - "Guide della Tavola Rotonda"
@@ -18,6 +21,9 @@ nav_static_it:
   - "Usa Regex"
   - "Nascondi Completati"
   - "Mostra:"
+  - "Entrambi"
+  - "Gioco Base"
+  - "DLC"
 
 dropdowns:
   -

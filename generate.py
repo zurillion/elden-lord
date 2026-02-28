@@ -882,9 +882,20 @@ def make_checklist(page):
                         with label(_for='dlc_filter', cls='mb-0'):
                             localized_span(nav_static.get(6, {'en': 'Show:'}))
                         with select(id='dlc_filter', cls='form-select form-select-sm'):
-                            option('Both', value='both', selected='selected')
-                            option('Base Game', value='base')
-                            option('DLC', value='dlc')
+                            both_opts = {'value': 'both', 'selected': 'selected'}
+                            for l in available_languages | {'en'}:
+                                both_opts[f'data_lang_{l}'] = nav_static.get(7, {'en': 'Both'}).get(l, 'Both')
+                            option(nav_static.get(7, {'en': 'Both'})['en'], **both_opts)
+
+                            base_opts = {'value': 'base'}
+                            for l in available_languages | {'en'}:
+                                base_opts[f'data_lang_{l}'] = nav_static.get(8, {'en': 'Base Game'}).get(l, 'Base Game')
+                            option(nav_static.get(8, {'en': 'Base Game'})['en'], **base_opts)
+
+                            dlc_opts = {'value': 'dlc'}
+                            for l in available_languages | {'en'}:
+                                dlc_opts[f'data_lang_{l}'] = nav_static.get(9, {'en': 'DLC'}).get(l, 'DLC')
+                            option(nav_static.get(9, {'en': 'DLC'})['en'], **dlc_opts)
 
             with div(id=page['id']+"_list"):
                 for s_idx, section in enumerate(page['sections']):
