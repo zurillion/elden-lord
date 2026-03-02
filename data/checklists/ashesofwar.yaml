@@ -209,11 +209,11 @@ sections:
       - id: "11_2"
         icon: "/img/icons/ashes_of_war/08420.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Determination\">Determination</a>", "Hold the flat of the armament to your face and pledge your resolve, powering up your next attack.", "Dropped by a scarab on the road southeast of the Agheel Lake North site of grace, in Limgrave."]
-        data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Determination\">Determination</a>", "Tieni il piatto dell'arma sul viso e giura la tua risolutezza, potenziando il tuo prossimo attacco.", "Lasciato cadere da uno scarabeo sulla strada a sudest del sito di grazia Agheel Lake North, in Limgrave."]
+        data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Determination\">Determinazione</a>", "Tieni il piatto dell'arma sul viso e giura la tua risolutezza, potenziando il tuo prossimo attacco.", "Lasciato cadere da uno scarabeo sulla strada a sudest del sito di grazia Agheel Lake North, in Limgrave."]
       - id: "11_5"
         icon: "/img/icons/ashes_of_war/08421.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Royal+Knight's+Resolve\">Royal Knight's Resolve</a>", "Skill of the knights who once served the Elden Lord. Hold the flat of the armament to your face and pledge your resolve, greatly powering up your next attack.", "Found at the bottom of the cage room behind the imp statue in Volcano Manor. After making your way through the Manor to the portal to the boss of Volcano Manor, you should find the imp statue nearby."]
-        data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Royal+Knight's+Resolve\">Royal Knight's Resolve</a>", "Abilità dei cavalieri che servivano un tempo il Signore degli Eletti. Tieni il piatto dell'arma sul viso e giura la tua risolutezza, potenziando enormemente il tuo prossimo attacco.", "Trovato in fondo alla stanza con le gabbie dietro la statua dell'imp nel Volcano Manor. Dopo aver attraversato il Manor verso il portale del boss, troverai la statua dell'imp nelle vicinanze."]
+        data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Royal+Knight's+Resolve\">Risoluzione del Cavaliere Reale</a>", "Abilità dei cavalieri che servivano un tempo il Signore degli Eletti. Tieni il piatto dell'arma sul viso e giura la tua risolutezza, potenziando enormemente il tuo prossimo attacco.", "Trovato in fondo alla stanza con le gabbie dietro la statua demoniaca a Villa Vulcano. Dopo aver attraversato la Villa verso il portale del boss, troverai la statua demoniaca nelle vicinanze."]
       - id: "20_14"
         dlc: true
         icon: "/img/icons/ashes_of_war/08514.png"

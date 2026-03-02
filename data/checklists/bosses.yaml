@@ -813,7 +813,7 @@ sections:
         data_it: ["Okina, Dito Sanguinante", "Chiesa del riposo", "734 rune, Fiumi di sangue, Maschera di Okina, Rimedio del Dito invocatore", "NPC invasore."]
       - id: "9_13"
         data: ["Godskin Apostle and Godskin Noble (Spectral Duo)", "Spiritcaller's Cave", "70,000 runes, Godskin Swaddling Cloth Talisman, Black Flame Ritual Incantation", "Avoid the spectral summon enemies and kill the invisible Snail."]
-        data_it: ["Apostolo Sacriderma e Nobile Sacriderma (Spettrali)", "Caverna dell'evocanda spiriti", "70.000 rune, Fasce in pelle divina, Rituale della fiamma nera", "Evita le evocazioni spettrali e uccidi la lumaca invisibile."]
+        data_it: ["Apostolo Sacriderma e Nobile Sacriderma (Spettrali)", "Caverna dell'evocanda spiriti", "70.000 rune, Fasce da Sacriderma, Rituale della fiamma nera", "Evita le evocazioni spettrali e uccidi la lumaca invisibile."]
       - id: "9_15"
         map_icon: "/map/icons/shadows/tools/remembrances/00174.png"
         data: ["Fire Giant", "Flame Peak", "180,000 runes, Remembrance of the Fire Giant", "Main boss. Required to proceed to Forge of the Giants. Grants Achievement/Trophy: Fire Giant."]
@@ -1035,7 +1035,7 @@ sections:
         data_it: ["Rellana, Cavaliera della Luna Gemella", "Castello di Ensis", "Rimembranza della cavaliera della luna gemella", ""]
       - id: "1004"
         data: ["Golden Hippopotamus", "Shadow Keep", "Aspects of the Crucible: Thorns, 2x Scadutree Fragment", ""]
-        data_it: ["Ippopotamo d'oro", "Rocca delle Ombre", "Aspetto del Crogiolo: Spine, 2x Frammento di Albero Scaduto", ""]
+        data_it: ["Ippopotamo d'oro", "Rocca delle Ombre", "Aspetto del Crogiolo: Spine, 2x Frammento di Albero Ombra", ""]
       - id: "1005"
         data: ["Messmer the Impaler", "Shadow Keep", "Remembrance of the Impaler, Messmer's Kindling", ""]
         data_it: ["Messmer l'Impalatore", "Rocca delle Ombre", "Rimembranza dell'Impalatore, Esca di Messmer", ""]
@@ -1047,7 +1047,7 @@ sections:
         data_it: ["Cavaliere Putrescente", "Fenditura dei sarcofagi di pietra", "Rimembranza della putrescenza", ""]
       - id: "1008"
         data: ["Scadutree Avatar", "Scadutree Base", "Remembrance of the Shadow Sunflower, Miquella's Great Rune", ""]
-        data_it: ["Avatar dell'Albero Scaduto", "Base dell'Albero Scaduto", "Rimembranza del girasole d'ombra, Grande Runa di Miquella", ""]
+        data_it: ["Avatar dell'Albero Ombra", "Base dell'Albero Ombra", "Rimembranza del girasole d'ombra, Grande Runa di Miquella", ""]
       - id: "1009"
         data: ["Metyr, Mother of Fingers", "Cathedral of Manus Metyr (Underground)", "Remembrance of the Mother of Fingers", ""]
         data_it: ["Metyr, Madre delle Dita", "Cattedrale di Manus Metyr (Sotterraneo)", "Rimembranza della Madre delle Dita", ""]

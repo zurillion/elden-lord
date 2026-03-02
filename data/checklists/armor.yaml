@@ -2794,7 +2794,7 @@ sections:
     data_it:
     - <a href="https://eldenring.wiki.fextralife.com/Shaman+Leggings">Gambali dello Sciamano</a>
 - title: Godskin Apostle Set
-  title_it: Set dell'Apostolo della Pelle Divina
+  title_it: Set dell'Apostolo Sacriderma
   link: https://eldenring.wiki.fextralife.com/Godskin+Apostle+Set
   items:
   - id: '168'
@@ -2802,27 +2802,27 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Hood">Godskin Apostle Hood</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Hood">Cappuccio dell'Apostolo della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Hood">Cappuccio dell'Apostolo Sacriderma</a>
   - id: '169'
     icon: /img/icons/armor/13721.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Robe">Godskin Apostle Robe</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Robe">Veste dell'Apostolo della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Robe">Veste dell'Apostolo Sacriderma</a>
   - id: '170'
     icon: /img/icons/armor/13722.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Bracelets">Godskin Apostle Bracelets</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Bracelets">Bracciali dell'Apostolo della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Bracelets">Bracciali dell'Apostolo Sacriderma</a>
   - id: '171'
     icon: /img/icons/armor/13723.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Trousers">Godskin Apostle Trousers</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Trousers">Pantaloni dell'Apostolo della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Apostle+Trousers">Pantaloni dell'Apostolo Sacriderma</a>
 - title: Godskin Noble Set
-  title_it: Set del Nobile della Pelle Divina
+  title_it: Set del Nobile Sacriderma
   link: https://eldenring.wiki.fextralife.com/Godskin+Noble+Set
   items:
   - id: '172'
@@ -2830,25 +2830,25 @@ sections:
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Hood">Godskin Noble Hood</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Hood">Cappuccio del Nobile della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Hood">Cappuccio del Nobile Sacriderma</a>
   - id: '173'
     icon: /img/icons/armor/13731.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Robe">Godskin Noble Robe</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Robe">Veste del Nobile della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Robe">Veste del Nobile Sacriderma</a>
   - id: '174'
     icon: /img/icons/armor/13732.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Bracelets">Godskin Noble Bracelets</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Bracelets">Bracciali del Nobile della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Bracelets">Bracciali del Nobile Sacriderma</a>
   - id: '175'
     icon: /img/icons/armor/13733.png
     data:
     - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Trousers">Godskin Noble Trousers</a>
     data_it:
-    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Trousers">Pantaloni del Nobile della Pelle Divina</a>
+    - <a href="https://eldenring.wiki.fextralife.com/Godskin+Noble+Trousers">Pantaloni del Nobile Sacriderma</a>
 - title: Fell Omen Cloak (Chest Only)
   title_it: Mantello del Presagio Oscuro (solo busto)
   items:

@@ -16732,7 +16732,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_1",
           "link": "/checklists/great_runes.html#item_1_1",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Godrick's Great Rune (unactivated)</span><span class=\"lang-text lang-it d-none\">Godrick l'Innestato</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Godrick the Grafted</span><span class=\"lang-text lang-it d-none\">Grande Runa di Godrick (non attivata)</span></span>"
         },
         "type": "Feature"
       },
@@ -16751,7 +16751,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "great_runes_1_2",
           "link": "/checklists/great_runes.html#item_1_2",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Great Rune of the Unborn</span><span class=\"lang-text lang-it d-none\">Rennala, Regina del Plenilunio</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Rennala, Queen of the Full Moon</span><span class=\"lang-text lang-it d-none\">Grande Runa dei Mai Nati</span></span>"
         },
         "type": "Feature"
       },
@@ -16770,7 +16770,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_3",
           "link": "/checklists/great_runes.html#item_1_3",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Radahn's Great Rune (unactivated)</span><span class=\"lang-text lang-it d-none\">Radahn, il Flagello dei Celestiali</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Starscourge Radahn</span><span class=\"lang-text lang-it d-none\">Grande Runa di Radahn (non attivata)</span></span>"
         },
         "type": "Feature"
       },
@@ -16789,7 +16789,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_4",
           "link": "/checklists/great_runes.html#item_1_4",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Morgott's Great Rune (unactivated)</span><span class=\"lang-text lang-it d-none\">Morgott, re presagio</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Morgott, the Omen King</span><span class=\"lang-text lang-it d-none\">Grande Runa di Morgott (non attivata)</span></span>"
         },
         "type": "Feature"
       },
@@ -16808,7 +16808,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_5",
           "link": "/checklists/great_runes.html#item_1_5",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Rykard's Great Rune (unactivated)</span><span class=\"lang-text lang-it d-none\">Rykard, signore della blasfemia</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Rykard, Lord of Blasphemy</span><span class=\"lang-text lang-it d-none\">Grande Runa di Rykard (non attivata)</span></span>"
         },
         "type": "Feature"
       },
@@ -16827,7 +16827,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_7",
           "link": "/checklists/great_runes.html#item_1_7",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Mohg's Great Rune (unactivated)</span><span class=\"lang-text lang-it d-none\">Mohg, signore del sangue</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Mohg, Lord of Blood</span><span class=\"lang-text lang-it d-none\">Grande Runa di Mohg (non attivata)</span></span>"
         },
         "type": "Feature"
       },
@@ -16846,7 +16846,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_6",
           "link": "/checklists/great_runes.html#item_1_6",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Malenia's Great Rune (unactivated)</span><span class=\"lang-text lang-it d-none\">Malenia, lama di Miquella</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Malenia, Blade of Miquella</span><span class=\"lang-text lang-it d-none\">Grande Runa di Malenia (non attivata)</span></span>"
         },
         "type": "Feature"
       },
@@ -16865,7 +16865,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_1r",
           "link": "/checklists/great_runes.html#item_1_1r",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Godrick's Great Rune restoration</span><span class=\"lang-text lang-it d-none\">di Godrick</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Godrick's</span><span class=\"lang-text lang-it d-none\">Grande Runa di Godrick</span></span>"
         },
         "type": "Feature"
       },
@@ -16884,7 +16884,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_3r",
           "link": "/checklists/great_runes.html#item_1_3r",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Radahn's Great Rune restoration</span><span class=\"lang-text lang-it d-none\">di Radahn</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Radahn's</span><span class=\"lang-text lang-it d-none\">Grande Runa di Radahn</span></span>"
         },
         "type": "Feature"
       },
@@ -16903,7 +16903,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_5r",
           "link": "/checklists/great_runes.html#item_1_5r",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Rykard's Great Rune restoration</span><span class=\"lang-text lang-it d-none\">di Rykard</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Rykard's</span><span class=\"lang-text lang-it d-none\">Grande Runa di Rykard</span></span>"
         },
         "type": "Feature"
       },
@@ -16922,7 +16922,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_6r",
           "link": "/checklists/great_runes.html#item_1_6r",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Malenia's Great Rune restoration</span><span class=\"lang-text lang-it d-none\">di Malenia</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Malenia's</span><span class=\"lang-text lang-it d-none\">Grande Runa di Malenia</span></span>"
         },
         "type": "Feature"
       },
@@ -16941,7 +16941,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_4r",
           "link": "/checklists/great_runes.html#item_1_4r",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Morgott's Great Rune restoration</span><span class=\"lang-text lang-it d-none\">di Morgott</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Morgott's</span><span class=\"lang-text lang-it d-none\">Grande Runa di Morgott</span></span>"
         },
         "type": "Feature"
       },
@@ -16960,7 +16960,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "great_runes_1_7r",
           "link": "/checklists/great_runes.html#item_1_7r",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Mohg's Great Rune restoration</span><span class=\"lang-text lang-it d-none\">di Mohg</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Mohg's</span><span class=\"lang-text lang-it d-none\">Grande Runa di Mohg</span></span>"
         },
         "type": "Feature"
       },
@@ -17023,7 +17023,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k3",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k3",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">In una piccola stanza intatta al centro delle Rovine bruciate dal drago, su un cadavere sorvegliato da un singolo topo</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In a tiny intact room in the center of Dragon-Burnt Ruins, on a body guarded by a single rat</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17042,7 +17042,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k4",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k4",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Venduta da Patches per 5.000 rune nella Grotta di Acquaquieta (e successivamente)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sold by Patches for 5000 runes in Murkwater Cave (and thereafter)</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17061,7 +17061,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k5",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k5",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Davanti alla Capanna di Colle Tempesta, su un cadavere in cima alla piccola scala di piattaforme di legno</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On the front of Stormhill Shack, on a body atop the little staircase of wooden platforms</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17080,7 +17080,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k6",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k6",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella Tomba dell'eroe dei confini, sulla sporgenza dalla quale \u00e8 possibile colpire i vasi per distruggere il carro</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Fringefolk Hero's Grave, on the ledge from which you can shoot down the jars to destroy the chariot</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17118,7 +17118,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k10",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k10",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Sul Ponte del Sacrificio, su un cadavere dietro la balista</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On the Bridge of Sacrifice on a body behind the ballista</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17137,7 +17137,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k11",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k11",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">All'estremit\u00e0 settentrionale dell'alta sporgenza a nord-est, su un cadavere seduto su una sedia</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On the northern tip of the high ledge in the northeast, on a body sitting in a chair</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17156,7 +17156,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k12",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k12",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Venduta dal mercante nomade a est per 2.000 rune</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sold by the Nomadic Merchant in the east for 2000 runes</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17194,7 +17194,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k16",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k16",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dal luogo di grazia Dietro al castello presso il Castello di Morne, scendi per un paio di sporgenze fino al primo tetto, poi procedi in avanti e calati su una piattaforma di legno a met\u00e0 altezza per trovare la chiave su un cadavere</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From the Behind the Castle Site of Grace in Castle Morne, descend down a couple ledges to the first rooftop, then walk forward and drop off to a wooden platform halfway down with the key on a body</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17213,7 +17213,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k17",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k17",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dalla Torre del bastione, sali la scala a chiocciola centrale e raggiungi i tetti; dalla pila di sacchi di sabbia, segui la sporgenza fino alla torre meridionale, poi gira a est e salta sulla successiva torre in rovina, quindi calati all'interno per trovarla su un cadavere</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From Rampart Tower, follow the path up the central spiral staircase and to the rooftops; from the stack of sandbags, follow the ledge to the south tower, then turn east and hop to the next crumbling tower, and drop down inside it to find it on a body</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17232,7 +17232,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k18",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k18",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Su un cadavere sulla piattaforma di legno sopra il Rampollo innestato (tramite l'ascensore di scelta rapida dalla Torre del bastione)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On a body on the wooden platform above the Grafted Scion (down the shortcut elevator from Rampart Tower)</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17251,7 +17251,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k19",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k19",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Su un cadavere nella fossa con lo Spirito arboreo ulcerato, subito dopo le prime grandi radici sulla sinistra</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On a body in the pit with the Ulcerated Tree Spirit, just past the first big roots on the left</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17270,7 +17270,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k20",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k20",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella Grotta di cristallo dell'Accademia, tieni la sinistra superando topi e saggi per trovare una piccola stanza laterale sul fondo, contenente la chiave su un corpo in gabbia</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Academy Crystal Cave, stick to the left past the rats and the Sages to find a small side room in the back, containing the key on a body in a cage</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17289,7 +17289,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k21",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k21",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Sull'isola direttamente a est del luogo di grazia Cancello meridionale di Raya Lucaria, accessibile dal Borgo dell'accademia nord; si trova in un forziere in una piccola torre emersa, richiede il doppio salto di Torrente per essere raggiunta</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On the island directly east of the South Raya Lucaria Gate Site of Grace, accessible from Gate Town North; it's in a chest in a small tower sticking out of the water, requiring Torrent's double jump to reach</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17308,7 +17308,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k22",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k22",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Fuori da Raya Lucaria alla base del suo angolo nord-orientale, su un pendio che conduce a un'area con molti Evocatori di spettri e un cadavere seduto su una sedia con la chiave</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Outside Raya Lucaria at the base of its northeastern corner, up an incline leading to an area with many Wraith Callers and a body sitting in a chair with the key</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17346,7 +17346,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k26",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k26",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Il pi\u00f9 a nord possibile partendo dal Pozzo del fiume Ainsel prima che la parete rocciosa interrompa il sentiero, su un cadavere seduto su una sedia in una piccola zona fiorita</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">As far north as it's possible to go from the Ainsel River Well before the cliff wall cuts off the path, on a body in a chair in a small patch of flowers</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17365,7 +17365,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k27",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k27",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">In cima al muro occidentale del Villaggio della Fiamma Frenetica</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Atop the western wall of Frenzied Flame Village</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17384,7 +17384,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k28",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k28",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dalle Tre Sorelle sopra il Maniero di Caria, segui il sentiero lungo i tetti calandoti dove necessario fino al bastione che domina il cancello principale, con un granchio gigante in cima a guardia di un cadavere con la chiave</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From Three Sisters above Caria Manor, follow the path along the rooftops, dropping down when necessary, all the way to the rampart overlooking the Main Gate, with a Giant Crab on top guarding a body with the key</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17403,7 +17403,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k29",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k29",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Oltre la libreria illusoria direttamente prima della Sala del dibattito (Lupo rosso di Radagon), dall'altro lato dell'altare dietro il forziere</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Past the illusory bookshelf directly before the Debate Parlor (Red Wolf of Radagon), on the other side of the altar behind the chest</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17422,7 +17422,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k30",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k30",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nel cortile subito dopo la Sala del dibattito, su un cadavere disteso sulla fontana centrale</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In the courtyard directly after the Debate Parlor, on a body draped on the central fountain</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17441,7 +17441,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k31",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k31",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella Grotta della galera, su un cadavere in una cella</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Gaol Cave, on a body in a cell</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17460,7 +17460,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k32",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k32",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Venduta dal mercante nomade a sud per 4.000 rune</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sold by the Nomadic Merchant in the south for 4000 runes</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17479,7 +17479,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k33",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k33",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dal luogo di grazia Dragonbarrow ovest, dirigiti alla Torre divina di Caelid e salta sul ramo alto dell'albero, poi sulla prima sporgenza con una scala e una sentinella con una torcia; non salire la scala ma rivolgiti a sud-est e segui l'arco per trovare la chiave su un cadavere nel pianerottolo successivo, sorvegliato da un cavaliere</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From the Dragonbarrow West grace, head to the Divine Tower of Caelid and jump onto the high tree branch, then to the first ledge with a ladder and a sentry with a torch; don't climb the ladder but face southeast from it and follow the arch to find the key on a body on the next landing, guarded by a knight</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17498,7 +17498,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k34",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k34",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">A Sellia, citt\u00e0 della stregoneria, su un cadavere accasciato sopra un arco che collega due edifici all'ingresso meridionale della citt\u00e0; passando verso nord sotto l'arco, gira a destra per vedere delle macerie con un albero marcio, un modo facile per salire a cavallo</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Sellia, Town of Sorcery, on a body slumped atop an archway connecting two buildings at the southern entrance of town; passing northward through the arch underneath, turn right to see rubble with a rotted tree through it, an easy way up on horseback</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17517,7 +17517,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k35",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k35",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Da Forte Faroth, rivolgiti a ovest e sali sulla massiccia roccia bianca in lontananza; si trova su uno dei cadaveri in cima, quello con la sedia rovesciata</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From Fort Faroth, face west and climb the hulking white rock in the distance; it's on one of the bodies on top, the one whose chair fell over</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17536,7 +17536,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k36",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k36",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">A sud del Pozzo profondo del Siofra, oltre il grosso orso, su un cadavere seduto sulla scogliera</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">South of the Deep Siofra Well, past the large bear, on a body sitting on the cliff</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17555,7 +17555,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k37",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k37",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">All'inizio della strada a nord-est dal Montacarichi di Dectus, nel piccolo accampamento di creature nel lato destro, su un cadavere appoggiato a una tenda</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Early on the road northeast from the Grand Lift of Dectus, in the small encampment of Misbegottens on the right, on a body against a tent</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17574,7 +17574,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k38",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k38",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella Grotta del saggio, procedi lungo il sentiero lineare attraverso i muri illusori quando necessario, fino a una stanza pi\u00f9 aperta con un fal\u00f2, molte stalattiti e uno scheletro pi\u00f9 grande armato di Granascia del boia; sulla sinistra c'\u00e8 un muro illusorio che nasconde una nicchia con un forziere contenente la chiave</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Sage's Cave, proceed down the linear path, through illusory walls when necessary, until a more open room with a bonfire, many stalactites, and a larger skeleton wielding the Executioner's Greataxe; on the left, being stared at by another skeleton, is an illusory wall hiding a nook with a chest with the key inside</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17612,7 +17612,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k42",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k42",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Sul lato orientale dell'altopiano rialzato al centro di Altus con tempeste di fulmini perenni, su un cadavere accasciato su una piattaforma di pietra</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On the eastern side of the raised plateau in the center of Altus with perpetual lightning storms, on a body slumped on a stone platform</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17631,7 +17631,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k43",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k43",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dal luogo di grazia Bastioni del Castello d'Ombra, torna gi\u00f9 per le scale e gira a sinistra, seguendo il bastione per trovare un Profumiere vicino a una rampa che scende verso la palude sottostante. Il muro del bastione \u00e8 rotto vicino a questa rampa; sali sul muro e seguilo all'indietro (verso sud) finch\u00e9 non puoi saltare a destra sulla grande barriera di pietra. Sali attentamente sulle pietre con alcuni salti precisi finch\u00e9 una sporgenza non curva leggermente a destra, da dove puoi vedere un pianerottolo pi\u00f9 basso verso il quale saltare. Poi gira a sinistra e salta oltre la roccia d'intralcio (\u00e8 un po' difficile) e calati dall'altra parte, su una piccola sporgenza con un cadavere che tiene la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From the Shaded Castle Ramparts grace, go back down the little stairs and turn left, following the rampart around to find a Perfumer near a ramp down to the swamp below. The wall of the rampart is broken near this ramp, providing a way up, so get on the wall and follow it back a bit the way you came (south) until you can hop to the right onto the large stone barrier. Carefully climb up the stones with a few precise jumps, until a ledge wraps slightly around to the right, from where you can see a lower landing ahead that you can jump to. Then turn left and hop over the rock in the way (it's a bit tricky to get over it) and drop down to the other side of it, onto a small ledge with a body holding the key, with three slugs looking up at you from below.</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17650,7 +17650,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k44",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k44",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella Tomba dell'eroe di Gelmir, oltre il primo carro, alcuni Nobili e Paggi e una trappola di fuoco, troverai un secondo carro oltre un arco; invece di girare a sinistra per scendere lungo il pendio, gira a destra e corri in un vicolo cieco per trovare la chiave. Attenzione: \u00e8 molto difficile tornare indietro senza essere uccisi dal carro, che risalir\u00e0 improvvisamente tutto il pendio al ritorno, quindi potrebbe essere necessario un tentativo suicida.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Gelmir Hero's Grave, past the first chariot, a few Nobles and Pages, and a fire trap, you'll find a second chariot through an archway; instead of turning left to go down the incline and progress through the dungeon, turn right and run up into a dead end to find the key, though beware it's very difficult to get back on track without being killed by the chariot, as it will suddenly go all the way up the incline on its way back, so you may need to make a suicide run for it</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17669,7 +17669,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k45",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k45",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Sul ponte interrotto subito a ovest della Capanna dell'odore di morte</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On the broken bridge just west of Corpse-Stench Shack</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17688,7 +17688,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k46",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k46",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Venduta dal mercante nomade qui per 5.000 rune</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sold by the Nomadic Merchant here for 5000 runes</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17707,7 +17707,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k47",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k47",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">A nord di Forte Laiedd, nell'angolo con lapidi e meduse, su un cadavere appoggiato a un grande albero</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">North of Fort Laiedd, in the corner with gravestones and jellyfish, on a body against a large tree</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17726,7 +17726,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k48",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k48",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dal luogo di grazia Chiesa della citt\u00e0 carceraria, scendi nella piazza della citt\u00e0 con un Assassino di presagi vicino a un fal\u00f2. Attraversa la porta vicino alla posizione iniziale dell'Assassino di presagi, procedi attraverso un altro arco con un cane e gira a destra. Scendi le scale fino all'interruzione. Invece di calarti (caduta fatale), con un salto in corsa puoi raggiungere a stento l'altro lato e atterrare sulla piattaforma di legno che ha la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From the Prison Town Church grace, descend into the town square with an Omenkiller by a bonfire. Go through the doorway near the Omenkiller's initial position, proceed through another archway with a dog, and turn right. Go down the stairs to the broken gap. Instead of dropping all the way down (you can survive that fall), if you take a running jump, you can just barely reach the other end of the gap and land on the wooden platform, which has the key.</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17745,7 +17745,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k49",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k49",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Esci a sud-est dalla stanza in cui si sposta Rya a Villa Vulcano durante la sua missione, salta sopra il sottile ruscello di lava e balza sulla sporgenza attraverso una finestra aperta per trovare la chiave su un cadavere su una branda</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Exit southeast from the room Rya moves to deep in Volcano Manor later in her questline, hop over the thin lava stream, and jump up the ledge through an open window to find the key on a body on a cot</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17764,7 +17764,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k50",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k50",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella Galleria sigillata, quando arrivi in una stanza aperta percorribile tramite rami d'albero e contenente molti membri della Milizia volgare e una Vergine rapitrice, usa i rami per raggiungere la piattaforma sul lato destro, che ha un breve sentiero senza uscita con la chiave su un cadavere</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Sealed Tunnel, when you emerge into an open room navigable by tree branches and containing many Vulgar Militia and an Iron Maiden, use the branches to get to the platform on the right side, which has a short dead-end path with the key on a body</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17783,7 +17783,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k51",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k51",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella Tomba dell'eroe di Auriza, nella stanza con i due carri che corrono in direzioni opposte, su un cadavere in una nicchia al centro dei loro percorsi</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Auriza Hero's Grave in the room with two chariots running opposite each other, on a body in an alcove in the center of their paths</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17802,7 +17802,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k52",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k52",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dal Bastione orientale della capitale, segui il bastione verso sud fino a poco prima della porta di un edificio pieno di piante, calati dai bastioni sui tetti e salta tra i tetti tornando verso nord, finch\u00e9 non trovi la chiave su un cadavere vicino a due Gargoyle.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From East Capital Rampart, follow the rampart all the way south until just before the door into a building filled with plants, drop off the side of the rampart onto the rooftops, and hop between rooftops all the way back north, until you find the key on a body next to two Imps</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17821,7 +17821,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k53",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k53",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dal Bastione occidentale della capitale, scendi al livello del suolo e rivolgiti a nord-ovest, poi sali sulla zampa di drago pietrificata e salta dal suo artiglio teso sul tetto di un fienile, e da l\u00ec nel secondo piano di un edificio adiacente, con la chiave su un cadavere disteso su un davanzale.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From West Capital Rampart, drop down to ground level and face northwest, then climb the petrified dragon foot and leap from its extended claw to the roof of a barn, and from there into the second floor of an adjacent building, with the key on a body draped over a windowsill</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17840,7 +17840,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k54",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k54",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dalla Terrazza sul viale, scendi le scale e gira intorno a esse verso destra, poi scendi la scala a pioli in una stanza con molti nemici che lanciano vasi fulminanti e apri la piccola cella al piano terra per trovare un forziere con la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From Avenue Balcony, head down the stairs and hook around them to the right, then down the ladder into a room with many enemies throwing lightning pots, and open the little cell on the ground floor to find a chest with the key inside</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17859,7 +17859,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k55",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k55",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dalla posizione precedente, esci dalla porta al piano terra e prosegui finch\u00e9 non puoi girare intorno a una piccola rampa di scale in alto a destra, per vedere due Miliziani scheletrici e un cadavere putrido che pregano su una tomba con un corpo che tiene la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From the previous, head out the door on the ground floor, and continue forward until you can hook around a little set of stairs up and right, to see two Skeletal Militiamen and a Putrid Corpse praying at a grave bearing a body with the key</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17878,7 +17878,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k56",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k56",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dalla Chiesa inferiore della capitale, esci e gira intorno all'edificio a destra; sali la lunga scala a pioli e la successiva per sbucare a un gazebo; gira di nuovo a destra prima del gazebo, poi gira a sinistra e segui lo stretto sentiero finch\u00e9 non puoi salire una grande scala alla tua sinistra; infine, dalla cima della scala, rivolgiti direttamente a est e corri saltando sopra il gazebo per raccogliere la chiave dal cadavere.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From Lower Capital Church, exit the church and wrap around the building to the right; climb the long ladder and the following ladder to emerge at a gazebo; hook right again before the gazebo, then turn left and follow the tight path until you can climb a large staircase on your left; finally, from the top of the staircase, face directly east and run and jump on top of the gazebo to loot the key from the body</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17897,7 +17897,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k57",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k57",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Sotterranei dei reietti: Dal Bordo della strada sotterranea, vai a nord-est e calati nell'apertura della grata sul pavimento, gira a nord-ovest ed entra nel tunnel nella parete destra, calati nel primo buco circondato da lumache e segui il sentiero fino a una stanza con tre Evocatori di spettri e la chiave su un cadavere.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Subterranean Shunning-Grounds: From Underground Roadside, head northeast and drop through the gap in the floor grate, turn northwest and go into the tunnel in the right wall, drop into the first hole surrounded by Slugs, and follow the path from there into a room with three Wraith Callers and the key on a body</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17935,7 +17935,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k61",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k61",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">A Castel Sol, dalla Chiesa dell'eclissi, esci a nord, sali la scala a pioli a est, vai fino in fondo a nord, attraversa il ponte di legno e sali le scale a destra per trovare un cadavere disteso sul muro a sinistra con la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Castle Sol, from the Church of the Eclipse, exit to the north, climb the ladder to the east, go all the way north, cross the wooden bridge, and climb the stairs on the right to find a body slumped over the wall on the left with the key</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17954,7 +17954,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k62",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k62",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Su un cadavere proprio dietro il Prelato del fuoco fuori dalla Guarnigione dei guardiani.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On a body right behind the Fire Prelate outside Guardians' Garrison</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17973,7 +17973,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k63",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k63",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dall'Entroterra del campo di neve consacrato, guarda la bussola e viaggia esattamente una tacca a nord dell'Ovest, verso una collina sorvegliata da due sfere fulminanti; in cima c'\u00e8 una sedia con un cadavere che porta la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From Inner Consecrated Snowfield, look at your compass and travel exactly one notch north of West, to a hill guarded by two lightning balls; on top is a chair with a corpse with the key</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -17992,7 +17992,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k64",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k64",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Nella parte nord-occidentale delle Rovine di Yelough Anix, in una piccola stanza fatiscente piena di quattro topi frenetici.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In the northwest of Yelough Anix Ruins, in a tiny crumbling room packed with four frenzied rats</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18011,7 +18011,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k65",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k65",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Direttamente a sud della Chioma dell'Albero Sacro su un cadavere sulla punta dello stesso ramo.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Directly south of Haligtree Canopy on a body at the tip of the same branch</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18030,7 +18030,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k66",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k66",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dalla Chioma dell'Albero Sacro, vai a est calandoti quando necessario per raggiungere il primo Grande inviato dell'Oracolo; segui il ramo da l\u00ec verso est/nord-est finch\u00e9 non puoi raggiungere un grande ramo centrale pattugliato da formiche giganti; segui il grande ramo verso sud fino alla sua prima diramazione a sinistra, che puoi seguire compiendo un grande cerchio ascendente su un ampio ramo superiore con un Germoglio di Miranda gigante; rivolgiti a nord-ovest e cammina lungo questo ramo fino alla sua prima diramazione a sinistra con un angolo acuto, alla fine della quale c'\u00e8 un inviato dell'Oracolo e un cadavere con la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From Haligtree Canopy, head east, dropping down when necessary to reach the first Large Oracle Envoy; follow the branch from there east/northeast until you can reach a large central branch with Giant Ants patrolling; follow the large branch south until its first offshoot on the left, which you can follow around in a large ascending circle onto a wide branch above with a scarlot rot flavored Giant Miranda Sprout; face northwest and walk along this branch until its first offshoot at a sharp left angle, at the end of which is an Oracle Envoy and a body with the key</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18049,7 +18049,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k67",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k67",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Sul retro del Tempio del drago a est, su un cadavere vicino a una sporgenza.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In the back of the Dragon Temple to the east, on a body near a ledge</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18087,7 +18087,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k71",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k71",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Alla fine del lungo ponte che sporge a sud-ovest del Fiume Siofra, accessibile tramite una sorgente spiritica situata di fronte.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">At the end of the long bridge/wall protruding from the southwest of Siofra River, accessed via a spiritspring in front of it</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18106,7 +18106,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k72",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k72",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Dal luogo di grazia Pozzo del Siofra inferiore, viaggia a sud-ovest lungo la scogliera a destra finch\u00e9 non trovi un ponte che conduce all'altro lato vicino a un Albero d'oro; gira a sinistra e salta sulla colonna l\u00ec presente, poi corri lungo la trave attaccata fino alla colonna successiva, che nasconde un cadavere con la chiave.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">From the Below the Well grace, travel southwest along the right cliffside until you find a bridge leading to the other side near a Golden Tree; turn left at the other side and hop onto the pillar there, then run down the attached beam to the next pillar, which hides a body with a key</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18125,7 +18125,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k73",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k73",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Su un cadavere subito a sud del luogo di grazia Scogliera sull'acquedotto, appena fuori dalla grotta, raggiungibile calandosi dalla sporgenza soprastante dove si trovano le meduse.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On a body just south of the Aqueduct-Facing Cliffs grace, right outside the cave, where you drop down from the ledge above with the jellyfish to reach it</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18144,7 +18144,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k74",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k74",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Su un cadavere nell'acqua circondato da molti germogli di Miranda, vicino alla cascata appena a sud-ovest delle Rovine del palazzo di Uld.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On a body in water surrounded by many frenzied Miranda Sprouts, near the waterfall just southwest of Uld Palace Ruins</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18163,7 +18163,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k75",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k75",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">A Nokstella, Citt\u00e0 Eterna, direttamente a nord dell'ascensore per il Bacino della cascata di Nokstella, su una scogliera sotto una sporgenza.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">In Nokstella, Eternal City, directly north of the elevator to Nokstella Waterfall Basin, on a cliff under a ledge</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18182,7 +18182,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k76",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k76",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">In cima all'edificio quadrato molto alto direttamente a sud-est del Cavaliere del crogiolo Siluria, raggiungibile tramite la sorgente spiritica accanto all'edificio.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Atop the very tall square building directly southeast of Crucible Knight Siluria, reached via the spiritspring next to the building</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18201,7 +18201,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k77",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k77",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">All'estremit\u00e0 meridionale dell'area con molti corvi giganti, su un corpo a terra all'aperto.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">On the south end of the area with many Giant Crows, on a body on the ground in the open</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18220,7 +18220,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_k78",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_k78",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stonesword Key</span><span class=\"lang-text lang-it d-none\">Lungo il sentiero che sale dall'Ingresso del mausoleo della dinastia, superato il fango scheletrico gigante, gira a destra per un sentiero laterale cieco con molti cadaveri putridi oranti e una chiave su un corpo appoggiato a una roccia.</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Along the path up from Dynasty Mausoleum Entrance, just past the Giant Skeletal Slime, turn right for a dead end side path with many praying Putrid Corpses and a key on a body against a rock</span><span class=\"lang-text lang-it d-none\">Chiave della spada di pietra</span></span>"
         },
         "type": "Feature"
       },
@@ -18258,7 +18258,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s1",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s1",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Tomba dell'eroe dei confini (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Fringefolk Hero's Grave (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18277,7 +18277,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s5",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s5",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Villaggio di Acqua Evocata (cantina)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Summonwater Village (cellar)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18296,7 +18296,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s4",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s4",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Catacombe del sacrario</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Tombsward Catacombs</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18315,7 +18315,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s6",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s6",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Evergaol del Pianto</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Weeping Evergaol</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18334,7 +18334,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s7",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s7",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Ricettario della pelle divina (cantina)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Godskin Prayerbook (cellar)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18353,7 +18353,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s8",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s8",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Castello di Grantempesta (vicino al Rampollo innestato)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Stormveil Castle (near Grafted Scion)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18372,7 +18372,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s9",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s9",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Catacombe di fine scogliera</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cliffbottom Catacombs</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18391,7 +18391,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s10",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s10",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Grotta di cristallo dell'Accademia (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Academy Crystal Cave (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18410,7 +18410,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s11",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s11",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Catacombe dei Neri Coltelli</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Black Knife Catacombs</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18429,7 +18429,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s12",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s12",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Rovine del feudo lunare</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Lunar Estate Ruins</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18448,7 +18448,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s13",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s13",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Grotta della galera (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Gaol Cave (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18467,7 +18467,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s14",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s14",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Rovine dei derelitti (cantina)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Forsaken Ruins (cellar)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18486,7 +18486,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s15",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s15",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Evergaol della stirpe aurea</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Golden Lineage Evergaol</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18505,7 +18505,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s16",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s16",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Catacombe spiacevoli (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Unsightly Catacombs (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18524,7 +18524,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s21",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s21",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Rovine di Wyndham (cantina)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Wyndham Ruins (cellar)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18543,7 +18543,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s17",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s17",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Tomba dell'eroe santo (stanza 1)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sainted Hero's Grave (room 1)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18562,7 +18562,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s18",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s18",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Tomba dell'eroe santo (stanza 2)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sainted Hero's Grave (room 2)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18581,7 +18581,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s19",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s19",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Vecchio tunnel di Altus (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Old Altus Tunnel (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18600,7 +18600,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s20",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s20",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Grotta di Acquaebollente (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Seethewater Cave (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18619,7 +18619,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s22",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s22",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Catacombe di Wyndham</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Wyndham Catacombs</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18638,7 +18638,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s23",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s23",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Villa Vulcano (cantina)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Volcano Manor (cellar)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18657,7 +18657,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s24",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s24",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Villa Vulcano (atrio)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Volcano Manor (hall)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18676,7 +18676,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s25",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s25",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Tomba dell'eroe di Auriza</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Auriza Hero's Grave</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18695,7 +18695,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s26",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s26",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Grotta del chiamaspirti (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Spiritcaller Cave (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18714,7 +18714,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s27",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s27",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Tomba dell'eroe conquistatore dei giganti</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Giant-Conquering Hero's Grave</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18733,7 +18733,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s28",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s28",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (2 keys)</span><span class=\"lang-text lang-it d-none\">Grotta dei derelitti (ingresso)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cave of the Forlorn (entrance)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (2 chiavi)</span></span>"
         },
         "type": "Feature"
       },
@@ -18752,7 +18752,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s29",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s29",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Stanza della preghiera (superiore)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Prayer Room (upper)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },
@@ -18771,7 +18771,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "stonesword_s30",
           "link": "/checklists/stonesword_keys_imp_seals.html#item_s30",
-          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Imp Statue Seal (1 key)</span><span class=\"lang-text lang-it d-none\">Stanza della preghiera (inferiore)</span></span>"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Prayer Room (lower)</span><span class=\"lang-text lang-it d-none\">Sigillo demoniaco (1 chiave)</span></span>"
         },
         "type": "Feature"
       },

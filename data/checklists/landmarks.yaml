@@ -848,7 +848,7 @@ sections:
     - Catacombe dei Neri Coltelli
     - Catacomba
     - Assassino dei Neri Coltelli<br>Ombra cimiteriale
-    - Contiene 1 statua di gargoyle.
+    - Contiene 1 statua demoniaca.
   - id: '2_3'
     data:
     - Cliffbottom Catacombs
@@ -863,7 +863,7 @@ sections:
     - Catacombe di Piè di Scarpata
     - Catacomba
     - Sentinella dell'Albero Madre
-    - Contiene 1 statua di gargoyle.
+    - Contiene 1 statua demoniaca.
   - id: '2_6'
     data:
     - Road's End Catacombs
@@ -2504,7 +2504,7 @@ sections:
     - Catacombe di Wyndham
     - Catacomba
     - Sentinella dell'Albero Madre
-    - Contiene 1 statua di gargoyle.
+    - Contiene 1 statua demoniaca.
   - id: '5_1'
     data:
     - Gelmir Hero's Grave
