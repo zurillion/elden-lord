@@ -1062,7 +1062,7 @@ sections:
         data_it: ["Uomo-drago antico", "Fossa del drago", "Gran katana del cacciatore di draghi", ""]
       - id: "1013"
         data: ["Ancient Dragon Senessax", "Jagged Peak", "Ancient Dragon Smithing Stone, Somber Ancient Dragon Smithing Stone", ""]
-        data_it: ["Drago Antico Senessax", "Picco Frastagliato", "Pietra da forgiatura del drago antico, Pietra da forgiatura infausta del drago antico", ""]
+        data_it: ["Drago Antico Senessax", "Picco Frastagliato", "Pietra da forgiatura del drago antico, Pietra da forgiatura funerea del drago antico", ""]
       - id: "1014"
         data: ["Bayle the Dread", "Jagged Peak (Summit)", "Heart of Bayle", ""]
         data_it: ["Bayle il Terribile", "Picco Frastagliato (Vetta)", "Cuore di Bayle", ""]
@@ -1077,7 +1077,7 @@ sections:
         data_it: ["Golem della Fornace", "Pianura delle Tombe / Vari", "Lacrime di cristallo / Volto della fornace", ""]
       - id: "1018"
         data: ["Ghostflame Dragon", "Gravesite Plain / Various", "Dragon Heart, Somber Ancient Dragon Smithing Stone", ""]
-        data_it: ["Drago della fiamma spettrale", "Pianura delle Tombe / Vari", "Cuore di drago, Pietra da forgiatura infausta del drago antico", ""]
+        data_it: ["Drago della fiamma spettrale", "Pianura delle Tombe / Vari", "Cuore di drago, Pietra da forgiatura funerea del drago antico", ""]
       - id: "1019"
         data: ["Jori, Elder Inquisitor", "Darklight Catacombs", "Barbed Staff-Spear", ""]
         data_it: ["Jori, inquisitore anziano", "Catacombe della luce oscura", "Lancia-bastone spinata", ""]

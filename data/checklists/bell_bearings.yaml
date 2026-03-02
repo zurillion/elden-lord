@@ -50,7 +50,7 @@ sections:
         data_it: ["[5]", "Pietra funerea [9]", "A Farum Azula in frantumi. Dal Luogo di Grazia Tetto del Tempio del drago, scendi dove ci sono i grandi volatili. Oltre gli uccelli c'è un drago. Oltrepassando il drago a destra c'è un gruppo di semi-umani. Oltre di loro c'è una rovina crollata che fa da ponte. Nel prossimo edificio a destra c'è un cadavere con il Globo cinereo."]
   -
     title: "Glovewort Picker's Bell Bearings"
-    title_it: "Globi cinerei del raccogliconvallarie"
+    title_it: "Globi cinerei del raccoglitore di convallaria"
     icon: "/img/icons/keys/edited/03142.png"
     table: ["", "Unlocks", "Location"]
     table_it: ["", "Sblocca", "Luogo"]
@@ -66,8 +66,8 @@ sections:
         data: ["[3]", "Grave Glovewort 7/8/9", "In Crumbling Farum Azula in a lake. Go down the elevator South-West of the room that is North-West from the Crumbling Beast Grave Depths Grace. You'll see a lake down the path and the Bell Bearing is there."]
         data_it: ["[3]", "Convallaria sepolcrale [7]/[8]/[9]", "A Farum Azula in frantumi in un lago. Scendi l'ascensore a sud-ovest della stanza che si trova a nord-ovest del Luogo di Grazia Profondità della tomba della bestia. Vedrai un lago lungo il sentiero e il Globo cinereo si trova lì."]
   -
-    title: "Ghostform Picker's Bell Bearings"
-    title_it: "Globi cinerei del raccoglitore spettrale"
+    title: "Ghost-Glovewort Picker's Bell Bearings"
+    title_it: "Globi cinerei del raccoglitore di convallaria spettrale"
     icon: "/img/icons/keys/edited/03142.png"
     table: ["", "Unlocks", "Location"]
     table_it: ["", "Sblocca", "Luogo"]
