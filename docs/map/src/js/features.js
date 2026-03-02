@@ -18872,7 +18872,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_1",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_1",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -18891,7 +18891,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_3",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_3",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -18910,7 +18910,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_4",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_4",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -18929,7 +18929,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_5",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_5",
-          "title": "Dragon Heart x3"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart x3</span><span class=\"lang-text lang-it d-none\">Cuore di drago x3</span></span>"
         },
         "type": "Feature"
       },
@@ -18948,7 +18948,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_2",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_2",
-          "title": "Dragon Heart x3"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart x3</span><span class=\"lang-text lang-it d-none\">Cuore di drago x3</span></span>"
         },
         "type": "Feature"
       },
@@ -18967,7 +18967,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_6",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_6",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -18986,7 +18986,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_7",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_7",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -19005,7 +19005,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_8",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_8",
-          "title": "Dragon Heart x5"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart x5</span><span class=\"lang-text lang-it d-none\">Cuore di drago x5</span></span>"
         },
         "type": "Feature"
       },
@@ -19024,7 +19024,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_9",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_9",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -19043,7 +19043,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_10",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_10",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -19062,7 +19062,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_11",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_11",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -19081,7 +19081,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_12",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_12",
-          "title": "Dragon Heart"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart</span><span class=\"lang-text lang-it d-none\">Cuore di drago</span></span>"
         },
         "type": "Feature"
       },
@@ -19100,7 +19100,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "dragon_hearts_death_roots_0_13",
           "link": "/checklists/dragon_hearts_deathroots.html#item_0_13",
-          "title": "Dragon Heart x3"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dragon Heart x3</span><span class=\"lang-text lang-it d-none\">Cuore di drago x3</span></span>"
         },
         "type": "Feature"
       },
@@ -19119,7 +19119,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_1",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_1",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19138,7 +19138,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_2",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_2",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19157,7 +19157,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_3",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_3",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19176,7 +19176,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_4",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_4",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19195,7 +19195,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_5",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_5",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19214,7 +19214,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_6",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_6",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19233,7 +19233,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_7",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_7",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19252,7 +19252,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_8",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_8",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       },
@@ -19271,7 +19271,7 @@ const feature_data = [
           "icon_size": 45,
           "id": "dragon_hearts_death_roots_1_9",
           "link": "/checklists/dragon_hearts_deathroots.html#item_1_9",
-          "title": "Deathroot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Deathroot</span><span class=\"lang-text lang-it d-none\">Radice mortale</span></span>"
         },
         "type": "Feature"
       }
@@ -19296,7 +19296,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_1_1",
           "link": "/checklists/paintings.html#item_1_1",
-          "title": "Prophecy Painting"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Prophecy Painting</span><span class=\"lang-text lang-it d-none\">Dipinto: Profezia</span></span>"
         },
         "type": "Feature"
       },
@@ -19315,7 +19315,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_1_2",
           "link": "/checklists/paintings.html#item_1_2",
-          "title": "Homing Instinct Painting"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Homing Instinct Painting</span><span class=\"lang-text lang-it d-none\">Dipinto: Istinto di conservazione</span></span>"
         },
         "type": "Feature"
       },
@@ -19334,7 +19334,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_2_1",
           "link": "/checklists/paintings.html#item_2_1",
-          "title": "Resurrection Painting"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Resurrection Painting</span><span class=\"lang-text lang-it d-none\">Dipinto: Resurrezione</span></span>"
         },
         "type": "Feature"
       },
@@ -19353,7 +19353,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_3_1",
           "link": "/checklists/paintings.html#item_3_1",
-          "title": "Redmane Painting"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Redmane Painting</span><span class=\"lang-text lang-it d-none\">Dipinto: Criniera rossa</span></span>"
         },
         "type": "Feature"
       },
@@ -19372,7 +19372,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_4_1",
           "link": "/checklists/paintings.html#item_4_1",
-          "title": "Champion's Song Painting"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Champion's Song Painting</span><span class=\"lang-text lang-it d-none\">Dipinto: Canto del campione</span></span>"
         },
         "type": "Feature"
       },
@@ -19391,7 +19391,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_5_1",
           "link": "/checklists/paintings.html#item_5_1",
-          "title": "Flightless Bird Painting"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Flightless Bird Painting</span><span class=\"lang-text lang-it d-none\">Dipinto: Uccello incapace di volare</span></span>"
         },
         "type": "Feature"
       },
@@ -19410,7 +19410,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_6_1",
           "link": "/checklists/paintings.html#item_6_1",
-          "title": "Sorcerer Painting"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sorcerer Painting</span><span class=\"lang-text lang-it d-none\">Dipinto: Stregone</span></span>"
         },
         "type": "Feature"
       },
@@ -19429,7 +19429,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_1",
           "link": "/checklists/paintings.html#item_1",
-          "title": "Prophecy Painting solution"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Prophecy Painting solution</span><span class=\"lang-text lang-it d-none\">Dipinto: Profezia</span></span>"
         },
         "type": "Feature"
       },
@@ -19448,7 +19448,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_2",
           "link": "/checklists/paintings.html#item_2",
-          "title": "Homing Instinct Painting solution"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Homing Instinct Painting solution</span><span class=\"lang-text lang-it d-none\">Dipinto: Istinto di conservazione</span></span>"
         },
         "type": "Feature"
       },
@@ -19467,7 +19467,7 @@ const feature_data = [
           "icon_size": 20,
           "id": "paintings_3",
           "link": "/checklists/paintings.html#item_3",
-          "title": "Resurrection Painting solution"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Resurrection Painting solution</span><span class=\"lang-text lang-it d-none\">Dipinto: Resurrezione</span></span>"
         },
         "type": "Feature"
       },
@@ -19486,7 +19486,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_4",
           "link": "/checklists/paintings.html#item_4",
-          "title": "Redmane Painting solution"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Redmane Painting solution</span><span class=\"lang-text lang-it d-none\">Dipinto: Criniera rossa</span></span>"
         },
         "type": "Feature"
       },
@@ -19505,7 +19505,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_5",
           "link": "/checklists/paintings.html#item_5",
-          "title": "Champion's Song Painting solution"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Champion's Song Painting solution</span><span class=\"lang-text lang-it d-none\">Dipinto: Canto del campione</span></span>"
         },
         "type": "Feature"
       },
@@ -19524,7 +19524,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_6",
           "link": "/checklists/paintings.html#item_6",
-          "title": "Flightless Bird Painting solution"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Flightless Bird Painting solution</span><span class=\"lang-text lang-it d-none\">Dipinto: Uccello incapace di volare</span></span>"
         },
         "type": "Feature"
       },
@@ -19543,7 +19543,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "paintings_7",
           "link": "/checklists/paintings.html#item_7",
-          "title": "Sorcerer Painting solution"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sorcerer Painting solution</span><span class=\"lang-text lang-it d-none\">Dipinto: Stregone</span></span>"
         },
         "type": "Feature"
       }
@@ -19568,7 +19568,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_1",
           "link": "/checklists/pots_bottles.html#item_1_1",
-          "title": "Cracked Pot x3"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot x3</span><span class=\"lang-text lang-it d-none\">Vaso incrinato x3</span></span>"
         },
         "type": "Feature"
       },
@@ -19587,7 +19587,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_5",
           "link": "/checklists/pots_bottles.html#item_1_5",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19606,7 +19606,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_4",
           "link": "/checklists/pots_bottles.html#item_1_4",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19625,7 +19625,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_6",
           "link": "/checklists/pots_bottles.html#item_1_6",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19644,7 +19644,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_7",
           "link": "/checklists/pots_bottles.html#item_1_7",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19663,7 +19663,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_8",
           "link": "/checklists/pots_bottles.html#item_1_8",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19682,7 +19682,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_9",
           "link": "/checklists/pots_bottles.html#item_1_9",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19701,7 +19701,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_10",
           "link": "/checklists/pots_bottles.html#item_1_10",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19720,7 +19720,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_11",
           "link": "/checklists/pots_bottles.html#item_1_11",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19739,7 +19739,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_13",
           "link": "/checklists/pots_bottles.html#item_1_13",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19758,7 +19758,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_12",
           "link": "/checklists/pots_bottles.html#item_1_12",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19777,7 +19777,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_15",
           "link": "/checklists/pots_bottles.html#item_1_15",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19796,7 +19796,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_14",
           "link": "/checklists/pots_bottles.html#item_1_14",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19815,7 +19815,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_16",
           "link": "/checklists/pots_bottles.html#item_1_16",
-          "title": "Cracked Pot x4"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot x4</span><span class=\"lang-text lang-it d-none\">Vaso incrinato x4</span></span>"
         },
         "type": "Feature"
       },
@@ -19834,7 +19834,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_1_20",
           "link": "/checklists/pots_bottles.html#item_1_20",
-          "title": "Cracked Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Cracked Pot</span><span class=\"lang-text lang-it d-none\">Vaso incrinato</span></span>"
         },
         "type": "Feature"
       },
@@ -19853,7 +19853,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_1",
           "link": "/checklists/pots_bottles.html#item_2_1",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -19872,7 +19872,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_2",
           "link": "/checklists/pots_bottles.html#item_2_2",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -19891,7 +19891,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_3",
           "link": "/checklists/pots_bottles.html#item_2_3",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -19910,7 +19910,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_5",
           "link": "/checklists/pots_bottles.html#item_2_5",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -19929,7 +19929,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_4",
           "link": "/checklists/pots_bottles.html#item_2_4",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -19948,7 +19948,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_6",
           "link": "/checklists/pots_bottles.html#item_2_6",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -19967,7 +19967,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_7",
           "link": "/checklists/pots_bottles.html#item_2_7",
-          "title": "Ritual Pot x2"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot x2</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -19986,7 +19986,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_9",
           "link": "/checklists/pots_bottles.html#item_2_9",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -20005,7 +20005,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_2_10",
           "link": "/checklists/pots_bottles.html#item_2_10",
-          "title": "Ritual Pot"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Ritual Pot</span><span class=\"lang-text lang-it d-none\">Vaso rituale</span></span>"
         },
         "type": "Feature"
       },
@@ -20024,7 +20024,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_1",
           "link": "/checklists/pots_bottles.html#item_3_1",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20043,7 +20043,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_2",
           "link": "/checklists/pots_bottles.html#item_3_2",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20062,7 +20062,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_5",
           "link": "/checklists/pots_bottles.html#item_3_5",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20081,7 +20081,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_3",
           "link": "/checklists/pots_bottles.html#item_3_3",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20100,7 +20100,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_4",
           "link": "/checklists/pots_bottles.html#item_3_4",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20119,7 +20119,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_6",
           "link": "/checklists/pots_bottles.html#item_3_6",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20138,7 +20138,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_7",
           "link": "/checklists/pots_bottles.html#item_3_7",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20157,7 +20157,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_8",
           "link": "/checklists/pots_bottles.html#item_3_8",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20176,7 +20176,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_9",
           "link": "/checklists/pots_bottles.html#item_3_9",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Boccetta di profumo</span></span>"
         },
         "type": "Feature"
       },
@@ -20195,7 +20195,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "pots_bottles_3_10",
           "link": "/checklists/pots_bottles.html#item_3_10",
-          "title": "Perfume Bottle"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Perfume Bottle</span><span class=\"lang-text lang-it d-none\">Attraverso i grandi portoni doppi di Leyndell che portano alle Terre proibite, in fondo senza salire le scale, su un corpo sorvegliato da una Chimera minore.</span></span>"
         },
         "type": "Feature"
       }
