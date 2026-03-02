@@ -111,7 +111,7 @@
 
     function updateTotalSection(el, checked, total) {
         if (checked === total) {
-            el.html('DONE');
+            el.html(window.DONE_HTML || 'DONE');
             el.removeClass('in_progress').addClass('done');
             el.removeClass('bg-info').addClass('bg-success');
             el.closest('.card').addClass('completed');// Show heading for not yet completed category
@@ -125,11 +125,13 @@
 
     function updateTotalNav(el, checked, total) {
         if (checked === total) {
-            el.html('DONE');
+            el.html(window.DONE_HTML || 'DONE');
             el.removeClass('in_progress').addClass('done');
+            el.removeClass('bg-info').addClass('bg-success');
         } else {
             el.html(checked + '/' + total);
             el.removeClass('done').addClass('in_progress');
+            el.removeClass('bg-success').addClass('bg-info');
         }
     }
 
@@ -140,6 +142,7 @@
             updateTotalNav($(nav_totals.get(i)), p[0], p[1]);
             updateTotalSection($(section_totals.get(i)), p[0], p[1]);
         }
+        if (window.applyLanguageCss) { window.applyLanguageCss(window.currentLanguage); }
     }
 
     $(function () {

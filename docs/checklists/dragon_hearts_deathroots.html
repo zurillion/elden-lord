@@ -185,6 +185,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/landmarks_locations.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Landmarks &amp; Locations</span>
+                      <span class="lang-text lang-it">Luoghi d'interesse</span>
                     </span>
                   </a>
                 </li>
@@ -192,6 +193,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/sitesof_grace.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Sites of Grace</span>
+                      <span class="lang-text lang-it">Luoghi di grazia</span>
                     </span>
                   </a>
                 </li>
@@ -300,6 +302,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/memory_stones_talisman_pouches.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Memory Stones &amp; Talisman Pouches</span>
+                      <span class="lang-text lang-it">Pietre della memoria e Borse per talismano</span>
                     </span>
                   </a>
                 </li>
@@ -307,6 +310,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/scrollsand_prayerbooks.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Scrolls and Prayerbooks</span>
+                      <span class="lang-text lang-it">Pergamene e Libri di preghiere</span>
                     </span>
                   </a>
                 </li>
@@ -314,6 +318,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/whetstones.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Whetstones</span>
+                      <span class="lang-text lang-it">Coltelli per affilatura</span>
                     </span>
                   </a>
                 </li>
@@ -329,6 +334,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/cookbooks.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Cookbooks</span>
+                      <span class="lang-text lang-it">Ricettari</span>
                     </span>
                   </a>
                 </li>
@@ -336,6 +342,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/ancient_dragon_smithing_stones.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Ancient Dragon Smithing Stones</span>
+                      <span class="lang-text lang-it">Pietre da forgiatura del drago antico</span>
                     </span>
                   </a>
                 </li>
@@ -343,6 +350,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/scadutree_fragments_revered_spirit_ashes.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Scadutree Fragments &amp; Revered Spirit Ashes</span>
+                      <span class="lang-text lang-it">Frammenti dell'Albero Ombra &amp; Ceneri di spirito venerato</span>
                     </span>
                   </a>
                 </li>
@@ -361,6 +369,7 @@
                   <a class="dropdown-item show-buttons" href="/checklists/remembrances_mausoleums.html">
                     <span class="lang-pair">
                       <span class="lang-text lang-en">Remembrances &amp; Mausoleums</span>
+                      <span class="lang-text lang-it">Rimembranze e Mausolei</span>
                     </span>
                   </a>
                 </li>
@@ -450,7 +459,7 @@
           <span class="lang-pair">
             <span class="lang-text lang-en">Dragon Hearts &amp; Deathroots</span>
           </span>
-          <span class="d-print-none" id="dragon_hearts_death_roots_overall_total"></span>
+          <span class="badge rounded-pill bg-success progress-val d-print-none ms-2" id="dragon_hearts_death_roots_overall_total"></span>
         </h1>
       </div>
       <div class="mb-3 d-print-none" id="btnHideCompleted">
@@ -887,11 +896,13 @@
     </a>
     <script>window.current_page_id = "dragon_hearts_death_roots";
 </script>
+    <script>window.DONE_HTML = '<span class="lang-pair"><span class="lang-text lang-en">DONE</span><span class="lang-text lang-it d-none">FATTO</span></span>';
+</script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/jstorage.min.js"></script>
     <script src="/js/progress.js"></script>
     <script src="/js/item_links.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="/js/common.js?v=1.1"></script>
     <script src="/js/sync.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/jets.min.js"></script>
@@ -1119,6 +1130,6 @@
                 });
             })( jQuery );
             </script>
-    <script src="/js/checklists.js"></script>
+    <script src="/js/checklists.js?v=1.1"></script>
   </body>
 </html>

@@ -222,6 +222,8 @@ var themes = {
         updateLangDisplay(lang);
     };
 
+    window.applyLanguageCss = applyLanguageCss;
+
     // Initialise language on page load
     updateLangDisplay(window.currentLanguage);
     applyLanguageCss(window.currentLanguage);

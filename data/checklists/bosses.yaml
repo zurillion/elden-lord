@@ -1017,3 +1017,70 @@ sections:
         data: ["Lichdragon Fortissax", "Deeproot Depths", "90,000 runes, Remembrance of the Lichdragon", "Part of Fia's questline. Grants Achievement/Trophy: Lichdragon Fortissax."]
         data_it: ["Fortissax, il Drago della Morte", "Abisso fra le radici", "90.000 rune, Rimembranza del Drago della Morte", "Parte della missione di Fia. Conferisce Obiettivo/Trofeo: Fortissax drago della morte."]
         cords: [5656, 10740]
+  -
+    title: "Realm of Shadow"
+    title_it: "Regno Dell'Ombra"
+    dlc: true
+    table: ["Name", "Location", "Drops", "Notes"]
+    table_it: ["Nome", "Luogo", "Ricompense", "Note"]
+    items:
+      - id: "1001"
+        data: ["Blackgaol Knight", "Western Nameless Mausoleum", "Greatsword of Solitude, Solitude Set", ""]
+        data_it: ["Cavaliere della Galera Solitaria", "Mausoleo senza nome occidentale", "Spadone della solitudine, Set della solitudine", ""]
+      - id: "1002"
+        data: ["Divine Beast Dancing Lion", "Belurat, Tower Settlement", "Remembrance of the Dancing Lion, Divine Beast Head", ""]
+        data_it: ["Leone danzante Belva Divina", "Belurat, insediamento della torre", "Rimembranza della belva danzante, Testa di belva divina", ""]
+      - id: "1003"
+        data: ["Rellana, Twin Moon Knight", "Castle Ensis", "Remembrance of the Twin Moon Knight", ""]
+        data_it: ["Rellana, Cavaliera della Luna Gemella", "Castello di Ensis", "Rimembranza della cavaliera della luna gemella", ""]
+      - id: "1004"
+        data: ["Golden Hippopotamus", "Shadow Keep", "Aspects of the Crucible: Thorns, 2x Scadutree Fragment", ""]
+        data_it: ["Ippopotamo d'oro", "Rocca delle Ombre", "Aspetto del Crogiolo: Spine, 2x Frammento di Albero Scaduto", ""]
+      - id: "1005"
+        data: ["Messmer the Impaler", "Shadow Keep", "Remembrance of the Impaler, Messmer's Kindling", ""]
+        data_it: ["Messmer l'Impalatore", "Rocca delle Ombre", "Rimembranza dell'Impalatore, Esca di Messmer", ""]
+      - id: "1006"
+        data: ["Commander Gaius", "Shadow Keep (Back Gate)", "Remembrance of the Wild Boar Rider", ""]
+        data_it: ["Comandante Gaius", "Rocca delle Ombre (Ingresso posteriore)", "Rimembranza del cavaliere di cinghiale", ""]
+      - id: "1007"
+        data: ["Putrescent Knight", "Stone Coffin Fissure", "Remembrance of Putrescence", ""]
+        data_it: ["Cavaliere Putrescente", "Fenditura dei sarcofagi di pietra", "Rimembranza della putrescenza", ""]
+      - id: "1008"
+        data: ["Scadutree Avatar", "Scadutree Base", "Remembrance of the Shadow Sunflower, Miquella's Great Rune", ""]
+        data_it: ["Avatar dell'Albero Scaduto", "Base dell'Albero Scaduto", "Rimembranza del girasole d'ombra, Grande Runa di Miquella", ""]
+      - id: "1009"
+        data: ["Metyr, Mother of Fingers", "Cathedral of Manus Metyr (Underground)", "Remembrance of the Mother of Fingers", ""]
+        data_it: ["Metyr, Madre delle Dita", "Cattedrale di Manus Metyr (Sotterraneo)", "Rimembranza della Madre delle Dita", ""]
+      - id: "1010"
+        data: ["Midra, Lord of Frenzied Flame", "Midra's Manse", "Remembrance of the Lord of Frenzied Flame", ""]
+        data_it: ["Midra, Signore della Fiamma Frenetica", "Maniero di Midra", "Rimembranza del Signore della Fiamma Frenetica", ""]
+      - id: "1011"
+        data: ["Romina, Saint of the Bud", "Church of the Bud", "Remembrance of the Saint of the Bud", ""]
+        data_it: ["Romina, Santa del Germoglio", "Chiesa del Germoglio", "Rimembranza della Santa del Germoglio", ""]
+      - id: "1012"
+        data: ["Ancient Dragon-Man", "Dragon's Pit", "Dragon-Hunter's Great Katana", ""]
+        data_it: ["Uomo-drago antico", "Fossa del drago", "Gran katana del cacciatore di draghi", ""]
+      - id: "1013"
+        data: ["Ancient Dragon Senessax", "Jagged Peak", "Ancient Dragon Smithing Stone, Somber Ancient Dragon Smithing Stone", ""]
+        data_it: ["Drago Antico Senessax", "Picco Frastagliato", "Pietra da forgiatura del drago antico, Pietra da forgiatura infausta del drago antico", ""]
+      - id: "1014"
+        data: ["Bayle the Dread", "Jagged Peak (Summit)", "Heart of Bayle", ""]
+        data_it: ["Bayle il Terribile", "Picco Frastagliato (Vetta)", "Cuore di Bayle", ""]
+      - id: "1015"
+        data: ["Needle Knight Leda & Allies", "Enir-Ilim", "Leda's Sword, etc.", ""]
+        data_it: ["Cavaliere Agugliato Leda e alleati", "Enir-Ilim", "Spada di Leda, ecc.", ""]
+      - id: "1016"
+        data: ["Promised Consort Radahn", "Enir-Ilim (Final)", "Remembrance of a God and a Lord", ""]
+        data_it: ["Radahn, Consorte di Miquella", "Enir-Ilim", "Rimembranza di un dio e di un lord", ""]
+      - id: "1017"
+        data: ["Furnace Golem", "Gravesite Plain / Various", "Crystal Tears / Furnace Visage", ""]
+        data_it: ["Golem della Fornace", "Pianura delle Tombe / Vari", "Lacrime di cristallo / Volto della fornace", ""]
+      - id: "1018"
+        data: ["Ghostflame Dragon", "Gravesite Plain / Various", "Dragon Heart, Somber Ancient Dragon Smithing Stone", ""]
+        data_it: ["Drago della fiamma spettrale", "Pianura delle Tombe / Vari", "Cuore di drago, Pietra da forgiatura infausta del drago antico", ""]
+      - id: "1019"
+        data: ["Jori, Elder Inquisitor", "Darklight Catacombs", "Barbed Staff-Spear", ""]
+        data_it: ["Jori, inquisitore anziano", "Catacombe della luce oscura", "Lancia-bastone spinata", ""]
+      - id: "1020"
+        data: ["Death Knight", "Fog Rift Catacombs / Various", "Death Knight Set / Weapons", ""]
+        data_it: ["Cavaliere della morte", "Catacombe della faglia di nebbia / Vari", "Set del cavaliere della morte / Armi", ""]

@@ -7360,6 +7360,86 @@
     "text": "Lichdragon Fortissax Deeproot Depths 90,000 runes, Remembrance of the Lichdragon Part of Fia's questline. Grants Achievement/Trophy: Lichdragon Fortissax."
   },
   {
+    "id": "/checklists/bosses.html#item_1001",
+    "text": "Blackgaol Knight Western Nameless Mausoleum Greatsword of Solitude, Solitude Set "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1002",
+    "text": "Divine Beast Dancing Lion Belurat, Tower Settlement Remembrance of the Dancing Lion, Divine Beast Head "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1003",
+    "text": "Rellana, Twin Moon Knight Castle Ensis Remembrance of the Twin Moon Knight "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1004",
+    "text": "Golden Hippopotamus Shadow Keep Aspects of the Crucible: Thorns, 2x Scadutree Fragment "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1005",
+    "text": "Messmer the Impaler Shadow Keep Remembrance of the Impaler, Messmer's Kindling "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1006",
+    "text": "Commander Gaius Shadow Keep (Back Gate) Remembrance of the Wild Boar Rider "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1007",
+    "text": "Putrescent Knight Stone Coffin Fissure Remembrance of Putrescence "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1008",
+    "text": "Scadutree Avatar Scadutree Base Remembrance of the Shadow Sunflower, Miquella's Great Rune "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1009",
+    "text": "Metyr, Mother of Fingers Cathedral of Manus Metyr (Underground) Remembrance of the Mother of Fingers "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1010",
+    "text": "Midra, Lord of Frenzied Flame Midra's Manse Remembrance of the Lord of Frenzied Flame "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1011",
+    "text": "Romina, Saint of the Bud Church of the Bud Remembrance of the Saint of the Bud "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1012",
+    "text": "Ancient Dragon-Man Dragon's Pit Dragon-Hunter's Great Katana "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1013",
+    "text": "Ancient Dragon Senessax Jagged Peak Ancient Dragon Smithing Stone, Somber Ancient Dragon Smithing Stone "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1014",
+    "text": "Bayle the Dread Jagged Peak (Summit) Heart of Bayle "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1015",
+    "text": "Needle Knight Leda & Allies Enir-Ilim Leda's Sword, etc. "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1016",
+    "text": "Promised Consort Radahn Enir-Ilim (Final) Remembrance of a God and a Lord "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1017",
+    "text": "Furnace Golem Gravesite Plain / Various Crystal Tears / Furnace Visage "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1018",
+    "text": "Ghostflame Dragon Gravesite Plain / Various Dragon Heart, Somber Ancient Dragon Smithing Stone "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1019",
+    "text": "Jori, Elder Inquisitor Darklight Catacombs Barbed Staff-Spear "
+  },
+  {
+    "id": "/checklists/bosses.html#item_1020",
+    "text": "Death Knight Fog Rift Catacombs / Various Death Knight Set / Weapons "
+  },
+  {
     "id": "/checklists/landmarks_locations.html#item_1_1",
     "text": "Stranded Graveyard Cave Soldier of Godrick "
   },
@@ -9434,6 +9514,426 @@
   {
     "id": "/checklists/sitesof_grace.html#item_312",
     "text": "Maliketh, the Black Blade"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1001",
+    "text": "Gravesite Plain"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1002",
+    "text": "Scorched Ruins"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1003",
+    "text": "Three-Path Cross"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1004",
+    "text": "Greatbridge, North"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1005",
+    "text": "Main Gate Cross"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1006",
+    "text": "Cliffroad Terminus"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1007",
+    "text": "Castle Front"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1008",
+    "text": "Pillar Path Cross"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1009",
+    "text": "Pillar Path Waypoint"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1010",
+    "text": "Ellac River Cave"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1011",
+    "text": "Ellac River Downstream"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1012",
+    "text": "Fog Rift Catacombs"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1013",
+    "text": "Belurat Gaol"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1014",
+    "text": "Ruined Forge Lava Intake"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1015",
+    "text": "Rivermouth Cave"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1016",
+    "text": "Dragon's Pit"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1017",
+    "text": "Dragon's Pit Terminus"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1018",
+    "text": "Belurat, Tower Settlement"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1019",
+    "text": "Small Private Altar"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1020",
+    "text": "Stagefront"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1021",
+    "text": "Theatre of the Divine Beast"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1022",
+    "text": "Castle Ensis Checkpoint"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1023",
+    "text": "Ensis Moongazing Grounds"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1024",
+    "text": "Castle-Lord's Chamber"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1025",
+    "text": "Abandoned Ailing Village"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1026",
+    "text": "Cerulean Coast"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1027",
+    "text": "Cerulean Coast West"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1028",
+    "text": "Cerulean Coast Cross"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1029",
+    "text": "The Fissure"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1030",
+    "text": "Finger Ruins of Rhia"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1031",
+    "text": "Charo's Hidden Grave"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1032",
+    "text": "Stone Coffin Fissure"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1033",
+    "text": "Fissure Cross"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1034",
+    "text": "Garden of Deep Purple"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1035",
+    "text": "Fissure Depths"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1036",
+    "text": "Fissure Waypoint"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1037",
+    "text": "Lamenter's Gaol"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1038",
+    "text": "Grand Altar of Dragon Communion"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1039",
+    "text": "Foot of the Jagged Peak"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1040",
+    "text": "Jagged Peak Mountainside"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1041",
+    "text": "Jagged Peak Summit"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1042",
+    "text": "Rest of the Dread Dragon"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1043",
+    "text": "Jagged Peak"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1044",
+    "text": "Ancient Ruins Base"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1045",
+    "text": "Temple Town Ruins"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1046",
+    "text": "Ravine North"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1047",
+    "text": "Scorpion River Catacombs"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1048",
+    "text": "Taylew's Ruined Forge"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1049",
+    "text": "Viaduct Minor Tower"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1050",
+    "text": "Rauh Ancient Ruins, East"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1051",
+    "text": "Rauh Ancient Ruins, West"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1052",
+    "text": "Ancient Ruins, Grand Stairway"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1053",
+    "text": "Church of the Bud, Main Entrance"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1054",
+    "text": "Church of the Bud"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1055",
+    "text": "Rauh Base"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1056",
+    "text": "Highroad Cross"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1057",
+    "text": "Scadu Altus, West"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1058",
+    "text": "Moorth Ruins"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1059",
+    "text": "Moorth Highway, South"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1060",
+    "text": "Fort of Reprimand"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1061",
+    "text": "Behind the Fort of Reprimand"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1062",
+    "text": "Scaduview Cross"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1063",
+    "text": "Bonny Village"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1064",
+    "text": "Bridge Leading to the Village"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1065",
+    "text": "Church District Highroad"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1066",
+    "text": "Cathedral of Manus Metyr"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1067",
+    "text": "Finger Birthing Grounds"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1068",
+    "text": "Castle Watering Hole"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1069",
+    "text": "Recluses' River Upstream"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1070",
+    "text": "Recluses' River Downstream"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1071",
+    "text": "Darklight Catacombs"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1072",
+    "text": "Bonny Gaol"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1073",
+    "text": "Ruined Forge of Starfall Past"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1074",
+    "text": "Shadow Keep Main Gate"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1075",
+    "text": "Main Gate Plaza"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1076",
+    "text": "Sunken Chapel"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1077",
+    "text": "Church District Entrance"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1078",
+    "text": "Storehouse, First Floor"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1079",
+    "text": "Storehouse, Fourth Floor"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1080",
+    "text": "Storehouse, Seventh Floor"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1081",
+    "text": "Storehouse, Back Section"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1082",
+    "text": "Specimen Storehouse"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1083",
+    "text": "Scaduview"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1084",
+    "text": "Shadow Keep"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1085",
+    "text": "Shadow Keep, Church District"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1086",
+    "text": "Abyssal Woods"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1087",
+    "text": "Forsaken Graveyard"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1088",
+    "text": "Woodland Trail"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1089",
+    "text": "Church Ruins"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1090",
+    "text": "Divided Fall"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1091",
+    "text": "Manse Hall"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1092",
+    "text": "Midra's Library"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1093",
+    "text": "Second Floor Chamber"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1094",
+    "text": "Discussion Chamber"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1095",
+    "text": "Midra's Manse"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1096",
+    "text": "Enir-Ilim: Outer Wall"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1097",
+    "text": "First Rise"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1098",
+    "text": "Spiral Rise"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1099",
+    "text": "Cleansing Chamber Anteroom"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1100",
+    "text": "Divine Gate Front Staircase"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1101",
+    "text": "Gate of Divinity"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1102",
+    "text": "Hinterland Bridge"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1103",
+    "text": "Fingerstone Hill"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1104",
+    "text": "Finger Ruins of Dheo"
+  },
+  {
+    "id": "/checklists/sitesof_grace.html#item_1105",
+    "text": "Village of Flies"
   },
   {
     "id": "/checklists/illusory_walls_invisible_paths.html#item_1_1",

@@ -114,6 +114,8 @@ for page in pages:
             if isinstance(item, str):
                 continue
             def f(item):
+                if 'id' not in item:
+                    return
                 if not isinstance(item['id'], str):
                     print("Please make item id " + str(item['id']) + ' a string by wrapping it in quotes. Found on page ' + page['id'] + ' in section "' + section['title'] + '"')
                     quit(1)
@@ -383,7 +385,7 @@ def make_footer(page=None):
     script(src="/js/jstorage.min.js")
     script(src='/js/progress.js')
     script(src='/js/item_links.js')
-    script(src='/js/common.js')
+    script(src='/js/common.js?v=1.1')
     script(src='/js/sync.js')
     script(src="/js/bootstrap.bundle.min.js")
     script(src="/js/jets.min.js")
@@ -678,7 +680,7 @@ def make_index():
                                             li(cls='tab-li').add(a(localized_span(guide[0]), href="/checklists/" + to_snake_case(guide[0]['en']) + '.html')).add(span(id=guide[1] + "_progress_total", cls='d-print-none'))
                                         hr()
             make_footer()
-            script(src="/js/index.js")
+            script(src="/js/index.js?v=1.1")
     with open(os.path.join('docs', 'index.html'), 'w', encoding='utf_8') as index:
         index.write(doc.render())
 
@@ -899,7 +901,7 @@ def make_checklist(page):
                             title_key = 'title_' + lang
                             if title_key in page:
                                 span(page[title_key], cls='lang-text lang-' + lang + ' d-none')
-                    span(id=page['id'] + "_overall_total", cls='d-print-none')
+                    span(id=page['id'] + "_overall_total", cls='badge rounded-pill bg-success progress-val d-print-none ms-2')
             
             hide_completed_button()
 
@@ -945,7 +947,7 @@ def make_checklist(page):
                     name_only_text = nav_static.get(10, {'en': 'Name Only'})
                     localized_span(name_only_text)
 
-            if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones'}:
+            if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones', 'graces'}:
                 with div(cls='row d-print-none mb-3'):
                     with div(cls='col-auto d-flex align-items-center gap-2'):
                         with label(_for='dlc_filter', cls='mb-0'):
@@ -1118,6 +1120,15 @@ def make_checklist(page):
                                         h5(raw(item))
                                         u = ul(cls="list-group-flush mb-0")
                                         continue
+                                    if isinstance(item, dict) and 'name' in item and 'id' not in item:
+                                        with h5(cls="lang-pair"):
+                                            span(raw(item['name']), cls='lang-text lang-en')
+                                            for lang in sorted(available_languages):
+                                                n_key = 'name_' + lang
+                                                if n_key in item:
+                                                    span(raw(item[n_key]), cls='lang-text lang-' + lang + ' d-none')
+                                        u = ul(cls="list-group-flush mb-0")
+                                        continue
                                     def f(item):
                                         id = str(item['id'])
                                         
@@ -1133,7 +1144,7 @@ def make_checklist(page):
                                             'id': 'item_' + id,
                                             'data_name_jets': d_name_jets.lower() if hasattr(d_name_jets, 'lower') else str(d_name_jets).lower(),
                                         }
-                                        if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones'}:
+                                        if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones', 'graces'}:
                                             is_dlc = item.get('dlc', section.get('dlc', page.get('dlc', False)))
                                             li_kwargs['data_dlc'] = str(bool(is_dlc)).lower()
                                         with li(**li_kwargs):
@@ -1171,8 +1182,9 @@ def make_checklist(page):
 
         a(cls="btn btn-primary btn-sm fadingbutton back-to-top d-print-none").add(raw("Back to Top&thinsp;"), span(cls="bi bi-arrow-up"))
         script(raw("window.current_page_id = \"{}\";\n".format(page['id'])))
+        script(raw(f"window.DONE_HTML = '{get_done_html()}';\n"))
         make_footer(page)
-        script(src="/js/checklists.js")
+        script(src="/js/checklists.js?v=1.1")
     with open(os.path.join('docs', 'checklists', to_snake_case(page['title']) + '.html'), 'w', encoding='utf_8') as index:
         index.write(doc.render())
 
@@ -1236,12 +1248,15 @@ def make_search():
                                     if isinstance(item, str):
                                         continue
                                     def f(item):
+                                        if 'id' not in item:
+                                            return
                                         with a(cls='d-none list-group-item list-group-item-action searchable', href='/checklists/' + to_snake_case(page['title']) + '.html#item_' + str(item['id']), id='/checklists/' + to_snake_case(page['title']) + '.html#item_' + str(item['id'])):
                                             with div(cls='d-flex align-items-center'):
                                                 if 'icon' in item:
                                                     add_icon(item['icon'], 'float-md-none float-end me-md-1')
                                                 raw(strip_a_tags(item['data'][0]))
-                                    f(item)
+                                    if isinstance(item, dict):
+                                        f(item)
                                     if isinstance(items.peek(0), list):
                                         item_id = str(item['id'])
                                         item = next(items)
@@ -1325,15 +1340,22 @@ def make_progress_js():
                 f.write('      [0, {}],\n'.format(section['num_ids']))
             f.write('    ],\n  },\n')
         f.write('};\n')
+def get_done_html():
+    done_en = nav_static.get(11, {'en': 'DONE'})['en']
+    html = f'<span class="lang-pair"><span class="lang-text lang-en">{done_en}</span>'
+    for lang in sorted(available_languages):
+        if lang == 'en': continue
+        done_text = nav_static.get(11, {'en': 'DONE'}).get(lang, done_en)
+        html += f'<span class="lang-text lang-{lang} d-none">{done_text}</span>'
+    html += '</span>'
+    return html
 
 def make_index_js():
     with open(os.path.join('docs', 'js', 'index.js'), 'w', encoding='utf_8') as f:
-        f.write(
-            """
-(function($) {
-    'use strict';
-    $(function() {
-        """)
+        f.write("(function($) {\n")
+        f.write("    'use strict';\n")
+        f.write(f"    window.DONE_HTML = '{get_done_html()}';\n")
+        f.write("    $(function() {\n")
         f.write('var all_ids = new Set([\n')
         all_ids_list = list(all_ids)
         all_ids_list.sort()
@@ -1351,12 +1373,17 @@ def make_index_js():
             f.write(page['id'] + '_checked += 1;\n}\n')
         f.write('}\n')
         f.write('}\n')
+        
+        done_html = get_done_html()
         for page in pages:
             f.write('if ({page_id}_checked >= {page_id}_total){{\n'.format(page_id=page['id']))
-            f.write('$("#{page_id}_progress_total").html("DONE");\n'.format(page_id=page['id']))
+            f.write(f'$("#{page["id"]}_progress_total").html(\'{done_html}\');\n')
+            f.write(f'$("#{page["id"]}_progress_total").removeClass("bg-info").addClass("bg-success");\n')
             f.write('} else {\n')
             f.write('$("#{page_id}_progress_total").html({page_id}_checked + "/" + {page_id}_total);\n'.format(page_id=page['id']))
+            f.write(f'$("#{page["id"]}_progress_total").removeClass("bg-success").addClass("bg-info");\n')
             f.write('}\n')
+        f.write('if (window.applyLanguageCss) { window.applyLanguageCss(window.currentLanguage); }\n')
         f.write('}\n')
         f.write('calculateProgress();\n')
         f.write('  });\n')
@@ -1371,11 +1398,14 @@ def make_search_index():
                 if isinstance(item, str):
                     continue
                 def f(item):
+                    if 'id' not in item:
+                        return
                     search_idx.append({
                         'id': '/checklists/{page_href}#item_{id}'.format(page_href=to_snake_case(page['title']) + '.html', id=item['id']),
                         'text': re.sub(r'(<([^>]+)>)', '', ' '.join(item['data'])),
                     })
-                f(item)
+                if isinstance(item, dict):
+                    f(item)
                 if isinstance(items.peek(0), list):
                     item = next(items)
                     for subitem in item:
@@ -1420,6 +1450,34 @@ def get_icon(page, section, item):
         print("Missing icon for {}".format(page['id'] + '_' + item['id']))
     return (icon, icon_size)
 
+def get_localized_map_title(item, available_languages):
+    en_title = item.get('map_title', strip_a_tags(item['data'][0]))
+    has_other_langs = False
+    for lang in sorted(available_languages):
+        if lang == 'en': continue
+        if f'map_title_{lang}' in item or f'data_{lang}' in item:
+            has_other_langs = True
+            break
+            
+    if not has_other_langs:
+        return en_title
+
+    html = f'<span class="lang-pair"><span class="lang-text lang-en">{en_title}</span>'
+    for lang in sorted(available_languages):
+        if lang == 'en': continue
+        
+        if f'map_title_{lang}' in item:
+            loc_title = item[f'map_title_{lang}']
+        elif f'data_{lang}' in item:
+            loc_title = strip_a_tags(item[f'data_{lang}'][0])
+        else:
+            loc_title = en_title
+            
+        html += f'<span class="lang-text lang-{lang} d-none">{loc_title}</span>'
+        
+    html += '</span>'
+    return html
+
 def make_feature(page, section, item):
     icon, icon_size = get_icon(page, section, item)
     return {
@@ -1430,7 +1488,7 @@ def make_feature(page, section, item):
             'coordinates': item['cords'],
         },
         'properties': {
-            'title': item['map_title'] if 'map_title' in item else item['data'][0],
+            'title': get_localized_map_title(item, available_languages),
             'id': page['id'] + '_' + item['id'],
             'group': page['id'],
             'icon': icon,
@@ -1547,9 +1605,11 @@ def make_map():
                     with div(cls='d-none', id='dev-mode-copy'):
                         a('map_link', type='button', cls='btn btn-primary btn-sm', id='dev-mode-copy-button')
         make_footer()
+        with script():
+            raw(f"window.DONE_HTML = '{get_done_html()}';")
         script(src='/map/src/js/ol.js')
         script(src='/map/src/js/features.js')
-        script(src='/map/src/js/map.js')
+        script(src='/map/src/js/map.js?v=1.1')
     with open(os.path.join('docs', 'map.html'), 'w', encoding='utf_8') as f:
         f.write(doc.render())
 

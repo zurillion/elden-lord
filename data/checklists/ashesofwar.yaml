@@ -7,6 +7,7 @@ sections:
     title: "Heavy"
     title_it: "Pesante"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "5_11"
         icon: "/img/icons/ashes_of_war/08305.png"
@@ -78,6 +79,7 @@ sections:
     title: "Keen"
     title_it: "Affilata"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "6_9"
         icon: "/img/icons/ashes_of_war/08303.png"
@@ -162,6 +164,7 @@ sections:
     title: "Quality"
     title_it: "Qualità"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "11_7"
         icon: "/img/icons/ashes_of_war/08314.png"
@@ -220,6 +223,7 @@ sections:
     title: "Magic"
     title_it: "Magica"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "8_5"
         icon: "/img/icons/ashes_of_war/08333.png"
@@ -262,6 +266,7 @@ sections:
     title: "Fire"
     title_it: "Fuoco"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "3_3"
         icon: "/img/icons/ashes_of_war/08342.png"
@@ -279,6 +284,7 @@ sections:
     title: "Flame"
     title_it: "Fiamma"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "4_2"
         icon: "/img/icons/ashes_of_war/08312.png"
@@ -302,6 +308,7 @@ sections:
     title: "Lightning"
     title_it: "Fulmine"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "7_3"
         icon: "/img/icons/ashes_of_war/08343.png"
@@ -324,6 +331,7 @@ sections:
     title: "Sacred"
     title_it: "Sacra"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "12_7"
         icon: "/img/icons/ashes_of_war/08331.png"
@@ -374,6 +382,7 @@ sections:
     title: "Poison"
     title_it: "Veleno"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "10_2"
         icon: "/img/icons/ashes_of_war/08354.png"
@@ -392,6 +401,7 @@ sections:
     title: "Blood"
     title_it: "Sangue"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "1_1"
         icon: "/img/icons/ashes_of_war/08350.png"
@@ -413,6 +423,7 @@ sections:
     title: "Cold"
     title_it: "Gelo"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "2_3"
         icon: "/img/icons/ashes_of_war/08332.png"
@@ -440,6 +451,7 @@ sections:
     title: "Occult"
     title_it: "Occulta"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "9_3"
         icon: "/img/icons/ashes_of_war/08352.png"
@@ -466,6 +478,7 @@ sections:
     title: "Standard"
     title_it: "Standard"
     table: ["Name", "Description", "Location"]
+    table_it: ["Nome", "Descrizione", "Luogo"]
     items:
       - id: "13_4"
         icon: "/img/icons/ashes_of_war/08382.png"
@@ -561,6 +574,7 @@ sections:
     title: "Misc."
     title_it: "Varie"
     table: ["Name", "Description"]
+    table_it: ["Nome", "Descrizione"]
     items:
       - id: "14_1"
         icon: "/img/icons/keys/03223.png"

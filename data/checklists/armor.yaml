@@ -11,6 +11,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '800'
     dlc: true
@@ -63,6 +66,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '805'
     dlc: true
@@ -106,6 +112,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '809'
     dlc: true
@@ -148,6 +157,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '810'
     dlc: true
@@ -164,6 +176,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '814'
     dlc: true
@@ -207,6 +222,15 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo 
+  table_it:
+  - Nome
+  - Luogo 
+  table_it:
+  - Nome
+  - Luogo  
   items:
   - id: '818'
     dlc: true
@@ -259,6 +283,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '823'
     dlc: true
@@ -311,6 +338,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '828'
     dlc: true
@@ -363,6 +393,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '833'
     dlc: true
@@ -406,6 +439,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '837'
     dlc: true
@@ -458,6 +494,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '842'
     dlc: true
@@ -501,6 +540,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '846'
     dlc: true
@@ -562,6 +604,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '852'
     dlc: true
@@ -614,6 +659,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '857'
     dlc: true
@@ -666,6 +714,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '862'
     dlc: true
@@ -718,6 +769,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '867'
     dlc: true
@@ -770,6 +824,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '872'
     dlc: true
@@ -813,6 +870,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '876'
     dlc: true
@@ -856,6 +916,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '880'
     dlc: true
@@ -907,6 +970,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '885'
     dlc: true
@@ -922,6 +988,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '886'
     dlc: true
@@ -937,6 +1006,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '887'
     dlc: true
@@ -953,6 +1025,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '888'
     dlc: true
@@ -1014,6 +1089,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '894'
     dlc: true
@@ -1057,6 +1135,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '898'
     dlc: true
@@ -1100,6 +1181,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '902'
     dlc: true
@@ -1152,6 +1236,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '907'
     dlc: true
@@ -1204,6 +1291,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '912'
     dlc: true
@@ -1247,6 +1337,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '916'
     dlc: true
@@ -1290,6 +1383,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '920'
     dlc: true
@@ -1315,6 +1411,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '922'
     dlc: true
@@ -1358,6 +1457,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '926'
     dlc: true
@@ -1401,6 +1503,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '930'
     dlc: true
@@ -1452,6 +1557,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '935'
     dlc: true
@@ -1461,13 +1569,16 @@ sections:
     - First, defeat Promised Consort Radahn / Radahn, Consort of Miquella in Enir-Ilim. After the battle, at the center of the boss arena, towards the golden orb. Select "Touch Memory" to trigger a cutscene. You'll obtain this item after the cutscene plays.
     data_it:
     - <a href="https://eldenring.wiki.fextralife.com/Circlet+of+Light">Cerchietto della Luce</a>
-    - Per prima cosa sconfiggi Radahn, Promesso Consorte / Radahn, Consorte di Miquella a Enir-Ilim. Dopo la battaglia, al centro dell'arena del boss, avvicinati alla sfera dorata. Seleziona "Tocca il ricordo" per attivare una scena d'intermezzo. Otterrai questo oggetto al termine della scena.
+    - Per prima cosa sconfiggi Radahn, Promesso Consorte / Radahn, Consorte di Miquella a Enir-Ilim. Dopo la battaglia, al centro dell'arena del boss, avvicinati alla sfera dorata. Seleziona "Tocca la rimembranza" per attivare una scena d'intermezzo. Otterrai questo oggetto al termine della scena.
 - title: Shadow Militiaman Set
   title_it: Set del Miliziano Ombra
   link: https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Set
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '936'
     dlc: true
@@ -1510,6 +1621,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '940'
     dlc: true
@@ -1525,6 +1639,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '941'
     dlc: true
@@ -1540,6 +1657,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '942'
     dlc: true
@@ -1555,6 +1675,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '943'
     dlc: true
@@ -1570,6 +1693,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '944'
     dlc: true
@@ -1586,6 +1712,9 @@ sections:
   table:
   - Name
   - Location
+  table_it:
+  - Nome
+  - Luogo
   items:
   - id: '0'
     icon: /img/icons/armor/14761.png

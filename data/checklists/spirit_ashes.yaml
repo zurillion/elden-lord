@@ -92,7 +92,7 @@ sections:
       - id: "3_6"
         icon: "/img/icons/spirit_ashes/00476.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Fanged+Imp+Ashes\">Fanged Imp Ashes</a>", "Can be selected as a Keepsake; otherwise, sold by the Isolated Merchant east of the Main Academy Gate site of grace."]
-        data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Fanged+Imp+Ashes\">Ceneri di folletto zannuto</a>", "Selezionabili come Ricordo; in alternativa, vendute dal Mercante solitario a est del luogo di grazia Cancello principale dell'Accademia."]
+        data_it: ["<a href=\"https://eldenring.wiki.fextralife.com/Fanged+Imp+Ashes\">Ceneri di folletto zannuto</a>", "Selezionabili come Rimembranza; in alternativa, vendute dal Mercante solitario a est del luogo di grazia Cancello principale dell'Accademia."]
       - id: "3_7"
         icon: "/img/icons/spirit_ashes/00483.png"
         data: ["<a href=\"https://eldenring.wiki.fextralife.com/Finger+Maiden+Therolina+Puppet\">Finger Maiden Therolina Puppet</a>", "Sold by Preceptor Seluvis's body in Seluvis's Rise after completing Ranni's questline."]
