@@ -300,7 +300,6 @@ sections:
         cords: [4434, 3542]
         map_title: "Perfume Bottle"
         map_title_it: "Boccetta di profumo"
-        map_title_it: "Boccetta di profumo"
       - id: "3_10"
         data: ["Through the large double doors in Leyndell leading to the path to the Forbidden Lands, all the way in the back without going up the stairs, on a body guarded by a Lesser Misbegotten"]
         data_it: ["Attraverso i grandi portoni doppi di Leyndell che portano alle Terre proibite, in fondo senza salire le scale, su un corpo sorvegliato da una Chimera minore."]
