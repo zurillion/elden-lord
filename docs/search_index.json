@@ -8260,6 +8260,94 @@
     "text": "Leyndell, Ashen Capital Legacy dungeon (major) Sir Gideon Ofnir, The All-KnowingGodfrey, First Elden Lord (Hoarah Loux)Radagon of the Golden Order / Elden Beast Required. Replaces Leyndell, Royal Capital."
   },
   {
+    "id": "/checklists/landmarks_locations.html#item_100_1",
+    "text": "Belurat, Tower Settlement Legacy dungeon (major) Divine Beast Dancing Lion "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_2",
+    "text": "Castle Ensis Legacy dungeon (minor) Rellana, Twin Moon Knight "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_3",
+    "text": "Shadow Keep Legacy dungeon (major) Golden HippopotamusMessmer the ImpalerCommander Gaius "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_5",
+    "text": "Enir-Ilim Legacy dungeon (major) Needle Knight Leda & AlliesPromised Consort Radahn Final dungeon of the DLC."
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_6",
+    "text": "Stone Coffin Fissure Legacy dungeon (minor) Putrescent Knight Found at the southernmost tip of the Cerulean Coast."
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_4",
+    "text": "Maniero di Midra Legacy dungeon (minor) Midra, Lord of Frenzied Flame Located in the Abyssal Woods."
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_7",
+    "text": "Fog Rift Catacombs Catacomb Death Knight "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_8",
+    "text": "Darklight Catacombs Catacomb Jori, Elder Inquisitor Leads to the Abyssal Woods."
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_9",
+    "text": "Scorpion River Catacombs Catacomb Death Knight "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_10",
+    "text": "Dragon's Pit Cave/Tunnel Ancient Dragon-Man "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_11",
+    "text": "Ruined Forge Intake Forge/Tunnel  "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_12",
+    "text": "Ruined Forge of Starfall Past Forge/Tunnel  "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_13",
+    "text": "Belurat Gaol Gaol Onze, Demi-Human Swordmaster "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_14",
+    "text": "Bonny Gaol Gaol Curseblade Labirith "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_15",
+    "text": "Cathedral of Manus Metyr Landmark (Church) Metyr, Mother of Fingers Related to Count Ymir's questline."
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_16",
+    "text": "Minor Erdtree Landmark  Located in the Gravesite Plain."
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_17",
+    "text": "Bonny Village Landmark (Village)  "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_18",
+    "text": "Church of the Bud Landmark (Church) Romina, Saint of the Bud "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_19",
+    "text": "Jagged Peak Landmark Ancient Dragon SenessaxBayle the Dread "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_20",
+    "text": "Ruined Forge Massal Forge/Tunnel  "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_21",
+    "text": "Ruined Forge of Taylew Forge/Tunnel  "
+  },
+  {
+    "id": "/checklists/landmarks_locations.html#item_100_22",
+    "text": "Rivermouth Cave Cave Chief Bloodfiend "
+  },
+  {
     "id": "/checklists/sitesof_grace.html#item_313",
     "text": "Table of Lost Grace"
   },
@@ -19189,139 +19277,139 @@
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s1",
-    "text": "2 keys: The entrance to Fringefolk Hero's Grave"
-  },
-  {
-    "id": "/checklists/stonesword_keys_imp_seals.html#item_s2",
-    "text": "1 key: A cellar in eastern Summonwater Village containing the Green Turtle Talisman"
-  },
-  {
-    "id": "/checklists/stonesword_keys_imp_seals.html#item_s3",
-    "text": "1 key: A small room down the stairs near Smithing Master Hewg containing Crepus's Black-Key Crossbow and another Imp Statue Seal"
-  },
-  {
-    "id": "/checklists/stonesword_keys_imp_seals.html#item_s4",
-    "text": "2 keys: A small room accessed via the previous, containing the Assassin's Prayerbook"
+    "text": "Fringefolk Hero's Grave (entrance) 2 Fringefolk Hero's Grave"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s5",
-    "text": "1 key: A small room in Tombsward Catacombs containing Nomadic Warrior's Cookbook [9]"
+    "text": "Summonwater Village (cellar) 1 Green Turtle Talisman"
+  },
+  {
+    "id": "/checklists/stonesword_keys_imp_seals.html#item_s2",
+    "text": "Downstairs (first seal) 1 Crepus's Black-Key Crossbow + 20 Black-Key Bolts"
+  },
+  {
+    "id": "/checklists/stonesword_keys_imp_seals.html#item_s3",
+    "text": "Downstairs (second seal) 2 Assassin's Prayerbook"
+  },
+  {
+    "id": "/checklists/stonesword_keys_imp_seals.html#item_s4",
+    "text": "Tombsward Catacombs 1 Lhulier the Finger Maiden (Spirit Ash)"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s6",
-    "text": "1 key: Unlocks Weeping Evergaol"
+    "text": "Weeping Evergaol 1 Ancient Dragon Apostle's Cookbook [1]"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s7",
-    "text": "1 key: A cellar down some stairs in the main courtyard opposite Liftside Chamber, on the other side of a room full of rats; contains the Godskin Prayerbook, the Godslayer's Seal, and a shortcut door"
+    "text": "Godskin Prayerbook (cellar) 1 Godskin Prayerbook, Godslayer's Seal"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s8",
-    "text": "1 key: A small room out the northwest of the main hall with the Grafted Scion, containing the Iron Whetblade, a Mis\u00e9ricorde, and a Hawk Crest Wooden Shield"
+    "text": "Stormveil Castle (near Grafted Scion) 1 Iron Whetblade, Mis\u00e9ricorde, Hawk Crest Wooden Shield"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s9",
-    "text": "1 key: A small room in Cliffbottom Catacombs containing the Nox Mirrorhelm"
+    "text": "Cliffbottom Catacombs 1 Nox Mirrorhelm"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s10",
-    "text": "2 keys: The entrance to Academy Crystal Cave"
+    "text": "Academy Crystal Cave (entrance) 2 Academy Crystal Cave"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s11",
-    "text": "1 key: A small room in Black Knife Catacombs containing Rosus' Axe"
+    "text": "Black Knife Catacombs 1 Rosus' Axe"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s12",
-    "text": "1 key: A cellar in Lunar Estate Ruins up by the Moonlight Altar accessed late in Ranni's questline. The Imp Statue appears to be by itself, with its seal located to its right underneath an illusory floor blocking a hidden basement. Contains the Cerulean Amber Medallion +2."
+    "text": "Lunar Estate Ruins 1 Cerulean Amber Medallion +2"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s13",
-    "text": "2 keys: The entrance to Gaol Cave"
+    "text": "Gaol Cave (entrance) 2 Gaol Cave"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s14",
-    "text": "1 key: A cellar in Forsaken Ruins containing the Sword of St. Trina"
+    "text": "Forsaken Ruins (cellar) 1 Sword of St. Trina"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s15",
-    "text": "1 key: Unlocks Golden Lineage Evergaol"
+    "text": "Golden Lineage Evergaol 1 Godfrey Icon"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s16",
-    "text": "2 keys: The entrance to Unsightly Catacombs"
+    "text": "Unsightly Catacombs (entrance) 2 Unsightly Catacombs"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s21",
-    "text": "1 key: A cellar near the top of Wyndham Ruins containing the Pearldrake Talisman +1"
+    "text": "Wyndham Ruins (cellar) 1 Pearldrake Talisman +1"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s17",
-    "text": "1 key: A small room in Sainted Hero's Grave containing the Crimson Seed Talisman"
+    "text": "Sainted Hero's Grave (room 1) 1 Crimson Seed Talisman"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s18",
-    "text": "1 key: A small room much farther into Sainted Hero's Grave containing a Ghost Glovewort [5] and the Dragoncrest Shield Talisman +1"
+    "text": "Sainted Hero's Grave (room 2) 1 Ghost Glovewort [5], Dragoncrest Shield Talisman +1"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s19",
-    "text": "2 keys: The entrance to Old Altus Tunnel"
+    "text": "Old Altus Tunnel (entrance) 2 Old Altus Tunnel"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s20",
-    "text": "2 keys: The entrance to Seethewater Cave"
+    "text": "Seethewater Cave (entrance) 2 Seethewater Cave"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s22",
-    "text": "1 key: A small room in Wyndham Catacombs containing the Lightning Scorpion Charm"
+    "text": "Wyndham Catacombs 1 Lightning Scorpion Charm"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s23",
-    "text": "1 key: A building along the main path from Prison Town Church with an Abductor Virgin and a spiral staircase to the Crimson Amber Medallion +1"
+    "text": "Volcano Manor (cellar) 1 Crimson Amber Medallion +1"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s24",
-    "text": "2 keys: In the grand hall with an eastern upstairs exit to a balcony with the teleporter to Audience Chamber, climb the west-facing stairs instead; a cavernous room with hanging cages that leads to the Dagger Talisman, a Seedbed Curse, a Somber Smithing Stone [7], and eventually a shortcut door"
+    "text": "Volcano Manor (hall) 2 Dagger Talisman, Seedbed Curse, Somber Smithing Stone [7]"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s25",
-    "text": "1 key: A small room in Auriza Hero's Grave containing the Golden Epitaph"
+    "text": "Auriza Hero's Grave 1 Golden Epitaph"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s26",
-    "text": "2 keys: The entrance to Spiritcaller Cave"
+    "text": "Spiritcaller Cave (entrance) 2 Spiritcaller Cave"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s27",
-    "text": "1 key: A small room in Giant-Conquering Hero's Grave containing Flame, Protect Me"
+    "text": "Giant-Conquering Hero's Grave 1 Flame, Protect Me"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s28",
-    "text": "2 keys: The entrance to Cave of the Forlorn"
+    "text": "Cave of the Forlorn (entrance) 2 Cave of the Forlorn"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s29",
-    "text": "1 key: Drop down twice immediately after the Prayer Room grace; a small room containing Triple Rings of Light"
+    "text": "Prayer Room (upper) 1 Triple Rings of Light"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s30",
-    "text": "1 key: Visible below from the previous, but must be climbed down to further on, e.g. via the pillars; a small room containing the Marika's Soreseal"
+    "text": "Prayer Room (lower) 1 Marika's Soreseal"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s31",
-    "text": "2 keys: Unlocks the Dragon Temple Lift"
+    "text": "Dragon Temple Lift (entrance) 2 Dragon Temple Lift"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s32",
-    "text": "2 keys: The elevator up to Deep Siofra Well"
+    "text": "Deep Siofra Well (elevator) 2 Deep Siofra Well"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s33",
-    "text": "1 key: A room down a small hall in the massive cathedral with a large ball in Night's Sacred Ground, upstairs near the altar with the Black Whetblade; contains the Mimic Tear Ashes"
+    "text": "Night's Sacred Ground 1 Mimic Tear Ashes"
   },
   {
     "id": "/checklists/stonesword_keys_imp_seals.html#item_s34",
-    "text": "1 key: A room along the path to the top, tucked around the far side of a building before the bridge leading to a large ball on a stairway; contains two Nox Monks guarding the Nightmaiden & Swordstress Puppets"
+    "text": "Nokstella, Eternal City 1 Nightmaiden & Swordstress Puppets"
   },
   {
     "id": "/checklists/dragon_hearts_deathroots.html#item_0_1",

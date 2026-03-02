@@ -1184,6 +1184,28 @@ var all_ids = new Set([
 "caves_0_3",
 "caves_0_4",
 "caves_0_5",
+"caves_100_1",
+"caves_100_10",
+"caves_100_11",
+"caves_100_12",
+"caves_100_13",
+"caves_100_14",
+"caves_100_15",
+"caves_100_16",
+"caves_100_17",
+"caves_100_18",
+"caves_100_19",
+"caves_100_2",
+"caves_100_20",
+"caves_100_21",
+"caves_100_22",
+"caves_100_3",
+"caves_100_4",
+"caves_100_5",
+"caves_100_6",
+"caves_100_7",
+"caves_100_8",
+"caves_100_9",
 "caves_1_1",
 "caves_1_10",
 "caves_1_2",
@@ -5080,7 +5102,7 @@ const legendaries_total = 32;
 var legendaries_checked = 0;
 const bosses_total = 262;
 var bosses_checked = 0;
-const caves_total = 205;
+const caves_total = 227;
 var caves_checked = 0;
 const graces_total = 419;
 var graces_checked = 0;

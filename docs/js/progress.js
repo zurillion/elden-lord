@@ -184,7 +184,7 @@ window.progress = {
     ],
   },
   "caves": {
-    "total": [0, 205],
+    "total": [0, 227],
     "sections": [
       [0, 29],
       [0, 20],
@@ -197,6 +197,7 @@ window.progress = {
       [0, 11],
       [0, 1],
       [0, 1],
+      [0, 22],
     ],
   },
   "graces": {

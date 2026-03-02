@@ -3307,4 +3307,304 @@ sections:
   - Tipologia
   - Boss
   - Note
+- title: Realm of Shadow
+  title_it: Regno dell'Ombra
+  dlc: true
+  table:
+  - Name
+  - Type
+  - Bosses
+  - Notes
+  table_it:
+  - Nome
+  - Tipologia
+  - Boss
+  - Note
+  items:
+  - id: '100_1'
+    data:
+    - Belurat, Tower Settlement
+    - Legacy dungeon (major)
+    - Divine Beast Dancing Lion
+    - ''
+    icon: /map/icons/MENU_MAP_50.png
+    dlc: true
+    data_it:
+    - Belurat, insediamento della torre
+    - Legacy dungeon (maggiore)
+    - Leone danzante Belva Divina
+    - ''
+  - id: '100_2'
+    data:
+    - Castle Ensis
+    - Legacy dungeon (minor)
+    - Rellana, Twin Moon Knight
+    - ''
+    icon: /map/icons/MENU_MAP_25.png
+    dlc: true
+    data_it:
+    - Castello di Ensis
+    - Legacy dungeon (minore)
+    - Rellana, Cavaliera della Luna Gemella
+    - ''
+  - id: '100_3'
+    data:
+    - Shadow Keep
+    - Legacy dungeon (major)
+    - Golden Hippopotamus<br>Messmer the Impaler<br>Commander Gaius
+    - ''
+    icon: /map/icons/MENU_MAP_50.png
+    dlc: true
+    data_it:
+    - Rocca delle Ombre
+    - Legacy dungeon (maggiore)
+    - Ippopotamo d'oro<br>Messmer l'Impalatore<br>Comandante Gaius
+    - ''
+  - id: '100_5'
+    data:
+    - Enir-Ilim
+    - Legacy dungeon (major)
+    - Needle Knight Leda & Allies<br>Promised Consort Radahn
+    - Final dungeon of the DLC.
+    icon: /map/icons/MENU_MAP_50.png
+    dlc: true
+    data_it:
+    - Enir-Ilim
+    - Legacy dungeon (maggiore)
+    - Cavaliere Agugliato Leda e alleati<br>Radahn, Consorte di Miquella
+    - Dungeon finale del DLC.
+  - id: '100_6'
+    data:
+    - Stone Coffin Fissure
+    - Legacy dungeon (minor)
+    - Putrescent Knight
+    - Found at the southernmost tip of the Cerulean Coast.
+    icon: /map/icons/edited/MENU_MAP_13.png
+    dlc: true
+    data_it:
+    - Fenditura dei sarcofagi di pietra
+    - Legacy dungeon (minore)
+    - Cavaliere Putrescente
+    - Si trova all'estremità meridionale della Costa azzurra.
+  - id: '100_4'
+    data:
+    - Maniero di Midra
+    - Legacy dungeon (minor)
+    - Midra, Lord of Frenzied Flame
+    - Located in the Abyssal Woods.
+    icon: /map/icons/MENU_MAP_25.png
+    dlc: true
+    data_it:
+    - Maniero di Midra
+    - Legacy dungeon (minore)
+    - Midra, Signore della Fiamma Frenetica
+    - Situato nell'Abisso.
+  - id: '100_7'
+    data:
+    - Fog Rift Catacombs
+    - Catacomb
+    - Death Knight
+    - ''
+    icon: /map/icons/edited/MENU_MAP_04.png
+    dlc: true
+    data_it:
+    - Catacombe della faglia di nebbia
+    - Catacomba
+    - Cavaliere della morte
+    - ''
+  - id: '100_8'
+    data:
+    - Darklight Catacombs
+    - Catacomb
+    - Jori, Elder Inquisitor
+    - Leads to the Abyssal Woods.
+    icon: /map/icons/edited/MENU_MAP_04.png
+    dlc: true
+    data_it:
+    - Catacombe della luce oscura
+    - Catacomba
+    - Jori, inquisitore anziano
+    - Conduce all'Abisso.
+  - id: '100_9'
+    data:
+    - Scorpion River Catacombs
+    - Catacomb
+    - Death Knight
+    - ''
+    icon: /map/icons/edited/MENU_MAP_04.png
+    dlc: true
+    data_it:
+    - Catacombe del Fiume dello Scorpione
+    - Catacomba
+    - Cavaliere della morte
+    - ''
+  - id: '100_10'
+    data:
+    - Dragon's Pit
+    - Cave/Tunnel
+    - Ancient Dragon-Man
+    - ''
+    icon: /map/icons/edited/MENU_MAP_13.png
+    dlc: true
+    data_it:
+    - Fossa del drago
+    - Grotta/Galleria
+    - Uomo-drago antico
+    - ''
+  - id: '100_11'
+    data:
+    - Ruined Forge Intake
+    - Forge/Tunnel
+    - ''
+    - ''
+    icon: /map/icons/MENU_MAP_14.png
+    dlc: true
+    data_it:
+    - Punto d'ingresso della fucina in rovina
+    - Fucina/Galleria
+    - ''
+    - ''
+  - id: '100_12'
+    data:
+    - Ruined Forge of Starfall Past
+    - Forge/Tunnel
+    - ''
+    - ''
+    icon: /map/icons/MENU_MAP_14.png
+    dlc: true
+    data_it:
+    - Fucina in rovina di Starfall Past
+    - Fucina/Galleria
+    - ''
+    - ''
+  - id: '100_13'
+    data:
+    - Belurat Gaol
+    - Gaol
+    - Onze, Demi-Human Swordmaster
+    - ''
+    icon: /map/icons/edited/MENU_MAP_09.png
+    dlc: true
+    data_it:
+    - Galera di Belurat
+    - Galera
+    - Onze, spadaccino semiumano
+    - ''
+  - id: '100_14'
+    data:
+    - Bonny Gaol
+    - Gaol
+    - Curseblade Labirith
+    - ''
+    icon: /map/icons/edited/MENU_MAP_09.png
+    dlc: true
+    data_it:
+    - Galera di Bonny
+    - Galera
+    - Labirith, lama della maledizione
+    - ''
+  - id: '100_15'
+    data:
+    - Cathedral of Manus Metyr
+    - Landmark (Church)
+    - Metyr, Mother of Fingers
+    - Related to Count Ymir's questline.
+    icon: /map/icons/MENU_MAP_Church.png
+    dlc: true
+    data_it:
+    - Cattedrale di Manus Metyr
+    - Luogo d'interesse (Chiesa)
+    - Metyr, Madre delle Dita
+    - Legata alla missione del Conte Ymir.
+  - id: '100_16'
+    data:
+    - Minor Erdtree
+    - Landmark
+    - ''
+    - Located in the Gravesite Plain.
+    icon: /map/icons/MENU_MAP_30.png
+    dlc: true
+    data_it:
+    - Albero Madre minore
+    - Luogo d'interesse
+    - ''
+    - Situato nella Pianura delle Tombe.
+  - id: '100_17'
+    data:
+    - Bonny Village
+    - Landmark (Village)
+    - ''
+    - ''
+    icon: /map/icons/MENU_MAP_37.png
+    dlc: true
+    data_it:
+    - Villaggio di Bonny
+    - Luogo d'interesse (Villaggio)
+    - ''
+    - ''
+  - id: '100_18'
+    data:
+    - Church of the Bud
+    - Landmark (Church)
+    - Romina, Saint of the Bud
+    - ''
+    icon: /map/icons/MENU_MAP_Church.png
+    dlc: true
+    data_it:
+    - Chiesa del Germoglio
+    - Luogo d'interesse (Chiesa)
+    - Romina, Santa del Germoglio
+    - ''
+  - id: '100_19'
+    data:
+    - Jagged Peak
+    - Landmark
+    - Ancient Dragon Senessax<br>Bayle the Dread
+    - ''
+    icon: /map/icons/MENU_MAP_21.png
+    dlc: true
+    data_it:
+    - Picco Frastagliato
+    - Luogo d'interesse
+    - Drago Antico Senessax<br>Bayle il Terribile
+    - ''
+  - id: '100_20'
+    data:
+    - Ruined Forge Massal
+    - Forge/Tunnel
+    - ''
+    - ''
+    icon: /map/icons/MENU_MAP_14.png
+    dlc: true
+    data_it:
+    - Fucina in rovina di Massal
+    - Fucina/Galleria
+    - ''
+    - ''
+  - id: '100_21'
+    data:
+    - Ruined Forge of Taylew
+    - Forge/Tunnel
+    - ''
+    - ''
+    icon: /map/icons/MENU_MAP_14.png
+    dlc: true
+    data_it:
+    - Fucina in rovina di Taylew
+    - Fucina/Galleria
+    - ''
+    - ''
+  - id: '100_22'
+    data:
+    - Rivermouth Cave
+    - Cave
+    - Chief Bloodfiend
+    - ''
+    icon: /map/icons/edited/MENU_MAP_13.png
+    dlc: true
+    data_it:
+    - Grotta dell'imboccatura del fiume
+    - Grotta
+    - Capo dei vili sanguinari
+    - ''
 title_it: Luoghi d'interesse

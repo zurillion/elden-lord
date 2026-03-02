@@ -947,7 +947,7 @@ def make_checklist(page):
                     name_only_text = nav_static.get(10, {'en': 'Name Only'})
                     localized_span(name_only_text)
 
-            if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones', 'graces'}:
+            if page['id'] in {'weapons', 'armor', 'incantations', 'ashesofwar', 'cookbooks', 'talismans', 'sorceries', 'spirit_ashes', 'bosses', 'crystal_tears', 'bell_bearings', 'ancient_dragon_smithing_stones', 'graces', 'caves'}:
                 with div(cls='row d-print-none mb-3'):
                     with div(cls='col-auto d-flex align-items-center gap-2'):
                         with label(_for='dlc_filter', cls='mb-0'):
@@ -1026,6 +1026,10 @@ def make_checklist(page):
                                                                     if t_key in section and len(section[t_key]) > idx:
                                                                         span(section[t_key][idx], cls='lang-text lang-' + lang + ' d-none')
                                     for item in items:
+                                        if isinstance(item, str):
+                                            with li(cls="list-group-item bg-light"):
+                                                h5(item, cls="mb-0")
+                                            continue
                                         id = str(item['id'])
                                         
                                         d_name_jets = strip_a_tags(item['data'][0])
@@ -1217,9 +1221,9 @@ def make_search():
                                     size = floor(12 / table_cols)
                                 table_widths = section['table_widths'] if 'table_widths' in section else page['table_widths']
                                 for item in items:
+                                    if isinstance(item, str):
+                                        continue
                                     with a(cls='d-none list-group-item list-group-item-action searchable', href='/checklists/' + to_snake_case(page['title']) + '.html#item_' + str(item['id']), id='/checklists/' + to_snake_case(page['title']) + '.html#item_' + str(item['id'])):
-                                        if isinstance(item,str):
-                                            continue
                                         with div(cls='row d-md-flex d-none'):
                                             for pos in range(table_cols):
                                                 col_size = str(table_widths[pos])
