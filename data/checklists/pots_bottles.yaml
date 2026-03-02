@@ -5,7 +5,7 @@ icon: "/img/icons/keys/edited/00504.png"
 sections:
   -
     title: "Hefty Cracked Pots"
-    title_it: "Vaso incrinato grande"
+    title_it: "Vasi incrinati grandi"
     icon: "/img/icons/keys/edited/03800.png"
     items:
       - id: "4_1"
@@ -41,7 +41,7 @@ sections:
         data_it: ["Prigione del Lamentatore: Su un corpo nell'angolo sud-ovest dell'area con i resti accumulati."]
   -
     title: "Cracked Pots"
-    title_it: "Vaso incrinato"
+    title_it: "Vasi incrinati"
     icon: "/img/icons/keys/edited/00504.png"
     map_icon: "/map/icons/shadows/keys/00504.png"
     items:
@@ -166,7 +166,7 @@ sections:
         map_title_it: "Vaso incrinato"
   -
     title: "Ritual Pots"
-    title_it: "Vaso rituale"
+    title_it: "Vasi rituali"
     icon: "/img/icons/keys/edited/03010.png"
     map_icon: "/map/icons/shadows/keys/03010.png"
     items:
@@ -237,7 +237,7 @@ sections:
         map_title_it: "Vaso rituale"
   -
     title: "Perfume Bottles"
-    title_it: "Boccetta di profumo"
+    title_it: "Boccette di profumo"
     icon: "/img/icons/keys/edited/00443.png"
     map_icon: "/map/icons/shadows/keys/00443.png"
     items:
