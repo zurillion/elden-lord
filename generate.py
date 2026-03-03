@@ -131,7 +131,7 @@ for page in pages:
 
 def detect_languages():
     """Scan all pages to find non-English language codes present in YAML data."""
-    lang_pattern = re.compile(r'^(title|data)_([a-z]{2,3})$')
+    lang_pattern = re.compile(r'^(title|data|name)_([a-z]{2,3})$')
     langs = set()
     for page in pages:
         for key in page:
