@@ -20220,7 +20220,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "tools_1_2",
           "link": "/checklists/tools_multiplayer.html#item_1_2",
-          "title": "Telescope"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Telescope</span><span class=\"lang-text lang-it d-none\">Telescopio</span></span>"
         },
         "type": "Feature"
       },
@@ -20239,7 +20239,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "tools_1_7",
           "link": "/checklists/tools_multiplayer.html#item_1_7",
-          "title": "Flask of Wondrous Physick"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Flask of Wondrous Physick</span><span class=\"lang-text lang-it d-none\">Ampolla di balsamo portentoso</span></span>"
         },
         "type": "Feature"
       },
@@ -20258,7 +20258,7 @@ const feature_data = [
           "icon_size": 25,
           "id": "tools_1_4",
           "link": "/checklists/tools_multiplayer.html#item_1_4",
-          "title": "Mimic's Veil"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Mimic's Veil</span><span class=\"lang-text lang-it d-none\">Velo mimetico</span></span>"
         },
         "type": "Feature"
       },
@@ -20277,7 +20277,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "tools_1_5",
           "link": "/checklists/tools_multiplayer.html#item_1_5",
-          "title": "Lantern"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Lantern</span><span class=\"lang-text lang-it d-none\">Lanterna</span></span>"
         },
         "type": "Feature"
       },
@@ -20296,7 +20296,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "tools_1_6",
           "link": "/checklists/tools_multiplayer.html#item_1_6",
-          "title": "Pureblood Knight's Medal"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Pureblood Knight's Medal</span><span class=\"lang-text lang-it d-none\">Medaglia del cavaliere purosangue</span></span>"
         },
         "type": "Feature"
       }
@@ -20321,7 +20321,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_1_1",
           "link": "/checklists/gestures.html#item_1_1",
-          "title": "Strength!"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Strength!</span><span class=\"lang-text lang-it d-none\">Forza!</span></span>"
         },
         "type": "Feature"
       },
@@ -20340,7 +20340,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_1_3",
           "link": "/checklists/gestures.html#item_1_3",
-          "title": "Nod in Thought"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Nod in Thought</span><span class=\"lang-text lang-it d-none\">Cenno d'assenso</span></span>"
         },
         "type": "Feature"
       },
@@ -20359,7 +20359,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_1_4",
           "link": "/checklists/gestures.html#item_1_4",
-          "title": "Grovel for Mercy"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Grovel for Mercy</span><span class=\"lang-text lang-it d-none\">Implora piet\u00e0</span></span>"
         },
         "type": "Feature"
       },
@@ -20378,7 +20378,7 @@ const feature_data = [
           "icon_size": 30,
           "id": "gestures_1_5",
           "link": "/checklists/gestures.html#item_1_5",
-          "title": "Extreme Repentance"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Extreme Repentance</span><span class=\"lang-text lang-it d-none\">Pentimento profondo</span></span>"
         },
         "type": "Feature"
       },
@@ -20397,7 +20397,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_1_6",
           "link": "/checklists/gestures.html#item_1_6",
-          "title": "Calm Down!"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Calm Down!</span><span class=\"lang-text lang-it d-none\">Calma!</span></span>"
         },
         "type": "Feature"
       },
@@ -20416,7 +20416,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_1_7",
           "link": "/checklists/gestures.html#item_1_7",
-          "title": "Finger Snap"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Finger Snap</span><span class=\"lang-text lang-it d-none\">Schiocco di dita</span></span>"
         },
         "type": "Feature"
       },
@@ -20435,7 +20435,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_1_8",
           "link": "/checklists/gestures.html#item_1_8",
-          "title": "Triumphant Delight"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Triumphant Delight</span><span class=\"lang-text lang-it d-none\">Gioia trionfale</span></span>"
         },
         "type": "Feature"
       },
@@ -20454,7 +20454,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_1_9",
           "link": "/checklists/gestures.html#item_1_9",
-          "title": "Crossed Legs"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Crossed Legs</span><span class=\"lang-text lang-it d-none\">Gambe incrociate</span></span>"
         },
         "type": "Feature"
       },
@@ -20473,7 +20473,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_1_10",
           "link": "/checklists/gestures.html#item_1_10",
-          "title": "Sitting Sideways"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Sitting Sideways</span><span class=\"lang-text lang-it d-none\">Seduta di lato</span></span>"
         },
         "type": "Feature"
       },
@@ -20492,7 +20492,7 @@ const feature_data = [
           "icon_size": 30,
           "id": "gestures_1_11",
           "link": "/checklists/gestures.html#item_1_11",
-          "title": "Dozing Cross-Legged"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Dozing Cross-Legged</span><span class=\"lang-text lang-it d-none\">Sonnellino a gambe incrociate</span></span>"
         },
         "type": "Feature"
       },
@@ -20511,7 +20511,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_1_12",
           "link": "/checklists/gestures.html#item_1_12",
-          "title": "Bravo!"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Bravo!</span><span class=\"lang-text lang-it d-none\">Bravo!</span></span>"
         },
         "type": "Feature"
       },
@@ -20530,7 +20530,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_1_13",
           "link": "/checklists/gestures.html#item_1_13",
-          "title": "Patches' Crouch"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Patches' Crouch</span><span class=\"lang-text lang-it d-none\">Posizione accovacciata di Patches</span></span>"
         },
         "type": "Feature"
       },
@@ -20549,7 +20549,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_2_1",
           "link": "/checklists/gestures.html#item_2_1",
-          "title": "Prayer"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Prayer</span><span class=\"lang-text lang-it d-none\">Preghiera</span></span>"
         },
         "type": "Feature"
       },
@@ -20568,7 +20568,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_2_2",
           "link": "/checklists/gestures.html#item_2_2",
-          "title": "What Do You Want?"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">What Do You Want?</span><span class=\"lang-text lang-it d-none\">Cosa vuoi?</span></span>"
         },
         "type": "Feature"
       },
@@ -20587,7 +20587,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_2_3",
           "link": "/checklists/gestures.html#item_2_3",
-          "title": "Reverential Bow"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Reverential Bow</span><span class=\"lang-text lang-it d-none\">Inchino devoto</span></span>"
         },
         "type": "Feature"
       },
@@ -20606,7 +20606,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_2_4",
           "link": "/checklists/gestures.html#item_2_4",
-          "title": "Curtsy"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Curtsy</span><span class=\"lang-text lang-it d-none\">Riverenza</span></span>"
         },
         "type": "Feature"
       },
@@ -20625,7 +20625,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_2_5",
           "link": "/checklists/gestures.html#item_2_5",
-          "title": "Rapture"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Rapture</span><span class=\"lang-text lang-it d-none\">Estasi</span></span>"
         },
         "type": "Feature"
       },
@@ -20644,7 +20644,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_3_1",
           "link": "/checklists/gestures.html#item_3_1",
-          "title": "As You Wish"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">As You Wish</span><span class=\"lang-text lang-it d-none\">Come desideri</span></span>"
         },
         "type": "Feature"
       },
@@ -20663,7 +20663,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_3_2",
           "link": "/checklists/gestures.html#item_3_2",
-          "title": "Fire Spur Me"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Fire Spur Me</span><span class=\"lang-text lang-it d-none\">Fuoco, dammi forza</span></span>"
         },
         "type": "Feature"
       },
@@ -20682,7 +20682,7 @@ const feature_data = [
           "icon_size": 25,
           "id": "gestures_3_3",
           "link": "/checklists/gestures.html#item_3_3",
-          "title": "Spread Out"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Spread Out</span><span class=\"lang-text lang-it d-none\">Rilassatezza</span></span>"
         },
         "type": "Feature"
       },
@@ -20701,7 +20701,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_3_4",
           "link": "/checklists/gestures.html#item_3_4",
-          "title": "Erudition"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Erudition</span><span class=\"lang-text lang-it d-none\">Erudizione</span></span>"
         },
         "type": "Feature"
       },
@@ -20720,7 +20720,7 @@ const feature_data = [
           "icon_size": 25,
           "id": "gestures_3_5",
           "link": "/checklists/gestures.html#item_3_5",
-          "title": "Balled Up"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Balled Up</span><span class=\"lang-text lang-it d-none\">Raggomitolamento</span></span>"
         },
         "type": "Feature"
       },
@@ -20739,7 +20739,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_3_6",
           "link": "/checklists/gestures.html#item_3_6",
-          "title": "Casual Greeting (option 1)"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Casual Greeting (option 1)</span><span class=\"lang-text lang-it d-none\">Saluto informale</span></span>"
         },
         "type": "Feature"
       },
@@ -20758,7 +20758,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_4_1",
           "link": "/checklists/gestures.html#item_4_1",
-          "title": "Desperate Prayer"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Desperate Prayer</span><span class=\"lang-text lang-it d-none\">Preghiera disperata</span></span>"
         },
         "type": "Feature"
       },
@@ -20777,7 +20777,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_4_2",
           "link": "/checklists/gestures.html#item_4_2",
-          "title": "Heartening Cry"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Heartening Cry</span><span class=\"lang-text lang-it d-none\">Incoraggiamento</span></span>"
         },
         "type": "Feature"
       },
@@ -20796,7 +20796,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_4_3",
           "link": "/checklists/gestures.html#item_4_3",
-          "title": "Polite Bow"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Polite Bow</span><span class=\"lang-text lang-it d-none\">Inchino garbato</span></span>"
         },
         "type": "Feature"
       },
@@ -20815,7 +20815,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_4_4",
           "link": "/checklists/gestures.html#item_4_4",
-          "title": "Casual Greeting (option 2)"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Casual Greeting (option 2)</span><span class=\"lang-text lang-it d-none\">Saluto informale</span></span>"
         },
         "type": "Feature"
       },
@@ -20834,7 +20834,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_5_1",
           "link": "/checklists/gestures.html#item_5_1",
-          "title": "My Thanks"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">My Thanks</span><span class=\"lang-text lang-it d-none\">I miei ringraziamenti</span></span>"
         },
         "type": "Feature"
       },
@@ -20853,7 +20853,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_6_1",
           "link": "/checklists/gestures.html#item_6_1",
-          "title": "Outer Order"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Outer Order</span><span class=\"lang-text lang-it d-none\">Ordine esterno</span></span>"
         },
         "type": "Feature"
       },
@@ -20872,7 +20872,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_6_2",
           "link": "/checklists/gestures.html#item_6_2",
-          "title": "By My Sword"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">By My Sword</span><span class=\"lang-text lang-it d-none\">Sulla mia spada</span></span>"
         },
         "type": "Feature"
       },
@@ -20891,7 +20891,7 @@ const feature_data = [
           "icon_size": 35,
           "id": "gestures_6_3",
           "link": "/checklists/gestures.html#item_6_3",
-          "title": "My Lord"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">My Lord</span><span class=\"lang-text lang-it d-none\">Mio lord</span></span>"
         },
         "type": "Feature"
       },
@@ -20910,7 +20910,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_6_4",
           "link": "/checklists/gestures.html#item_6_4",
-          "title": "Golden Order Totality"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Golden Order Totality</span><span class=\"lang-text lang-it d-none\">Totalit\u00e0 dell'Ordine Aureo</span></span>"
         },
         "type": "Feature"
       },
@@ -20929,7 +20929,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_7_1",
           "link": "/checklists/gestures.html#item_7_1",
-          "title": "Fancy Spin"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Fancy Spin</span><span class=\"lang-text lang-it d-none\">Giro artistico</span></span>"
         },
         "type": "Feature"
       },
@@ -20948,7 +20948,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_7_2",
           "link": "/checklists/gestures.html#item_7_2",
-          "title": "Hoslow's Oath"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Hoslow's Oath</span><span class=\"lang-text lang-it d-none\">Giuramento di Hoslow</span></span>"
         },
         "type": "Feature"
       },
@@ -20967,7 +20967,7 @@ const feature_data = [
           "icon_size": 40,
           "id": "gestures_8_1",
           "link": "/checklists/gestures.html#item_8_1",
-          "title": "Inner Order"
+          "title": "<span class=\"lang-pair\"><span class=\"lang-text lang-en\">Inner Order</span><span class=\"lang-text lang-it d-none\">Ordine interno</span></span>"
         },
         "type": "Feature"
       }
