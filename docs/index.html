@@ -70,6 +70,25 @@
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
     document.write('<style id="language-fouc-fix">.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; } .d-none-regex { display: none !important; }</style>');
+    
+    // Localize placeholders
+    window.addEventListener('DOMContentLoaded', function() {
+        var updatePlaceholders = function(l) {
+            document.querySelectorAll('input[placeholder]').forEach(function(input) {
+                var localized = input.getAttribute('data-placeholder-' + l);
+                if (localized) {
+                    input.placeholder = localized;
+                } else if (l === 'en') {
+                    // Restore original if available? For now just handle it or it stays as is
+                }
+            });
+        };
+        updatePlaceholders(lang);
+        
+        window.addEventListener('languageChanged', function(e) {
+            updatePlaceholders(e.detail.lang);
+        });
+    });
 })();
 </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -103,7 +122,7 @@
           </li>
         </ul>
         <form action="/search.html" class="d-none d-sm-flex order-2 order-xl-3" method="get">
-          <input aria-label="search" class="form-control me-2" name="search" placeholder="Search" type="search">
+          <input aria-label="search" class="form-control me-2" data-placeholder-it="Cerca" name="search" placeholder="Search" type="search">
           <button class="btn" formaction="/search.html" formmethod="get" formnovalidate="true" type="submit"><i class="bi bi-search"></i></button>
         </form>
         <div class="d-sm-none order-2">
@@ -471,7 +490,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1 class="mt-4">Roundtable Guides</h1>
+          <h1 class="mt-4">
+            <span class="lang-pair">
+              <span class="lang-text lang-en">Roundtable Guides</span>
+              <span class="lang-text lang-it">Guide della Tavola Rotonda</span>
+            </span>
+          </h1>
         </div>
         <div class="row gy-3">
           <div class="col-md-8 col-12">
@@ -479,15 +503,30 @@
               <div class="col">
                 <div class="card shadow h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Welcome to Roundtable Guides</h5>
-                    <p class="card-text">Guides, Walkthroughs, and Progress Tracking for Elden Ring. Written and maintained by the players. This site is still a work in-progress. We are working on it every day.</p>
+                    <h5 class="card-title text-center">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Welcome to Roundtable Guides</span>
+                        <span class="lang-text lang-it">Benvenuti nelle Guide della Tavola Rotonda</span>
+                      </span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Guides, Walkthroughs, and Progress Tracking for Elden Ring. Written and maintained by the players. This site is still a work in-progress. We are working on it every day.</span>
+                        <span class="lang-text lang-it">Guide, Soluzioni e monitoraggio dei progressi per Elden Ring. Scritto e mantenuto dai giocatori. Questo sito è ancora in fase di sviluppo. Ci lavoriamo ogni giorno.</span>
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card shadow h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Get the Apps!</h5>
+                    <h5 class="card-title text-center">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Get the Apps!</span>
+                        <span class="lang-text lang-it">Scarica le App!</span>
+                      </span>
+                    </h5>
                     <div class="badge" style="width: 180px;">
                       <a href="https://apps.apple.com/us/app/elden-ring-guides/id1620436088?itsct=apps_box_badge&amp;amp;itscg=30200">
                         <img alt="Download on the App Store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;amp;releaseDate=1650585600&amp;h=3eb10370b9c49cf5b5dde5ca0352f23a" style="margin: 6%; width: 88%;">
@@ -504,15 +543,42 @@
               <div class="col">
                 <div class="card shadow h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Our other resources</h5>
-                    <p class="card-text">Join the Roundtable Hold 
-                      <a href="https://discord.gg/BzJzFeBjHr">Discord community</a>
+                    <h5 class="card-title text-center">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Our other resources</span>
+                        <span class="lang-text lang-it">Altre risorse</span>
+                      </span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Join the Roundtable Hold </span>
+                        <span class="lang-text lang-it">Unisciti alla comunità della </span>
+                        <a href="https://discord.gg/BzJzFeBjHr">
+                          <span class="lang-pair">
+                            <span class="lang-text lang-en">Discord community</span>
+                            <span class="lang-text lang-it">Tavola Rotonda su Discord</span>
+                          </span>
+                        </a>
+                      </span>
                     </p>
-                    <p class="card-text">More guides are over on 
-                      <a href="https://www.reddit.com/r/Roundtable_Guides/">/r/Roundtable_Guides</a>
+                    <p class="card-text">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">More guides are over on </span>
+                        <span class="lang-text lang-it">Altre guide sono disponibili su </span>
+                        <a href="https://www.reddit.com/r/Roundtable_Guides/">/r/Roundtable_Guides</a>
+                      </span>
                     </p>
-                    <p class="card-text">Video guides on the 
-                      <a href="https://www.youtube.com/channel/UCE-I15Z8HQBNCFHq2V0bbsA">YouTube channel</a>
+                    <p class="card-text">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Video guides on the </span>
+                        <span class="lang-text lang-it">Video guide sul </span>
+                        <a href="https://www.youtube.com/channel/UCE-I15Z8HQBNCFHq2V0bbsA">
+                          <span class="lang-pair">
+                            <span class="lang-text lang-en">YouTube channel</span>
+                            <span class="lang-text lang-it">canale YouTube</span>
+                          </span>
+                        </a>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -520,10 +586,37 @@
               <div class="col">
                 <div class="card shadow h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-center">I have feedback, how can I contribute?</h5>
-                    <p class="card-text">Contributing is easy! And does not require you to know how to code. You can find instructions on the
-                      <a href="https://github.com/RoundtableHold/roundtablehold.github.io">Github repository</a> You can also simply 
-                      <a href="https://github.com/RoundtableHold/roundtablehold.github.io/issues">report issues</a> and we'll fix them.
+                    <h5 class="card-title text-center">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">I have feedback, how can I contribute?</span>
+                        <span class="lang-text lang-it">Ho un feedback, come posso contribuire?</span>
+                      </span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Contributing is easy! And does not require you to know how to code. You can find instructions on the</span>
+                        <span class="lang-text lang-it">Contribuire è facile! E non richiede di saper programmare. Puoi trovare istruzioni sulla</span>
+                      </span>
+                      <a href="https://github.com/RoundtableHold/roundtablehold.github.io">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">Github repository</span>
+                          <span class="lang-text lang-it">repository GitHub</span>
+                        </span>
+                      </a>
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"> You can also simply </span>
+                        <span class="lang-text lang-it"> Puoi anche semplicemente </span>
+                      </span>
+                      <a href="https://github.com/RoundtableHold/roundtablehold.github.io/issues">
+                        <span class="lang-pair">
+                          <span class="lang-text lang-en">report issues</span>
+                          <span class="lang-text lang-it">segnalare problemi</span>
+                        </span>
+                      </a>
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en"> and we'll fix them.</span>
+                        <span class="lang-text lang-it"> e noi li risolveremo.</span>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -531,16 +624,36 @@
               <div class="col">
                 <div class="card shadow h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-center">Can I use this for multiple characters?</h5>
-                    <p class="card-text">Yes! Use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.</p>
+                    <h5 class="card-title text-center">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Can I use this for multiple characters?</span>
+                        <span class="lang-text lang-it">Posso usarlo per più personaggi?</span>
+                      </span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">Yes! Use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.</span>
+                        <span class="lang-text lang-it">Sì! Usa il selettore di profili e i pulsanti nella scheda delle opzioni nella parte superiore della pagina per impostare più profili.</span>
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card shadow h-100">
                   <div class="card-body">
-                    <h5 class="card-title text-center">How does the checklist status get saved?</h5>
-                    <p class="card-text">The checklists are saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.</p>
+                    <h5 class="card-title text-center">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">How does the checklist status get saved?</span>
+                        <span class="lang-text lang-it">Come viene salvato lo stato della checklist?</span>
+                      </span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang-pair">
+                        <span class="lang-text lang-en">The checklists are saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.</span>
+                        <span class="lang-text lang-it">Le checklist vengono salvate nella memoria locale del browser. Fai attenzione quando svuoti la cache del browser poiché distruggerà anche i tuoi progressi salvati.</span>
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -549,7 +662,12 @@
           <div class="col-md-4 col-12">
             <div class="card shadow">
               <div class="card-body uncolor-links">
-                <h5 class="card-title text-center">Progress</h5>
+                <h5 class="card-title text-center">
+                  <span class="lang-pair">
+                    <span class="lang-text lang-en">Progress</span>
+                    <span class="lang-text lang-it">Progressi</span>
+                  </span>
+                </h5>
                 <ul class="nav flex-column" id="progress_list">
                   <hr>
                   <li class="tab-li">

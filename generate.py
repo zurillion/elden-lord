@@ -270,6 +270,25 @@ def make_doc(title, description):
 
     var lang = localStorage.getItem('selectedLanguage') || 'en';
     document.write('<style id="language-fouc-fix">.lang-text { display: none !important; } .lang-text.lang-' + lang + ' { display: inline !important; } .lang-pair:not(:has(.lang-' + lang + ')) .lang-text.lang-en { display: inline !important; } .d-none-regex { display: none !important; }</style>');
+    
+    // Localize placeholders
+    window.addEventListener('DOMContentLoaded', function() {
+        var updatePlaceholders = function(l) {
+            document.querySelectorAll('input[placeholder]').forEach(function(input) {
+                var localized = input.getAttribute('data-placeholder-' + l);
+                if (localized) {
+                    input.placeholder = localized;
+                } else if (l === 'en') {
+                    // Restore original if available? For now just handle it or it stays as is
+                }
+            });
+        };
+        updatePlaceholders(lang);
+        
+        window.addEventListener('languageChanged', function(e) {
+            updatePlaceholders(e.detail.lang);
+        });
+    });
 })();
 """))
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css")
@@ -279,10 +298,10 @@ def make_doc(title, description):
 def title_row():
     with div(cls="row"):
         with div(cls="col-md-12 text-center"):
-            h1("Roundtable Hold", cls="mt-3")
+            h1(localized_span({'en': 'Roundtable Hold', 'it': 'Tavola Rotonda'}), cls="mt-3")
             text = p(cls="lead d-print-none")
-            text += "Contribute at the "
-            text += a("Github Page",
+            text += localized_span({'en': 'Contribute at the ', 'it': 'Contribuisci alla '})
+            text += a(localized_span({'en': 'Github Page', 'it': 'Pagina GitHub'}),
                       href="https://github.com/RoundtableHold/roundtablehold.github.io")
 
 def hide_completed_button():
@@ -325,7 +344,10 @@ def make_nav(page, is_map = False):
                                     a(raw(meta['flag']), ' ', meta['name'], href="#", cls="dropdown-item lang-option", data_lang=lang_code)
 
             with form(cls="d-none d-sm-flex order-2 order-xl-3", action="/search.html", method="get"):
-                input_(cls='form-control me-2', type='search', placeholder='Search', aria_label='search', name='search')
+                search_text_dict = nav_static.get(12, {'en': 'Search'})
+                search_text_en = search_text_dict.get('en', 'Search')
+                search_text_it = search_text_dict.get('it', 'Cerca')
+                input_(cls='form-control me-2', type='search', placeholder=search_text_en, aria_label='search', name='search', data_placeholder_it=search_text_it)
                 with button(type='submit', cls='btn', formaction='/search.html', formmethod='get', formnovalidate='true'):
                     i(cls='bi bi-search')
             with div(cls='d-sm-none order-2'):
@@ -623,19 +645,19 @@ def make_index():
         with div(cls="container"):
             with div(cls="row"):
                 with div(cls="col-md-12 text-center"):
-                    h1("Roundtable Guides", cls="mt-4")
+                    h1(localized_span(nav_static.get(0, {'en': 'Roundtable Guides'})), cls="mt-4")
                 with div(cls="row gy-3"):
                     with div(cls='col-md-8 col-12'):
                         with div(cls='row row-cols-1 row-cols-md-2 gy-3'):
                             with div(cls="col"):
                                 with div(cls="card shadow h-100"):
                                     with div(cls="card-body"):
-                                        h5('Welcome to Roundtable Guides', cls='card-title text-center')
-                                        p('Guides, Walkthroughs, and Progress Tracking for Elden Ring. Written and maintained by the players. This site is still a work in-progress. We are working on it every day.', cls='card-text')
+                                        h5(localized_span({'en': 'Welcome to Roundtable Guides', 'it': 'Benvenuti nelle Guide della Tavola Rotonda'}), cls='card-title text-center')
+                                        p(localized_span({'en': 'Guides, Walkthroughs, and Progress Tracking for Elden Ring. Written and maintained by the players. This site is still a work in-progress. We are working on it every day.', 'it': 'Guide, Soluzioni e monitoraggio dei progressi per Elden Ring. Scritto e mantenuto dai giocatori. Questo sito è ancora in fase di sviluppo. Ci lavoriamo ogni giorno.'}), cls='card-text')
                             with div(cls='col'):
                                 with div(cls='card shadow h-100'):
                                     with div(cls='card-body'):
-                                        h5('Get the Apps!', cls='card-title text-center')
+                                        h5(localized_span({'en': 'Get the Apps!', 'it': 'Scarica le App!'}), cls='card-title text-center')
                                         with div(style='width: 180px;', cls='badge'):
                                             with a(href='https://apps.apple.com/us/app/elden-ring-guides/id1620436088?itsct=apps_box_badge&amp;itscg=30200'):
                                                 img(src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1650585600&h=3eb10370b9c49cf5b5dde5ca0352f23a", alt="Download on the App Store", style='margin: 6%; width: 88%;')
@@ -645,34 +667,34 @@ def make_index():
                             with div(cls="col"):
                                 with div(cls="card shadow h-100"):
                                     with div(cls="card-body"):
-                                        h5('Our other resources', cls='card-title text-center')
-                                        p('Join the Roundtable Hold ', cls='card-text').add(a('Discord community', href='https://discord.gg/BzJzFeBjHr'))
-                                        p('More guides are over on ', cls='card-text').add(a('/r/Roundtable_Guides', href='https://www.reddit.com/r/Roundtable_Guides/'))
-                                        p('Video guides on the ', cls='card-text').add(a('YouTube channel', href='https://www.youtube.com/channel/UCE-I15Z8HQBNCFHq2V0bbsA'))
+                                        h5(localized_span({'en': 'Our other resources', 'it': 'Altre risorse'}), cls='card-title text-center')
+                                        p(cls='card-text').add(localized_span({'en': 'Join the Roundtable Hold ', 'it': 'Unisciti alla comunità della '})).add(a(localized_span({'en': 'Discord community', 'it': 'Tavola Rotonda su Discord'}), href='https://discord.gg/BzJzFeBjHr'))
+                                        p(cls='card-text').add(localized_span({'en': 'More guides are over on ', 'it': 'Altre guide sono disponibili su '})).add(a('/r/Roundtable_Guides', href='https://www.reddit.com/r/Roundtable_Guides/'))
+                                        p(cls='card-text').add(localized_span({'en': 'Video guides on the ', 'it': 'Video guide sul '})).add(a(localized_span({'en': 'YouTube channel', 'it': 'canale YouTube'}), href='https://www.youtube.com/channel/UCE-I15Z8HQBNCFHq2V0bbsA'))
                             with div(cls="col"):
                                 with div(cls='card shadow h-100'):
                                     with div(cls="card-body"):
-                                        h5('I have feedback, how can I contribute?', cls='card-title text-center')
+                                        h5(localized_span({'en': 'I have feedback, how can I contribute?', 'it': 'Ho un feedback, come posso contribuire?'}), cls='card-title text-center')
                                         text = p(cls='card-text')
-                                        text += 'Contributing is easy! And does not require you to know how to code. You can find instructions on the'
-                                        text += a('Github repository', href='https://github.com/RoundtableHold/roundtablehold.github.io')
-                                        text += ' You can also simply '
-                                        text += a('report issues', href='https://github.com/RoundtableHold/roundtablehold.github.io/issues')
-                                        text += " and we'll fix them."
+                                        text += localized_span({'en': 'Contributing is easy! And does not require you to know how to code. You can find instructions on the', 'it': 'Contribuire è facile! E non richiede di saper programmare. Puoi trovare istruzioni sulla'})
+                                        text += a(localized_span({'en': 'Github repository', 'it': 'repository GitHub'}), href='https://github.com/RoundtableHold/roundtablehold.github.io')
+                                        text += localized_span({'en': ' You can also simply ', 'it': ' Puoi anche semplicemente '})
+                                        text += a(localized_span({'en': 'report issues', 'it': 'segnalare problemi'}), href='https://github.com/RoundtableHold/roundtablehold.github.io/issues')
+                                        text += localized_span({'en': " and we'll fix them.", 'it': ' e noi li risolveremo.'})
                             with div(cls="col"):
                                 with div(cls="card shadow h-100"):
                                     with div(cls="card-body"):
-                                        h5('Can I use this for multiple characters?', cls='card-title text-center')
-                                        p('Yes! Use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.', cls='card-text')
+                                        h5(localized_span({'en': 'Can I use this for multiple characters?', 'it': 'Posso usarlo per più personaggi?'}), cls='card-title text-center')
+                                        p(localized_span({'en': 'Yes! Use the profile selector and buttons in the options tab at the top of the page to setup multiple profiles.', 'it': 'Sì! Usa il selettore di profili e i pulsanti nella scheda delle opzioni nella parte superiore della pagina per impostare più profili.'}), cls='card-text')
                             with div(cls="col"):
                                 with div(cls="card shadow h-100"):
                                     with div(cls="card-body"):
-                                        h5('How does the checklist status get saved?', cls='card-title text-center')
-                                        p("The checklists are saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.", cls='card-text')
+                                        h5(localized_span({'en': 'How does the checklist status get saved?', 'it': 'Come viene salvato lo stato della checklist?'}), cls='card-title text-center')
+                                        p(localized_span({'en': "The checklists are saved to your browser's local storage. Be careful when clearing your browser's cache as it will also destroy your saved progress.", 'it': 'Le checklist vengono salvate nella memoria locale del browser. Fai attenzione quando svuoti la cache del browser poiché distruggerà anche i tuoi progressi salvati.'}), cls='card-text')
                     with div(cls="col-md-4 col-12"):
                         with div(cls='card shadow'):
                             with div(cls="card-body uncolor-links"):
-                                h5('Progress', cls='card-title text-center')
+                                h5(localized_span({'en': 'Progress', 'it': 'Progressi'}), cls='card-title text-center')
                                 with ul(id='progress_list', cls='nav flex-column'):
                                     hr()
                                     for name, l in dropdowns:
@@ -691,36 +713,36 @@ def make_options():
         with div(cls="container"):
             with div(cls="row"):
                 with div(cls="col-md-12 text-center"):
-                    h1("Roundtable Guides", cls="mt-4")
+                    h1(localized_span(nav_static.get(0, {'en': 'Roundtable Guides'})), cls="mt-4")
             with div(cls="row"):
-                h2("Options")
+                h2(localized_span(nav_static.get(2, {'en': 'Options'})))
                 with div(cls="row"):
-                    div(cls="col col-12 col-md-6").add(h4("Theme selection:"))
+                    div(cls="col col-12 col-md-6").add(h4(localized_span({'en': 'Theme selection:', 'it': 'Selezione del tema:'})))
                     div(cls="col col-12 col-md-6").add(select(cls="form-select", id="themes"))
                 with div(cls="row"):
-                    div(cls="col col-12 col-md-4").add(h4("Profile management:"))
+                    div(cls="col col-12 col-md-4").add(h4(localized_span({'en': 'Profile management:', 'it': 'Gestione dei profili:'})))
                     with form(cls="form-inline input-group pull-right gap-1"):
                         with div(cls="col col-12 col-md-4"):
                             select(cls="form-select", id="profiles")
                         with div(cls="col col-12 col-md-4"):
                             with div(cls="btn-group"):
-                                button("Add", cls="btn btn-primary", type="button", id="profileAdd")
+                                button(localized_span({'en': 'Add', 'it': 'Aggiungi'}), cls="btn btn-primary", type="button", id="profileAdd")
                             with div(cls="btn-group"):
-                                button("Edit", cls="btn btn-primary", type="button", id="profileEdit")
+                                button(localized_span({'en': 'Edit', 'it': 'Modifica'}), cls="btn btn-primary", type="button", id="profileEdit")
                             with div(cls="btn-group"):
                                 button("NG+", cls="btn btn-primary", type="button", id="profileNG+")
                 with div(cls="row"):
-                    div(cls="col col-12 col-md-4").add(h4("Data import/export:"))
+                    div(cls="col col-12 col-md-4").add(h4(localized_span({'en': 'Data import/export:', 'it': 'Importazione/esportazione dati:'})))
                     with div(cls="col col-12 col-md-8"):
                         with form(cls="form-inline gap-1 m-1"):
                             with div(cls="btn-group pull-left"):
-                                button("Import file", cls="btn btn-primary", type="button", id="profileImport")
+                                button(localized_span({'en': 'Import file', 'it': 'Importa file'}), cls="btn btn-primary", type="button", id="profileImport")
                             with div(cls="btn-group pull-left"):
-                                button("Export file", cls="btn btn-primary", type="button", id="profileExport")
+                                button(localized_span({'en': 'Export file', 'it': 'Esporta file'}), cls="btn btn-primary", type="button", id="profileExport")
                             with div(cls="btn-group pull-right"):
-                                button("Import textbox", cls="btn btn-primary", type="button", id="profileImportText")
+                                button(localized_span({'en': 'Import textbox', 'it': 'Importa casella di testo'}), cls="btn btn-primary", type="button", id="profileImportText")
                             with div(cls="btn-group pull-right mt-1 mt-md-0"):
-                                button("Export clipboard", cls="btn btn-primary", type="button", id="profileExportText")
+                                button(localized_span({'en': 'Export clipboard', 'it': 'Esporta negli appunti'}), cls="btn btn-primary", type="button", id="profileExportText")
                     with div(cls='row'):
                         div(id='alert-div')
                     with div(cls='row'):
@@ -729,70 +751,69 @@ def make_options():
                                    cls="text-muted small d-inline-flex align-items-center gap-1 mb-1",
                                    aria_expanded="false"):
                                 i(cls="bi bi-chevron-down")
-                                span("Detailed configuration")
+                                span(localized_span({'en': 'Detailed configuration', 'it': 'Configurazione dettagliata'}))
                             with div(id="detailedConfig", cls="collapse"):
                                 textarea(id="profileText", cls="form-control")
             with div(cls="row mt-4", id="cloudSync"):
-                h2("Cloud Sync & Backup")
+                h2(localized_span({'en': 'Cloud Sync & Backup', 'it': 'Sincronizzazione Cloud e Backup'}))
                 div(id="syncAlertDiv")
                 with div(id="syncInactive"):
-                    p("Back up and sync your progress across browsers and devices. "
-                      "Your data is stored in your own cloud account.", cls="text-muted mb-3")
+                    p(localized_span({'en': 'Back up and sync your progress across browsers and devices. Your data is stored in your own cloud account.', 'it': 'Esegui il backup e sincronizza i tuoi progressi su browser e dispositivi diversi. I tuoi dati sono archiviati nel tuo account cloud.'}), cls="text-muted mb-3")
                     button(cls="btn btn-primary", id="btnActivateSync").add(
-                        i(cls="bi bi-cloud-upload"), " Activate Cloud Sync")
+                        i(cls="bi bi-cloud-upload"), localized_span({'en': ' Activate Cloud Sync', 'it': ' Attiva Sincronizzazione Cloud'}))
                 with div(id="syncActive", cls="d-none"):
                     with div(cls="d-flex align-items-center gap-2 mb-2"):
                         span(id="syncStatusBadge", cls="badge bg-success").add(
-                            i(cls="bi bi-check-circle-fill"), " Synced")
+                            i(cls="bi bi-check-circle-fill"), localized_span({'en': ' Synced', 'it': ' Sincronizzato'}))
                     p(id="syncProviderInfo", cls="mb-1")
                     p(id="syncLastSyncTime", cls="text-muted small mb-3")
                     with div(cls="d-flex gap-2 flex-wrap"):
                         button(cls="btn btn-sm btn-primary", id="btnSyncNow").add(
-                            i(cls="bi bi-arrow-repeat"), " Sync Now")
+                            i(cls="bi bi-arrow-repeat"), localized_span({'en': ' Sync Now', 'it': ' Sincronizza Ora'}))
                         button(cls="btn btn-sm btn-outline-secondary", id="btnViewHistory").add(
-                            i(cls="bi bi-clock-history"), " View History")
+                            i(cls="bi bi-clock-history"), localized_span({'en': ' View History', 'it': ' Visualizza Cronologia'}))
                         button(cls="btn btn-sm btn-outline-danger", id="btnDeactivateSync").add(
-                            i(cls="bi bi-cloud-slash"), " Deactivate")
+                            i(cls="bi bi-cloud-slash"), localized_span({'en': ' Deactivate', 'it': ' Disattiva'}))
                     with div(id="syncVersionPanel", cls="mt-3 d-none"):
-                        h5("Version History", cls="mb-2")
+                        h5(localized_span({'en': 'Version History', 'it': 'Cronologia Versioni'}), cls="mb-2")
                         p(cls="text-muted small mb-2", id="syncVersionDesc")
                         div(cls="list-group", id="syncVersionList")
             with div(id="profileModal", cls="modal fade", tabindex="-1", role="dialog"):
                 with div(cls="modal-dialog", role="document"):
                     with div(cls="modal-content"):
                         with div(cls="modal-header"):
-                            h3("Profile", id="profileModalTitle", cls="modal-title")
+                            h3(localized_span({'en': 'Profile', 'it': 'Profilo'}), id="profileModalTitle", cls="modal-title")
                             button(type="button", cls="btn-close", data_bs_dismiss="modal", aria_label="Close")
                         with div(cls="modal-body"):
                             with form(cls="form-horizontal"):
                                 with div(cls="control-group"):
-                                    label("Name", cls="control-label", _for="profileModalName")
+                                    label(localized_span({'en': 'Name', 'it': 'Nome'}), cls="control-label", _for="profileModalName")
                                     div(cls="controls").add(input_(type="text", cls="form-control", id="profileModalName", placeholder="Enter Profile name"))
                         with div(cls="modal-footer"):
-                            button("Close", id="profileModalClose", cls="btn btn-secondary", data_bs_dismiss="modal")
-                            a("Add", href="#", id="profileModalAdd", cls="btn btn-primary", data_bs_dismiss="modal")
-                            a("Update", href="#", id="profileModalUpdate", cls="btn btn-primary")
-                            a("Delete", href="#", id="profileModalDelete", cls="btn btn-primary")
+                            button(localized_span({'en': 'Close', 'it': 'Chiudi'}), id="profileModalClose", cls="btn btn-secondary", data_bs_dismiss="modal")
+                            a(localized_span({'en': 'Add', 'it': 'Aggiungi'}), href="#", id="profileModalAdd", cls="btn btn-primary", data_bs_dismiss="modal")
+                            a(localized_span({'en': 'Update', 'it': 'Aggiorna'}), href="#", id="profileModalUpdate", cls="btn btn-primary")
+                            a(localized_span({'en': 'Delete', 'it': 'Elimina'}), href="#", id="profileModalDelete", cls="btn btn-primary")
             with div(id="NG+Modal", cls="modal fade", tabindex="-1", role="dialog"):
                 with div(cls="modal-dialog", role="document"):
                     with div(cls="modal-content"):
                         with div(cls="modal-header"):
-                            h3("Begin next journey?", id="profileModalTitleNG", cls="modal-title")
+                            h3(localized_span({'en': 'Begin next journey?', 'it': 'Iniziare il prossimo viaggio?'}), id="profileModalTitleNG", cls="modal-title")
                             button(type="button", cls="btn-close", data_bs_dismiss="modal", aria_label="Close")
-                        div('If you begin the next journey, all progress on the "Playthrough" and "Misc" tabs of this profile will be reset, while achievement and collection checklists will be kept.', cls="modal-body")
+                        div(localized_span({'en': 'If you begin the next journey, all progress on the "Playthrough" and "Misc" tabs of this profile will be reset, while achievement and collection checklists will be kept.', 'it': 'Se inizi il prossimo viaggio, tutti i progressi nelle schede "Walkthrough" e "Varie" di questo profilo verranno ripristinati, mentre le checklist degli obiettivi e dei collezionabili verranno mantenute.'}), cls="modal-body")
                         with div(cls="modal-footer"):
-                            a("No", href="#", cls="btn btn-primary", data_bs_dismiss="modal")
-                            a("Yes", href="#", cls="btn btn-danger", id="NG+ModalYes")
+                            a(localized_span({'en': 'No', 'it': 'No'}), href="#", cls="btn btn-primary", data_bs_dismiss="modal")
+                            a(localized_span({'en': 'Yes', 'it': 'Sì'}), href="#", cls="btn btn-danger", id="NG+ModalYes")
             with div(id='importTextModal', cls='modal fade', tabindex='-1', role='dialog'):
                 with div(cls='modal-dialog', role='document'):
                     with div(cls='modal-content'):
                         with div(cls='modal-header'):
-                            h3('Import profile?', cls='modal-title')
+                            h3(localized_span({'en': 'Import profile?', 'it': 'Importare profilo?'}), cls='modal-title')
                             button(type='button', cls='btn-close', data_bs_dismiss='modal', aria_label='Close')
-                        div('If you import this profile all of your current progress will be lost.', cls='modal-body')
+                        div(localized_span({'en': 'If you import this profile all of your current progress will be lost.', 'it': 'Se importi questo profilo, tutti i tuoi progressi attuali andranno persi.'}), cls='modal-body')
                         with div(cls='modal-footer'):
-                            a('No', href='#', cls='btn btn-primary', data_bs_dismiss='modal')
-                            a('Yes', href='#', cls='btn btn-danger', id='importTextYes')
+                            a(localized_span({'en': 'No', 'it': 'No'}), href='#', cls='btn btn-primary', data_bs_dismiss='modal')
+                            a(localized_span({'en': 'Yes', 'it': 'Sì'}), href='#', cls='btn btn-danger', id='importTextYes')
             with div(id='importFileModal', cls='modal fade', tabindex='-1', role='dialog'):
                 with div(cls='modal-dialog', role='document'):
                     with div(cls='modal-content'):
